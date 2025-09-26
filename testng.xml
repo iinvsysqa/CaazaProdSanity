@@ -10,7 +10,7 @@
 	 <classes>
             <class name="caaza_testcases.SingleNodeSanity" />
             <class name="caaza_testcases.DualNodeSanity" />
-        </classes>
+     </classes>
 
 	</test> <!--
 	Default test -->

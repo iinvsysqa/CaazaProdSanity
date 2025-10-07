@@ -64,6 +64,7 @@ public class DualNodeSanity extends MobileAppWrappers {
 			adddevicepage.waitForVerificationComplete();
 			adddevicepage.enterPanelName("PNL1");
 			adddevicepage.clickAddPanelSaveBtn();
+			Thread.sleep(5000);
 			//adddevicepage.clickAddswitchSaveBtn();
 			adddevicepage.enterSwitch1Name("SW1");
 			adddevicepage.clickSwitchType1Dropdown();
@@ -86,7 +87,9 @@ public class DualNodeSanity extends MobileAppWrappers {
 			switchpage.clickSettingsButton();
 			switchpage.clickResetDeviceButton();
 			switchpage.clickResetConfirmationButton();
-			switchpage.clickBackButton();
+			Thread.sleep(3000);
+			driver.navigate().back();
+			//switchpage.clickBackButton();
 			Thread.sleep(5000);
 			//readwrite.closePort();
 		}

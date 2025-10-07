@@ -312,6 +312,7 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement switchNameTextBox;
 	
 	@FindBy(xpath = "(//android.widget.EditText[@text=\"Enter Switch Name\"])[1]")
+//	@FindBy(xpath = "(//android.widget.ScrollView[@content-desc='com.CaaZa_Smart:id/AddSwitch_FlatList']//android.widget.EditText[@text='Enter Switch Name'])[1]")
 	private WebElement switchName1TextBox;
 	
 	

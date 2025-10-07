@@ -47,8 +47,20 @@ public class SwitchPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='Header_Back_Button']")
 	private WebElement headerbackbutton;
 	
+	@FindBy(xpath = "//*[@resource-id='Switchboard_MenuIconContainer_0']")
+	private WebElement switchBoardMenu1;
+	
+	@FindBy(xpath = "//*[@resource-id='Switchboard_RemoveOptionText_0']")
+	private WebElement removeSwitchBoardOption;
 	
 	
+	public void clickSwitchBoardMenu1() {
+		clickbyXpath(switchBoardMenu1, "Click on Switch Board Menu Option Button");
+	}
+	
+	public void clickRemoveSwitchBoardOption() {
+		clickbyXpath(removeSwitchBoardOption, "Click on Remove Button");
+	}
 	
 	public void clickMenuButton() {
 		clickbyXpath(menuButton, "Click on Menu Button");

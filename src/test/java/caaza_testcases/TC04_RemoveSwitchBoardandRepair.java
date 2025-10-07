@@ -2,6 +2,7 @@ package caaza_testcases;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
+
 import pages.AccountsInfoPage;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
@@ -15,7 +16,7 @@ import pages.SwitchPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
-public class SingleNodeSanity extends MobileAppWrappers {
+public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignUpPage signuppage;
@@ -30,13 +31,13 @@ public class SingleNodeSanity extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "Single Node Sanity Check";
-		testDescription = "Single Node Sanity Check";
+		testCaseName = "TC04_Remove Switch Board and Repair";
+		testDescription = "Check User able to remove device and Repair it";
 	}
 
 	
 	@Test(priority = 0)
-	public void SingleNodeSanity_Check() throws Exception {
+	public void TC04_RemoveSwitchBoardandRepair_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();
 	}
@@ -58,6 +59,30 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			//landingpage.enterUserName("Demouserauto");
 			//landingpage.enterPassword("Welcome@123");
 			//landingpage.clickSignInButton();
+			homepage.clickFloorSelctionBtn();
+			adddevicepage.pair(2);
+			adddevicepage.waitForVerificationComplete();
+			adddevicepage.enterPanelName("PNL1");
+			adddevicepage.clickAddPanelSaveBtn();
+			//adddevicepage.clickAddswitchSaveBtn();
+			Thread.sleep(5000);
+			adddevicepage.enterSwitchName("SW1");
+			adddevicepage.clickSwitchTypeDropdown();
+			adddevicepage.clickFanType();
+			adddevicepage.clickAddswitchSaveBtn();
+			adddevicepage.clickOkButton();
+			homepage.clickFloorSelctionBtn();
+			Thread.sleep(5000);
+			switchpage.clickOnOffButton();
+			Thread.sleep(3000);
+			switchpage.clickOnOffButton();
+			switchpage.clickMenuButton();
+			switchpage.clickAddEditSwitchBoardButton();
+			switchpage.clickSwitchBoardMenu1();
+			switchpage.clickRemoveSwitchBoardOption();
+			driver.navigate().back();
+			driver.navigate().back();
+			Thread.sleep(3000);
 			homepage.clickFloorSelctionBtn();
 			adddevicepage.pair(2);
 			adddevicepage.waitForVerificationComplete();

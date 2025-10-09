@@ -79,6 +79,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			switchpage.clickSettingsButton();
 			switchpage.clickResetDeviceButton();
 			switchpage.clickResetConfirmationButton();
+			Thread.sleep(5000);
 			driver.navigate().back();
 			//switchpage.clickBackButton();
 

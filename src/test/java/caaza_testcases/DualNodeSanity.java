@@ -61,6 +61,7 @@ public class DualNodeSanity extends MobileAppWrappers {
 			//landingpage.clickSignInButton();
 			homepage.clickFloorSelctionBtn();
 			adddevicepage.pair(2);
+			//Thread.sleep(30000);
 			adddevicepage.waitForVerificationComplete();
 			adddevicepage.enterPanelName("PNL1");
 			adddevicepage.clickAddPanelSaveBtn();
@@ -77,20 +78,19 @@ public class DualNodeSanity extends MobileAppWrappers {
 			homepage.clickFloorSelctionBtn();
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			switchpage.clickOnOff2Button();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			switchpage.clickOnOff2Button();
 			switchpage.clickMenuButton();
 			switchpage.clickSettingsButton();
 			switchpage.clickResetDeviceButton();
 			switchpage.clickResetConfirmationButton();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			driver.navigate().back();
 			//switchpage.clickBackButton();
-			Thread.sleep(5000);
 			//readwrite.closePort();
 		}
 		catch (Exception e) {

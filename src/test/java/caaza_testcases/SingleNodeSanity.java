@@ -73,7 +73,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			homepage.clickFloorSelctionBtn();
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
-			Thread.sleep(3000);
+			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
 			switchpage.clickSettingsButton();
@@ -81,7 +81,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			switchpage.clickResetConfirmationButton();
 			driver.navigate().back();
 			//switchpage.clickBackButton();
-			Thread.sleep(5000);
+
 			//readwrite.closePort();
 		}
 		catch (Exception e) {

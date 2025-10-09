@@ -65,7 +65,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			adddevicepage.enterPanelName("PNL1");
 			adddevicepage.clickAddPanelSaveBtn();
 			//adddevicepage.clickAddswitchSaveBtn();
-			Thread.sleep(5000);
+			Thread.sleep(7000);
 			adddevicepage.enterSwitchName("SW1");
 			adddevicepage.clickSwitchTypeDropdown();
 			adddevicepage.clickFanType();
@@ -77,6 +77,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			Thread.sleep(3000);
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
+			Thread.sleep(3000);
 			switchpage.clickAddEditSwitchBoardButton();
 			switchpage.clickSwitchBoardMenu1();
 			switchpage.clickRemoveSwitchBoardOption();

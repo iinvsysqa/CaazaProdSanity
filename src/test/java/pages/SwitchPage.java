@@ -3,6 +3,7 @@ package pages;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -31,7 +32,7 @@ public class SwitchPage extends GenericWrappers{
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.CaaZa_Smart:id/SwitchToggle_2\"]/android.view.ViewGroup")
 	private WebElement onOffButton2;
 	
-	@FindBy(xpath = "MenuItem_AddandEditSwitchboard_0")
+	@FindBy(xpath = "//*[@resource-id='MenuItem_AddandEditSwitchboard_0']")
 	private WebElement addEditSwitchBoardButton;
 	
 	
@@ -53,6 +54,10 @@ public class SwitchPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='Switchboard_RemoveOptionText_0']")
 	private WebElement removeSwitchBoardOption;
 	
+	@FindBy(xpath = "//*[@resource-id='DisconnectedBadge_1']")
+	private WebElement disconnectedIcon;
+	
+	
 	
 	public void clickSwitchBoardMenu1() {
 		clickbyXpath(switchBoardMenu1, "Click on Switch Board Menu Option Button");
@@ -67,10 +72,12 @@ public class SwitchPage extends GenericWrappers{
 	}
 
 	public void clickOnOffButton() {
+		
 		clickbyXpath(onOffButton, "Click On/OFF 1 Button");
 	}
-	
+
 	public void clickOnOff2Button() {
+		
 		clickbyXpath(onOffButton2, "Click On/OFF 2 Button");
 	}
 

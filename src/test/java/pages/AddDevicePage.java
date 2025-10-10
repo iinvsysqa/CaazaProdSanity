@@ -325,7 +325,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"Select the field\"])[1]")
 	private WebElement switchType1DropdownBtn;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Fridge\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Fan\"]")
 	private WebElement switchTypeFanButton;
 	
 	@FindBy(xpath = "//*[@resource-id='AddDevices_VerifyingText']")

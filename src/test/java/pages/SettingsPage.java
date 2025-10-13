@@ -1,10 +1,15 @@
 package pages;
 
 import java.time.Duration;
+import java.util.NoSuchElementException;
 
+import org.openqa.selenium.By;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -13,6 +18,7 @@ import wrappers.GenericWrappers;
 public class SettingsPage extends GenericWrappers{
 
 	private AndroidDriver driver;
+	public static String ConfiguredRouter;
 	
 	public SettingsPage(AndroidDriver driver) {
 		this.driver = driver;
@@ -84,6 +90,8 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement LowVoltagesavedToast;
 	@FindBy(xpath = "//android.widget.Toast[@text=\"Your device reset successfully\"]")
 	private WebElement DeviceresetToast;
+	@FindBy(xpath = "//android.widget.Toast[@text=\"Credentials updated successfully\"]")
+	private WebElement CredentialsupdatedToast;
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Device couldn't connect with router\"]")
 	private WebElement CouldntConnectrouterPopUp;
 	@FindBy(xpath = "//*[@resource-id='Single_Button']")
@@ -159,5 +167,60 @@ public class SettingsPage extends GenericWrappers{
 	}
 	
 	
+	public void verifyConfiguredRouter(String router) {
+		 ConfiguredRouter = SettingsItem_SubText_ConfiguredRouter.getText();
+		verifyTextContainsByXpath( SettingsItem_SubText_ConfiguredRouter,router , "Configured router name");
+	}
+	
+	public void clickModifyRouterbtn() {
+		clickbyXpath(SettingsItem_ModifyRouter,"Modify Router Btn");
+	}
+	public void enterRouterPassword(String Password) {
+		entervaluebyXpath(WIFI_EnterPasswordTextbox,"WIFI_EnterPasswordTextbox", Password);
+
+	}
+	public void clickModifyRouterSubmitBtn() {
+		clickbyXpath(WIFI_Submitbtn, "Wifi Submit btn");
+	}
+	public void clickModifyRouterCancelBtn() {
+		clickbyXpath(WIFI_Cancelbtn, "Router Cancel button");
+	}
+	public boolean verifyCouldntConnectPopup() throws InterruptedException {
+
+        WebDriverWait wait = new WebDriverWait(driver,60);
+        wait.pollingEvery(Duration.ofMillis(500));
+        wait.ignoring(NoSuchElementException.class);
+        wait.ignoring(StaleElementReferenceException.class);
+
+        try {
+            // Option A: wait until next-screen element is visible (preferred)
+            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.TextView[@text=\\\"Device couldn't connect with router\\\"]")));
+            verifyTextContainsByXpath(CouldntConnectrouterPopUp, "Device couldn't connect with router", "Could connect to router ");
+            return true;
+        } catch (TimeoutException e) {
+            // Option B fallback: wait until verifying header is not visible
+        	return false;
+        }
+    
+	}
+	public void clickCouldntconnectrouterOKpopup() {
+		clickbyXpath(CouldntConnectrouter_OKPopUp, "Couldnt connect router OK pop-up");
+	}
+	public boolean verifyCredentialsToast() {
+		 WebDriverWait wait = new WebDriverWait(driver,60);
+	        wait.pollingEvery(Duration.ofMillis(500));
+	        wait.ignoring(NoSuchElementException.class);
+	        wait.ignoring(StaleElementReferenceException.class);
+
+	        try {
+	            // Option A: wait until next-screen element is visible (preferred)
+	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.Toast[@text=\\\"Credentials updated successfully\\\"]")));
+	            verifyTextContainsByXpath(CredentialsupdatedToast,"Credentials updated successfully", "Credentials updated Toast");
+	            return true;
+	        } catch (TimeoutException e) {
+	            // Option B fallback: wait until verifying header is not visible
+	        	return false;
+	        }
+	}
 }
 

@@ -25,6 +25,7 @@ import org.apache.commons.net.ftp.FTPFile;
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.ExpectedConditions;
@@ -82,11 +83,17 @@ public class GenericWrappers {
     }
 	@SuppressWarnings("deprecation")
 	public static void allowpermissions() throws IOException {
-		Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.ACCESS_FINE_LOCATION");
-		Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.BLUETOOTH_SCAN");
-		Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.BLUETOOTH_CONNECT");
-		Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.CAMERA");
-		Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.POST_NOTIFICATIONS");
+		try {
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.ACCESS_FINE_LOCATION");
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.BLUETOOTH_SCAN");
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.BLUETOOTH_CONNECT");
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.CAMERA");
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.POST_NOTIFICATIONS");
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.READ_EXTERNAL_STORAGE");
+		    Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.caazasmart android.permission.WRITE_EXTERNAL_STORAGE");
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
 	}
 	
 	@SuppressWarnings("deprecation")
@@ -588,9 +595,9 @@ public class GenericWrappers {
 
 	}
 
-	public void switchToSpecificWifiUsingCommand() {
+	public void switchToSpecificWifiUsingCommand(String wifi,String Password) {
 		try {
-			String command = "nmcli dev wifi connect 'realme6' password '12345222'";
+			String command = "nmcli dev wifi connect '"+wifi+"' password '"+Password+"'";
 			@SuppressWarnings("deprecation")
 			Process process = Runtime.getRuntime().exec(command);
 			process.waitFor();
@@ -601,9 +608,9 @@ public class GenericWrappers {
 	}
 
 
-
+Boolean yes= true;
 	@SuppressWarnings("deprecation")
-	public void connectToWiFi(String wifiName, String wifiPassword) {
+	public void connectToWiFi(String wifiName, String wifiPassword) throws Exception {
 		try {
 			
 			// Open WiFi settings on the Android device
@@ -624,6 +631,7 @@ public class GenericWrappers {
 		
 			// Check if the password entry field is displayed
 			try {
+				Thread.sleep(3000);
 				WebElement enterPasswordField = driver.findElement(MobileBy.xpath("//android.widget.EditText[@resource-id=\"com.android.settings:id/password\"]")); // Replace with the actual XPath
 				WebElement enterPasswordFieldOnePlus = driver.findElement(MobileBy.xpath("(//android.widget.LinearLayout[@resource-id=\"com.oplus.wirelesssettings:id/edittext_container\"])[1]")); // Replace with the actual XPath
 				if (isElementDisplayedCheck(enterPasswordField)) {
@@ -650,7 +658,7 @@ public class GenericWrappers {
 					Thread.sleep(3000);
 				}
 					
-				} 
+				}
 				else {
 					System.out.println("Already connected or password is saved.");
 				
@@ -665,6 +673,7 @@ public class GenericWrappers {
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
+		checkappinforeground();
 	}
 
 	// Helper method to check if the element is displayed
@@ -1134,6 +1143,23 @@ public class GenericWrappers {
 			driver.activateApp(packages);
 			allowpermissions();
 		}
+	}
+	
+	public boolean Waitandverifytext(WebElement xpath,String input) {
+		 WebDriverWait wait = new WebDriverWait(driver,60);
+	        wait.pollingEvery(Duration.ofMillis(500));
+	        wait.ignoring(NoSuchElementException.class);
+	        wait.ignoring(StaleElementReferenceException.class);
+
+	        try {
+	            // Option A: wait until next-screen element is visible (preferred)
+	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.Toast[@text=\"" + input + "\"]")));
+	            verifyTextContainsByXpath(xpath,"Credentials updated successfully", "Credentials updated Toast");
+	            return true;
+	        } catch (TimeoutException e) {
+	            // Option B fallback: wait until verifying header is not visible
+	        	return false;
+	        }
 	}
 	
  

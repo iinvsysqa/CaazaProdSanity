@@ -19,7 +19,7 @@ import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
-public class TC08_RouterConfiguration extends MobileAppWrappers{
+public class TC07_DeviceSettingspage extends MobileAppWrappers{
 
 	LandingPage landingpage;
 	SignUpPage signuppage;
@@ -73,6 +73,50 @@ public class TC08_RouterConfiguration extends MobileAppWrappers{
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(1,switchNames);
 			homepage.enterFirstcard();
+			settingspage.openMenuPage();
+			settingspage.navigateSettingspage();
+			
+			settingspage.navigateHighVoltCutoff();
+			settingspage.clickHighVoltToggle();
+			settingspage.enterHighVoltagevalue("270");
+			settingspage.clickSavebutton();
+			settingspage.verifyHighvoltToast();
+			
+			settingspage.navigateHighVoltCutoff();
+			settingspage.verifyHighVoltValues("270");
+			settingspage.navigateback();
+			
+			
+			settingspage.navigateLowVoltCutoff();
+			settingspage.clickLowVoltToggle();
+			settingspage.enterLowVoltagevalue("170");
+			settingspage.clickSavebutton();
+			settingspage.verifyLowvoltToast();
+			
+			settingspage.navigateLowVoltCutoff();
+			settingspage.verifyLowVoltValues("170");
+			settingspage.navigateback();
+			
+//modify router		
+			settingspage.verifyConfiguredRouter("TP-Link_6D38-with_Internet");
+			connectToWiFi("GRID_LOCK", "43210567" );
+			settingspage.clickModifyRouterbtn();
+			settingspage.clickModifyRouterSubmitBtn();
+			settingspage.verifyCouldntConnectPopup();
+			settingspage.clickCouldntconnectrouterOKpopup();
+			settingspage.clickModifyRouterbtn();
+			settingspage.enterRouterPassword("43210567");
+			settingspage.clickModifyRouterSubmitBtn();
+			settingspage.verifyCredentialsToast();
+			settingspage.verifyConfiguredRouter(settingspage.ConfiguredRouter);
+			
+			
+			
+			settingspage.navigateback();
+			settingspage.openMenuPage();
+			settingspage.navigateSettingspage();
+			settingspage.resetDevice();
+			settingspage.navigateback();
 			
 			
 			
@@ -83,4 +127,5 @@ public class TC08_RouterConfiguration extends MobileAppWrappers{
 //			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
-	}}
+	}
+}

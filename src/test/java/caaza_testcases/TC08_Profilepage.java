@@ -10,6 +10,7 @@ import pages.AddDevicePage;
 import pages.Analytics;
 import pages.HomePage;
 import pages.LandingPage;
+import pages.Profilepage;
 import pages.ScenecreationPage;
 import pages.Schedularpage;
 import pages.Schedulartestpage;
@@ -19,7 +20,7 @@ import pages.StoreLogPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
-public class TC07_Voltageconfiguration extends MobileAppWrappers{
+public class TC08_Profilepage extends MobileAppWrappers{
 
 	LandingPage landingpage;
 	SignUpPage signuppage;
@@ -31,6 +32,7 @@ public class TC07_Voltageconfiguration extends MobileAppWrappers{
 	Analytics analytics;
 	AddDevicePage adddevicepage;
 	ScenecreationPage scenecreation;
+	Profilepage profilepage;
 
 	@BeforeClass
 	public void startTestCase() {
@@ -56,55 +58,27 @@ public class TC07_Voltageconfiguration extends MobileAppWrappers{
 		analytics = new Analytics(driver);
 		adddevicepage = new AddDevicePage(driver);
 		scenecreation =new ScenecreationPage(driver);
+		profilepage= new Profilepage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		List<String> switchNames = Arrays.asList("Switch1");
 		try {
 //			readwrite.openPort();
-			uninstall_reinstall();
-			landingpage.clickLandingPageNextBtn();			
-			landingpage.enterUserName(loadProp("USERNAME"));
-			landingpage.enterPassword(loadProp("PASSWORD"));
-			landingpage.clickSignInButton();
-			
-			
-			
-			homepage.enterFirstcard();
-			adddevicepage.pair(2);
-			adddevicepage.EnterNode(1,switchNames);
-			homepage.enterFirstcard();
-			settingspage.openMenuPage();
-			settingspage.navigateSettingspage();
-			
-			settingspage.navigateHighVoltCutoff();
-			settingspage.clickHighVoltToggle();
-			settingspage.enterHighVoltagevalue("270");
-			settingspage.clickSavebutton();
-			settingspage.verifyHighvoltToast();
-			
-			settingspage.navigateHighVoltCutoff();
-			settingspage.verifyHighVoltValues("270");
-			settingspage.navigateback();
-			
-			
-			settingspage.navigateLowVoltCutoff();
-			settingspage.clickLowVoltToggle();
-			settingspage.enterLowVoltagevalue("170");
-			settingspage.clickSavebutton();
-			settingspage.verifyLowvoltToast();
-			
-			settingspage.navigateLowVoltCutoff();
-			settingspage.verifyLowVoltValues("170");
-			settingspage.navigateback();
-			
-//modify router			
-			settingspage.navigateback();
-			settingspage.openMenuPage();
-			settingspage.navigateSettingspage();
-			settingspage.resetDevice();
-			settingspage.navigateback();
-			
-			
+//			uninstall_reinstall();
+//			landingpage.clickLandingPageNextBtn();			
+//			landingpage.enterUserName(loadProp("USERNAME"));
+//			landingpage.enterPassword(loadProp("PASSWORD"));
+//			landingpage.clickSignInButton();
+//			
+//			
+//			
+//			homepage.enterFirstcard();
+//			adddevicepage.pair(2);
+//			adddevicepage.EnterNode(1,switchNames);
+//			homepage.enterFirstcard();
+//			profilepage.navigateProfileSettingsProfileeditpage();
+//			profilepage.SetProfileimage();
+			profilepage.setDOB();
 			
 //			readwrite.closePort();
 		}
@@ -113,5 +87,4 @@ public class TC07_Voltageconfiguration extends MobileAppWrappers{
 //			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
-	}
-}
+	}}

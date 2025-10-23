@@ -1,14 +1,19 @@
 package caaza_testcases;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.AccountsInfoPage;
 import pages.AddDevicePage;
 import pages.DeviceMenuPage;
+import pages.HierarchyPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
+import pages.Profilepage;
 import pages.SettingsPage;
 import pages.SignUpPage;
 import pages.StoreLogPage;
@@ -28,13 +33,22 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 	StoreLogPage logpage;
 	AddDevicePage adddevicepage;
 	SwitchPage switchpage;
+	HierarchyPage hierarchypage;
+	Profilepage profilepage;
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC04_Remove Switch Board and Repair";
-		testDescription = "Check User able to remove device and Repair it";
+		testCaseName = "TC_04_removeswitchboard";
+		testDescription = "TC_04_removeswitchboard";
 	}
-
+	
+	
+	logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+	List<String> switchNames = Arrays.asList("Switch1");
+	String Hierarchyname="apartment";
+	String Oldpassword =loadProp("PASSWORD");
+	String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
+	String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
 	
 	@Test(priority = 3)
 	public void TC04_RemoveSwitchBoardandRepair_Check() throws Exception {
@@ -50,27 +64,36 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 		homepage= new HomePage(driver);
 		adddevicepage= new AddDevicePage(driver);
 		switchpage = new SwitchPage(driver);
+		hierarchypage = new HierarchyPage(driver);
+		profilepage = new Profilepage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 			//readwrite.openPort();
+			uninstall_reinstall();
+			landingpage.clickLandingPageNextBtn();
+			landingpage.clickSignUpLink();
+			signuppage.enterUserName(userName);
+			signuppage.enterName(userName);
+			signuppage.enterPassword(Oldpassword);
+			signuppage.enterConfirmPassword(Oldpassword);
+			signuppage.clickSignUpcheckbox();
+			signuppage.clickSignUpNextButton();
+			signuppage.enteranswer1("demo");
+			signuppage.enteranswer2("demo");
+			signuppage.clickSignUpButton();
+			killAndReopenApp();
+			hierarchypage.clickStartaNewHomeButton();
+			hierarchypage.clickStartanewhometext();
+			hierarchypage.enterHierarchyText(1, Hierarchyname);
+			hierarchypage.clickCreateHierarchybtn();
+			hierarchypage.addHierarchy_oneOption();
 			
-			//landingpage.clickLandingPageNextBtn();			
-			//landingpage.enterUserName("Demouserauto");
-			//landingpage.enterPassword("Welcome@123");
-			//landingpage.clickSignInButton();
-			homepage.clickFloorSelctionBtn();
+			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.waitForVerificationComplete();
-			adddevicepage.enterPanelName("PNL1");
-			adddevicepage.clickAddPanelSaveBtn();
-			//adddevicepage.clickAddswitchSaveBtn();
-			Thread.sleep(5000);
-			adddevicepage.enterSwitchName("SW1");
-			adddevicepage.clickSwitchTypeDropdown();
-			adddevicepage.clickFanType();
-			adddevicepage.clickAddswitchSaveBtn();
-			adddevicepage.clickOkButton();
+			adddevicepage.EnterNode(node,switchNames);	
+			
+			
 			homepage.clickFloorSelctionBtn();
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
@@ -80,21 +103,17 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			switchpage.clickAddEditSwitchBoardButton();
 			switchpage.clickSwitchBoardMenu1();
 			switchpage.clickRemoveSwitchBoardOption();
+			Thread.sleep(3000);
+			switchpage.clickOkButton();
 			driver.navigate().back();
 			driver.navigate().back();
 			Thread.sleep(3000);
 			homepage.clickFloorSelctionBtn();
+			
 			adddevicepage.pair(2);
-			adddevicepage.waitForVerificationComplete();
-			adddevicepage.enterPanelName("PNL1");
-			adddevicepage.clickAddPanelSaveBtn();
-			//adddevicepage.clickAddswitchSaveBtn();
-			Thread.sleep(5000);
-			adddevicepage.enterSwitchName("SW1");
-			adddevicepage.clickSwitchTypeDropdown();
-			adddevicepage.clickFanType();
-			adddevicepage.clickAddswitchSaveBtn();
-			adddevicepage.clickOkButton();
+			adddevicepage.EnterNode(node,switchNames);	
+			
+			
 			homepage.clickFloorSelctionBtn();
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
@@ -105,8 +124,18 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			switchpage.clickResetDeviceButton();
 			switchpage.clickResetConfirmationButton();
 			driver.navigate().back();
-			//switchpage.clickBackButton();
-			Thread.sleep(5000);
+			
+			//remove hierarchy and delete account
+			profilepage.clickApartmentIcon();
+			profilepage.clickMenubaricon();
+			profilepage.clickAddEditbtn();
+			profilepage.DeleteHierarchy(1,Hierarchyname);
+			profilepage.clickHierarchy_BackButton();
+			profilepage.navigateSettingsbtn();
+			profilepage.navigateProfileSettingsPage();
+			profilepage.deleteAccount();
+			profilepage.confirmDelete();
+			profilepage.checkSignInButton();
 			//readwrite.closePort();
 		}
 		catch (Exception e) {

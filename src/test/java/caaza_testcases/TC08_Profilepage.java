@@ -2,12 +2,15 @@ package caaza_testcases;
 
 import java.util.Arrays;
 import java.util.List;
+import java.util.UUID;
 
+import org.openqa.selenium.logging.profiler.HttpProfilerLogEntry;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import pages.AddDevicePage;
 import pages.Analytics;
+import pages.HierarchyPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.Profilepage;
@@ -33,15 +36,16 @@ public class TC08_Profilepage extends MobileAppWrappers{
 	AddDevicePage adddevicepage;
 	ScenecreationPage scenecreation;
 	Profilepage profilepage;
+	HierarchyPage hierarchypage;
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_01_SignUp with Valid creds";
-		testDescription = "Sign Up with valid user and log-out";
+		testCaseName = "TC08_Profilepage";
+		testDescription = "Profilepage_logoutlogin_deleteAccount_changePassword";
 	}
 
 	
-	@Test(priority = 4)
+	@Test(priority = 7)
 	public void TC_01_Account_Info_page_check() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
@@ -59,26 +63,78 @@ public class TC08_Profilepage extends MobileAppWrappers{
 		adddevicepage = new AddDevicePage(driver);
 		scenecreation =new ScenecreationPage(driver);
 		profilepage= new Profilepage(driver);
+		hierarchypage= new HierarchyPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		List<String> switchNames = Arrays.asList("Switch1");
+		String Hierarchyname="apartment";
+		String Oldpassword =loadProp("PASSWORD");
+		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
+		
+		String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
+		/*
+		 * " 1. Gointo profile section. 2. Check user able edit name,DOB and chane
+		 * password. 3. Logout and login with new password and check user details
+		 * updated properly. "
+		 */	
 		try {
 //			readwrite.openPort();
-//			uninstall_reinstall();
-//			landingpage.clickLandingPageNextBtn();			
-//			landingpage.enterUserName(loadProp("USERNAME"));
-//			landingpage.enterPassword(loadProp("PASSWORD"));
-//			landingpage.clickSignInButton();
-//			
-//			
-//			
+			uninstall_reinstall();
+			landingpage.clickLandingPageNextBtn();
+			landingpage.clickSignUpLink();
+			signuppage.enterUserName(userName);
+			signuppage.enterName(userName);
+			signuppage.enterPassword(Oldpassword);
+			signuppage.enterConfirmPassword(Oldpassword);
+			signuppage.clickSignUpcheckbox();
+			signuppage.clickSignUpNextButton();
+			signuppage.enteranswer1("demo");
+			signuppage.enteranswer2("demo");
+			signuppage.clickSignUpButton();
+			killAndReopenApp();
+			hierarchypage.clickStartaNewHomeButton();
+			hierarchypage.clickStartanewhometext();
+			hierarchypage.enterHierarchyText(1, Hierarchyname);
+			hierarchypage.clickCreateHierarchybtn();
+			hierarchypage.addHierarchy_oneOption();
+
+		
 //			homepage.enterFirstcard();
 //			adddevicepage.pair(2);
 //			adddevicepage.EnterNode(1,switchNames);
 //			homepage.enterFirstcard();
 //			profilepage.navigateProfileSettingsProfileeditpage();
+			// //unable to do 
 //			profilepage.SetProfileimage();
-			profilepage.setDOB();
+//			profilepage.setDOB();
+			
+			
+			profilepage.removeAddeddevice();
+			profilepage.clickApartmentIcon();
+			profilepage.clickMenubaricon();
+			profilepage.clickAddEditbtn();
+			profilepage.DeleteHierarchy(1,Hierarchyname);
+			profilepage.clickHierarchy_BackButton();
+			
+			profilepage.navigateSettingsbtn();
+			profilepage.navigateProfileSettingsPage();
+			
+			profilepage.openChangePasswordpage();
+			profilepage.entercurrentpassword(Oldpassword);
+			profilepage.changepassword(GeneratedPassword);
+			
+			driver.navigate().back();
+			profilepage.clicklogoutbtn();
+			profilepage.logoutConfirmationBtn();
+			landingpage.enterUserName(userName);
+			landingpage.enterPassword(GeneratedPassword);
+			landingpage.clickSignInButton();
+			killAndReopenApp();
+			profilepage.navigateSettingsbtn();
+			profilepage.navigateProfileSettingsPage();
+			profilepage.deleteAccount();
+			profilepage.confirmDelete();
+			profilepage.checkSignInButton();
 			
 //			readwrite.closePort();
 		}
@@ -87,4 +143,5 @@ public class TC08_Profilepage extends MobileAppWrappers{
 //			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
-	}}
+	}
+}

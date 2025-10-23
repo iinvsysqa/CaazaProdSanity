@@ -38,6 +38,8 @@ public class Analytics  extends GenericWrappers {
 	private WebElement analyticsButton;
 	@FindBy(xpath = "//*[@resource-id='Device_BackIcon']")
 	private WebElement BackButton;
+	@FindBy(xpath = "//*[@resource-id='RetryButton']")
+	private WebElement RetryButton;
 //	@FindBy(xpath = "")
 //	private WebElement ;
 //	@FindBy(xpath = "")
@@ -49,7 +51,15 @@ public class Analytics  extends GenericWrappers {
 	
 	public void navigateAnalyticsPage() {
 
-		clickbyXpath(analyticsButton, "analytics button");
+
+
+		if (isElementDisplayedCheck(analyticsButton)) {
+			clickbyXpath(analyticsButton, "analytics button");
+			}else if(isElementDisplayedCheck(RetryButton)) {
+				clickbyXpathwithoutReport("Retry button", RetryButton);
+				clickbyXpath(analyticsButton, "analytics button");
+				}
+	
 	}
 	
 	

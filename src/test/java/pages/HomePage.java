@@ -1,8 +1,11 @@
 package pages;
 import java.time.Duration;
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Set;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -17,7 +20,9 @@ import io.appium.java_client.appmanagement.ApplicationState;
 import wrappers.GenericWrappers;
 
 public class HomePage extends GenericWrappers{
-	private AndroidDriver driver;
+	private static AndroidDriver driver;
+
+	public String userName = loadProp("USERNAME");	
 
 	@FindBy(xpath="//*[@resource-id='home_main_on_off_swch']")
 			private WebElement deviceONOFFButton;
@@ -99,6 +104,8 @@ public class HomePage extends GenericWrappers{
 	private WebElement floorSelectionButton;
 	@FindBy(xpath = "//*[@resource-id='FloorCardName_0']")
 	private WebElement floorFirstcard;
+	@FindBy(xpath = "//*[@resource-id='RetryButton']")
+	private WebElement RetryButton;
 	
 //	@FindBy(xpath = "//*[@resource-id='Tab_Home_Container']")
 //	private WebElement Homebutton;
@@ -108,7 +115,34 @@ public class HomePage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='AreaList_HeaderText']")
 	private WebElement Premisestitle;
 	
+	private WebElement devicenameDeviceSettingsPage(String username) {
+		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
+		
+	}
+	private WebElement Hierarchyinputtext(int level) {
+		return driver.findElement(By.xpath("//*[@resource-id='HierarchyInput_Level_"+level+"']"));
+		
+	}
+	private WebElement HierarchyAddbutton(int level) {
+		return driver.findElement(By.xpath("//*[@resource-id='HierarchyButtonWrapper_Level_"+level+"']"));
+		
+	}
+	private WebElement HierarchyListItemContainer(int level) {
+		return driver.findElement(By.xpath("//*[@resource-id='Hierarchy_ListItemContainer_"+level+"']"));
+		
+	}
 	
+JavascriptExecutor js = (JavascriptExecutor) driver;
+	
+	// Constructor to initialize the driver and instantiate elements using
+	
+	public HomePage(AndroidDriver driver) {
+		this.driver = driver;
+		PageFactory.initElements(driver, this);
+		this.js = (JavascriptExecutor) driver;
+		this.wait = new WebDriverWait(driver, 10);
+	}
+
 	public void clickFloorSelctionBtn() {
 		clickbyXpath(floorSelectionButton, "Floor selction button");
 	}
@@ -118,34 +152,39 @@ public class HomePage extends GenericWrappers{
 		   clickbyXpath(hierarchyAddButton, "Level 1 Add button ");
 		   entervaluebyXpath(hierarchyAddInput, "Level 1 Input", "Apartment");
 		   clickbyXpath(hierarchyAddConfirm, "Level 1 Confirm button ");
+		   
+		   clickbyXpath(HierarchyListItemContainer(0), "Hierarchy 1st item");
 		   clickbyXpath(hierarchyAddButton, "Level 2 Add button ");
 		   entervaluebyXpath(hierarchyAddInput, "Level 2 Input", "Block");
 		   clickbyXpath(hierarchyAddConfirm, "Level 2 Confirm button ");
+		   
+		   
+		   clickbyXpath(HierarchyListItemContainer(0), "Hierarchy 1st item");
 		   clickbyXpath(hierarchyAddButton, "Level 3 Add button ");
 		   entervaluebyXpath(hierarchyAddInput, "Level 3 Input", "Floor");
 		   clickbyXpath(hierarchyAddConfirm, "Level 3 Confirm button ");
+		   
+		   
+		   clickbyXpath(HierarchyListItemContainer(0), "Hierarchy 1st item");
 		   clickbyXpath(hierarchyAddButton, "Level 4 Add button ");
 		   entervaluebyXpath(hierarchyAddInput, "Level 4 Input", "Room");
 		   clickbyXpath(hierarchyAddCategoryDropdown,"Select room type drop down");
 		   clickbyXpath(hierarchyFirstDropdownOption, "Select first Room option");
-		   clickbyXpath(hierarchySaveButton, " Save Button ");
+		   clickbyXpath(hierarchyAddConfirm, "Level 4 Confirm button ");
+		   clickbyXpath(hierarchySaveButton, " Save Button ");	
 		   		   
 	   }
-	
-	
-	
-	private WebElement devicenameDeviceSettingsPage(String username) {
-		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
+	public void addHierarchy_oneOption() {
 		
+		   clickbyXpath(hierarchyAddButton, "Level 1 Add button ");
+		   entervaluebyXpath(hierarchyAddInput, "Level 1 Input", "Apartment");
+		   clickbyXpath(hierarchyAddCategoryDropdown,"Select room type drop down");
+		   clickbyXpath(hierarchyFirstDropdownOption, "Select first Room option");
+		   clickbyXpath(hierarchySaveButton, " Save Button ");
 	}
 	
 	
-	public String userName = loadProp("USERNAME");
 	
-	public HomePage(AndroidDriver driver) {
-		this.driver = driver;
-		PageFactory.initElements(driver, this);
-	}
 	
 	
 	
@@ -176,38 +215,37 @@ public class HomePage extends GenericWrappers{
 //		
 //	}
 	
-	public void homepagenavigation() {
+	public void navigateback() {
 		driver.navigate().back();
 	}
 	public void enterFirstcard() {
-		clickbyXpath(floorFirstcard, "Floor First card");
+
+
+		if (isElementDisplayedCheck(floorFirstcard)) {
+			clickbyXpath(floorFirstcard, "Floor First card");
+			}else if(isElementDisplayedCheck(RetryButton)) {
+				clickbyXpathwithoutReport("Retry button", RetryButton);
+				clickbyXpath(floorFirstcard, "Floor First card");
+				}
 	}
 	
 	public void enterHierarchyText(int level, String text) {
-		try {
+		
 			
-			driver.findElement(By.xpath("//*[@resource-id='HierarchyInput_Level_"+ level + "']")).sendKeys("Apartment");
+//			driver.findElement(By.xpath("//*[@resource-id='HierarchyInput_Level_"+ level + "']")).sendKeys("Apartment");
 			
-			WebDriverWait wait = new WebDriverWait(driver,10);
-			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@resource-id='HierarchyInput_Level_"+ level + "']"))));
-			WebElement inputField = driver.findElement(By.xpath("//*[@resource-id='HierarchyInput_Level_"+ level + "']")); 
-			inputField.sendKeys(text);
-		    utils.Reporter.reportStep("Hierarachy level"+level+" Field is entered with value : " + text, "PASS");
-		} catch (Exception e) {
-			 utils.Reporter.reportStep("Unable to Locate the element"+e, "FAIL");
-		}
+//			WebDriverWait wait = new WebDriverWait(driver,10);
+//			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@resource-id='HierarchyInput_Level_"+ level + "']"))));
+		hidekeyboard();
+		entervaluebyXpath(Hierarchyinputtext(level), "Hierarchy name", text);
+		hidekeyboard();
     }
 	
 	public void clickHierarchyAddButton(int level) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver,10);
-			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@resource-id='HierarchyButtonWrapper_Level_"+ level + "']"))));
-			WebElement addButton = driver.findElement(By.xpath("//*[@resource-id='HierarchyButtonWrapper_Level_"+ level +"']"));
-			addButton.click();
-		    utils.Reporter.reportStep("Hierarachy level"+level+" Add button is clicked successfully ", "PASS");
-		} catch (Exception e) {
-			 utils.Reporter.reportStep("Unable to Locate the element"+e, "FAIL");
-		}
+//			WebDriverWait wait = new WebDriverWait(driver,10);
+//			wait.until(ExpectedConditions.visibilityOf(driver.findElement(By.xpath("//*[@resource-id='HierarchyButtonWrapper_Level_"+ level + "']"))));
+			clickbyXpath(HierarchyAddbutton(level), "Hierarchy Add button");
+		
     }
 
 	public void clickONOFFButton() {
@@ -293,7 +331,12 @@ public class HomePage extends GenericWrappers{
 		   clickbyXpath(settingsButton, "Click on Settings button");
 	   }
 	   
-	   
+		public static void hidekeyboard() {
+//			 Scroll up
+			Map<String, Object> params = new HashMap<>();
+			params.put("direction", "up");
+			driver.executeScript("mobile: hideKeyboard", params);
+		}
 	     
 
 }

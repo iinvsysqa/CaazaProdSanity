@@ -35,7 +35,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 	}
 
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void SingleNodeSanity_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();

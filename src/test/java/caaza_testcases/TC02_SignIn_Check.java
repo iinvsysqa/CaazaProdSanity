@@ -7,6 +7,7 @@ import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
+import pages.Profilepage;
 import pages.SettingsPage;
 import pages.SignInPage;
 import pages.StoreLogPage;
@@ -23,7 +24,8 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 	AccountsInfoPage accountinfopage;
 	DeviceMenuPage devicesettingpage;
 	StoreLogPage logpage;
-
+	Profilepage profilepage;
+	
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC_02_SignIn_check";
@@ -42,10 +44,12 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 		landingpage= new LandingPage(driver);
 		settingspage = new SettingsPage(driver);
 		homepage= new HomePage(driver);
+		profilepage = new Profilepage(driver);
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-			readwrite.openPort();
-			
+//			readwrite.openPort();
+			uninstall_reinstall();
+			landingpage.clickLandingPageNextBtn();	
 			landingpage.clickLandingPageNextBtn();			
 			landingpage.enterUserName("Demouserauto");
 			landingpage.enterPassword("Welcome@123");
@@ -54,7 +58,9 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 			settingspage.clickLogOutButton();
 			settingspage.clickLogOutConfirmButton();
 			landingpage.checkSignInPageTitle();
-			readwrite.closePort();
+			Thread.sleep(5000);
+			
+//			readwrite.closePort();
 		}
 		catch (Exception e) {
 			readwrite.closePort();

@@ -55,6 +55,7 @@ public class GenericWrappers {
 	static ExtentTest test;
 	static ExtentReports report;
 	public String sUrl, primaryWindowHandle, sHubUrl, sHubPort;
+	public int node =Integer.parseInt(loadProp("NODE"));
 	
 	public static String loadProp(String property) {
 		Properties prop = new Properties();
@@ -68,18 +69,31 @@ public class GenericWrappers {
 		}
 		return prop.getProperty(property);
 	}
-	public static void updateProperty( String key, String newValue) throws IOException {
+	public static String updateProperty( String key, String newValue) {
         Properties props = new Properties();
         try (FileInputStream in = new FileInputStream("./config.properties")) {
             props.load(in);
-        }
+        } catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 
         // Update the value
         props.setProperty(key, newValue);
 
         try (FileOutputStream out = new FileOutputStream("./config.properties")) {
             props.store(out, null);
-        }
+        } catch (FileNotFoundException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		return newValue;
     }
 	@SuppressWarnings("deprecation")
 	public static void allowpermissions() throws IOException {
@@ -112,6 +126,7 @@ public class GenericWrappers {
 			caps.setCapability("appium:automationName", "uiautomator2");
 			caps.setCapability("appium:ignoreHiddenApiPolicyError", "true");
 			caps.setCapability("newCommandTimeout", 999999);
+			caps.setCapability("noReset", true);
 //			caps.setCapability("appium:autoGrantPermissions", true);
 			
 
@@ -229,6 +244,20 @@ public class GenericWrappers {
 		}
 		return bReturn;
 
+	}
+	public static boolean clickbyXpathwithoutReport( String button,WebElement xpath) {
+		boolean bReturn = false;
+		try {
+			expWaitTillElementDisplay(xpath);
+			xpath.click();
+			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
+			bReturn = true;
+			
+		} catch (Exception e) {
+			// Reporter.reportStep("The Field "+button+" could not be clicked.", "FAIL");
+		}
+		return bReturn;
+		
 	}
 
 	public boolean verifyTitle(String title) {
@@ -374,6 +403,22 @@ public class GenericWrappers {
 		}
 
 	}
+	public static void expWaitTillElementDisplay(WebElement xpath) {
+		try {
+			
+			WebDriverWait wait = new WebDriverWait(driver,10);
+	        wait.pollingEvery(Duration.ofMillis(500));
+	        wait.ignoring(NoSuchElementException.class);
+	        wait.ignoring(StaleElementReferenceException.class);
+			wait.until(ExpectedConditions.visibilityOf(xpath));
+		} catch (Exception e) {
+			System.out.println(e);
+			
+			
+			
+		}
+		
+	}
 	public static boolean expshortWait(WebElement xpath) {
 		try {
 			WebDriverWait wait = new WebDriverWait(driver, 10);
@@ -437,9 +482,29 @@ public class GenericWrappers {
 	}
 
 
-	public String randomnumbers(int num) {
-
+	public static String randomCharacters(int num,int mode) {
 		String numbers = "123456789";
+		String alphabetscaps ="ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+		String alphabetsmall ="abcdefghijklmnopqrstuvwxyz";
+		String specialcharacters ="@&*";
+		String modes = null;
+		switch(mode) {
+		case 1:
+			modes=alphabetscaps;
+			break;
+		case 2:
+			modes=alphabetsmall;
+			break;
+		 case 3:
+			 modes=numbers;
+			 break;
+		 case 4:
+			 modes=specialcharacters;
+			 break;
+			 default:
+				 System.out.println("Enter mode from 1 -3");
+		}
+		
 
 		// Create a StringBuilder to store the random numbers
 		StringBuilder sb = new StringBuilder();
@@ -451,8 +516,8 @@ public class GenericWrappers {
 		int length = num;
 
 		for (int i = 0; i < length; i++) {
-			int index = random.nextInt(numbers.length());
-			char randomNum = numbers.charAt(index);
+			int index = random.nextInt(modes.length());
+			char randomNum = modes.charAt(index);
 			sb.append(randomNum);
 		}
 		String randomString = sb.toString();
@@ -676,6 +741,7 @@ Boolean yes= true;
 		checkappinforeground();
 	}
 
+	
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element,String Field) {
 		try {
@@ -1161,6 +1227,7 @@ Boolean yes= true;
 	        	return false;
 	        }
 	}
+	
 	
  
 }

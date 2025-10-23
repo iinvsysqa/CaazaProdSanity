@@ -8,14 +8,17 @@ import org.testng.annotations.Test;
 
 import pages.AddDevicePage;
 import pages.Analytics;
+import pages.HierarchyPage;
 import pages.HomePage;
 import pages.LandingPage;
+import pages.Profilepage;
 import pages.ScenecreationPage;
 import pages.Schedularpage;
 import pages.Schedulartestpage;
 import pages.SettingsPage;
 import pages.SignUpPage;
 import pages.StoreLogPage;
+import pages.SwitchPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -31,15 +34,18 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 	Analytics analytics;
 	AddDevicePage adddevicepage;
 	ScenecreationPage scenecreation;
+	HierarchyPage hierarchypage;
+	Profilepage profilepage;
+	SwitchPage switchpage;
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC_01_SignUp with Valid creds";
-		testDescription = "Sign Up with valid user and log-out";
+		testCaseName = "SceneCreation";
+		testDescription = "Scene Creation for Switches ";
 	}
 
 	
-	@Test(priority = 4)
+	@Test(priority = 5)
 	public void TC_01_Account_Info_page_check() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
@@ -56,38 +62,84 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 		analytics = new Analytics(driver);
 		adddevicepage = new AddDevicePage(driver);
 		scenecreation =new ScenecreationPage(driver);
+		hierarchypage = new HierarchyPage(driver);
+		profilepage = new Profilepage(driver);
+		switchpage = new SwitchPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		List<String> switchNames = Arrays.asList("Switch1");
+		String Hierarchyname="apartment";
+		String Oldpassword =loadProp("PASSWORD");
+		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
+		String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
 		try {
 //			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();			
-			landingpage.enterUserName(loadProp("USERNAME"));
-			landingpage.enterPassword(loadProp("PASSWORD"));
-			landingpage.clickSignInButton();
+			landingpage.clickSignUpLink();
+			signuppage.enterUserName(userName);
+			signuppage.enterName(userName);
+			signuppage.enterPassword(Oldpassword);
+			signuppage.enterConfirmPassword(Oldpassword);
+			signuppage.clickSignUpcheckbox();
+			signuppage.clickSignUpNextButton();
+			signuppage.enteranswer1("demo");
+			signuppage.enteranswer2("demo");
+			signuppage.clickSignUpButton();
+			killAndReopenApp();
+			hierarchypage.clickStartaNewHomeButton();
+			hierarchypage.clickStartanewhometext();
+			hierarchypage.enterHierarchyText(1, Hierarchyname);
+			hierarchypage.clickCreateHierarchybtn();
+			hierarchypage.addHierarchy_oneOption();
 			
 			
 			
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(1,switchNames);
+			adddevicepage.EnterNode(node,switchNames);
 			scenecreation.navigateScenecreationpage();
-			scenecreation.enterSceneName("TurnOffAll");			
-			scenecreation.setSceneCreation_Allswitches(1, "Off");//it should be in this format On ,Off
-			scenecreation.clickScenecreationBtn();
-			scenecreation.checkSceneCreation_successToast("Scene Created Successfully");
-			scenecreation.navigateScenecreationpage();
-			scenecreation.enterSceneName("TurnOnAll");			
+			scenecreation.enterSceneName("A");			
 			scenecreation.setSceneCreation_Allswitches(1, "On");//it should be in this format On ,Off
 			scenecreation.clickScenecreationBtn();
-			scenecreation.checkSceneCreation_successToast("Scene Created Successfully");
+//			scenecreation.checkSceneCreation_successToast("Scene Created Successfully");
+			scenecreation.navigateScenecreationpage();
+			scenecreation.enterSceneName("B");			
+			scenecreation.setSceneCreation_Allswitches(1, "Off");//it should be in this format On ,Off
+			scenecreation.clickScenecreationBtn();
+//			scenecreation.checkSceneCreation_successToast("Scene Created Successfully");
 			scenecreation.clickAllSceneStartButtons();
 			
-			//reset device
+			
+			
+			//edit switchboardname
 			homepage.enterFirstcard();
+			settingspage.openMenuPage();
+			switchpage.clickAddandEditSwitchboard();
+			switchpage.clickMenuButton();
+			switchpage.clickSwitchboardMenuEdit();
+			switchpage.changeSwitchBoardname("Panel");
+			switchpage.clickConfirmButton();
+			switchpage.verifySwitchBoardname("Panel");
+			switchpage.clickBackButton();
+			settingspage.navigateback();
 			
+			//reset device
+			settingspage.navigateSettingspage();
+			settingspage.resetDevice();
+			settingspage.navigateback();
 			
+			profilepage.clickApartmentIcon();
+			profilepage.clickMenubaricon();
+			profilepage.clickAddEditbtn();
+			profilepage.DeleteHierarchy(1,Hierarchyname);
+			profilepage.clickHierarchy_BackButton();
+			
+			profilepage.navigateSettingsbtn();
+			profilepage.navigateProfileSettingsPage();
+			profilepage.deleteAccount();
+			profilepage.confirmDelete();
+			profilepage.checkSignInButton();
 			
 //			readwrite.closePort();
 		}

@@ -22,6 +22,7 @@ import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
+import utils.Reporter;
 import wrappers.GenericWrappers;
 
 public class Schedularpage extends GenericWrappers {
@@ -105,9 +106,36 @@ public class Schedularpage extends GenericWrappers {
 	private WebElement placeholdeofSchedulepage;
 	@FindBy(xpath = "//*[@resource-id='Edit_Schedule_RepeatEveryWeek_Icon']")
 	private WebElement repeateveryweekcheckbox;
+	@FindBy(xpath = "//*[@resource-id='Header_MenuButton']")
+	private WebElement Header_MenuButton;
+	@FindBy(xpath = "//*[@resource-id='MenuItem_Timer_1']")
+	private WebElement MenuItem_Timer;
+	@FindBy(xpath = "//*[@resource-id='Duration_Minutes_Input']")
+	private WebElement Timer_Duration_Minutes_Input;
+	@FindBy(xpath = "//*[@resource-id='Duration_Toggle']")
+	private WebElement Timer_Duration_Toggle;
+	@FindBy(xpath = "//*[@resource-id='SaveButton']")
+	private WebElement SaveButton;
+	@FindBy(xpath = "//*[@resource-id='LockIcon_1']")
+	private WebElement LockIconimage;
+	@FindBy(xpath = "//*[@resource-id='Menu_CloseBtn']")
+	private WebElement Menu_CloseBtn;
+	@FindBy(xpath = "//*[@resource-id='Header_Back_Button']")
+	private WebElement SwitchBackButton;
+	@FindBy(xpath = "//*[@resource-id='MenuItem_SwitchLock_2']")
+	private WebElement MenuItem_SwitchLock;
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Others\"]")
+	private WebElement othersSchedulePage;
+	@FindBy(xpath = "//android.view.ViewGroup[starts-with(@content-desc, 'Duration')]")
+	private WebElement othersSchedulePage_schedule;
+	@FindBy(xpath = "//android.widget.ScrollView[@content-desc=\"com.CaaZa_Smart:id/SettingsScreen_ScrollView\"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup")
+	private WebElement switchLockToggle;
+	
+	
+	
 
-	private WebElement deviceName(String username) {
-		return driver.findElement(By.xpath("//android.widget.TextView[@text=\"" + username + "\"]"));
+	private WebElement deviceName(int username) {
+		return driver.findElement(By.xpath("//*[@resource-id='SwitchName_" + username + "\']"));
 
 	}
 
@@ -120,6 +148,10 @@ public class Schedularpage extends GenericWrappers {
 	private WebElement userName(String username) {
 		return driver.findElement(By.xpath("//android.widget.TextView[@text='" + username + "']"));
 
+	}
+	private WebElement switchToggle(int switchcount) {
+		return driver.findElement(By.xpath("//*[@resource-id='SwitchToggle_" + switchcount+ "']"));
+		
 	}
 
 	public String scheduleDeletedtoast = loadProp("thisScheduleHasBeenDeleted");
@@ -151,6 +183,15 @@ public class Schedularpage extends GenericWrappers {
 	public void addScheduleButton() {
 		clickbyXpath(plusIcon, "plusbutton");
 	}
+	public void checkPartialAccessSchedulepage() {
+		if (!isElementDisplayedCheck(plusIcon)) {
+			Reporter.reportStep( "Plusicon not displayed.", "PASS");
+		}else {
+			Reporter.reportStep( "Plusicon  displayed.", "FAIL");
+			
+		}
+	}
+	
 
 	public void createSchedules(int timetostart, int intervals, int gapBetweenNextSchedule) {
 		// Get the current time and calculate the start time for the first schedule
@@ -209,6 +250,8 @@ public class Schedularpage extends GenericWrappers {
 
 		}
 	}
+	
+	
 
 	public void createSchedules(int switchCount, int timeToStart, int intervals, int gapBetweenNextSchedule) {
 		// Get current time and calculate when first schedule should start
@@ -226,12 +269,12 @@ public class Schedularpage extends GenericWrappers {
 
 		// Loop for each switch
 		for (int i = 1; i <= switchCount; i++) {
-			scrollToTextSafe("Switch" + i, 3);
-			String deviceName = deviceName("Switch" + i).getText().trim();
+//			scrollToTextSafe("Switch" + i, 3);
+			String deviceName = deviceName(i).getText().trim();
 			System.out.println("🟢 Creating schedules for device: " + deviceName);
 
 			// Open that switch screen
-			deviceName("Switch" + i).click();
+			deviceName(i).click();
 
 //			// Generate schedule times
 //			List<LocalTime> scheduleTimes = generateSchedule(startTime, intervals, gapBetweenNextSchedule);
@@ -279,7 +322,6 @@ public class Schedularpage extends GenericWrappers {
 			
 			// Generate schedule times based on intervals and gap
 			List<LocalTime> scheduleTimes = generateSchedule(startTime, intervals, gapBetweenNextSchedule);
-			//List<LocalTime> scheduleTimesEnd = generateSchedule(timet, intervals, gapBetweenNextSchedule);
 
 			// Loop through each time and create the schedule
 			for (LocalTime time : scheduleTimes) {
@@ -381,8 +423,8 @@ public class Schedularpage extends GenericWrappers {
 
 	public void saveSchedule() {
 		// Click the save button after setting the time
-		// scrollToText("Save");
-		scroll2();
+//		 scrollToText("Save");
+		scrollOntop();
 		clickbyXpath(savebtn, "saveschedule");
 
 		// Validate if the schedule is saved successfully
@@ -398,7 +440,8 @@ public class Schedularpage extends GenericWrappers {
 	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
 
 	        // ✅ determine center index dynamically
-	        int centerIndex = (elements.size() == 2) ? 0 : elements.size() / 2;
+	        int centerIndex = (elements.size() == 2 ) ? 0 : elements.size() / 2;
+
 	        WebElement centerEl = elements.get(centerIndex);
 	        String currentValue = centerEl.getText().trim();
 
@@ -669,5 +712,77 @@ public class Schedularpage extends GenericWrappers {
 		driver.perform(List.of(scroll));
 
 	}
+	
+	public void scrollOntop() {
+		int screenWidth = driver.manage().window().getSize().getWidth();
+	    int screenHeight = driver.manage().window().getSize().getHeight();
 
+	    // Start X near the center horizontally
+	    int startX = screenWidth / 2;
+
+	    // Start Y near the top (say 20% of the screen height)
+	    int startY = (int) (screenHeight * 0.20);
+
+	    // End Y further down (say 80% of the screen height)
+	    int endY = (int) (screenHeight * 0.80);
+
+	    PointerInput finger = new PointerInput(PointerInput.Kind.TOUCH, "finger");
+	    Sequence scroll = new Sequence(finger, 0);
+
+	    scroll.addAction(finger.createPointerMove(Duration.ZERO, PointerInput.Origin.viewport(), startX, startY));
+	    scroll.addAction(finger.createPointerDown(PointerInput.MouseButton.LEFT.asArg()));
+	    scroll.addAction(finger.createPointerMove(Duration.ofMillis(700), PointerInput.Origin.viewport(), startX, endY));
+	    scroll.addAction(finger.createPointerUp(PointerInput.MouseButton.LEFT.asArg()));
+
+	    driver.perform(List.of(scroll));
+	}
+	public void SetTimerForSwitches(int Switches) {
+		
+		for(int i=1;i<=Switches;i++) {
+			
+			clickbyXpath(deviceName(i), "Switchcard");
+			clickbyXpath(Header_MenuButton, "Header MenuButton");
+			clickbyXpath(MenuItem_Timer, "MenuTimer");
+			clickbyXpath(Timer_Duration_Toggle, "Timer Duration Toggle");
+			entervaluebyXpath(Timer_Duration_Minutes_Input, "Duration_Minutes_Input", "1");
+			clickbyXpath(SaveButton, "Save button");
+			clickbyXpath(Menu_CloseBtn, "MenuClose Button");
+			clickbyXpath(SwitchBackButton, "Switch Backbutton");
+			clickbyXpath(switchToggle(i), "Switch Toggle");
+			
+		}
+	}
+	public void clickSwitchMenuButton() {
+		clickbyXpath(Header_MenuButton, "Header MenuButton");
+
+	}
+	public void clickSwitchLockButton() {
+clickbyXpath(MenuItem_SwitchLock, "menuItem SwitchLock button");
+	}
+	public void clickSwitchlockToggle() {
+clickbyXpath(switchLockToggle, "SwitchlockToggle");
+	}
+	
+	public void clickSwitchsaveBtn() {
+		clickbyXpath(SaveButton, "save button");
+	}
+	public void verifyLockicon() {
+		if(!isElementDisplayedCheck(LockIconimage)) {
+			 Reporter.reportStep("lock icon image not Displayed", "FAIL");
+		}else {
+			Reporter.reportStep("lock icon image Displayed", "PASS");
+			
+		}
+	}
+	
+	
+	public void NavigateOtherSchedulepage() {
+		clickbyXpath(othersSchedulePage, "othersScheduleButton");
+	}
+	public void verifyOtherUserscheduleSchedules() {
+		if(!isElementDisplayedCheck(othersSchedulePage_schedule)) {
+			 Reporter.reportStep("Disconnected Badge Displayed", "FAIL");
+		}
+	}
+ 
 }

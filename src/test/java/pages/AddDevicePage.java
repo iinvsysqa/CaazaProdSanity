@@ -37,7 +37,7 @@ import wrappers.GenericWrappers;
 
 public class AddDevicePage extends GenericWrappers {
 
-	public AndroidDriver driver;
+	public static AndroidDriver<WebElement> driver;
 
 	
 	public String userName = loadProp("USERNAME");
@@ -295,6 +295,8 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement remoteNonConnectivity;
 	@FindBy(xpath = "//*[@resource-id='menu_icon_removeDevice']")
 	private WebElement removeDevice;
+	@FindBy(xpath = "//*[@resource-id='RetryButton']")
+	private WebElement RetryButton;
 	
 	private WebElement devicenameDeviceSettingsPage(String username) {
 		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
@@ -330,6 +332,9 @@ public class AddDevicePage extends GenericWrappers {
 	
 	@FindBy(xpath = "//*[@resource-id='AddDevices_VerifyingText']")
 	private WebElement addDeviceverifytext;
+	
+	@FindBy(xpath = "//android.widget.EditText[@text=\\\"Enter name of your smart panel\\\"]")
+	private WebElement smartpanelPlaceholder;
 	
 	private WebElement switchTextboxes(int container) {
 	    return driver.findElement(By.xpath("(//android.widget.EditText[@text='Enter Switch Name'])[" + container + "]"));
@@ -378,14 +383,17 @@ public class AddDevicePage extends GenericWrappers {
 	
 	public void enterPanelName(String panelname) {
 		entervaluebyXpath(panelNameTextBox, " Panel Name ", panelname);
+		hidekeyboard();
 	}
 
 	public void enterSwitchName(String switchname) {
 		entervaluebyXpath(switchNameTextBox, " Switch Name ", switchname);
+		hidekeyboard();
 	}
 	
 	public void enterSwitch1Name(String switchname) {
 		entervaluebyXpath(switchName1TextBox, " Switch Name ", switchname);
+		hidekeyboard();
 	}
 	
 	public AddDevicePage clickAddDeviceButton() {
@@ -423,7 +431,12 @@ public class AddDevicePage extends GenericWrappers {
 
 	        try {
 	            // Option A: wait until next-screen element is visible (preferred)
-	            wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.EditText[@text=\"Enter name of your smart panel\"]")));
+	        	WebElement until = wait.until(ExpectedConditions.visibilityOfElementLocated(By.xpath("//android.widget.EditText[@text=\"Enter name of your smart panel\"]")));
+	        	if (isElementDisplayedCheck(until)) {
+					System.out.println("Enter your panel name -placeholder displayed");
+				}else if (isElementDisplayedCheck(RetryButton)) {
+					clickbyXpathwithoutReport( "Retry button",RetryButton);					
+				}
 	            return true;
 	        } catch (TimeoutException e) {
 	            // Option B fallback: wait until verifying header is not visible
@@ -713,6 +726,7 @@ public class AddDevicePage extends GenericWrappers {
 		passcommand = new PassSTComment();
 		
 		//verifysigninpage();
+		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 		initiatepairing(mode);
 	}
 
@@ -1061,7 +1075,7 @@ public class AddDevicePage extends GenericWrappers {
 			System.out.println("Alert pop-up not displayed");
 		}
 	}
-	public void hidekeyboard() {
+	public static void hidekeyboard() {
 //		 Scroll up
 		Map<String, Object> params = new HashMap<>();
 		params.put("direction", "up");
@@ -1165,10 +1179,10 @@ public void TurnOffmobiledata() throws Exception {
  // Add names for the switches
 
 public void EnterNode(int Node ,List<String> switchNames) throws InterruptedException {
+	
 	waitForVerificationComplete();
 	enterPanelName("Panel1");
 	clickbyXpath(panelNameSaveBtn, "PanelNamesave");
-	Thread.sleep(5000);
 	switch(Node) {
 	case 1://singlenode-1switch
 //		 enterSwitchName("Switch1");
@@ -1208,21 +1222,25 @@ public List<WebElement> getSwitchTextboxes() {
 public void enterNamesForSwitches(List<String> switchNames) {
     List<WebElement> switchTextboxes = getSwitchTextboxes();
     
+    System.out.println("Switchtextboxes sizes: "+switchTextboxes.size() );
+    System.out.println("Switchnames sizes: "+switchNames.size() );
+    
     // Check if the number of switches matches the provided names
     if (switchTextboxes.size() != switchNames.size()) {
         System.out.println("Warning: Number of switch text boxes does not match the provided names.");
     }
 
     for (int i = 0; i < switchTextboxes.size(); i++) {
+    	
         WebElement switchTextBox = switchTextboxes.get(i);
-        wait.until(ExpectedConditions.visibilityOf(switchTextBox)); // Wait until the switch is visible
         switchTextBox.clear(); // Clear existing text if any
-        switchTextBox.sendKeys(switchNames.get(i)); // Enter the name for each switch
+        entervaluebyXpath(switchTextBox,"Switch textbox" ,switchNames.get(i) );
     }
 }
 
 
 public void setupSwitches(List<String> switchNames) {
+	clickbyXpathwithoutReport( "Retry button",RetryButton);
     enterNamesForSwitches(switchNames);
     clickSwitchTypeDropdown();
     clickFanType();

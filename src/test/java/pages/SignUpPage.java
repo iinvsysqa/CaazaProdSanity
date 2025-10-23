@@ -103,13 +103,15 @@ public class SignUpPage extends GenericWrappers {
 	    String xpath = String.format("(//android.widget.TextView[@text=\"\"])[%d]", index);
 	    return driver.findElement(By.xpath(xpath));
 	}
-	
+	JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 	// Constructor to initialize the driver and instantiate elements using
 	
 	public SignUpPage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
+		this.js = (JavascriptExecutor) driver;
+		this.wait = new WebDriverWait(driver, 10);
 	}
 
 	// Methods to be used as part of loginpage.
@@ -237,21 +239,14 @@ public class SignUpPage extends GenericWrappers {
 			Runtime.getRuntime().exec("adb uninstall com.iinvsys.szephyr");
 			driver.installApp(prop.getProperty("APP_PATH"));
 			driver.activateApp(packages);
-			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
-			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
-			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
-			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
-			Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
+			allowpermissions();
 			}
 			else {
 				
 				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(packages);
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
+				allowpermissions();
+
 			}
 		}
 		

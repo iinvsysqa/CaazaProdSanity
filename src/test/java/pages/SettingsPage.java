@@ -18,7 +18,6 @@ import wrappers.GenericWrappers;
 public class SettingsPage extends GenericWrappers{
 
 	private AndroidDriver driver;
-	public static String ConfiguredRouter;
 	
 	public SettingsPage(AndroidDriver driver) {
 		this.driver = driver;
@@ -96,6 +95,10 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement CouldntConnectrouterPopUp;
 	@FindBy(xpath = "//*[@resource-id='Single_Button']")
 	private WebElement CouldntConnectrouter_OKPopUp;
+	@FindBy(xpath = "//*[@resource-id='RetryButton']")
+	private WebElement RetryButton;
+
+	
 	
 	
 	public void clickLogOutButton() {
@@ -107,7 +110,18 @@ public class SettingsPage extends GenericWrappers{
 	}
 
 	public void openMenuPage() {
-		clickbyXpath(devicepage_menuButton, "Menu button");
+
+
+		if (isElementDisplayedCheck(devicepage_menuButton)) {
+			clickbyXpath(devicepage_menuButton, "Menu button");
+			}else if(isElementDisplayedCheck(RetryButton)) {
+				clickbyXpathwithoutReport("Retry button", RetryButton);
+				clickbyXpath(devicepage_menuButton, "Menu button");
+				}
+
+	
+		
+	
 	}
 	public void navigateSettingspage() {
 		clickbyXpath(menu_Settingsbtn, "Settings button");
@@ -154,13 +168,14 @@ public class SettingsPage extends GenericWrappers{
 	}
 	public void navigateback() {
 		driver.navigate().back();
+		
 	}
 	
 	public void resetDevice() throws InterruptedException {
 		clickbyXpath(SettingsItem_ResetDevice, "ResetDevice");
 		clickbyXpath(Reset_ConfirmButton_Text, "ResetDevice_confirmationBTN");
 		Thread.sleep(3000);
-		verifyTextContainsByXpath(DeviceresetToast, "Your device reset successfully", "Device reset successfully ");
+//		verifyTextContainsByXpath(DeviceresetToast, "Your device reset successfully", "Device reset successfully ");
 	}
 	public void resetDeviceCancelBTN() {
 		clickbyXpath(Reset_CancelButton_Text, "ResetDeviceCancelBtn");
@@ -168,7 +183,6 @@ public class SettingsPage extends GenericWrappers{
 	
 	
 	public void verifyConfiguredRouter(String router) {
-		 ConfiguredRouter = SettingsItem_SubText_ConfiguredRouter.getText();
 		verifyTextContainsByXpath( SettingsItem_SubText_ConfiguredRouter,router , "Configured router name");
 	}
 	

@@ -10,6 +10,7 @@ import pages.DeviceMenuPage;
 import pages.HomePage;
 import pages.LandingPage;
 import pages.OtpPage;
+import pages.Profilepage;
 import pages.SettingsPage;
 import pages.SignInPage;
 import pages.SignUpPage;
@@ -27,7 +28,8 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 	AccountsInfoPage accountinfopage;
 	DeviceMenuPage devicesettingpage;
 	StoreLogPage logpage;
-
+	Profilepage profilepage;
+	
 	@BeforeClass
 	public void startTestCase() {
 		testCaseName = "TC_01_SignUp with Valid creds";
@@ -47,10 +49,12 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 		signuppage = new SignUpPage(driver);
 		settingspage = new SettingsPage(driver);
 		homepage= new HomePage(driver);
+		profilepage = new Profilepage(driver);
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-			readwrite.openPort();
-			
+//			readwrite.openPort();
+			uninstall_reinstall();
+			landingpage.clickLandingPageNextBtn();	
 			landingpage.clickSignUpLink();
 			String randomStr = UUID.randomUUID().toString().replaceAll("[^a-zA-Z]", "").substring(0, 4);
 			signuppage.enterUserName(randomStr);
@@ -62,9 +66,14 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 			signuppage.enteranswer1("demo");
 			signuppage.enteranswer2("Demo");
 			signuppage.clickSignUpButton();
-			
+			killAndReopenApp();
 			Thread.sleep(5000);
-			readwrite.closePort();
+			profilepage.navigateSettingsbtn();
+			profilepage.navigateProfileSettingsPage();
+			profilepage.deleteAccount();
+			profilepage.confirmDelete();
+			profilepage.checkSignInButton();
+//			readwrite.closePort();
 		}
 		catch (Exception e) {
 			readwrite.closePort();

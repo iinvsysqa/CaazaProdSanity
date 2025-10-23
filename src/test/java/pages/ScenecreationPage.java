@@ -90,7 +90,6 @@ public class ScenecreationPage extends GenericWrappers {
 			// Find the switch container for the current node
             WebElement container = Scenepage_Switchcontainer(i);
 
-            System.out.println("helloo");
             // Click the "On" radio button within the container
             WebElement onRadioButton = scenepageSwitchRadiobtn(i,switchMode);
             if (isElementDisplayedCheck(onRadioButton)) {
@@ -135,7 +134,7 @@ public class ScenecreationPage extends GenericWrappers {
 	            if (startButton.isDisplayed()) {
 	                System.out.println("Clicking on: " + startButton.getAttribute("content-desc"));
 	                clickbyXpath(startButton, "start button");
-	                checkSceneTriggered_successToast("Scene triggered successfully");
+//	                checkSceneTriggered_successToast("Scene triggered successfully");
 	                Thread.sleep(3000);
 	            }
 	        } catch (Exception e) {

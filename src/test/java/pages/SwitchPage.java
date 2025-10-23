@@ -1,10 +1,12 @@
 package pages;
 
+import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
+import org.testng.Assert;
 
 import io.appium.java_client.android.AndroidDriver;
 import utils.Reporter;
@@ -25,6 +27,8 @@ public class SwitchPage extends GenericWrappers{
 
 	@FindBy(xpath = "//*[@resource-id='Header_MenuButton']")
 	private WebElement menuButton;
+	@FindBy(xpath = "//*[@resource-id='Single_Button']")
+	private WebElement okButton;
 
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.CaaZa_Smart:id/SwitchToggle_1\"]/android.view.ViewGroup")
 	private WebElement onOffButton;
@@ -58,6 +62,30 @@ public class SwitchPage extends GenericWrappers{
 	private WebElement disconnectedIcon;
 	
 	
+	//doing
+	@FindBy(xpath = "//*[@resource-id='MenuItem_AddandEditSwitchboard_0']")
+	private WebElement MenuItem_AddandEditSwitchboard;
+	@FindBy(xpath = "//*[@resource-id='Switchboard_MenuTrigger_0']")
+	private WebElement Switchboard_MenuTrigger;
+	@FindBy(xpath = "//*[@resource-id='Switchboard_EditOptionText_0']")
+	private WebElement Switchboard_EditOptionText_0;
+	@FindBy(xpath = "//*[@resource-id='Switchboard_EditInput_0']")
+	private WebElement switchpageTextbox;
+	@FindBy(xpath = "//*[@resource-id='Switchboard_EditConfirm_0']")
+	private WebElement Switchboard_EditConfirm;
+	@FindBy(xpath = "//*[@resource-id='Header_BackIcon']")
+	private WebElement Switchboard_BackIcon;
+	@FindBy(xpath = "//*[@resource-id='SwitchToggle_1']")
+	private WebElement SwitchToggle;
+//	@FindBy(xpath = "//*[@resource-id='']")
+//	private WebElement ;
+//	@FindBy(xpath = "//*[@resource-id='']")
+//	private WebElement ;
+	
+	private WebElement deviceName(int username) {
+		return driver.findElement(By.xpath("//*[@resource-id='SwitchName_" + username + "\']"));
+
+	}
 	
 	public void clickSwitchBoardMenu1() {
 		clickbyXpath(switchBoardMenu1, "Click on Switch Board Menu Option Button");
@@ -65,6 +93,11 @@ public class SwitchPage extends GenericWrappers{
 	
 	public void clickRemoveSwitchBoardOption() {
 		clickbyXpath(removeSwitchBoardOption, "Click on Remove Button");
+	}
+	public void clickOkButton() {
+		if (isElementDisplayedCheck(okButton)) {
+			clickbyXpath(okButton, "Pop-up Ok button");
+		}
 	}
 	
 	public void clickMenuButton() {
@@ -108,7 +141,37 @@ public class SwitchPage extends GenericWrappers{
 		//clickbyXpath(headerbackbutton, "Click On back Button");
 	}
 	
-	
-	
+	public void clickAddandEditSwitchboard() {
+		clickbyXpath(MenuItem_AddandEditSwitchboard, "MenuItem Add and Edit Switchboard");
+	}
+	public void verifySwitchBoardname(String text) {
+		verifyTextContainsByXpath(switchpageTextbox, text, "SwitchpageTextbox");
+	}
+	public void clickSwitchboardmenu() {
+		clickbyXpath(Switchboard_MenuTrigger, "Swiychboardmenu trigger");
+	}
+	public void clickSwitchboardMenuEdit() {
+		clickbyXpath(Switchboard_EditConfirm, "Switch Board menu edit button");
+	}
+	public void changeSwitchBoardname(String text) {
+		entervaluebyXpath(switchpageTextbox, "Switchboard textbox value", text);
+	}
+	public void clickConfirmButton() {
+		clickbyXpath(Switchboard_EditConfirm, "Switchboard Edit confirm button");
+	}
+	public void clickSwitchToggle() {
+		
+		if(isElementDisplayedCheck(SwitchToggle)) {
+			clickbyXpath(SwitchToggle, "SwitchToggle");
+		}else if(isElementDisplayedCheck(disconnectedIcon)){
+			Reporter.reportStep("Disconnected Badge Displayed", "FAIL");
+			
+		}
+	}
+
+	public void NavigatetoSwitches(int switchnumber) {
+		
+		clickbyXpath(deviceName(switchnumber), "Switch card");
+	}
 }
 

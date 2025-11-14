@@ -219,7 +219,7 @@ public class GenericWrappers {
 	public static boolean clickbyXpath(WebElement xpath, String button) {
 		boolean bReturn = false;
 		try {
-			expshortWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.click();
 			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
 			bReturn = true;
@@ -234,7 +234,7 @@ public class GenericWrappers {
 	public static boolean clickbyXpathwithoutReport(WebElement xpath, String button) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.click();
 			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
 			bReturn = true;
@@ -248,7 +248,7 @@ public class GenericWrappers {
 	public static boolean clickbyXpathwithoutReport( String button,WebElement xpath) {
 		boolean bReturn = false;
 		try {
-			expWaitTillElementDisplay(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.click();
 			Reporter.reportStep(button + " is clicked Successfully.", "PASS");
 			bReturn = true;
@@ -282,7 +282,7 @@ public class GenericWrappers {
 	public boolean selectById(WebElement id, int value, String fieldName) {
 		boolean bReturn = false;
 		try {
-			expWait(id);
+			expWaitTillElementDisplay(id,10);
 			new Select(id).selectByIndex(value);
 			Reporter.reportStep("The element with id: " + fieldName + " is selected with value :" + value, "PASS");
 
@@ -297,7 +297,7 @@ public class GenericWrappers {
 	public boolean entervaluebyXpath(WebElement xpath, String fieldname, String value) {
 		boolean bReturn = false;
 		try {
-			expshortWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			xpath.sendKeys(value);
 			Reporter.reportStep(fieldname + " field is entered with value : " + value, "PASS");
 
@@ -310,7 +310,7 @@ public class GenericWrappers {
 	public boolean entertoiFrame(WebElement xpath, String fName) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			WebElement frame = xpath;
 			driver.switchTo().frame(frame);
 			Reporter.reportStep("iframe " + fName + " entered successfully", "PASS");
@@ -325,7 +325,7 @@ public class GenericWrappers {
 	public boolean selectByVisibleText(WebElement xpath, String fieldName) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			List<WebElement> size = new Select(xpath).getOptions();
 			for (WebElement s : size) {
 				if (s.isEnabled()) {
@@ -344,7 +344,7 @@ public class GenericWrappers {
 	public boolean verifyTextContainsByXpath(WebElement xpath, String text, String field) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			String sText = xpath.getText();
 			System.out.println(sText);
 			if (sText.trim().contains(text)) {
@@ -362,7 +362,7 @@ public class GenericWrappers {
 	public boolean verifyTextContainsByXpath_Toast(WebElement xpath, String text, String field) {
 		boolean bReturn = false;
 		try {
-			expWait(xpath);
+			expWaitTillElementDisplay(xpath,10);
 			String sText = xpath.getText();
 			System.out.println(sText);
 			if (sText.trim().contains(text)) {
@@ -389,69 +389,26 @@ public class GenericWrappers {
 		}
 
 	}
-
-	public static void expWait(WebElement xpath) {
-		try {
-
-			WebDriverWait wait = new WebDriverWait(driver,30);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		} catch (Exception e) {
-			System.out.println(e);
-
-
-
-		}
-
-	}
-	public static void expWaitTillElementDisplay(WebElement xpath) {
+	public static boolean expWaitTillElementDisplay(WebElement xpath,int seconds) {
+		boolean bReturn = false;
 		try {
 			
-			WebDriverWait wait = new WebDriverWait(driver,10);
+			WebDriverWait wait = new WebDriverWait(driver,seconds);
 	        wait.pollingEvery(Duration.ofMillis(500));
 	        wait.ignoring(NoSuchElementException.class);
 	        wait.ignoring(StaleElementReferenceException.class);
 			wait.until(ExpectedConditions.visibilityOf(xpath));
+			bReturn = true;
 		} catch (Exception e) {
 			System.out.println(e);
 			
 			
 			
 		}
-		
-	}
-	public static boolean expshortWait(WebElement xpath) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver, 10);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-			return true; // success case
-		} catch (Exception e) {
-			System.out.println("Element not visible: " + e.getMessage());
-			return false; // failure case
-		}
-	}
-	public static void expshortWaittwenty(WebElement xpath) {
-		try {
-			
-			WebDriverWait wait = new WebDriverWait(driver,20);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		} catch (Exception e) {
-			System.out.println(e);
-			
-			
-			
-		}
+		return bReturn;
 		
 	}
 
-	public void expWaitforPairing(WebElement xpath) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver,30);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		} catch (Exception e) {
-			System.out.println(e);
-		}
-
-	}
 
 
 
@@ -603,6 +560,7 @@ public class GenericWrappers {
 				// Reopen the app, it should maintain its previous state (same page)
 				driver.activateApp(packages);
 				allowpermissions();
+				Thread.sleep(3000);
 				Reporter.reportStep("The app was reopened successfully.", "PASS");
 			}
 		} catch (Exception e) {
@@ -611,25 +569,6 @@ public class GenericWrappers {
 	}
 
 	
-	public static void expWaitforFirmware(WebElement xpath) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver,300);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		}
-		catch(Exception e) {
-			System.out.println(e); 
-		}
-
-	}
-	public static void expWaitstatusbar(WebElement xpath) {
-		try {
-			WebDriverWait wait = new WebDriverWait(driver,300);
-			wait.until(ExpectedConditions.visibilityOf(xpath));
-		}
-		catch(Exception e) {
-			System.out.println(e); 
-		}
-	}
 
 
 
@@ -745,7 +684,7 @@ Boolean yes= true;
 	// Helper method to check if the element is displayed
 	public boolean isElementDisplayed(WebElement element,String Field) {
 		try {
-			expshortWait(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
@@ -763,7 +702,7 @@ Boolean yes= true;
 	}
 	public boolean isElementDisplayednext(WebElement element,String Field) {
 		try {
-			expshortWaittwenty(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			
 			if (element.isDisplayed()) {
 				
@@ -782,16 +721,16 @@ Boolean yes= true;
 	
 	
 
-	public boolean retryWait(WebElement element) {
-		try {
-			Thread.sleep(80*1000);  // Introduce a small delay before checking visibility
-			Reporter.reportStep(element+"Element displayed", "PASS");
-			return element.isDisplayed();
-		} catch (NoSuchElementException | InterruptedException e) {
-//			Reporter.reportStep(element+"Element not displayed", "INFO");
-			return false;
-		}
-	}
+//	public boolean retryWait(WebElement element) {
+//		try {
+//			Thread.sleep(80*1000);  // Introduce a small delay before checking visibility
+//			Reporter.reportStep(element+"Element displayed", "PASS");
+//			return element.isDisplayed();
+//		} catch (NoSuchElementException | InterruptedException e) {
+////			Reporter.reportStep(element+"Element not displayed", "INFO");
+//			return false;
+//		}
+//	}
 
 
 	public void enterValueByXpathwifipage(WebElement element, String fieldName, String value) {
@@ -837,7 +776,7 @@ Boolean yes= true;
 	public boolean connectivitycheck(WebElement element,String field) {
 
 		try {
-			expWait(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,20);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
@@ -856,7 +795,7 @@ Boolean yes= true;
 	}
 	public boolean isiconDisplayed(WebElement element,String field) {
 		try {
-			expWaitforPairing(element);// Introduce a small delay before checking visibility
+			expWaitTillElementDisplay(element,10);// Introduce a small delay before checking visibility
 			  
 			if (element.isDisplayed()) {
 				
@@ -1084,7 +1023,7 @@ Boolean yes= true;
     
     public boolean isElementDisplayedCheck(WebElement element) {
         try {
-        	expshortWait(element);
+        	expWaitTillElementDisplay(element,10);
         	
             return element.isDisplayed();
         } catch (NoSuchElementException | StaleElementReferenceException e) {
@@ -1211,7 +1150,7 @@ Boolean yes= true;
 		}
 	}
 	
-	public boolean Waitandverifytext(WebElement xpath,String input) {
+	public boolean Waitandverifytexttoast(WebElement xpath,String input) {
 		 WebDriverWait wait = new WebDriverWait(driver,60);
 	        wait.pollingEvery(Duration.ofMillis(500));
 	        wait.ignoring(NoSuchElementException.class);

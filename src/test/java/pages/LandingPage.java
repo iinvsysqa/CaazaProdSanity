@@ -60,7 +60,7 @@ public class LandingPage extends GenericWrappers{
 	    
 	    public void clickLandingPageNextBtn() {
 	    	try {
-	    		if(expshortWait(landingPageNextBtn)){
+	    		if(expWaitTillElementDisplay(landingPageNextBtn,10)){
 	    		clickbyXpath(landingPageNextBtn, " Landing page next button " );
 	    		clickbyXpath(landingPageNextBtn, " Landing page next button " );
 	    		clickbyXpath(landingPageGetStartedBtn, " Landing page Get started button " );

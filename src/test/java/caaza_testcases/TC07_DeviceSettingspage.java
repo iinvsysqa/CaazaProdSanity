@@ -43,7 +43,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 
 	
 	@Test(priority = 6)
-	public void TC_01_Account_Info_page_check() throws Exception {
+	public void TC_07_DeviceSettingspagecheck() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
     }
@@ -70,7 +70,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 		String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
 		
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();			
 			landingpage.clickSignUpLink();
@@ -98,7 +98,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			adddevicepage.EnterNode(node,switchNames);
 			homepage.enterFirstcard();
 			settingspage.openMenuPage();
-			settingspage.navigateSettingspage();
+			settingspage.navigateMenuitemSettings();
 			
 			settingspage.navigateHighVoltCutoff();
 			settingspage.clickHighVoltToggle();
@@ -154,11 +154,11 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
 			
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {	
-//			readwrite.closePort();
-//			logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

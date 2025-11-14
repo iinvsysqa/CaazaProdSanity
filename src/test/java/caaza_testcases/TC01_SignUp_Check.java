@@ -38,7 +38,7 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 
 	
 	@Test(priority = 0)
-	public void TC_01_Account_Info_page_check() throws Exception {
+	public void TC_01_SignUpcheck() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
 	}
@@ -52,7 +52,9 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 		profilepage = new Profilepage(driver);
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
+			
+			
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();	
 			landingpage.clickSignUpLink();
@@ -73,7 +75,7 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 			profilepage.deleteAccount();
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {
 			readwrite.closePort();

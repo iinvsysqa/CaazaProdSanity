@@ -47,10 +47,9 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 		profilepage = new Profilepage(driver);
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();	
-			landingpage.clickLandingPageNextBtn();			
 			landingpage.enterUserName("Demouserauto");
 			landingpage.enterPassword("Welcome@123");
 			landingpage.clickSignInButton();
@@ -60,7 +59,7 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 			landingpage.checkSignInPageTitle();
 			Thread.sleep(5000);
 			
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {
 			readwrite.closePort();

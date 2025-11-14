@@ -46,7 +46,7 @@ public class TC08_Profilepage extends MobileAppWrappers{
 
 	
 	@Test(priority = 7)
-	public void TC_01_Account_Info_page_check() throws Exception {
+	public void TC08_Profilepage_check() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
     }
@@ -78,7 +78,7 @@ public class TC08_Profilepage extends MobileAppWrappers{
 		 * updated properly. "
 		 */	
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();
 			landingpage.clickSignUpLink();
@@ -136,11 +136,11 @@ public class TC08_Profilepage extends MobileAppWrappers{
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
 			
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {	
-//			readwrite.closePort();
-//			logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

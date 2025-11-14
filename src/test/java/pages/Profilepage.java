@@ -20,16 +20,18 @@ public class Profilepage extends GenericWrappers{
 
 	private AndroidDriver driver;
 	public static String ConfiguredRouter;
-	
+	SettingsPage settingspage ;
+	HomePage homepage ;
 	
 	public Profilepage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.wait=new WebDriverWait(driver, 10);
+		settingspage = new SettingsPage(driver);
+		homepage = new HomePage(driver);
 	}
 
-	SettingsPage settingspage ;
-	HomePage homepage ;
+	
 	
 	// Locate all elements on the page
 
@@ -186,8 +188,7 @@ public class Profilepage extends GenericWrappers{
 	}
 	
 	public void removeAddeddevice() throws InterruptedException {
-		settingspage = new SettingsPage(driver);
-		homepage = new HomePage(driver);
+		
 		
 	 if (isElementDisplayedCheck(Homecontainer)) {
 		clickbyXpath(Homecontainer, "Home page container");

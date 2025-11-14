@@ -32,7 +32,7 @@ public class OTA_Status_monitor extends GenericWrappers{
 		
 		public void waitforstatusbar() 
 		{
-			expWaitforPairing(statusBarElement);
+			expWaitTillElementDisplay(statusBarElement,30);
 		
 		}
 

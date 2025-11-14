@@ -372,12 +372,12 @@ public class DeviceMenuPage extends GenericWrappers{
 	}
 	
 	public void ClickOkButtonBLEpopUP() {
-		expWaitforPairing(ClickOkButtonBLEpopUP);
+		expWaitTillElementDisplay(ClickOkButtonBLEpopUP,20);
 		clickbyXpath(ClickOkButtonBLEpopUP, " Click OK  Bluetooth Button Popup ");
 	}
 	
 	public void ClickCancelWifi() {
-		expWaitforPairing(ClickCancelWifi);
+		expWaitTillElementDisplay(ClickCancelWifi,20);
 		clickbyXpath(ClickCancelWifi, " Click Cancel Wifi Popup ");
 	}
 	public void clickRemoveRouterButton() {	

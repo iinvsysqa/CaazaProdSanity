@@ -70,7 +70,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
 		String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();			
@@ -96,41 +96,30 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);			
-			analytics.navigateAnalyticsPage();
+		
+			homepage.enterFirstcard();
+			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
-			homepage.enterFirstcard();
-			schedular.createSchedules(1, 2, 2, 2);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			schedular.createSchedules(1, 2, 1, 1);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			Thread.sleep(60000*3);
+			schedular.enter_Switchpage(1);
+			analytics.checkenrgyduration(1);
+			schedular.deleteschedule();
 			homepage.navigateback();
-			homepage.navigateback();
-			Thread.sleep(60000*4);
-			homepage.enterFirstcard();
-			Thread.sleep(5000);
-			homepage.navigateback();
-			
-			analytics.navigateAnalyticsPage();
-			analytics.checkenrgyduration(4);
-			homepage.navigateback();
-			
+			/////////////////
 			//for timer
-			analytics.navigateAnalyticsPage();
+			
+			homepage.enterFirstcard();
+			schedular.enter_Switchpage(1);//1 switch
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
-			homepage.enterFirstcard();
-			schedular.SetTimerForSwitches(1);
-			homepage.navigateback();
+			schedular.SetTimerForSwitches(1);//1 minute
 			Thread.sleep(60000*1);
 			
-			homepage.enterFirstcard();
-			Thread.sleep(5000);
-			homepage.navigateback();
-			
-			analytics.navigateAnalyticsPage();
+			schedular.enter_Switchpage(1);//1 switch
 			analytics.checkenrgyduration(1);
-			homepage.navigateback();
 			
-			//resetdevice
-			homepage.enterFirstcard();
 			settingspage.openMenuPage();
 			settingspage.navigateSettingspage();
 			settingspage.resetDevice();
@@ -147,11 +136,11 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 			profilepage.deleteAccount();
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {	
-//			readwrite.closePort();
-//			logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

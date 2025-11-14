@@ -26,8 +26,10 @@ public class Analytics  extends GenericWrappers {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	@FindBy(xpath = "//*[@resource-id='energy_used_live_units_watts']")
 	private WebElement energyUsedunit;
-	@FindBy(xpath = "//*[@resource-id='SummaryCard_Value_duration']")
+	@FindBy(xpath = "//*[@resource-id='switch_dur_value']")
 	private WebElement enrgyDurationmin;
+	@FindBy(xpath = "//*[@resource-id='duration_expand_icon']")
+	private WebElement durationExpandicon;
 	
 	@FindBy(xpath = "//*[@resource-id='EnergyDuration_TouchableOpacity']")
 	private WebElement energyDuration;
@@ -62,11 +64,13 @@ public class Analytics  extends GenericWrappers {
 	
 	}
 	
-	
+	public void navigateswitchpage_getenergyduration() {
+		
+	}
 	String oldvalue;
 	public String getenergydurationvalue() {
 
-        expWait(enrgyDurationmin);
+        expWaitTillElementDisplay(enrgyDurationmin,10);
 		 oldvalue = enrgyDurationmin.getText();
 		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
 		System.out.println(oldvalue);
@@ -82,7 +86,7 @@ public class Analytics  extends GenericWrappers {
 	}
 	public boolean checkenrgyduration(int value) throws Exception {	
 		boolean bReturn = false;
-		expshortWaittwenty(enrgyDurationmin);
+		expWaitTillElementDisplay(enrgyDurationmin,10);
 //		clickbyXpath(enrgyDurationmin, "energy duration");
 		
 		int newvalue=extractMinutes(oldvalue)+value;

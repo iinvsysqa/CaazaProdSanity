@@ -1,9 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Suite">
+<listeners>
+    <listener class-name="utils.RetryListener" />
+</listeners>
   <test thread-count="5" name="Test">
     <packages>
       <package name="caaza_testcases"/>
     </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
+<!--to do:
+after failure remove /resetdevice,
+st commands from device team ,
+after failure how to share logs 
+-->

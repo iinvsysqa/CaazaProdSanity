@@ -66,7 +66,7 @@ public class Szephyr_info_Page extends GenericWrappers{
 	}
 	
 	public void clickfirmware_update() {
-		expWaitforPairing(firmware_update);
+		expWaitTillElementDisplay(firmware_update,10);
 		clickbyXpath(firmware_update, " Firware_update ");
 	}
 	
@@ -75,7 +75,7 @@ public class Szephyr_info_Page extends GenericWrappers{
 	}
 	
 	public void clickOTA_OK_Button() {	
-		expWaitforFirmware(OTA_OK_Button);
+		expWaitTillElementDisplay(OTA_OK_Button,10);
 		clickbyXpath(OTA_OK_Button, " OTA_Update Success");
 	}
 	

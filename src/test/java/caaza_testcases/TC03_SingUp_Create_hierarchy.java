@@ -63,7 +63,7 @@ public class TC03_SingUp_Create_hierarchy extends MobileAppWrappers {
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();	
 			landingpage.clickSignUpLink();
@@ -103,11 +103,12 @@ public class TC03_SingUp_Create_hierarchy extends MobileAppWrappers {
 			profilepage.deleteAccount();
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {
 			readwrite.closePort();
-			//logpage.CollectLogOnFailure(testCaseName,testDescription);
+			
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

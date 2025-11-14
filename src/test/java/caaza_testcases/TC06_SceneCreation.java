@@ -46,7 +46,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 
 	
 	@Test(priority = 5)
-	public void TC_01_Account_Info_page_check() throws Exception {
+	public void TC_06_SceneCreation() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
     }
@@ -73,7 +73,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
 		String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();			
 			landingpage.clickSignUpLink();
@@ -116,16 +116,19 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			settingspage.openMenuPage();
 			switchpage.clickAddandEditSwitchboard();
-			switchpage.clickMenuButton();
-			switchpage.clickSwitchboardMenuEdit();
+			switchpage.clickSwitchboardmenuButton(0);
+			switchpage.clickEditoptionText(0);
+//			switchpage.clickSwitchboardMenuEdit();
 			switchpage.changeSwitchBoardname("Panel");
-			switchpage.clickConfirmButton();
+			switchpage.clickConfirmButton(0);
 			switchpage.verifySwitchBoardname("Panel");
-			switchpage.clickBackButton();
+//			switchpage.clickBackButton();
 			settingspage.navigateback();
 			
+			
 			//reset device
-			settingspage.navigateSettingspage();
+			switchpage.clickMenuButton();
+			settingspage.navigateswitchmenuSettingspage();
 			settingspage.resetDevice();
 			settingspage.navigateback();
 			
@@ -141,11 +144,11 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
 			
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {	
-//			readwrite.closePort();
-//			logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

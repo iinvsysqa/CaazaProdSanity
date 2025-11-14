@@ -86,10 +86,20 @@ public class SwitchPage extends GenericWrappers{
 		return driver.findElement(By.xpath("//*[@resource-id='SwitchName_" + username + "\']"));
 
 	}
-	
-	public void clickSwitchBoardMenu1() {
-		clickbyXpath(switchBoardMenu1, "Click on Switch Board Menu Option Button");
+	private WebElement SwitchBoardMenu(int switches) {
+		return driver.findElement(By.xpath("//*[@resource-id='Switchboard_MenuIconContainer_" + switches + "\']"));
+		
 	}
+	private WebElement SwitchBoardEditoptiontext(int switches) {
+		return driver.findElement(By.xpath("//*[@resource-id='Switchboard_EditOptionText_" + switches + "\']"));
+		
+	}
+	private WebElement SwitchBoardEditconfirm(int switches) {
+		return driver.findElement(By.xpath("//*[@resource-id='Switchboard_EditConfirm_" + switches + "\']"));
+		
+	}
+	
+	
 	
 	public void clickRemoveSwitchBoardOption() {
 		clickbyXpath(removeSwitchBoardOption, "Click on Remove Button");
@@ -102,6 +112,10 @@ public class SwitchPage extends GenericWrappers{
 	
 	public void clickMenuButton() {
 		clickbyXpath(menuButton, "Click on Menu Button");
+	}
+	
+	public void clickSwitchboardmenuButton(int switches) {
+		clickbyXpath(SwitchBoardMenu(switches), "Switchboardmenu");
 	}
 
 	public void clickOnOffButton() {
@@ -117,7 +131,9 @@ public class SwitchPage extends GenericWrappers{
 	public void clickAddEditSwitchBoardButton() {
 		clickbyXpath(addEditSwitchBoardButton, "Click On Add Edit Switchboard Button");
 	}
-
+	public void clickEditoptionText(int count) {
+		clickbyXpath(SwitchBoardEditoptiontext(count), "Switchboard edit option");
+	}
 	
 	public void clickSettingsButton() {
 		clickbyXpath(settingsButton, "Click On settings Button");
@@ -133,7 +149,7 @@ public class SwitchPage extends GenericWrappers{
 	
 	public void clickBackButton() {
 		try {
-			expshortWait(headerbackbutton);
+			expWaitTillElementDisplay(headerbackbutton,10);
 			headerbackbutton.click();
 		}catch (Exception e) {
 			Reporter.reportStep(" Back button is not clicked"+e, "FAIL");
@@ -154,21 +170,22 @@ public class SwitchPage extends GenericWrappers{
 		clickbyXpath(Switchboard_EditConfirm, "Switch Board menu edit button");
 	}
 	public void changeSwitchBoardname(String text) {
+		switchpageTextbox.clear();
 		entervaluebyXpath(switchpageTextbox, "Switchboard textbox value", text);
 	}
-	public void clickConfirmButton() {
-		clickbyXpath(Switchboard_EditConfirm, "Switchboard Edit confirm button");
+	public void clickConfirmButton(int count) {
+		clickbyXpath(SwitchBoardEditconfirm(count), "Switchboard Edit confirm button");
 	}
 	public void clickSwitchToggle() {
 		
-		if(isElementDisplayedCheck(SwitchToggle)) {
 			clickbyXpath(SwitchToggle, "SwitchToggle");
-		}else if(isElementDisplayedCheck(disconnectedIcon)){
-			Reporter.reportStep("Disconnected Badge Displayed", "FAIL");
-			
-		}
 	}
-
+	public void checkforDisconenctedBadge() {
+		 if(isElementDisplayedCheck(disconnectedIcon)){
+				Reporter.reportStep("Disconnected Badge Displayed", "FAIL");
+				
+			}
+	}
 	public void NavigatetoSwitches(int switchnumber) {
 		
 		clickbyXpath(deviceName(switchnumber), "Switch card");

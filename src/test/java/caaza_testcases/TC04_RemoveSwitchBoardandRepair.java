@@ -69,7 +69,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-			//readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();
 			landingpage.clickSignUpLink();
@@ -101,7 +101,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
 			switchpage.clickAddEditSwitchBoardButton();
-			switchpage.clickSwitchBoardMenu1();
+			switchpage.clickSwitchboardmenuButton(1);
 			switchpage.clickRemoveSwitchBoardOption();
 			Thread.sleep(3000);
 			switchpage.clickOkButton();
@@ -136,11 +136,11 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			profilepage.deleteAccount();
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
-			//readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {
-			//readwrite.closePort();
-			//logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

@@ -403,7 +403,7 @@ public class AddDevicePage extends GenericWrappers {
 
 	public void clickOkButton() {
 		try {
-		expshortWait(alertok);
+		expWaitTillElementDisplay(alertok,10);
 		alertok.click();
 		} catch (Exception e) {
 			Reporter.reportStep("Alert okay button not displayed", "FAIL");
@@ -502,7 +502,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void ClickBrandName() {
-		expWaitforPairing(ClickBrandName);
+		expWaitTillElementDisplay(ClickBrandName,20);
 		clickbyXpath(ClickBrandName, " Ac Brand Name ");
 	}
 
@@ -536,7 +536,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void cancelButton() throws Exception {
-		expWaitforPairing(cancelButton);
+		expWaitTillElementDisplay(cancelButton,20);
 		clickbyXpathwithoutReport(cancelButton, " Wifi cancel Button ");
 		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp(packages); // Bring it back
@@ -544,7 +544,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void ClickOkButtonBLEpopUP() throws Exception {
-		expWaitforPairing(ClickOkButtonBLEpopUP);
+		expWaitTillElementDisplay(ClickOkButtonBLEpopUP,20);
 		clickbyXpathwithoutReport(ClickOkButtonBLEpopUP, " Ok Ble Button ");
 		if (driver.queryAppState(packages) != ApplicationState.RUNNING_IN_FOREGROUND) {
 			driver.activateApp(packages); // Bring it back
@@ -560,7 +560,7 @@ public class AddDevicePage extends GenericWrappers {
 	}
 
 	public void clickBlePermissionOkbutton() {
-		expWaitforPairing(blePermissionOkButton);
+		expWaitTillElementDisplay(blePermissionOkButton,10);
 		clickbyXpath(blePermissionOkButton, " Ble Popup Cancel Button ");
 	}
 
@@ -644,14 +644,14 @@ public class AddDevicePage extends GenericWrappers {
 	public void aCBrandNameClick()
 
 	{
-		expWaitforPairing(ACBrandNameClick);
+		expWaitTillElementDisplay(ACBrandNameClick,10);
 		clickbyXpath(ACBrandNameClick, "Acbrandname");
 	}
 
 	public void aCBrandNameCarrierclick()
 
 	{
-		expWaitforPairing(ACBrandNameCarrier);
+		expWaitTillElementDisplay(ACBrandNameCarrier,10);
 		clickbyXpath(ACBrandNameCarrier, "Acbrandname");
 	}
 
@@ -798,7 +798,7 @@ public class AddDevicePage extends GenericWrappers {
 			case 1:
 				turnOnBT();
 				startPairingButton();
-				//readwrite.write("factory_reset\r");
+				readwrite.write("factory_reset\r");
 //				blepermissionokpopup();
 //				locationPopUpPermission();
 //				nearByPermission();
@@ -823,7 +823,7 @@ public class AddDevicePage extends GenericWrappers {
 //				blepermissionokpopup();
 //				locationPopUpPermission();
 //				nearByPermission();
-				//readwrite.write("factory_reset\r");
+				readwrite.write("factory_reset\r\n");
 				//blepermissionokpopup();
 				enterWiFiPassword(wifiPassword);
 			//	Thread.sleep(10000);
@@ -1244,5 +1244,10 @@ public void setupSwitches(List<String> switchNames) {
     enterNamesForSwitches(switchNames);
     clickSwitchTypeDropdown();
     clickFanType();
+}
+
+public void afterFailure() {
+	
+	
 }
 }

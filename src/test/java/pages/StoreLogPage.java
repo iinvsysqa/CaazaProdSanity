@@ -31,8 +31,14 @@ public class StoreLogPage extends GenericWrappers{
 	}
 	 
 	 
-		@FindBy(xpath = "//*[@resource-id='menu_icon_sharelog']")
-		private WebElement shareLogbtn;
+	 @FindBy(xpath = "//*[@resource-id='Tab_Settings_Container']")
+	 private WebElement settingsbtn;
+	 @FindBy(xpath = "//*[@resource-id='sharelogMenu']")
+	 private WebElement shareLogBtn;
+//	 @FindBy(xpath = "//*[@resource-id='sharelogMenu']")
+//	 private WebElement shareLogBtn;
+	 
+	 
 		@FindBy(xpath = "//android.widget.TextView[@text='File Manager +']")
 		private WebElement FTPicon;
 		@FindBy(xpath = "//android.widget.TextView[@text='Downloads']")
@@ -43,8 +49,9 @@ public class StoreLogPage extends GenericWrappers{
 		private WebElement menuBarButton;
 		 @FindBy(xpath = "//*[@resource-id='Launch_SignInText']")
 		    private WebElement launchSignInButton;
-		 @FindBy(xpath = "//*[@resource-id='SignIn_SignInText']")
-			private WebElement signInButton;
+		
+		 @FindBy(xpath = "//*[@resource-id='Sign InText']")
+		    private WebElement signInButton;
 		 @FindBy(xpath = "//*[@resource-id='SignIn_Email_or_UserName']")
 			private WebElement userNameField;
 		 
@@ -68,32 +75,42 @@ public class StoreLogPage extends GenericWrappers{
 
 			@FindBy(xpath = "//*[@resource-id='com.android.permissioncontroller:id/permission_allow_button']")
 			private WebElement nearByPermisson;
-		
+	
+		    @FindBy(xpath = "//*[@resource-id='UserNameInput']")
+	  		private WebElement userNameTextbox;
+		    
+		    @FindBy(xpath = "//*[@resource-id='passwordInput']")
+	  		private WebElement passwordTextBox;
+		  
+		    @FindBy(xpath = "//*[@resource-id='SignInText']")
+	  		private WebElement signInTitle;
+			
+			   public void enterUserName(String username) {
+			    	entervaluebyXpath(userNameTextbox, " Enter User Name ", username );
+			    }
+			    
+			    public void enterPassword(String password) {
+			    	entervaluebyXpath(passwordTextBox, " Enter Password ", password );
+			    }
+			    public void clickSignInButton() {
+			    	clickbyXpath(signInButton, " Sign In Button " );
+			    }
 		public void storeLogToDownloads() throws IOException {
 			turnOnBT();
 			killAndReopenApp();
-			if (isElementDisplayedCheck(menuBarButton)) {
+			if (isElementDisplayedCheck(settingsbtn)) {
 				
-				clickbyXpath(menuBarButton, " Menu Bar ");
-				clickbyXpath(shareLogbtn, "ShareLog Button");
+				clickbyXpath(settingsbtn, " settings Btn");
+				clickbyXpath(shareLogBtn, "ShareLog Button");
 				clickbyXpath(FTPicon, "Filemanager Button");
 				clickbyXpath(FTPDownloads, "Filemanager downloads Button");
 				clickbyXpath(FTPsaveBtn, "Filemanager save Button");
 			}else {
-				clickbyXpath(launchSignInButton, " Launch Sign In Button " );
-				entervaluebyXpath(userNameField, " User Name " , userName);
-				clickbyXpath(signInButton, " Sign In ");
-				entervaluebyXpath(otpField1, " OTP Box 1 " , "1");
-				entervaluebyXpath(otpField2, " OTP Box 2 " , "2");
-				entervaluebyXpath(otpField3, " OTP Box 3 " , "3");
-				entervaluebyXpath(otpField4, " OTP Box 4 " , "4");
-				clickbyXpath(submitBtn," Submit Button ");
+				allowpermissions();
+				enterUserName("Demouserauto");
+				enterPassword("Welcome@123");
+				clickSignInButton();
 				
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.ACCESS_FINE_LOCATION");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_SCAN");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.BLUETOOTH_CONNECT");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.CAMERA");
-				Runtime.getRuntime().exec("adb shell pm grant com.iinvsys.szephyr android.permission.POST_NOTIFICATIONS");
 //				if (isElementDisplayedCheck(locationPopUp)) {
 //					clickbyXpath(locationPopUp, "Location pop-up");
 //				} else {
@@ -105,8 +122,8 @@ public class StoreLogPage extends GenericWrappers{
 //					clickbyXpathwithoutReport(nearByPermisson, " Near by devices Permission  ");
 //				}
 				
-				clickbyXpath(menuBarButton, " Menu Bar ");
-				clickbyXpath(shareLogbtn, "ShareLog Button");
+				clickbyXpath(settingsbtn, " settings Btn");
+				clickbyXpath(shareLogBtn, "ShareLog Button");
 				clickbyXpath(FTPicon, "Filemanager Button");
 				clickbyXpath(FTPDownloads, "Filemanager downloads Button");
 				clickbyXpath(FTPsaveBtn, "Filemanager save Button");

@@ -49,7 +49,7 @@ public class Internal_longrun_task extends GenericWrappers{
 			String stringvalue="100.0V";
 
 			while (val>0) {
-				expWait(element);
+				expWaitTillElementDisplay(element, 15);
 				String text = element.getText();
 				String numericPart = text.replaceAll("[^0-9.]", "");
 				

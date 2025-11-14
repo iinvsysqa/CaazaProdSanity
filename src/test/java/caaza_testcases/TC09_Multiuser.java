@@ -47,7 +47,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 
 	
 	@Test(priority = 8)
-	public void TC_01_Account_Info_page_check() throws Exception {
+	public void TC_09_Multiuser_check() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
     }
@@ -81,7 +81,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 		 * updated properly. "
 		 */	
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();			
 			landingpage.clickSignUpLink();
@@ -110,7 +110,8 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
-			userpage.navigateBack();
+			
+			System.out.println("Moving to Full access");
 			
 			//==========================share full access to user
 			userpage.NavigateUserpage();
@@ -138,23 +139,24 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.clickOtherUsersHierarchycontainer();
 			userpage.sharedUserHierarchyBox();
 			//get analytics value
-			analytics.navigateAnalyticsPage();
+			
+			homepage.enterFirstcard();
+			homepage.navigateback();
+			homepage.enterFirstcard();
+			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
 			
 			//turn on app for 1 min
-			homepage.enterFirstcard();
+			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
 			Thread.sleep(60000);
 			switchpage.clickSwitchToggle();
 			
 			//check analytics value updated or not 
-			homepage.navigateback();
-			homepage.enterFirstcard();
-			Thread.sleep(5000);
-			homepage.navigateback();
-			analytics.navigateAnalyticsPage();
+			schedular.enter_Switchpage(1);
 			analytics.checkenrgyduration(1);
+			homepage.navigateback();
 			homepage.navigateback();
 			
 //          navigate to shared user and check created schedule showing to main user or not
@@ -176,6 +178,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.navigateback();
 			Thread.sleep(60000*5);//to complete that old schedule
 			
+			System.out.println("Moving to partial access");
 			//==========================change the access to partial access 
 			
 			userpage.NavigateUserpage();
@@ -185,7 +188,6 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.clickdeviceShareButton();
 			userpage.enterUsername("Autotest");
 			userpage.clickSendbutton();
-			userpage.clickContinueButton();
 			userpage.clickContinueButton();
 			userpage.checkAddedUser("Autotest");
 			userpage.navigateBack();
@@ -207,30 +209,22 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			//get analytics value
 			
 			homepage.enterFirstcard();
-			Thread.sleep(5000);
 			homepage.navigateback();
-			analytics.navigateAnalyticsPage();
+			homepage.enterFirstcard();
+			switchpage.NavigatetoSwitches(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
 			
 			//turn on app for 1 min
-			homepage.enterFirstcard();
-			Thread.sleep(5000);
+			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
 			Thread.sleep(60000);
 			switchpage.clickSwitchToggle();
 			
 			//check analytics value updated or not 
-			homepage.navigateback();
-			homepage.enterFirstcard();
-			Thread.sleep(5000);
-			homepage.navigateback();
-			analytics.navigateAnalyticsPage();
-			analytics.checkenrgyduration(1);
-			homepage.navigateback();
-			
-			homepage.enterFirstcard();
 			switchpage.NavigatetoSwitches(1);
+			analytics.checkenrgyduration(1);
+			
 			schedular.checkPartialAccessSchedulepage();
 			homepage.navigateback();
 			homepage.navigateback();
@@ -239,7 +233,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			profilepage.clicklogoutbtn();
 			profilepage.logoutConfirmationBtn();
 			
-			
+			System.out.println("Moving to View only access");
 			//==============================change the access to view only access
 			landingpage.enterUserName(userName);
 			landingpage.enterPassword(Oldpassword);
@@ -253,7 +247,6 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.clickdeviceShareButton();
 			userpage.enterUsername("Autotest");
 			userpage.clickSendbutton();
-			userpage.clickContinueButton();
 			userpage.clickContinueButton();
 			userpage.checkAddedUser("Autotest");
 			userpage.navigateBack();
@@ -273,6 +266,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 			homepage.enterFirstcard();
 			Thread.sleep(5000);
+			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
 			userpage.checkViewonlyAccesson_off_Toast();
 			switchpage.NavigatetoSwitches(1);
@@ -294,7 +288,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 			homepage.enterFirstcard();
 			settingspage.openMenuPage();
-			settingspage.navigateSettingspage();
+			settingspage.navigateswitchmenuSettingspage();
 			settingspage.resetDevice();
 			settingspage.navigateback();
 			
@@ -310,11 +304,11 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
 			
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {	
-//			readwrite.closePort();
-//			logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

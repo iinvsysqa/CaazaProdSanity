@@ -45,7 +45,7 @@ public class logReadandWrite {
             serialPort.openPort();
             // Ensure baud rate and other params are optimal for your device.
             // Higher baud rates (if supported by device) reduce transmission time.
-            this.currentBaudRate = SerialPort.BAUDRATE_115200; // Store the baud rate
+            this.currentBaudRate = 921600;; // Store the baud rate
             serialPort.setParams(this.currentBaudRate, // Use the stored baud rate
                                  SerialPort.DATABITS_8,
                                  SerialPort.STOPBITS_1,

@@ -27,6 +27,8 @@ import wrappers.GenericWrappers;
 
 public class Schedularpage extends GenericWrappers {
 	public static AndroidDriver driver;
+	Analytics analytics;
+	
 
 //	public AndroidElement element;
 
@@ -194,6 +196,7 @@ public class Schedularpage extends GenericWrappers {
 	
 
 	public void createSchedules(int timetostart, int intervals, int gapBetweenNextSchedule) {
+		
 		// Get the current time and calculate the start time for the first schedule
 
 		LocalTime currentTime = LocalTime.now();
@@ -254,6 +257,7 @@ public class Schedularpage extends GenericWrappers {
 	
 
 	public void createSchedules(int switchCount, int timeToStart, int intervals, int gapBetweenNextSchedule) {
+		analytics = new Analytics(driver);
 		// Get current time and calculate when first schedule should start
 		LocalTime currentTime = LocalTime.now();
 		LocalTime startTime = currentTime.plusMinutes(timeToStart);
@@ -274,50 +278,8 @@ public class Schedularpage extends GenericWrappers {
 			System.out.println("🟢 Creating schedules for device: " + deviceName);
 
 			// Open that switch screen
-			deviceName(i).click();
-
-//			// Generate schedule times
-//			List<LocalTime> scheduleTimes = generateSchedule(startTime, intervals, gapBetweenNextSchedule);
-//
-//			for (int j = 0; j < scheduleTimes.size(); j++) {
-//				LocalTime fromTime = scheduleTimes.get(j);
-//				LocalTime toTime = fromTime.plusMinutes(gapBetweenNextSchedule);
-//
-//				// Convert to 12-hour format
-//				int fromHour = fromTime.getHour() % 12 == 0 ? 12 : fromTime.getHour() % 12;
-//				int fromMinute = fromTime.getMinute();
-//				String fromAmPm = fromTime.getHour() >= 12 ? "PM" : "AM";
-//
-//				int toHour = toTime.getHour() % 12 == 0 ? 12 : toTime.getHour() % 12;
-//				int toMinute = toTime.getMinute();
-//				String toAmPm = toTime.getHour() >= 12 ? "PM" : "AM";
-//
-//				System.out.println(String.format("⏱ Period %d: %02d:%02d %s → %02d:%02d %s", j + 1, fromHour,
-//						fromMinute, fromAmPm, toHour, toMinute, toAmPm));
-//
-//				// Add new schedule
-//				addScheduleButton();
-//
-//				// Select start time
-//				setContext("start");
-//				selectTimeUsingBounds(fromHour, fromMinute, fromAmPm);
-//
-//				// Select end time
-//				setContext("end");
-//				selectTimeUsingBounds(toHour, toMinute, toAmPm);
-//
-//				// Select weekdays (assuming method exists)
-////	            for (int k = 0; k <= 5; k++) {
-////	                clickbyXpath(weekdays(k), "Selecting all weekdays");
-////	            }
-////	            clickbyXpath(repeateveryweekcheckbox, "Repeat every week");
-//
-//				// Save schedule
-//				saveSchedule();
-//
-//				System.out.println("✅ Schedule saved for period " + (j + 1));
-		
-
+			clickbyXpath(deviceName(i),"switchcard" );
+			
 			
 			
 			// Generate schedule times based on intervals and gap
@@ -338,11 +300,9 @@ public class Schedularpage extends GenericWrappers {
 				clickbyXpath(plusIcon, "plusbutton");
 				System.out.println("Creating schedule for: " + hour + ":" + formattedMinute + " " + amPm);
 
-				// Navigate to the screen to create a schedule
 				
 
-				// Scroll to the desired time using the method that scrolls until the element is
-				// visible
+				// Scroll to the desired time using the method that scrolls until the element is visible
 				setContext("start");
 				selectTimeUsingBounds(hour, minute, amPm);
 
@@ -372,7 +332,7 @@ public class Schedularpage extends GenericWrappers {
 			}
 
 			backToHomepage();
-			System.out.println("🏠 Returned to home for next switch\n");
+			System.out.println("🏠 Returned to switch for next switch\n");
 		}
 
 		System.out.println("🎯 All schedules created successfully!");
@@ -751,6 +711,10 @@ public class Schedularpage extends GenericWrappers {
 			clickbyXpath(switchToggle(i), "Switch Toggle");
 			
 		}
+	}
+	
+	public void enter_Switchpage(int switches) {
+		clickbyXpath(deviceName(switches), "Switchcard");
 	}
 	public void clickSwitchMenuButton() {
 		clickbyXpath(Header_MenuButton, "Header MenuButton");

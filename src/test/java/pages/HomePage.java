@@ -249,7 +249,7 @@ JavascriptExecutor js = (JavascriptExecutor) driver;
     }
 
 	public void clickONOFFButton() {
-		expWaitforPairing(deviceONOFFButton);
+		expWaitTillElementDisplay(deviceONOFFButton,10);
 		clickbyXpath(deviceONOFFButton, " Device ON OFF Button ");
 	}
 	
@@ -261,7 +261,7 @@ JavascriptExecutor js = (JavascriptExecutor) driver;
 	
 
 	 public void clicksharcelog() {
-		expWaitforPairing(sharelog);
+		expWaitTillElementDisplay(sharelog,10);
 		clickbyXpath(sharelog, " sharelog button ");
 	 }
 	 

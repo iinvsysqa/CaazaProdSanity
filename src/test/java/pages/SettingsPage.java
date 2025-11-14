@@ -18,11 +18,13 @@ import wrappers.GenericWrappers;
 public class SettingsPage extends GenericWrappers{
 
 	private AndroidDriver driver;
+	AddDevicePage adddevicepage;
 	
 	public SettingsPage(AndroidDriver driver) {
 		this.driver = driver;
 		PageFactory.initElements(driver, this);
 		this.wait=new WebDriverWait(driver, 10);
+		adddevicepage = new AddDevicePage(driver);
 	}
 
 	
@@ -41,15 +43,22 @@ public class SettingsPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='Close_Icon_Svg']")
 	private WebElement menu_CloseIcon;
 	
-	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_1']")
+	
+	@FindBy(xpath = "//*[@resource-id='Tab_Settings_Icon']")
 	private WebElement menu_Settingsbtn;
+	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_1']")
+	private WebElement MenuItem_Settings;
+	
+	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_1']")
+	private WebElement switchpagemenu_settingsButton;
+	
 	@FindBy(xpath = "//*[@resource-id='MenuItem_AddandEditSwitchboard_0']")
 	private WebElement Menu_AddandEditSwitchboard;
 	@FindBy(xpath = "//*[@resource-id='MenuItem_FirmwareUpdate_2']")
 	private WebElement Menu_FirmwareUpdate;
-	@FindBy(xpath = "//*[@resource-id='SettingsItem_HighVoltageCuttoff']")
+	@FindBy(xpath = "//*[@resource-id='SettingsItem_HighVoltageCutoff']")
 	private WebElement SettingsItem_HighVoltageCuttoff;
-	@FindBy(xpath = "//*[@resource-id='SettingsItem_LowVoltageCuttoff']")
+	@FindBy(xpath = "//*[@resource-id='SettingsItem_LowVoltageCutoff']")
 	private WebElement SettingsItem_LowVoltageCuttoff;
 	@FindBy(xpath = "//*[@resource-id='SettingsItem_TimeZoneConfiguration']")
 	private WebElement SettingsItem_TimeZoneConfiguration;
@@ -126,6 +135,9 @@ public class SettingsPage extends GenericWrappers{
 	public void navigateSettingspage() {
 		clickbyXpath(menu_Settingsbtn, "Settings button");
 	}
+	public void navigateMenuitemSettings() {
+		clickbyXpath(MenuItem_Settings, "Menuitem settings ");
+	}
 	public void navigateHighVoltCutoff() {
 		clickbyXpath(SettingsItem_HighVoltageCuttoff, "HighVoltageBTN");
 	}
@@ -141,11 +153,14 @@ public class SettingsPage extends GenericWrappers{
 
 	}
 	public void enterHighVoltagevalue(String input) {
+		adddevicepage.hidekeyboard();
 		entervaluebyXpath(HighVoltage_Input, "High Voltage Input textbox",input);
+		adddevicepage.hidekeyboard();
 	}
 	public void enterLowVoltagevalue(String input) {
+		adddevicepage.hidekeyboard();
 		entervaluebyXpath(LowVoltage_Input, "High Voltage Input textbox",input);
-
+		adddevicepage.hidekeyboard();
 	}
 	public void verifyHighVoltValues(String input) {
 		verifyTextContainsByXpath(HighVoltage_Input, input, "High Volt value");
@@ -235,6 +250,9 @@ public class SettingsPage extends GenericWrappers{
 	            // Option B fallback: wait until verifying header is not visible
 	        	return false;
 	        }
+	}
+	public void navigateswitchmenuSettingspage() {
+		clickbyXpath(switchpagemenu_settingsButton, "switchmenusettingsbutton");
 	}
 }
 

@@ -49,7 +49,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 
 	
 	@Test(priority = 9)
-	public void TC_01_Account_Info_page_check() throws Exception {
+	public void TC_10_SwitchLock_notifications_check() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
     }
@@ -85,7 +85,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 		 * updated properly. "
 		 */	
 		try {
-//			readwrite.openPort();
+			readwrite.openPort();
 			uninstall_reinstall();
 			landingpage.clickLandingPageNextBtn();			
 			landingpage.clickSignUpLink();
@@ -171,7 +171,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			//resetdevice and check notifications 
 			
 			settingspage.openMenuPage();
-			settingspage.navigateSettingspage();
+			settingspage.navigateMenuitemSettings();
 			settingspage.resetDevice();
 			settingspage.navigateback();
 			
@@ -189,7 +189,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			
 			homepage.enterFirstcard();
 			settingspage.openMenuPage();
-			settingspage.navigateSettingspage();
+			settingspage.navigateMenuitemSettings();
 			settingspage.resetDevice();
 			settingspage.navigateback();
 			
@@ -401,11 +401,11 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 //			profilepage.confirmDelete();
 			
 			
-//			readwrite.closePort();
+			readwrite.closePort();
 		}
 		catch (Exception e) {	
-//			readwrite.closePort();
-//			logpage.CollectLogOnFailure(testCaseName,testDescription);
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

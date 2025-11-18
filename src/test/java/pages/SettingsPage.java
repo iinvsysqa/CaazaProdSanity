@@ -17,8 +17,10 @@ import wrappers.GenericWrappers;
 
 public class SettingsPage extends GenericWrappers{
 
-	private AndroidDriver driver;
+	private static AndroidDriver driver;
 	AddDevicePage adddevicepage;
+	
+	
 	
 	public SettingsPage(AndroidDriver driver) {
 		this.driver = driver;
@@ -56,9 +58,10 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement Menu_AddandEditSwitchboard;
 	@FindBy(xpath = "//*[@resource-id='MenuItem_FirmwareUpdate_2']")
 	private WebElement Menu_FirmwareUpdate;
-	@FindBy(xpath = "//*[@resource-id='SettingsItem_HighVoltageCutoff']")
+	@FindBy(xpath = "//*[@resource-id='SettingsItem_Label_HighVoltageCutoff']")
 	private WebElement SettingsItem_HighVoltageCuttoff;
-	@FindBy(xpath = "//*[@resource-id='SettingsItem_LowVoltageCutoff']")
+	
+	@FindBy(xpath = "//*[@resource-id='SettingsItem_Label_LowVoltageCutoff']")
 	private WebElement SettingsItem_LowVoltageCuttoff;
 	@FindBy(xpath = "//*[@resource-id='SettingsItem_TimeZoneConfiguration']")
 	private WebElement SettingsItem_TimeZoneConfiguration;
@@ -106,6 +109,8 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement CouldntConnectrouter_OKPopUp;
 	@FindBy(xpath = "//*[@resource-id='RetryButton']")
 	private WebElement RetryButton;
+	@FindBy(xpath = "//*[@resource-id='Header_Back_Button']")
+	private WebElement Header_Back_Button;
 
 	
 	
@@ -133,7 +138,7 @@ public class SettingsPage extends GenericWrappers{
 	
 	}
 	public void navigateSettingspage() {
-		clickbyXpath(menu_Settingsbtn, "Settings button");
+		clickbyXpath(MenuItem_Settings, "Settings button");
 	}
 	public void navigateMenuitemSettings() {
 		clickbyXpath(MenuItem_Settings, "Menuitem settings ");
@@ -152,23 +157,23 @@ public class SettingsPage extends GenericWrappers{
 		clickbyXpath(LowVoltage_Toggle, "Low Voltage Toggle");
 
 	}
+	
 	public void enterHighVoltagevalue(String input) {
-		adddevicepage.hidekeyboard();
+		
 		entervaluebyXpath(HighVoltage_Input, "High Voltage Input textbox",input);
-		adddevicepage.hidekeyboard();
+//		adddevicepage.hidekeyboard();
 	}
 	public void enterLowVoltagevalue(String input) {
-		adddevicepage.hidekeyboard();
 		entervaluebyXpath(LowVoltage_Input, "High Voltage Input textbox",input);
-		adddevicepage.hidekeyboard();
+//		adddevicepage.hidekeyboard();	
 	}
 	public void verifyHighVoltValues(String input) {
 		verifyTextContainsByXpath(HighVoltage_Input, input, "High Volt value");
-		driver.navigate().back();
+//		adddevicepage.hidekeyboard();
 	}
 	public void verifyLowVoltValues(String input) {
 		verifyTextContainsByXpath(LowVoltage_Input, input, "Low Volt value");
-		driver.navigate().back();
+//		adddevicepage.hidekeyboard();
 		
 	}
 	
@@ -183,7 +188,7 @@ public class SettingsPage extends GenericWrappers{
 	}
 	public void navigateback() {
 		driver.navigate().back();
-		
+//		clickbyXpath(Header_Back_Button, "back button");
 	}
 	
 	public void resetDevice() throws InterruptedException {

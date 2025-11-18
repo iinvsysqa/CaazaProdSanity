@@ -101,7 +101,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
 			switchpage.clickAddEditSwitchBoardButton();
-			switchpage.clickSwitchboardmenuButton(1);
+			switchpage.clickSwitchboardmenuButton(0);
 			switchpage.clickRemoveSwitchBoardOption();
 			Thread.sleep(3000);
 			switchpage.clickOkButton();
@@ -120,9 +120,8 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			Thread.sleep(3000);
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
-			switchpage.clickSettingsButton();
-			switchpage.clickResetDeviceButton();
-			switchpage.clickResetConfirmationButton();
+			settingspage.navigateswitchmenuSettingspage();
+			settingspage.resetDevice();
 			driver.navigate().back();
 			
 			//remove hierarchy and delete account

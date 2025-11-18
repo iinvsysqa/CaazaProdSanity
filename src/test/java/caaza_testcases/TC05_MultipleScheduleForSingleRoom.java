@@ -119,7 +119,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 			
 			schedular.enter_Switchpage(1);//1 switch
 			analytics.checkenrgyduration(1);
-			
+			homepage.navigateback();
 			settingspage.openMenuPage();
 			settingspage.navigateSettingspage();
 			settingspage.resetDevice();

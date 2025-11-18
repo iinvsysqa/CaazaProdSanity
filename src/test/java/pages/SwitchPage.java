@@ -1,5 +1,7 @@
 package pages;
 
+import java.util.List;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -88,7 +90,6 @@ public class SwitchPage extends GenericWrappers{
 	}
 	private WebElement SwitchBoardMenu(int switches) {
 		return driver.findElement(By.xpath("//*[@resource-id='Switchboard_MenuIconContainer_" + switches + "\']"));
-		
 	}
 	private WebElement SwitchBoardEditoptiontext(int switches) {
 		return driver.findElement(By.xpath("//*[@resource-id='Switchboard_EditOptionText_" + switches + "\']"));
@@ -189,6 +190,31 @@ public class SwitchPage extends GenericWrappers{
 	public void NavigatetoSwitches(int switchnumber) {
 		
 		clickbyXpath(deviceName(switchnumber), "Switch card");
+	}
+	
+	public void FetchSerailnumber() {
+		
+		try {
+			List<WebElement> switchElements = driver.findElements(
+		            By.xpath("//*[@resource-id[contains(., 'PanelName_')]]")
+		        );
+
+		        System.out.println("Found " + switchElements.size() + " switches:");
+		        System.out.println("========================================");
+
+		        for (WebElement element : switchElements) {
+		            String resourceId = element.getAttribute("resource-id");
+		            
+		            // Extract serial number: everything after the LAST underscore
+		            String serialNumber = resourceId.substring(resourceId.lastIndexOf("_") + 1);
+		            Reporter.reportStep( "Serial Number -"+ serialNumber , "PASS");
+		            System.out.println("Serial Number: " + serialNumber);
+		        }
+		}catch (Exception e) {
+        	System.out.println(e);
+        	 Reporter.reportStep( "Serial Number not fetched " , "PASS");
+		}
+		
 	}
 }
 

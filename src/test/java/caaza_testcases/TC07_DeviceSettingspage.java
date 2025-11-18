@@ -109,8 +109,9 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.navigateHighVoltCutoff();
 			settingspage.verifyHighVoltValues("270");
 			settingspage.navigateback();
-			
-			
+			settingspage.navigateback();
+			settingspage.openMenuPage();
+			settingspage.navigateMenuitemSettings();
 			settingspage.navigateLowVoltCutoff();
 			settingspage.clickLowVoltToggle();
 			settingspage.enterLowVoltagevalue("170");

@@ -35,7 +35,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 	}
 
 	
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void SingleNodeSanity_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();
@@ -52,7 +52,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-			//readwrite.openPort();
+//			readwrite.openPort();
 			
 			//landingpage.clickLandingPageNextBtn();			
 			//landingpage.enterUserName("Demouserauto");
@@ -75,6 +75,10 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			switchpage.clickOnOffButton();
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
+			switchpage.FetchSerailnumber();//newly added
+			
+			
+			
 			switchpage.clickMenuButton();
 			switchpage.clickSettingsButton();
 			switchpage.clickResetDeviceButton();
@@ -83,10 +87,10 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			driver.navigate().back();
 			//switchpage.clickBackButton();
 
-			//readwrite.closePort();
+//			readwrite.closePort();
 		}
 		catch (Exception e) {
-			//readwrite.closePort();
+//			readwrite.closePort();
 			//logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}

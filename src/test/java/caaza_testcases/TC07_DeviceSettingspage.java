@@ -106,10 +106,16 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.clickSavebutton();
 			settingspage.verifyHighvoltToast();
 			
+			killAndReopenApp();
+			homepage.enterFirstcard();
+			settingspage.openMenuPage();
+			settingspage.navigateMenuitemSettings();
+			
 			settingspage.navigateHighVoltCutoff();
 			settingspage.verifyHighVoltValues("270");
 			settingspage.navigateback();
-			settingspage.navigateback();
+			settingspage.clickheaderbackbutton();
+			settingspage.clickheaderbackbutton();
 			settingspage.openMenuPage();
 			settingspage.navigateMenuitemSettings();
 			settingspage.navigateLowVoltCutoff();
@@ -118,13 +124,19 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.clickSavebutton();
 			settingspage.verifyLowvoltToast();
 			
+			killAndReopenApp();
+			homepage.enterFirstcard();
+			settingspage.openMenuPage();
+			settingspage.navigateMenuitemSettings();
+			
 			settingspage.navigateLowVoltCutoff();
 			settingspage.verifyLowVoltValues("170");
 			settingspage.navigateback();
+			settingspage.clickheaderbackbutton();
 			
 //modify router		
-			settingspage.verifyConfiguredRouter("TP-Link_6D38-with_Internet");
-			connectToWiFi("GRID_LOCK", "43210567" );
+			settingspage.verifyConfiguredRouter(loadProp("WIFINAME"));
+			connectToWiFi("GRID_LOCK", "43210567");
 			settingspage.clickModifyRouterbtn();
 			settingspage.clickModifyRouterSubmitBtn();
 			settingspage.verifyCouldntConnectPopup();
@@ -137,7 +149,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			
 			
 			
-			settingspage.navigateback();
+			settingspage.clickheaderbackbutton();
 			settingspage.openMenuPage();
 			settingspage.navigateSettingspage();
 			settingspage.resetDevice();

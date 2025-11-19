@@ -109,7 +109,7 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement CouldntConnectrouter_OKPopUp;
 	@FindBy(xpath = "//*[@resource-id='RetryButton']")
 	private WebElement RetryButton;
-	@FindBy(xpath = "//*[@resource-id='Header_Back_Button']")
+	@FindBy(xpath = "//*[@resource-id='Header_BackIcon']")
 	private WebElement Header_Back_Button;
 
 	
@@ -188,7 +188,9 @@ public class SettingsPage extends GenericWrappers{
 	}
 	public void navigateback() {
 		driver.navigate().back();
-//		clickbyXpath(Header_Back_Button, "back button");
+	}
+	public void clickheaderbackbutton() {
+		clickbyXpath(Header_Back_Button, "back button");
 	}
 	
 	public void resetDevice() throws InterruptedException {

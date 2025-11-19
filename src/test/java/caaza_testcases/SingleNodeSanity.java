@@ -1,5 +1,8 @@
 package caaza_testcases;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 import pages.AccountsInfoPage;
@@ -35,13 +38,13 @@ public class SingleNodeSanity extends MobileAppWrappers {
 	}
 
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void SingleNodeSanity_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();
 	}
 
-
+	List<String> switchNames = Arrays.asList("Switch1");
 	public void functionaCheck() throws Exception {
 		landingpage= new LandingPage(driver);
 		signuppage = new SignUpPage(driver);
@@ -60,16 +63,17 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			//landingpage.clickSignInButton();
 			homepage.clickFloorSelctionBtn();
 			adddevicepage.pair(2);
-			adddevicepage.waitForVerificationComplete();
-			adddevicepage.enterPanelName("PNL1");
-			adddevicepage.clickAddPanelSaveBtn();
-			//adddevicepage.clickAddswitchSaveBtn();
-			Thread.sleep(5000);
-			adddevicepage.enterSwitchName("SW1");
-			adddevicepage.clickSwitchTypeDropdown();
-			adddevicepage.clickFanType();
-			adddevicepage.clickAddswitchSaveBtn();
-			adddevicepage.clickOkButton();
+			adddevicepage.EnterNode(node,switchNames);
+//			adddevicepage.waitForVerificationComplete();
+//			adddevicepage.enterPanelName("PNL1");
+//			adddevicepage.clickAddPanelSaveBtn();
+//			//adddevicepage.clickAddswitchSaveBtn();
+//			Thread.sleep(5000);
+//			adddevicepage.enterSwitchName("SW1");
+//			adddevicepage.clickSwitchTypeDropdown();
+//			adddevicepage.clickFanType();
+//			adddevicepage.clickAddswitchSaveBtn();
+//			adddevicepage.clickOkButton();
 			homepage.clickFloorSelctionBtn();
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();

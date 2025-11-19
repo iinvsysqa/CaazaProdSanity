@@ -140,8 +140,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.sharedUserHierarchyBox();
 			//get analytics value
 			
-			homepage.enterFirstcard();
-			homepage.navigateback();
+			
 			homepage.enterFirstcard();
 			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();

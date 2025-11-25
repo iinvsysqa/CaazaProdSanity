@@ -42,7 +42,7 @@ public class SwitchPage extends GenericWrappers{
 	private WebElement addEditSwitchBoardButton;
 	
 	
-	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_1']")
+	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_0']")
 	private WebElement settingsButton;
 	
 	@FindBy(xpath = "//*[@resource-id='SettingsItem_ResetDevice']")

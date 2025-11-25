@@ -3,15 +3,12 @@
 <suite name="Suite">
 <listeners>
     <listener class-name="utils.RetryListener" />
-</listeners>
+</listeners> 
   <test thread-count="5" name="Test">
-    <packages>
-      <package name="caaza_testcases"/>
-    </packages>
+    <classes>
+   
+      <class name="caaza_testcases.SingleNodeSanity"/>
+
+    </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
-<!--to do:
-after failure remove /resetdevice,
-st commands from device team ,
-after failure how to share logs 
--->

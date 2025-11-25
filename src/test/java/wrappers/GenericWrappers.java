@@ -16,6 +16,7 @@ import java.util.Calendar;
 import java.util.List;
 import java.util.Properties;
 import java.util.Random;
+import java.util.Scanner;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
 import java.util.concurrent.TimeUnit;
@@ -154,6 +155,7 @@ public class GenericWrappers {
 
 			String appPackage = prop.getProperty("APP_PACKAGE");
 			if (driver.isAppInstalled(appPackage)) {
+				
 				System.out.println("App is already installed. Launching the app...");
 				turnOnBT();
 				driver.activateApp(appPackage); // Open the app
@@ -1167,6 +1169,74 @@ Boolean yes= true;
 	        }
 	}
 	
-	
+	 public static String getUDID() {
+	        String udid = null;
+	        try {
+	            // 1. Run 'adb devices' command to get the list of connected devices
+	            Process process = Runtime.getRuntime().exec("adb devices");
+	            BufferedReader reader = new BufferedReader(new InputStreamReader(process.getInputStream()));
+
+	            String line;
+	            while ((line = reader.readLine()) != null) {
+	                // Skip the first line that contains "List of devices attached"
+	                if (line.contains("\tdevice")) {
+	                    udid = line.split("\t")[0];  // Extract the UDID (before the tab character)
+	                    break;
+	                }
+	            }
+
+	            // Check if a device was found
+	            if (udid == null) {
+	                System.out.println("No devices connected.");
+	                return null;  // Return null if no device is connected
+	            }
+
+	            System.out.println("Found UDID: " + udid);
+
+	            // Optional: Update the property or configuration file with the UDID
+	            updateProperty("UDID", udid);
+
+	        } catch (IOException e) {
+	            e.printStackTrace();
+	        }
+	        
+	        return udid;  // Return the UDID or null if no device found
+	    }
+	 
+	  public static void checkWiFiAndContinue() {
+	        Scanner scanner = new Scanner(System.in);
+
+	        // Prompt the user to turn on WiFi and enable auto-connect
+	        System.out.println("Please turn on the WiFi on your mobile and enable 'Connect Automatically'.");
+	        System.out.println("Please check in app that user is already signed in and app is on Home page");
+	        System.out.println("Please Turn ON the Device Power supply");
+	        System.out.println("Once done, enter 'yes' to continue or 'no' to stop.");
+	        
+	        String input = scanner.nextLine().trim().toLowerCase();  // Read user input and normalize it
+
+	        // Continue or stop based on user input
+	        if (input.equals("yes") || input.equals("y")) {
+	            System.out.println("WiFi is enabled. Continuing with the script...");
+	        } else {
+	            System.out.println("WiFi is not enabled. Please turn on WiFi and enable auto-connect.");
+	            System.out.println("If WiFi is enabled, enter 'Yes' to continue or 'No' to stop.");
+	            
+	            // Keep prompting the user until the correct input is given
+	            while (true) {
+	                input = scanner.nextLine().trim().toLowerCase();
+	                if (input.equals("yes") || input.equals("y")) {
+	                    System.out.println("WiFi is enabled. Continuing with the script...");
+	                    break;  // Exit the loop and continue the script
+	                } else if (input.equals("no")) {
+	                    System.out.println("Exiting the script. Please enable WiFi and try again.");
+	                    System.exit(0);  // Exit the program if user doesn't enable WiFi
+	                } else {
+	                    System.out.println("Invalid input. Please enter 'Yes' or 'No'.");
+	                }
+	            }
+	        }
+
+	        scanner.close();  // Close the scanner
+	    }
  
 }

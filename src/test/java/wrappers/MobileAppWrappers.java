@@ -77,7 +77,8 @@ public class MobileAppWrappers extends GenericWrappers {
 //		CheckoutAndBuildApk build= new CheckoutAndBuildApk();
 //		build.buildAPK();
 		Reporter.startResult();//START TESTNG RESULT
-		
+		 getUDID();
+		 checkWiFiAndContinue();
 	        // Redirect console output to a file
 //		originalOut = System.out;
 //	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));

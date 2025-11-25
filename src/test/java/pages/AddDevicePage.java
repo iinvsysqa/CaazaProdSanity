@@ -327,7 +327,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"Select the field\"])[1]")
 	private WebElement switchType1DropdownBtn;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Fan\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Fridge\"]")
 	private WebElement switchTypeFanButton;
 	
 	@FindBy(xpath = "//*[@resource-id='AddDevices_VerifyingText']")
@@ -726,7 +726,7 @@ public class AddDevicePage extends GenericWrappers {
 		passcommand = new PassSTComment();
 		
 		//verifysigninpage();
-		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+//		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 		initiatepairing(mode);
 	}
 
@@ -1239,15 +1239,13 @@ public void enterNamesForSwitches(List<String> switchNames) {
 }
 
 
-public void setupSwitches(List<String> switchNames) {
-	clickbyXpathwithoutReport( "Retry button",RetryButton);
+public void setupSwitches(List<String> switchNames) throws InterruptedException {
+//	clickbyXpathwithoutReport( "Retry button",RetryButton);
+	Thread.sleep(5000);
     enterNamesForSwitches(switchNames);
     clickSwitchTypeDropdown();
     clickFanType();
 }
 
-public void afterFailure() {
-	
-	
-}
+
 }

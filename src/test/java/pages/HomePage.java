@@ -102,6 +102,7 @@ public class HomePage extends GenericWrappers{
 	
 	@FindBy(xpath = "//*[@resource-id='FLoorCard_innercard']")
 	private WebElement floorSelectionButton;
+	
 	@FindBy(xpath = "//*[@resource-id='FloorCardName_0']")
 	private WebElement floorFirstcard;
 	@FindBy(xpath = "//*[@resource-id='RetryButton']")
@@ -131,6 +132,10 @@ public class HomePage extends GenericWrappers{
 		return driver.findElement(By.xpath("//*[@resource-id='Hierarchy_ListItemContainer_"+level+"']"));
 		
 	}
+	private WebElement Panel(int panel) {
+		return driver.findElement(By.xpath("//*[@resource-id='panel-item-"+panel+"']"));
+		
+	}
 	
 JavascriptExecutor js = (JavascriptExecutor) driver;
 	
@@ -145,6 +150,9 @@ JavascriptExecutor js = (JavascriptExecutor) driver;
 
 	public void clickFloorSelctionBtn() {
 		clickbyXpath(floorSelectionButton, "Floor selction button");
+	}
+	public void clickPanel(int panel) {
+		clickbyXpath(Panel(panel), "Panel");
 	}
 	
 	public void addHierarchyOption() {

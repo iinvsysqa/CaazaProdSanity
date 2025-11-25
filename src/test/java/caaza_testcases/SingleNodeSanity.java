@@ -38,8 +38,9 @@ public class SingleNodeSanity extends MobileAppWrappers {
 	}
 
 	
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void SingleNodeSanity_Check() throws Exception {
+		
 		initAndriodDriver();
 		functionaCheck();
 	}
@@ -57,10 +58,11 @@ public class SingleNodeSanity extends MobileAppWrappers {
 		try {
 //			readwrite.openPort();
 			
-			//landingpage.clickLandingPageNextBtn();			
-			//landingpage.enterUserName("Demouserauto");
-			//landingpage.enterPassword("Welcome@123");
-			//landingpage.clickSignInButton();
+//			landingpage.clickLandingPageNextBtn();			
+//			landingpage.enterUserName("Demouserauto");
+//			landingpage.enterPassword("Welcome@123");
+//			landingpage.clickSignInButton();
+
 			homepage.clickFloorSelctionBtn();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
@@ -75,6 +77,7 @@ public class SingleNodeSanity extends MobileAppWrappers {
 //			adddevicepage.clickAddswitchSaveBtn();
 //			adddevicepage.clickOkButton();
 			homepage.clickFloorSelctionBtn();
+			homepage.clickPanel(0);
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
 			Thread.sleep(5000);
@@ -89,13 +92,14 @@ public class SingleNodeSanity extends MobileAppWrappers {
 			switchpage.clickResetConfirmationButton();
 			Thread.sleep(5000);
 			driver.navigate().back();
+			driver.navigate().back();
 			//switchpage.clickBackButton();
 
 //			readwrite.closePort();
 		}
 		catch (Exception e) {
 //			readwrite.closePort();
-			//logpage.CollectLogOnFailure(testCaseName,testDescription);
+//			logpage.CollectLogOnFailure(testCaseName,testDescription);
 			fail(e);
 		}
 	}

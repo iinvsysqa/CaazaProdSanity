@@ -327,8 +327,10 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"Select the field\"])[1]")
 	private WebElement switchType1DropdownBtn;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Fridge\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Fan\"]")
 	private WebElement switchTypeFanButton;
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Fridge\"]")
+	private WebElement switchTypeFridgeButton;
 	
 	@FindBy(xpath = "//*[@resource-id='AddDevices_VerifyingText']")
 	private WebElement addDeviceverifytext;
@@ -371,7 +373,13 @@ public class AddDevicePage extends GenericWrappers {
 	
 	
 	public void clickFanType() {
-		clickbyXpath(switchTypeFanButton, " Click Fan option ");
+		if(isElementDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
+			
+			clickbyXpath(switchTypeFanButton, " Click Fan option ");
+		}else {
+			clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
+			
+		}
 	}
 	public void clickAddswitchSaveBtn() {
 		clickbyXpath(addSwitchSaveBtn, "Panel name save button ");
@@ -734,7 +742,7 @@ public class AddDevicePage extends GenericWrappers {
 	public void verifysigninpage() throws Exception {
 
 		// Backgrounds app for 10 seconds
-		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+//		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 
 //		turnOnBT();
 		/*
@@ -1235,16 +1243,16 @@ public void enterNamesForSwitches(List<String> switchNames) {
         WebElement switchTextBox = switchTextboxes.get(i);
         switchTextBox.clear(); // Clear existing text if any
         entervaluebyXpath(switchTextBox,"Switch textbox" ,switchNames.get(i) );
+        clickSwitchTypeDropdown();
+        clickFanType();
     }
 }
 
 
 public void setupSwitches(List<String> switchNames) throws InterruptedException {
-//	clickbyXpathwithoutReport( "Retry button",RetryButton);
 	Thread.sleep(5000);
     enterNamesForSwitches(switchNames);
-    clickSwitchTypeDropdown();
-    clickFanType();
+    
 }
 
 

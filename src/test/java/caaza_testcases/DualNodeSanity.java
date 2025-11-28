@@ -1,5 +1,8 @@
 package caaza_testcases;
 
+import java.util.Arrays;
+import java.util.List;
+
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
@@ -36,14 +39,13 @@ public class DualNodeSanity extends MobileAppWrappers {
 	}
 
 	
-//	@Test(priority = 0)
+	@Test(priority = 0)
 	public void DualNodeSanity_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();
 	}
 
-
-	public void functionaCheck() throws Exception {
+	List<String> switchNames = Arrays.asList("Switch1","Switch2"); void functionaCheck() throws Exception {
 		landingpage= new LandingPage(driver);
 		signuppage = new SignUpPage(driver);
 		settingspage = new SettingsPage(driver);
@@ -61,21 +63,23 @@ public class DualNodeSanity extends MobileAppWrappers {
 			//landingpage.clickSignInButton();
 			homepage.clickFloorSelctionBtn();
 			adddevicepage.pair(2);
+			adddevicepage.EnterNode(node,switchNames);
 			//Thread.sleep(30000);
-			adddevicepage.waitForVerificationComplete();
-			adddevicepage.enterPanelName("PNL1");
-			adddevicepage.clickAddPanelSaveBtn();
-			Thread.sleep(5000);
-			//adddevicepage.clickAddswitchSaveBtn();
-			adddevicepage.enterSwitch1Name("SW1");
-			adddevicepage.clickSwitchType1Dropdown();
-			adddevicepage.clickFanType();
-			adddevicepage.enterSwitchName("SW2");
-			adddevicepage.clickSwitchType1Dropdown();
-			adddevicepage.clickFanType();
-			adddevicepage.clickAddswitchSaveBtn();
-			adddevicepage.clickOkButton();
+//			adddevicepage.waitForVerificationComplete();
+//			adddevicepage.enterPanelName("PNL1");
+//			adddevicepage.clickAddPanelSaveBtn();
+//			Thread.sleep(5000);
+//			//adddevicepage.clickAddswitchSaveBtn();
+//			adddevicepage.enterSwitch1Name("SW1");
+//			adddevicepage.clickSwitchType1Dropdown();
+//			adddevicepage.clickFanType();
+//			adddevicepage.enterSwitchName("SW2");
+//			adddevicepage.clickSwitchType1Dropdown();
+//			adddevicepage.clickFanType();
+//			adddevicepage.clickAddswitchSaveBtn();
+//			adddevicepage.clickOkButton();
 			homepage.clickFloorSelctionBtn();
+			homepage.clickPanel(0);
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
 			Thread.sleep(5000);
@@ -83,12 +87,16 @@ public class DualNodeSanity extends MobileAppWrappers {
 			Thread.sleep(5000);
 			switchpage.clickOnOff2Button();
 			Thread.sleep(5000);
-			switchpage.clickOnOff2Button();
+			switchpage.clickOnOff2Button(); 
+			
+			switchpage.FetchSerailnumber();//newly added
+			
 			switchpage.clickMenuButton();
 			switchpage.clickSettingsButton();
 			switchpage.clickResetDeviceButton();
 			switchpage.clickResetConfirmationButton();
 			Thread.sleep(5000);
+			driver.navigate().back();
 			driver.navigate().back();
 			//switchpage.clickBackButton();
 			//readwrite.closePort();

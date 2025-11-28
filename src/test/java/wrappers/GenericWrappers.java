@@ -1208,6 +1208,7 @@ Boolean yes= true;
 
 	        // Prompt the user to turn on WiFi and enable auto-connect
 	        System.out.println("Please turn on the WiFi on your mobile and enable 'Connect Automatically'.");
+	        System.out.println("In config Properties file ,set the correct wifi Password example-WIFINAME=TP-Link_C75A,WIFIPASSWORD=38172946");
 	        System.out.println("Please check in app that user is already signed in and app is on Home page");
 	        System.out.println("Please Turn ON the Device Power supply");
 	        System.out.println("Once done, enter 'yes' to continue or 'no' to stop.");

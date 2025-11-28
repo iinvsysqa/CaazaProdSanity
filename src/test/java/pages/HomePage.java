@@ -115,7 +115,10 @@ public class HomePage extends GenericWrappers{
 
 	@FindBy(xpath = "//*[@resource-id='AreaList_HeaderText']")
 	private WebElement Premisestitle;
-	
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Panel1, 2 Switches\"]")
+	private WebElement switchespagetwo;
+	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"Panel1, 1 Switch\"]")
+	private WebElement switchespageone;
 	private WebElement devicenameDeviceSettingsPage(String username) {
 		return driver.findElement(By.xpath("//android.widget.TextView[@text='"+username+"']"));
 		
@@ -152,7 +155,15 @@ JavascriptExecutor js = (JavascriptExecutor) driver;
 		clickbyXpath(floorSelectionButton, "Floor selction button");
 	}
 	public void clickPanel(int panel) {
-		clickbyXpath(Panel(panel), "Panel");
+//		if(isiconDisplayed(Panel(panel), "panel page")) {
+//		clickbyXpath(Panel(panel), "Panel");
+//		}
+		 if(isiconDisplayed(switchespageone, "panel page")){
+			clickbyXpath(switchespageone, "Panel");
+			}else {
+				clickbyXpath(switchespagetwo, "Panel");
+				
+			}
 	}
 	
 	public void addHierarchyOption() {

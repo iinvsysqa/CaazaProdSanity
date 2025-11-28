@@ -61,24 +61,12 @@ public class DualNodeSanity extends MobileAppWrappers {
 			//landingpage.enterUserName("Demouserauto");
 			//landingpage.enterPassword("Welcome@123");
 			//landingpage.clickSignInButton();
+			
 			homepage.clickFloorSelctionBtn();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
-			//Thread.sleep(30000);
-//			adddevicepage.waitForVerificationComplete();
-//			adddevicepage.enterPanelName("PNL1");
-//			adddevicepage.clickAddPanelSaveBtn();
-//			Thread.sleep(5000);
-//			//adddevicepage.clickAddswitchSaveBtn();
-//			adddevicepage.enterSwitch1Name("SW1");
-//			adddevicepage.clickSwitchType1Dropdown();
-//			adddevicepage.clickFanType();
-//			adddevicepage.enterSwitchName("SW2");
-//			adddevicepage.clickSwitchType1Dropdown();
-//			adddevicepage.clickFanType();
-//			adddevicepage.clickAddswitchSaveBtn();
-//			adddevicepage.clickOkButton();
 			homepage.clickFloorSelctionBtn();
+			
 			homepage.clickPanel(0);
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();

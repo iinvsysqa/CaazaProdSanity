@@ -373,7 +373,7 @@ public class AddDevicePage extends GenericWrappers {
 	
 	
 	public void clickFanType() {
-		if(isElementDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
+		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
 			
 			clickbyXpath(switchTypeFanButton, " Click Fan option ");
 		}else {

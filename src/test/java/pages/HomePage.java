@@ -155,15 +155,15 @@ JavascriptExecutor js = (JavascriptExecutor) driver;
 		clickbyXpath(floorSelectionButton, "Floor selction button");
 	}
 	public void clickPanel(int panel) {
-//		if(isiconDisplayed(Panel(panel), "panel page")) {
-//		clickbyXpath(Panel(panel), "Panel");
-//		}
-		 if(isiconDisplayed(switchespageone, "panel page")){
-			clickbyXpath(switchespageone, "Panel");
-			}else {
-				clickbyXpath(switchespagetwo, "Panel");
-				
-			}
+		if(isiconDisplayed(Panel(panel), "panel page")) {
+		clickbyXpath(Panel(panel), "Panel");
+		}
+//		 if(isiconDisplayed(switchespageone, "panel page")){
+//			clickbyXpath(switchespageone, "Panel");
+//			}else {
+//				clickbyXpath(switchespagetwo, "Panel");
+//				
+//			}
 	}
 	
 	public void addHierarchyOption() {

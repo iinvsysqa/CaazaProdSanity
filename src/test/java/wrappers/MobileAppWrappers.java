@@ -23,6 +23,7 @@ import pages.StoreLogPage;
 import utils.ADBconnections;
 import utils.CheckoutAndBuildApk;
 import utils.DataInputProvider;
+import utils.Flashscript_RegisterSerialno;
 import utils.GetAppLog;
 import utils.Reporter;
 import utils.RunFlashScript;
@@ -54,13 +55,11 @@ public class MobileAppWrappers extends GenericWrappers {
 	@BeforeSuite
 	public void beforeSuite() throws FileNotFoundException, IOException, InterruptedException{
 		
-		//RunRelayFromPython.powerOndeviceViaRelay("on");
+		
 		
 		// Switch Tp Link Wifi for Flashing
 		
 //			SwitchWiFi.switchwifi(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
-//			// Flash 1 for Smazer, 2 - Smamax, 3 - sZphyer
-//			RunFlashScript.runFlashScript("3");
 //			
 //			// Switch to IINVSYS Wifi After Flashing
 //			SwitchWiFi.switchwifi(loadProp("REMOTEWIFINAME"), loadProp("REMOTEWIFIPASSWORD"));
@@ -77,8 +76,11 @@ public class MobileAppWrappers extends GenericWrappers {
 //		CheckoutAndBuildApk build= new CheckoutAndBuildApk();
 //		build.buildAPK();
 		Reporter.startResult();//START TESTNG RESULT
+//			// Flash 1 for Smazer, 2 - Smamax, 3 - sZphyer
+//			RunFlashScript.runFlashScript("9","14");
+//		Flashscript_RegisterSerialno.runFlashScriptAndRegister("9","14");
 		 getUDID();
-		 checkWiFiAndContinue();
+//		 checkWiFiAndContinue();
 	        // Redirect console output to a file
 //		originalOut = System.out;
 //	        fileOut = new PrintStream(new FileOutputStream("test-output/console-output.txt"));

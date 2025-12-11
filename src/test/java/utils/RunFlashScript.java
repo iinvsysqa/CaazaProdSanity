@@ -6,8 +6,8 @@ import java.util.concurrent.*;
 import wrappers.MobileAppWrappers;
 
 public class RunFlashScript extends MobileAppWrappers {
-    public static void runFlashScript(String productId) {
-        String desktopPath = System.getProperty("user.home") + "\\Desktop\\Flash script";
+    public static void runFlashScript(String productId,String variant) {
+        String desktopPath = System.getProperty("user.home") + "\\Desktop\\flash_tool_automation_scripts";
         String pythonScriptPath = desktopPath + "\\Flash_Script.py";
 
         try {
@@ -23,24 +23,20 @@ public class RunFlashScript extends MobileAppWrappers {
             InputStream stdout = process.getInputStream();
             InputStream stderr = process.getErrorStream();
 
-            // Step 3: Define expected prompt-response pairs
-            //Product ID 1 - Auto Flashing for SmaZer product
-            //Product ID 2 - Auto Flashing for SmAmp_Max product
-            //Product ID 3 - Auto Flashing for SZephyr product
+          
             
-
+            //For CAAZA
             String[][] promptResponses = {
-                {"Select the product ID", productId + "\n"},
-                {"Select the Board Version", "5\n"},
-                {"Select eigher one partition (1/2) :", "2\n"},
-                {"Do you want flash OTA BIN?", "N\n"},
-                {"Select the Server Type", "2\n"},
-                {"Select the flash type", "1\n"},
-                {"Enter your last two digits", "KA\n"},
-                {"Flash / Erase Selection", "1\n"},
-                {"Enter Serial Port", loadProp("COM") + "\n"},
-                {"Press Enter to continue after switching to "
-                + "external network & To start the serial number addition process...", "\n"}
+            		{"Select the product ID", productId + "\n"},
+            		{"Select SmartPanel V2 Variant (1 to 18) :",variant+ "\n"},
+            		{"Do you want flash OTA BIN?", "N\n"},
+            		{"Select the Server Type", "2\n"},
+            		{"Select the flash type", "1\n"},
+            		{"Enter your last two digits", "BA\n"},
+            		{"Flash / Erase Selection", "1\n"},
+            		{"Enter Serial Port", loadProp("COM") + "\n"},
+            		{"Press Enter to continue after switching to "
+            				+ "external network & To start the serial number addition process...", "\n"}
             };
 
             // Step 4: Thread to handle live output reading and prompt detection

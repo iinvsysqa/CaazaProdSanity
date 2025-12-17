@@ -72,7 +72,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 		notificationpage=new NotificationPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		List<String> switchNames = Arrays.asList("Switch1");
+		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 		String Hierarchyname="apartment";
 		String Oldpassword =loadProp("PASSWORD");
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
@@ -167,7 +167,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			landingpage.enterPassword(Oldpassword);
 			landingpage.clickSignInButton();
 			homepage.enterFirstcard();
-			
+			homepage.clickPanel(0);
 			//resetdevice and check notifications 
 			
 			settingspage.openMenuPage();

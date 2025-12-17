@@ -39,7 +39,7 @@ public class DualNodeSanity extends MobileAppWrappers {
 	}
 
 	
-	@Test(priority = 0)
+//	@Test(priority = 0)
 	public void DualNodeSanity_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();

@@ -32,7 +32,7 @@ public class HierarchyPage  extends GenericWrappers{
 	private WebElement hierarchySaveButton;
 	@FindBy(xpath = "//*[@resource-id='Hierarchy_AddConfirm']")
 	private WebElement hierarchyAddConfirm;
-	@FindBy(xpath = "//*[@resource-id='Start a New HomeButton']")
+	@FindBy(xpath = "//*[@resource-id='Start a New SmartEcoButton']")
 	private WebElement StartaNewHomeButton;
 	@FindBy(xpath = "//*[@resource-id='SkipButton_Text']")
 	private WebElement SkipButton_Text;
@@ -41,7 +41,7 @@ public class HierarchyPage  extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='RetryButton']")
 	private WebElement RetryButton;
 	
-	@FindBy(xpath = "(//android.widget.TextView[@content-desc=\"com.CaaZa_Smart:id/Start a New HomeText\"])[2]")
+	@FindBy(xpath = "(//android.widget.TextView[@content-desc=\"com.CaaZa_Smart:id/Start a New SmartEcoText\"])[2]")
 	private WebElement StartaNewHomeText;
 	
 	private WebElement devicenameDeviceSettingsPage(String username) {
@@ -81,18 +81,19 @@ public class HierarchyPage  extends GenericWrappers{
 		
 		public void clickStartaNewHomeButton() {
 
-			if (isElementDisplayedCheck(StartaNewHomeButton)) {
+//			if (isElementDisplayedCheck(StartaNewHomeButton)) {
 				clickbyXpath(StartaNewHomeButton, "Start a new Home button");
-				}else if(isElementDisplayedCheck(RetryButton)) {
-					clickbyXpathwithoutReport("Retry button", RetryButton);
-					clickbyXpath(StartaNewHomeButton, "Start a new Home button");
-					}
+//				}else if(isElementDisplayedCheck(RetryButton)) {
+//					clickbyXpathwithoutReport("Retry button", RetryButton);
+//					clickbyXpath(StartaNewHomeButton, "Start a new Home button");
+//					}
 
 		
 			
 		}
 		public void clickStartanewhometext() {
 			clickbyXpath(StartaNewHomeText, "StartaNewHomeText");
+			
 		}
 		public void clickHierarchy_Back_Button() {
 			clickbyXpath(Hierarchy_Back_Button, "Hierachy back button");

@@ -63,7 +63,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 		profilepage = new Profilepage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		List<String> switchNames = Arrays.asList("Switch1");
+		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 		String Hierarchyname="apartment";
 		String Oldpassword =loadProp("PASSWORD");
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
@@ -97,8 +97,9 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			settingspage.openMenuPage();
-			settingspage.navigateMenuitemSettings();
+			settingspage.navigateSettingspage();
 			
 			settingspage.navigateHighVoltCutoff();
 			settingspage.clickHighVoltToggle();
@@ -106,11 +107,11 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.clickSavebutton();
 			settingspage.verifyHighvoltToast();
 			
-			killAndReopenApp();
-			homepage.enterFirstcard();
-			settingspage.openMenuPage();
-			settingspage.navigateMenuitemSettings();
-			
+//			killAndReopenApp();
+//			homepage.enterFirstcard();
+//			homepage.clickPanel(0);
+//			settingspage.openMenuPage();
+//			settingspage.navigateSettingspage();
 			settingspage.navigateHighVoltCutoff();
 			settingspage.verifyHighVoltValues("270");
 			settingspage.navigateback();
@@ -124,10 +125,11 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.clickSavebutton();
 			settingspage.verifyLowvoltToast();
 			
-			killAndReopenApp();
-			homepage.enterFirstcard();
-			settingspage.openMenuPage();
-			settingspage.navigateMenuitemSettings();
+//			killAndReopenApp();
+//			homepage.enterFirstcard();
+//			homepage.clickPanel(0);
+//			settingspage.openMenuPage();
+//			settingspage.navigateSettingspage();
 			
 			settingspage.navigateLowVoltCutoff();
 			settingspage.verifyLowVoltValues("170");

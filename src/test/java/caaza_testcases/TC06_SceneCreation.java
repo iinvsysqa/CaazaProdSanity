@@ -67,7 +67,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 		switchpage = new SwitchPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		List<String> switchNames = Arrays.asList("Switch1");
+		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 		String Hierarchyname="apartment";
 		String Oldpassword =loadProp("PASSWORD");
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
@@ -98,6 +98,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
+			
 			scenecreation.navigateScenecreationpage();
 			scenecreation.enterSceneName("A");			
 			scenecreation.setSceneCreation_Allswitches(1, "On");//it should be in this format On ,Off
@@ -127,8 +128,9 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 			
 			
 			//reset device
-			switchpage.clickMenuButton();
-			settingspage.navigateswitchmenuSettingspage();
+			homepage.clickPanel(0);
+			settingspage.openMenuPage();
+			settingspage.navigateSettingspage();
 			settingspage.resetDevice();
 			settingspage.navigateback();
 			

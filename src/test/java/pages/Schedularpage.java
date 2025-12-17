@@ -706,7 +706,7 @@ public class Schedularpage extends GenericWrappers {
 			clickbyXpath(Timer_Duration_Toggle, "Timer Duration Toggle");
 			entervaluebyXpath(Timer_Duration_Minutes_Input, "Duration_Minutes_Input", "1");
 			clickbyXpath(SaveButton, "Save button");
-			clickbyXpath(Menu_CloseBtn, "MenuClose Button");
+//			clickbyXpath(Menu_CloseBtn, "MenuClose Button");
 			clickbyXpath(SwitchBackButton, "Switch Backbutton");
 			clickbyXpath(switchToggle(i), "Switch Toggle");
 			

@@ -48,6 +48,9 @@ public class SwitchPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='SettingsItem_ResetDevice']")
 	private WebElement resetDeviceButton;
 	
+	@FindBy(xpath = "//*[@resource-id='SettingsItem_RemoveDevice']")
+	private WebElement removeDeviceButton;
+	
 	@FindBy(xpath = "//*[@resource-id='CustomModal_ConfirmButton']")
 	private WebElement resetConfirmationButton;
 	
@@ -142,6 +145,9 @@ public class SwitchPage extends GenericWrappers{
 	
 	public void clickResetDeviceButton() {
 		clickbyXpath(resetDeviceButton, "Click On Reset Device Button");
+	}
+	public void clickRemoveDeviceButton() {
+		clickbyXpath(removeDeviceButton, "Click On Reset Device Button");
 	}
 	
 	public void clickResetConfirmationButton() {

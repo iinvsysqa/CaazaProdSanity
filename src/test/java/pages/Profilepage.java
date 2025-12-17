@@ -94,7 +94,7 @@ public class Profilepage extends GenericWrappers{
 	private WebElement Homecontainer;
 	@FindBy(xpath = "//*[@resource-id='Add SwitchboardText']")
 	private WebElement AddSwitchboardText;
-	@FindBy(xpath = "//*[@resource-id='Tab_Apartment_Icon']")
+	@FindBy(xpath = "//*[@resource-id='Tab_Apartment_Container']")
 	private WebElement Apartment_Icon;
 	@FindBy(xpath = "//*[@resource-id='Header_MenuButton']")
 	private WebElement MenuButton;

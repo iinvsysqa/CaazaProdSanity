@@ -64,7 +64,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 		profilepage = new Profilepage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		List<String> switchNames = Arrays.asList("Switch1");
+		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 		String Hierarchyname="apartment";
 		String Oldpassword =loadProp("PASSWORD");
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
@@ -98,6 +98,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 			adddevicepage.EnterNode(node,switchNames);			
 		
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();

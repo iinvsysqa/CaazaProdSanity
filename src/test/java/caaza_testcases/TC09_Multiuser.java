@@ -69,7 +69,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 		userpage = new UsersPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-		List<String> switchNames = Arrays.asList("Switch1");
+		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 		String Hierarchyname="apartment";
 		String Oldpassword =loadProp("PASSWORD");
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
@@ -119,9 +119,9 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.clickFullAccessradioButton();
 			userpage.SelectApartmentDevices("Apartment");
 			userpage.clickdeviceShareButton();
-			userpage.enterUsername("Autotest");
+			userpage.enterUsername(loadProp("DUMMYUSER"));
 			userpage.clickSendbutton();
-			userpage.checkAddedUser("Autotest");
+			userpage.checkAddedUser(loadProp("DUMMYUSER"));
 			userpage.navigateBack();
 			
 			profilepage.navigateSettingsbtn();
@@ -131,7 +131,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 			
 			//loginanotheruser
-			landingpage.enterUserName("Autotest");
+			landingpage.enterUserName(loadProp("DUMMYUSER"));
 			landingpage.enterPassword("Welcome@123");
 			landingpage.clickSignInButton();
             
@@ -142,6 +142,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 			
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
@@ -160,6 +161,8 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 //          navigate to shared user and check created schedule showing to main user or not
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
+			schedular.enter_Switchpage(1);
 			schedular.createSchedules(1, 2, 1, 3);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
 			homepage.navigateback();
 			homepage.navigateback();
@@ -170,6 +173,8 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			landingpage.enterPassword(Oldpassword);
 			landingpage.clickSignInButton();
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
+			schedular.enter_Switchpage(1);
 			switchpage.NavigatetoSwitches(1);
 			schedular.NavigateOtherSchedulepage();
 			schedular.verifyOtherUserscheduleSchedules();
@@ -185,10 +190,10 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.clickPartialAccessRadioButton();
 			userpage.SelectApartmentDevices("Apartment");
 			userpage.clickdeviceShareButton();
-			userpage.enterUsername("Autotest");
+			userpage.enterUsername(loadProp("DUMMYUSER"));
 			userpage.clickSendbutton();
 			userpage.clickContinueButton();
-			userpage.checkAddedUser("Autotest");
+			userpage.checkAddedUser(loadProp("DUMMYUSER"));
 			userpage.navigateBack();
 			
 			profilepage.navigateSettingsbtn();
@@ -198,7 +203,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 			
 			//loginanotheruser
-			landingpage.enterUserName("Autotest");
+			landingpage.enterUserName(loadProp("DUMMYUSER"));
 			landingpage.enterPassword("Welcome@123");
 			landingpage.clickSignInButton();
             
@@ -207,9 +212,9 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.sharedUserHierarchyBox();
 			//get analytics value
 			
+		
 			homepage.enterFirstcard();
-			homepage.navigateback();
-			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			switchpage.NavigatetoSwitches(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
@@ -244,10 +249,10 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.clickViewOnlyAcessRadioButton();
 			userpage.SelectApartmentDevices("Apartment");
 			userpage.clickdeviceShareButton();
-			userpage.enterUsername("Autotest");
+			userpage.enterUsername(loadProp("DUMMYUSER"));
 			userpage.clickSendbutton();
 			userpage.clickContinueButton();
-			userpage.checkAddedUser("Autotest");
+			userpage.checkAddedUser(loadProp("DUMMYUSER"));
 			userpage.navigateBack();
 			
 			profilepage.navigateSettingsbtn();
@@ -255,7 +260,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			profilepage.logoutConfirmationBtn();
 			
 			
-			landingpage.enterUserName("Autotest");
+			landingpage.enterUserName(loadProp("DUMMYUSER"));
 			landingpage.enterPassword("Welcome@123");
 			landingpage.clickSignInButton();
             
@@ -264,6 +269,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			userpage.sharedUserHierarchyBox();
 			
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			Thread.sleep(5000);
 			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
@@ -286,6 +292,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			
 			
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			settingspage.openMenuPage();
 			settingspage.navigateswitchmenuSettingspage();
 			settingspage.resetDevice();

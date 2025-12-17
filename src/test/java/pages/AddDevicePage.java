@@ -65,8 +65,7 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//*[@resource-id='Pairing_mode_ButtonText']")
 	private WebElement nextButtonPairing;
 
-	@FindBy(xpath = "//*[@resource-id='Start_Pairing_Button_Text']")
-	private WebElement startPairingButton;
+	
 
 	@FindBy(xpath = "//*[@resource-id='com.android.permissioncontroller:id/permission_allow_foreground_only_button']")
 	private WebElement locationPopUp;
@@ -321,13 +320,13 @@ public class AddDevicePage extends GenericWrappers {
 	private WebElement switchName1TextBox;
 	
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Select the field\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"Select the type\"]")
 	private WebElement switchTypeDropdownBtn;
 	
 	@FindBy(xpath = "(//android.widget.TextView[@text=\"Select the field\"])[1]")
 	private WebElement switchType1DropdownBtn;
 	
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Fan\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"fan\"]")
 	private WebElement switchTypeFanButton;
 	@FindBy(xpath = "//android.widget.TextView[@text=\"Fridge\"]")
 	private WebElement switchTypeFridgeButton;
@@ -338,6 +337,9 @@ public class AddDevicePage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.EditText[@text=\\\"Enter name of your smart panel\\\"]")
 	private WebElement smartpanelPlaceholder;
 	
+//    @FindBy(xpath = "//*[@resource-id='Start_Pairing_Button_Text']")
+    @FindBy(xpath = "//android.widget.TextView[@content-desc=\"com.CaaZa_Smart:id/Start_Pairing_Button_Text\" and @text=\"Start Pairing\"]")
+    private WebElement startPairingButton;
 	private WebElement switchTextboxes(int container) {
 	    return driver.findElement(By.xpath("(//android.widget.EditText[@text='Enter Switch Name'])[" + container + "]"));
 	}
@@ -373,14 +375,14 @@ public class AddDevicePage extends GenericWrappers {
 	
 	
 	public void clickFanType() {
-		clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
-//		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
-//			
-//			clickbyXpath(switchTypeFanButton, " Click Fan option ");
-//		}else {
-//			clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
-//			
-//		}
+//		clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
+		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
+			
+			clickbyXpath(switchTypeFanButton, " Click Fan option ");
+		}else {
+			clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
+			
+		}
 	}
 	public void clickAddswitchSaveBtn() {
 		clickbyXpath(addSwitchSaveBtn, "Panel name save button ");
@@ -735,7 +737,7 @@ public class AddDevicePage extends GenericWrappers {
 		passcommand = new PassSTComment();
 		
 		//verifysigninpage();
-//		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
+		homepage.WifiSwitch(loadProp("WIFINAME"), loadProp("WIFIPASSWORD"));
 		initiatepairing(mode);
 	}
 
@@ -816,7 +818,6 @@ public class AddDevicePage extends GenericWrappers {
 				clickWifiCancelButton();
 //				blepermissionokpopup();
           
-				Thread.sleep(30000);
 				
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
 					blepermissionokpopup();

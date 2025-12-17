@@ -1,0 +1,3101 @@
+I (20:18:09.718)(14:48:09:376) TDRV: Temp periodic tmr exp
+I (20:18:09.718)(14:48:09:377) 17: read connectivity_mode_status=1
+I (20:18:09.719)(14:48:09:377) 17: read connectivity_mode_status=1
+I (20:18:09.719)(14:48:09:378) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:10.676)(14:48:10:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:10.676)(14:48:10:335) 2: B13 2 0 30 7
+I (20:18:10.677)(14:48:10:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:10.678)(14:48:10:336) BLE: ble curr user count 0 
+I (20:18:10.678)(14:48:10:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:10.679)(14:48:10:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:10.680)(14:48:10:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:10.680)(14:48:10:339) 3: C30:0
+I (20:18:10.681)(14:48:10:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:10.682)(14:48:10:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:10.683)(14:48:10:341) 2: B15 2 0 0 30 7
+I (20:18:12.018)(14:48:12:676) TDRV: Temp periodic tmr exp
+I (20:18:12.018)(14:48:12:677) 17: read connectivity_mode_status=1
+I (20:18:12.019)(14:48:12:678) 17: read connectivity_mode_status=1
+I (20:18:12.020)(14:48:12:678) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:12.712)(14:48:12:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:13.213)(14:48:13:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:13.214)(14:48:13:872) 4: D10 0 1 0 0 0 216000 0 0 5 0 25
+I (20:18:14.318)(14:48:14:976) TDRV: Temp periodic tmr exp
+I (20:18:14.318)(14:48:14:977) 17: read connectivity_mode_status=1
+I (20:18:14.319)(14:48:14:978) 17: read connectivity_mode_status=1
+E (20:18:14.320)(14:48:14:978) 7: G1 0 0x48 48.19
+I (20:18:14.321)(14:48:14:979) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:18:14.321)(14:48:14:979) 7: G5 48.19°C 0 0 64
+I (20:18:15.676)(14:48:15:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:15.676)(14:48:15:335) 2: B13 2 0 30 7
+I (20:18:15.677)(14:48:15:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:15.678)(14:48:15:336) BLE: ble curr user count 0 
+I (20:18:15.678)(14:48:15:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:15.679)(14:48:15:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:15.680)(14:48:15:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:15.681)(14:48:15:339) 3: C30:0
+I (20:18:15.681)(14:48:15:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:15.682)(14:48:15:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:15.683)(14:48:15:341) 2: B15 2 0 0 30 7
+I (20:18:15.713)(14:48:15:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:15.714)(14:48:15:372) 4: D10 0 1 0 0 0 216000 0 0 0 0 25
+E (20:18:16.279)(14:48:16:938) 1: A20 0 0
+I (20:18:16.618)(14:48:16:276) TDRV: Temp periodic tmr exp
+I (20:18:16.618)(14:48:16:277) 17: read connectivity_mode_status=1
+I (20:18:16.619)(14:48:16:278) 17: read connectivity_mode_status=1
+I (20:18:16.620)(14:48:16:278) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:17.712)(14:48:17:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:18.918)(14:48:18:576) TDRV: Temp periodic tmr exp
+I (20:18:18.918)(14:48:18:577) 17: read connectivity_mode_status=1
+I (20:18:18.919)(14:48:18:577) 17: read connectivity_mode_status=1
+I (20:18:18.920)(14:48:18:578) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:20.676)(14:48:20:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:20.676)(14:48:20:335) 2: B13 2 0 30 7
+I (20:18:20.677)(14:48:20:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:20.678)(14:48:20:336) BLE: ble curr user count 0 
+I (20:18:20.678)(14:48:20:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:20.679)(14:48:20:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:20.680)(14:48:20:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:20.680)(14:48:20:339) 3: C30:0
+I (20:18:20.681)(14:48:20:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:20.682)(14:48:20:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:20.683)(14:48:20:341) 2: B15 2 0 0 30 7
+I (20:18:20.713)(14:48:20:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:20.714)(14:48:20:372) 4: D10 0 1 0 0 0 216000 0 0 1 0 25
+I (20:18:21.218)(14:48:21:876) TDRV: Temp periodic tmr exp
+I (20:18:21.218)(14:48:21:877) 17: read connectivity_mode_status=1
+I (20:18:21.219)(14:48:21:877) 17: read connectivity_mode_status=1
+I (20:18:21.219)(14:48:21:878) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:22.712)(14:48:22:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:23.213)(14:48:23:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:23.214)(14:48:23:872) 4: D10 0 1 0 0 0 216000 0 0 2 0 25
+I (20:18:23.518)(14:48:23:176) TDRV: Temp periodic tmr exp
+I (20:18:23.518)(14:48:23:177) 17: read connectivity_mode_status=1
+I (20:18:23.519)(14:48:23:178) 17: read connectivity_mode_status=1
+I (20:18:23.520)(14:48:23:178) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:25.676)(14:48:25:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:25.676)(14:48:25:335) 2: B13 2 0 30 7
+I (20:18:25.677)(14:48:25:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:25.678)(14:48:25:336) BLE: ble curr user count 0 
+I (20:18:25.678)(14:48:25:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:25.679)(14:48:25:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:25.680)(14:48:25:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:25.680)(14:48:25:339) 3: C30:0
+I (20:18:25.681)(14:48:25:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:25.682)(14:48:25:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:25.683)(14:48:25:341) 2: B15 2 0 0 30 7
+I (20:18:25.713)(14:48:25:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:25.714)(14:48:25:372) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+I (20:18:25.818)(14:48:25:476) TDRV: Temp periodic tmr exp
+I (20:18:25.818)(14:48:25:477) 17: read connectivity_mode_status=1
+I (20:18:25.819)(14:48:25:477) 17: read connectivity_mode_status=1
+I (20:18:25.820)(14:48:25:478) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:27.712)(14:48:27:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:28.118)(14:48:28:776) TDRV: Temp periodic tmr exp
+I (20:18:28.118)(14:48:28:777) 17: read connectivity_mode_status=1
+I (20:18:28.119)(14:48:28:777) 17: read connectivity_mode_status=1
+I (20:18:28.120)(14:48:28:778) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:28.213)(14:48:28:871) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:28.214)(14:48:28:872) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+E (20:18:28.413)(14:48:28:071) 2: B9 0
+I (20:18:30.418)(14:48:30:076) TDRV: Temp periodic tmr exp
+I (20:18:30.418)(14:48:30:077) 17: read connectivity_mode_status=1
+I (20:18:30.419)(14:48:30:078) 17: read connectivity_mode_status=1
+E (20:18:30.420)(14:48:30:078) 7: G1 0 0x48 48.50
+I (20:18:30.420)(14:48:30:079) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:18:30.421)(14:48:30:079) 7: G5 48.50°C 0 0 71
+I (20:18:30.676)(14:48:30:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:30.677)(14:48:30:335) 2: B13 2 0 30 7
+I (20:18:30.678)(14:48:30:336) TAG_INTF_MTRX: HP_FR 25204 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:30.678)(14:48:30:336) BLE: ble curr user count 0 
+I (20:18:30.678)(14:48:30:337) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:30.679)(14:48:30:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:30.680)(14:48:30:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:30.681)(14:48:30:339) 3: C30:0
+I (20:18:30.682)(14:48:30:340) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:30.682)(14:48:30:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:30.683)(14:48:30:341) 2: B15 2 0 0 30 7
+I (20:18:32.712)(14:48:32:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:32.718)(14:48:32:376) TDRV: Temp periodic tmr exp
+I (20:18:32.718)(14:48:32:376) 17: read connectivity_mode_status=1
+I (20:18:32.719)(14:48:32:377) 17: read connectivity_mode_status=1
+I (20:18:32.719)(14:48:32:377) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:33.213)(14:48:33:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:33.214)(14:48:33:872) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+I (20:18:35.018)(14:48:35:676) TDRV: Temp periodic tmr exp
+I (20:18:35.018)(14:48:35:677) 17: read connectivity_mode_status=1
+I (20:18:35.019)(14:48:35:678) 17: read connectivity_mode_status=1
+I (20:18:35.020)(14:48:35:678) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:35.676)(14:48:35:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:35.676)(14:48:35:335) 2: B13 2 0 30 7
+E (20:18:35.678)(14:48:35:336) 2: B3 1406137 215570 163622 163587 0 0 0 1 7402
+E (20:18:35.678)(14:48:35:336) 2: B4 0 0 0 25844 0 0 24365 -39 582
+I (20:18:35.679)(14:48:35:337) SMAX: Name rx_process hghwtrmrk 1948 tsk_st 2
+I (20:18:35.680)(14:48:35:338) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:35.680)(14:48:35:338) BLE: ble curr user count 0 
+I (20:18:35.680)(14:48:35:339) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:35.681)(14:48:35:340) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:35.682)(14:48:35:340) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:35.683)(14:48:35:341) 3: C30:0
+I (20:18:35.684)(14:48:35:342) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:35.684)(14:48:35:342) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:35.685)(14:48:35:344) 2: B15 2 0 0 30 7
+E (20:18:36.316)(14:48:36:975) 1: A20 0 0
+I (20:18:37.318)(14:48:37:976) TDRV: Temp periodic tmr exp
+I (20:18:37.319)(14:48:37:977) 17: read connectivity_mode_status=1
+I (20:18:37.320)(14:48:37:978) 17: read connectivity_mode_status=1
+I (20:18:37.320)(14:48:37:979) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:37.712)(14:48:37:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:39.619)(14:48:39:277) TDRV: Temp periodic tmr exp
+I (20:18:39.619)(14:48:39:278) 17: read connectivity_mode_status=1
+I (20:18:39.620)(14:48:39:279) 17: read connectivity_mode_status=1
+I (20:18:39.621)(14:48:39:279) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:40.676)(14:48:40:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:40.677)(14:48:40:335) 2: B13 2 0 30 7
+I (20:18:40.677)(14:48:40:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:40.678)(14:48:40:336) BLE: ble curr user count 0 
+I (20:18:40.678)(14:48:40:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:40.679)(14:48:40:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:40.680)(14:48:40:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:40.681)(14:48:40:339) 3: C30:0
+I (20:18:40.681)(14:48:40:340) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:40.682)(14:48:40:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:40.683)(14:48:40:341) 2: B15 2 0 0 30 7
+I (20:18:40.712)(14:48:40:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:41.919)(14:48:41:577) TDRV: Temp periodic tmr exp
+I (20:18:41.919)(14:48:41:578) 17: read connectivity_mode_status=1
+I (20:18:41.920)(14:48:41:578) 17: read connectivity_mode_status=1
+I (20:18:41.921)(14:48:41:579) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:43.213)(14:48:43:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:43.214)(14:48:43:872) 4: D10 0 1 0 0 0 216000 0 0 4 0 25
+I (20:18:44.219)(14:48:44:877) TDRV: Temp periodic tmr exp
+I (20:18:44.219)(14:48:44:878) 17: read connectivity_mode_status=1
+I (20:18:44.220)(14:48:44:878) 17: read connectivity_mode_status=1
+I (20:18:44.220)(14:48:44:879) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:45.676)(14:48:45:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:45.676)(14:48:45:335) 2: B13 2 0 30 7
+I (20:18:45.677)(14:48:45:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:45.678)(14:48:45:336) BLE: ble curr user count 0 
+I (20:18:45.678)(14:48:45:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:45.679)(14:48:45:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:45.680)(14:48:45:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:45.680)(14:48:45:339) 3: C30:0
+I (20:18:45.681)(14:48:45:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:45.682)(14:48:45:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:45.683)(14:48:45:341) 2: B15 2 0 0 30 7
+I (20:18:45.712)(14:48:45:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:46.519)(14:48:46:177) TDRV: Temp periodic tmr exp
+I (20:18:46.519)(14:48:46:178) 17: read connectivity_mode_status=1
+I (20:18:46.520)(14:48:46:179) 17: read connectivity_mode_status=1
+E (20:18:46.521)(14:48:46:180) 7: G1 0 0x48 48.62
+I (20:18:46.522)(14:48:46:180) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:18:46.522)(14:48:46:180) 7: G5 48.62°C 0 0 78
+I (20:18:48.819)(14:48:48:477) TDRV: Temp periodic tmr exp
+I (20:18:48.819)(14:48:48:478) 17: read connectivity_mode_status=1
+I (20:18:48.820)(14:48:48:478) 17: read connectivity_mode_status=1
+I (20:18:48.820)(14:48:48:479) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:50.676)(14:48:50:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:50.676)(14:48:50:335) 2: B13 2 0 30 7
+I (20:18:50.677)(14:48:50:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:50.678)(14:48:50:336) BLE: ble curr user count 0 
+I (20:18:50.678)(14:48:50:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:50.679)(14:48:50:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:50.680)(14:48:50:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:50.680)(14:48:50:339) 3: C30:0
+I (20:18:50.681)(14:48:50:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:50.682)(14:48:50:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:50.683)(14:48:50:341) 2: B15 2 0 0 30 7
+I (20:18:50.712)(14:48:50:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:50.714)(14:48:50:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:18:50.714)(14:48:50:372) 4: D10 0 1 0 0 0 216000 0 0 0 0 25
+I (20:18:51.119)(14:48:51:777) TDRV: Temp periodic tmr exp
+I (20:18:51.119)(14:48:51:778) 17: read connectivity_mode_status=1
+I (20:18:51.120)(14:48:51:779) 17: read connectivity_mode_status=1
+I (20:18:51.121)(14:48:51:779) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:53.419)(14:48:53:077) TDRV: Temp periodic tmr exp
+I (20:18:53.419)(14:48:53:078) 17: read connectivity_mode_status=1
+I (20:18:53.420)(14:48:53:079) 17: read connectivity_mode_status=1
+I (20:18:53.421)(14:48:53:079) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:18:55.676)(14:48:55:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:18:55.676)(14:48:55:335) 2: B13 2 0 30 7
+I (20:18:55.677)(14:48:55:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:18:55.678)(14:48:55:336) BLE: ble curr user count 0 
+I (20:18:55.678)(14:48:55:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:18:55.679)(14:48:55:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:18:55.679)(14:48:55:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:18:55.680)(14:48:55:339) 3: C30:0
+I (20:18:55.681)(14:48:55:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:18:55.682)(14:48:55:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:18:55.683)(14:48:55:341) 2: B15 2 0 0 30 7
+I (20:18:55.712)(14:48:55:370) PCNT: NVM_COMMIT_CNT 582
+I (20:18:55.719)(14:48:55:377) TDRV: Temp periodic tmr exp
+I (20:18:55.719)(14:48:55:377) 17: read connectivity_mode_status=1
+I (20:18:55.720)(14:48:55:378) 17: read connectivity_mode_status=1
+I (20:18:55.720)(14:48:55:378) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:18:56.355)(14:48:56:014) 1: A20 0 0
+I (20:18:58.019)(14:48:58:677) TDRV: Temp periodic tmr exp
+I (20:18:58.019)(14:48:58:678) 17: read connectivity_mode_status=1
+I (20:18:58.020)(14:48:58:679) 17: read connectivity_mode_status=1
+I (20:18:58.021)(14:48:58:679) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:18:58.413)(14:48:58:071) 2: B9 0
+I (20:19:00.319)(14:49:00:977) TDRV: Temp periodic tmr exp
+I (20:19:00.319)(14:49:00:978) 17: read connectivity_mode_status=1
+I (20:19:00.320)(14:49:00:978) 17: read connectivity_mode_status=1
+I (20:19:00.321)(14:49:00:979) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:00.676)(14:49:00:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:00.676)(14:49:00:335) 2: B13 2 0 30 7
+I (20:19:00.677)(14:49:00:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:00.678)(14:49:00:336) BLE: ble curr user count 0 
+I (20:19:00.678)(14:49:00:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:00.679)(14:49:00:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:00.679)(14:49:00:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:00.680)(14:49:00:339) 3: C30:0
+I (20:19:00.681)(14:49:00:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:00.682)(14:49:00:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:00.683)(14:49:00:341) 2: B15 2 0 0 30 7
+I (20:19:00.712)(14:49:00:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:00.714)(14:49:00:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:19:00.714)(14:49:00:372) 4: D10 0 1 0 0 0 216000 0 0 1 0 25
+I (20:19:02.619)(14:49:02:277) TDRV: Temp periodic tmr exp
+I (20:19:02.619)(14:49:02:278) 17: read connectivity_mode_status=1
+I (20:19:02.620)(14:49:02:279) 17: read connectivity_mode_status=1
+E (20:19:02.621)(14:49:02:279) 7: G1 0 0x48 48.44
+I (20:19:02.621)(14:49:02:280) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:19:02.622)(14:49:02:280) 7: G5 48.44°C 0 0 85
+I (20:19:04.919)(14:49:04:577) TDRV: Temp periodic tmr exp
+I (20:19:04.919)(14:49:04:578) 17: read connectivity_mode_status=1
+I (20:19:04.920)(14:49:04:578) 17: read connectivity_mode_status=1
+I (20:19:04.921)(14:49:04:579) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:05.676)(14:49:05:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:05.676)(14:49:05:335) 2: B13 2 0 30 7
+E (20:19:05.678)(14:49:05:336) 2: B3 1415501 217059 164751 164716 0 0 0 1 7462
+E (20:19:05.678)(14:49:05:336) 2: B4 0 0 0 25840 0 0 24365 -40 582
+I (20:19:05.679)(14:49:05:337) SMAX: Name rx_process hghwtrmrk 1948 tsk_st 2
+I (20:19:05.680)(14:49:05:338) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:05.680)(14:49:05:338) BLE: ble curr user count 0 
+I (20:19:05.680)(14:49:05:339) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:05.681)(14:49:05:340) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:05.682)(14:49:05:340) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:05.683)(14:49:05:341) 3: C30:0
+I (20:19:05.684)(14:49:05:342) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:05.684)(14:49:05:342) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:05.685)(14:49:05:344) 2: B15 2 0 0 30 7
+I (20:19:05.712)(14:49:05:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:07.219)(14:49:07:877) TDRV: Temp periodic tmr exp
+I (20:19:07.219)(14:49:07:878) 17: read connectivity_mode_status=1
+I (20:19:07.220)(14:49:07:878) 17: read connectivity_mode_status=1
+I (20:19:07.220)(14:49:07:879) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:09.519)(14:49:09:177) TDRV: Temp periodic tmr exp
+I (20:19:09.519)(14:49:09:178) 17: read connectivity_mode_status=1
+I (20:19:09.520)(14:49:09:179) 17: read connectivity_mode_status=1
+I (20:19:09.521)(14:49:09:179) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:10.676)(14:49:10:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:10.676)(14:49:10:335) 2: B13 2 0 30 7
+I (20:19:10.677)(14:49:10:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:10.678)(14:49:10:336) BLE: ble curr user count 0 
+I (20:19:10.678)(14:49:10:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:10.679)(14:49:10:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:10.680)(14:49:10:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:10.680)(14:49:10:339) 3: C30:0
+I (20:19:10.681)(14:49:10:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:10.682)(14:49:10:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:10.683)(14:49:10:341) 2: B15 2 0 0 30 7
+I (20:19:10.712)(14:49:10:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:11.819)(14:49:11:477) TDRV: Temp periodic tmr exp
+I (20:19:11.819)(14:49:11:478) 17: read connectivity_mode_status=1
+I (20:19:11.820)(14:49:11:478) 17: read connectivity_mode_status=1
+I (20:19:11.821)(14:49:11:479) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:13.213)(14:49:13:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:19:13.214)(14:49:13:872) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+I (20:19:14.119)(14:49:14:777) TDRV: Temp periodic tmr exp
+I (20:19:14.119)(14:49:14:778) 17: read connectivity_mode_status=1
+I (20:19:14.120)(14:49:14:779) 17: read connectivity_mode_status=1
+I (20:19:14.121)(14:49:14:779) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:15.676)(14:49:15:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:15.676)(14:49:15:335) 2: B13 2 0 30 7
+I (20:19:15.677)(14:49:15:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:15.678)(14:49:15:336) BLE: ble curr user count 0 
+I (20:19:15.678)(14:49:15:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:15.679)(14:49:15:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:15.680)(14:49:15:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:15.680)(14:49:15:339) 3: C30:0
+I (20:19:15.681)(14:49:15:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:15.682)(14:49:15:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:15.683)(14:49:15:341) 2: B15 2 0 0 30 7
+I (20:19:15.712)(14:49:15:370) PCNT: NVM_COMMIT_CNT 582
+E (20:19:16.393)(14:49:16:052) 1: A20 0 0
+I (20:19:16.419)(14:49:16:077) TDRV: Temp periodic tmr exp
+I (20:19:16.419)(14:49:16:077) 17: read connectivity_mode_status=1
+I (20:19:16.420)(14:49:16:078) 17: read connectivity_mode_status=1
+I (20:19:16.421)(14:49:16:079) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:18.719)(14:49:18:377) TDRV: Temp periodic tmr exp
+I (20:19:18.719)(14:49:18:378) 17: read connectivity_mode_status=1
+I (20:19:18.720)(14:49:18:378) 17: read connectivity_mode_status=1
+E (20:19:18.720)(14:49:18:379) 7: G1 0 0x48 48.50
+I (20:19:18.721)(14:49:18:379) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:19:18.721)(14:49:18:380) 7: G5 48.50°C 0 0 92
+I (20:19:20.676)(14:49:20:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:20.676)(14:49:20:335) 2: B13 2 0 30 7
+I (20:19:20.677)(14:49:20:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:20.678)(14:49:20:336) BLE: ble curr user count 0 
+I (20:19:20.678)(14:49:20:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:20.679)(14:49:20:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:20.680)(14:49:20:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:20.681)(14:49:20:339) 3: C30:0
+I (20:19:20.681)(14:49:20:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:20.682)(14:49:20:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:20.683)(14:49:20:341) 2: B15 2 0 0 30 7
+I (20:19:20.712)(14:49:20:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:20.714)(14:49:20:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:19:20.714)(14:49:20:372) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+I (20:19:21.019)(14:49:21:677) TDRV: Temp periodic tmr exp
+I (20:19:21.019)(14:49:21:678) 17: read connectivity_mode_status=1
+I (20:19:21.020)(14:49:21:679) 17: read connectivity_mode_status=1
+I (20:19:21.021)(14:49:21:679) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:23.319)(14:49:23:977) TDRV: Temp periodic tmr exp
+I (20:19:23.319)(14:49:23:978) 17: read connectivity_mode_status=1
+I (20:19:23.320)(14:49:23:979) 17: read connectivity_mode_status=1
+I (20:19:23.321)(14:49:23:979) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:25.619)(14:49:25:277) TDRV: Temp periodic tmr exp
+I (20:19:25.619)(14:49:25:278) 17: read connectivity_mode_status=1
+I (20:19:25.620)(14:49:25:279) 17: read connectivity_mode_status=1
+I (20:19:25.621)(14:49:25:279) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:25.676)(14:49:25:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:25.676)(14:49:25:334) 2: B13 2 0 30 7
+I (20:19:25.677)(14:49:25:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:25.677)(14:49:25:336) BLE: ble curr user count 0 
+I (20:19:25.677)(14:49:25:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:25.679)(14:49:25:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:25.679)(14:49:25:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:25.680)(14:49:25:338) 3: C30:0
+I (20:19:25.681)(14:49:25:340) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:25.682)(14:49:25:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:25.683)(14:49:25:341) 2: B15 2 0 0 30 7
+I (20:19:25.712)(14:49:25:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:27.919)(14:49:27:577) TDRV: Temp periodic tmr exp
+I (20:19:27.919)(14:49:27:578) 17: read connectivity_mode_status=1
+I (20:19:27.920)(14:49:27:579) 17: read connectivity_mode_status=1
+I (20:19:27.921)(14:49:27:579) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:28.213)(14:49:28:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:19:28.214)(14:49:28:872) 4: D10 0 1 0 0 0 216000 0 0 1 0 25
+E (20:19:28.413)(14:49:28:071) 2: B9 0
+I (20:19:30.219)(14:49:30:877) TDRV: Temp periodic tmr exp
+I (20:19:30.219)(14:49:30:878) 17: read connectivity_mode_status=1
+I (20:19:30.220)(14:49:30:878) 17: read connectivity_mode_status=1
+I (20:19:30.220)(14:49:30:879) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:30.676)(14:49:30:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:30.676)(14:49:30:335) 2: B13 2 0 30 7
+I (20:19:30.677)(14:49:30:335) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:30.678)(14:49:30:336) BLE: ble curr user count 0 
+I (20:19:30.678)(14:49:30:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:30.679)(14:49:30:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:30.680)(14:49:30:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:30.680)(14:49:30:339) 3: C30:0
+I (20:19:30.681)(14:49:30:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:30.682)(14:49:30:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:30.683)(14:49:30:341) 2: B15 2 0 0 30 7
+I (20:19:30.712)(14:49:30:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:32.519)(14:49:32:177) TDRV: Temp periodic tmr exp
+I (20:19:32.519)(14:49:32:178) 17: read connectivity_mode_status=1
+I (20:19:32.520)(14:49:32:179) 17: read connectivity_mode_status=1
+I (20:19:32.521)(14:49:32:179) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:34.819)(14:49:34:477) TDRV: Temp periodic tmr exp
+I (20:19:34.819)(14:49:34:478) 17: read connectivity_mode_status=1
+I (20:19:34.820)(14:49:34:478) 17: read connectivity_mode_status=1
+E (20:19:34.820)(14:49:34:479) 7: G1 0 0x48 48.06
+I (20:19:34.821)(14:49:34:480) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:19:34.822)(14:49:34:480) 7: G5 48.06°C 0 0 99
+I (20:19:35.676)(14:49:35:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:35.676)(14:49:35:335) 2: B13 2 0 30 7
+E (20:19:35.678)(14:49:35:336) 2: B3 1424823 218506 165850 165815 0 0 0 1 7522
+E (20:19:35.678)(14:49:35:336) 2: B4 0 0 0 25840 0 0 24365 -44 582
+I (20:19:35.679)(14:49:35:337) SMAX: Name rx_process hghwtrmrk 1948 tsk_st 2
+I (20:19:35.680)(14:49:35:338) TAG_INTF_MTRX: HP_FR 25840 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:35.680)(14:49:35:338) BLE: ble curr user count 0 
+I (20:19:35.680)(14:49:35:339) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:35.681)(14:49:35:340) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:35.682)(14:49:35:340) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:35.683)(14:49:35:341) 3: C30:0
+I (20:19:35.684)(14:49:35:342) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:35.684)(14:49:35:343) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:35.685)(14:49:35:344) 2: B15 2 0 0 30 7
+I (20:19:35.712)(14:49:35:370) PCNT: NVM_COMMIT_CNT 582
+E (20:19:36.428)(14:49:36:086) 1: A20 0 0
+I (20:19:37.119)(14:49:37:777) TDRV: Temp periodic tmr exp
+I (20:19:37.119)(14:49:37:778) 17: read connectivity_mode_status=1
+I (20:19:37.120)(14:49:37:779) 17: read connectivity_mode_status=1
+I (20:19:37.121)(14:49:37:779) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:38.213)(14:49:38:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:19:38.214)(14:49:38:872) 4: D10 0 1 0 0 0 217000 0 0 3 0 25
+I (20:19:39.419)(14:49:39:077) TDRV: Temp periodic tmr exp
+I (20:19:39.419)(14:49:39:078) 17: read connectivity_mode_status=1
+I (20:19:39.420)(14:49:39:078) 17: read connectivity_mode_status=1
+I (20:19:39.421)(14:49:39:079) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:19:40.676)(14:49:40:334) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:19:40.676)(14:49:40:335) 2: B13 2 0 30 7
+I (20:19:40.677)(14:49:40:335) TAG_INTF_MTRX: HP_FR 25844 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:19:40.678)(14:49:40:336) BLE: ble curr user count 0 
+I (20:19:40.678)(14:49:40:336) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:19:40.679)(14:49:40:337) TAG_INTF_MTRX: Remote_cnt 1
+I (20:19:40.680)(14:49:40:338) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:40.680)(14:49:40:339) 3: C30:0
+I (20:19:40.681)(14:49:40:339) 2: event 30 intrf_type 7 ucstae 0
+I (20:19:40.682)(14:49:40:340) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:19:40.683)(14:49:40:341) 2: B15 2 0 0 30 7
+I (20:19:40.712)(14:49:40:370) PCNT: NVM_COMMIT_CNT 582
+I (20:19:40.714)(14:49:40:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:19:40.714)(14:49:40:372) 4: D10 0 1 0 0 0 217000 0 0 5 0 25
+I (20:19:41.712)(14:49:41:370) UART TEST: B_S .factory_reset
+I (20:19:41.712)(14:49:41:371) 2: factory reset
+I (20:19:41.713)(14:49:41:371) OST: Periodic Notify Timer,Tmr Stpd Scsfly
+I (20:19:41.713)(14:49:41:371) OST: PARTIAL_WRITE,Tmr Stpd Scsfly
+I (20:19:41.714)(14:49:41:372) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:19:41.715)(14:49:41:373) 3: C30:0
+I (20:19:41.715)(14:49:41:373) 3: ret rly sts:0 relay_status: 0 gp 0 rly id 1 1st rly sts 1
+E (20:19:41.716)(14:49:41:374) 3: C30:0
+I (20:19:41.717)(14:49:41:375) 3: ret rly sts:0 relay_status: 0 gp 0 rly id 2 1st rly sts 1
+E (20:19:41.718)(14:49:41:376) 3: C30:0
+I (20:19:41.718)(14:49:41:376) 3: ret rly sts:0 relay_status: 0 gp 0 rly id 3 1st rly sts 1
+E (20:19:41.719)(14:49:41:377) 3: C30:0
+I (20:19:41.720)(14:49:41:378) 3: ret rly sts:0 relay_status: 0 gp 0 rly id 4 1st rly sts 1
+E (20:19:41.721)(14:49:41:379) 3: C30:0
+I (20:19:41.721)(14:49:41:379) 3: ret rly sts:0 relay_status: 0 gp 0 rly id 5 1st rly sts 1
+E (20:19:41.722)(14:49:41:380) 3: C30:0
+I (00:00:00.000)(18:30:00:381) 2: FR Sec 1577836800 LT 1577836800
+E (00:00:00.000)(18:30:00:381) 17: O1 0 1
+I (00:00:00.001)(18:30:00:382) 20: connected sts : 1 1073653120 18 0
+I (00:00:00.001)(18:30:00:383) 20: cstart:15 cstop:3773 totcon:3758
+
+I (00:00:00.002)(18:30:00:383) 20: connec sts 0
+I (00:00:00.003)(18:30:00:384) QSND: INTF_MSG to 7 evnt 1 pld 0x12 len(w) 0 ctx 0 fre_req 0
+E (00:00:00.004)(18:30:00:385) 21: T 18 1579 0
+E (00:00:00.004)(18:30:00:385) 21: R 18 44 0 0 87
+E (00:00:00.005)(18:30:00:386) TM: T1 77 0 1798 0
+E (00:00:00.005)(18:30:00:387) TM: T2 16 0 4 0
+E (00:00:00.006)(18:30:00:387) TM: MM 1711 0 1714 0
+E (00:00:00.009)(18:30:00:391) 2: B13 2 0 1 7
+I (00:00:00.013)(18:30:00:394) 2: Pwr Off State_event rcvd event=1
+I (00:00:00.013)(18:30:00:394) 17: common events =1
+E (00:00:00.054)(18:30:00:435) 1: A20 0 0
+W (00:00:00.056)(18:30:00:438) TRANSPORT_WS: esp_transport_ws_poll_connection_closed: unexpected data readable on socket=57
+W (00:00:00.057)(18:30:00:438) WEBSOCKET_CLIENT: Connection terminated while waiting for clean TCP close
+I (00:00:00.058)(18:30:00:439) 1: The connection has been closed cleanly 1
+I (00:00:00.062)(18:30:00:443) 1: !Websocket Stopped!
+I (00:00:00.063)(18:30:00:444) QSND: INTF_MSG to 7 evnt 1 pld 0x12 len(w) 0 ctx 0 fre_req 0
+I (00:00:00.063)(18:30:00:444) 14: unreg the events
+I (00:00:00.063)(18:30:00:445) 14: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+I (00:00:00.064)(18:30:00:445) 14: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+I (3774591)(18:30:00:447) wifi:state: run -> init (0)(18:30:00:447)
+I (3774592)(18:30:00:448) wifi:pm stop, total sleep time: lu us / lu us
+
+W (3774593)(18:30:00:448) wifi:<ba-del>idx
+W (3774593)(18:30:00:448) wifi:<ba-del>idx
+W (3774593)(18:30:00:449) wifi:<ba-del>idx
+W (3774594)(18:30:00:449) wifi:<ba-del>idx
+I (3774594)(18:30:00:450) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (00:00:00.070)(18:30:00:452) 14: ap_sta esp_wifi_disconnect ESP_OK: succeed
+I (3774599)(18:30:00:454) wifi:flush txq
+I (3774599)(18:30:00:454) wifi:stop sw txq
+I (3774600)(18:30:00:455) wifi:lmac stop hw txq
+I (00:00:00.074)(18:30:00:456) 14: esp_wifi_stop ESP_OK: succeed
+I (3774601)(18:30:00:456) wifi:Deinit lldesc rx mblock:2
+I (00:00:00.076)(18:30:00:457) 14: esp_wifi_deinit ESP_OK: succeed
+I (00:00:00.076)(18:30:00:457) OST: Tmr Del scs
+E (00:00:00.076)(18:30:00:458) 17: O2
+I (00:00:00.113)(18:30:00:494) 17: conn_no_rcvd 18 bit_map_connection_sts 0 recv_dat 18
+I (00:00:00.113)(18:30:00:494) 1: DC WEBSKT close only  last_err_code: 0 tls_err_code:0 cert_sts: 1
+I (00:00:00.114)(18:30:00:495) 1: WEB_SKT_NOT_CLOSE
+I (00:00:00.114)(18:30:00:496) 17: reset DC flags
+I (00:00:00.115)(18:30:00:496) OST: Periodic Notify Timer,Tmr Stpd Scsfly
+I (00:00:00.116)(18:30:00:497) 2: event 1 intrf_type 7 ucstae 0
+I (00:00:00.116)(18:30:00:498) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 1 from intf 7
+E (00:00:00.118)(18:30:00:499) 2: B15 2 0 0 1 7
+E (00:00:00.118)(18:30:00:499) 2: B13 2 0 1 7
+I (00:00:00.119)(18:30:00:500) 2: Pwr Off State_event rcvd event=1
+I (00:00:00.119)(18:30:00:501) 17: common events =1
+I (00:00:00.220)(18:30:00:601) 17: conn_no_rcvd 18 bit_map_connection_sts 0 recv_dat 18
+I (00:00:00.220)(18:30:00:601) 1: DC WEBSKT close only  last_err_code: 0 tls_err_code:0 cert_sts: 1
+I (00:00:00.221)(18:30:00:602) 1: WEB_SKT_NOT_CLOSE
+I (00:00:00.221)(18:30:00:602) 17: reset DC flags
+I (00:00:00.222)(18:30:00:603) OST: Periodic Notify Timer,Tmr Stpd Scsfly
+I (00:00:00.223)(18:30:00:604) 2: event 1 intrf_type 7 ucstae 0
+I (00:00:00.223)(18:30:00:605) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 1 from intf 7
+E (00:00:00.225)(18:30:00:606) 2: B15 2 0 0 1 7
+I (00:00:01.080)(00:00:01:461) 2: Lv 160 Hv= 275 pv 180 ed 3
+I (00:00:01.080)(00:00:01:461) 2: Lv 160 Hv= 275 pv 180 ed 0
+I (00:00:01.081)(00:00:01:462) 2: Lv 160 Hv= 275 pv 180 ed 0
+I (00:00:01.081)(00:00:01:462) 2: Lv 160 Hv= 275 pv 180 ed 0
+I (00:00:01.082)(00:00:01:463) 2: Lv 160 Hv= 275 pv 180 ed 0
+I (00:00:01.082)(00:00:01:463) 2: Lv 160 Hv= 275 pv 180 ed 0
+E (00:00:01.083)(00:00:01:464) 2: B36 479
+�� � ��� �   � ����� ��     �         �  �    �      �    �   �  �  � ��  � ��  �   �� � �� �    �� �   � � ���������� � ����������  ���� �� ���� � ���� �  �   ������� �� �    ��  �     � � �� ���  ����  �� �� �� ������  �  �� �� ��  ����  �� �� � ���� � ��  � � ���� ��  �� ��� �� �� �� � �      �� �   � �   � �   �     �   � �� ���  ����� �� �    ��� ��� ���  � � � ���������  �  � �� �    �     � � ����  �  � �� �    �     �   ����  �  � �� �    �     � � �� �  ���  �  � �� �    �     �  ��  ����  �  � �� �    �     � ��� ����  �  � �� �    �    ��  � �������  ��� � �   ��  �� � �   � � ������ �����    �� �� �� �    ��  �  ������ �  � �    ��    �  �  �    �     �  ���� � �� � ���      � ��  �  �����       ��� �� �� ��  �         �����������   � ��  �  ������ �  � �    � �     ��          �  ���� � �� � �   � �  �     ��  �  ������ �  � �    � �          �      �  ���� � �� � �   �     ��  � �� � �� ��  �� �     � �          � ��   ��  � �  �   �    �  � �     ������� �� �   �� �� �� ����� �  �  �  �    ��� �� �  ����   �� �� ��  ����   �� � ���  �� ������  �  �      ��  �  � � ��� �� ��� �    ������� �� ������ �  ��� �  ���  � �  �   �    �  � �     ������� �� �   � �������� �� �� ���� �   ��� �������� �        �    �  �     � ��  � �  �   � �    � �     ������� �� �   � � ��� �� �    ��� � ��� ��� �� ����� �� �   �  ��  � �  �   � �  �  � �     ������� ������ ������������ �   � � ��� �� �    ��� � ��� ��� �� ����� �� �   �   �   ����� �� �� �     ������� �� ������ �  ��� �  �  � � ��� �� �    ��� � ��� ��� �� ����� �� �   �  ��  � �  �   � �  �� � �     ������� �� � �� �� � ��      �   � �� ���  �  � �� ��� ��� �  �             �    �   �� �  � ����  � �  �   �  �   � �     ������� �� � �� �� � ��      �   � �� ���  �  �� ����  ��� �               �     ��  �� ���  � �  �   �  �  � � �     ������� �� � �� �� � ��      �   � �� ���  �    � ��� �� � ��  � ��� �� ���� �   �     �� �  ���  � �  �   �  �   � �     ������� �� �   �� � ��� �  � ��� �� ��� �    ��  �� �  �� �� �  � ��� �  �� � �� ��  ���� �� �  � ��������  �� ��� � �  �  � ��  � �  �   � ���    � �     ������� �� �    ��� �  � ��� �� ��� ����� ��   ���� �  � ���� � � ��  � �  �   � ��� ��� � �     ������� �� �   �  �      �� �  ��� � ��                        ������ �� �� ��� �                     ���� � ��� �  � �� ���  � �  �  �� ��� � ��        ��� � ��� � �� ����  � �  �   �  � �  � �     ������� �� �          �� ��� �                            ����� ��  �� ��    �� � ��� �                  �                   �                   �       ��  � �  �   �  �   � �     ������� �� �     �     � ��� ����� �� ��� �� ��                    ��  �    �� � ��� �                      �      �              �                �        ��  � �  �   � ��  � � �     ������� �� �           �� ��� ����� ��� �  � ��                  ����� ��  �� ��    �� � ��� �                  �                 �                     �       ��  � �  �   �   �  � �     ������� �� �     �     �� ���������  �� � ��� �����                ����� ������ �������� ��    �� � ��� �            �      �          �   �                          ��  � �  �   �   �� � �     ������� �� �      �    �� ���������  �� � ��� ����                 ����� ������ �������� ��    �� � ��� �            �      �          �   �                          ��  � �  �   � �   � � �     ������� �� �     ���    �� ���������  �� � ��� �����                ����� ������ �������� ��    �� � ��� �            �      �          �                             ��  � �  �   � �      � �     ������� �� �      �    �� ���������  �� � ��� ���� �               ����� ������ �������� ��    �� � ��� �            �      �          �  � �                         ��  � �  �   � �    �� � �     ������� �� �     ��    �� ���������  �� � ��� �������               ����� ������ �������� ��    �� � ��� �            �      �          �  � �                         ��  � �  �   � �  �  �  � �     ������� �� �           ��� �� ��� �  � ���� �  �����                ����� ������ �������� ��    �� � ��� �            �      �          �  �� �                         ��  � �  �   � �       � �     ������� �� �     �      ��� �� ��� �  � ���� �  ����                 ����� ������ �������� ��    �� � ��� �            �      �                                        ��  � �  �   � �      � � �     ������� �� �   �        ��� �� ��� �  � ���� �  �����                ����� ������ �������� ��    �� � ��� �            �      �                                         ��  � �  �   � �  �  �  � �     ������� �� �   �  �      ��� �� ��� �  � ���� �  ���� �               ����� ������ �������� ��    �� � ��� �            �      �              �                          ��  � �  �   � �   �   � �     ������� �� �   �         ��� �� ��� �  � ���� �  �������               ����� ������ �������� ��    �� � ��� �            �      �              �                          ��  � �  �   � �   �  � � �     ������� �� �   �  �      ��� �� ��� �  � ���� �  ���� �               ����� ������ �������� ��    �� � ��� �            �      �                                        ��  � �  �   � �  ��� �  � �     ������� �� �   �   �     ��� �� ��� �  � ���� �  ������               ����� ������ �������� ��    �� � ��� �            �      �             � �                         ��  � �  �   � �  ��� �  � �     ������� �� �   �  ���     ��� �� ��� �  � ���� �  ����                ����� ������ �������� ��    �� � ��� �            �      �             � �                         ��  � �  �   � �   �  � � �     ������� �� �   �   �     ��� �� ��� �  � ���� �  �����                ����� ������ �������� ��    �� � ��� �            �      �             �� �                         ��  � �  �   � �  �� �  � �     ������� �� �   �  ��     ��� �� ��� �  � ���� �  �����                ����� ������ �������� ��    �� � ��� �            �      �          �                             ��  � �  �   � �  �� �  � �     ������� �� �   �        ��� �� ��� �  � ���� �  �����  �              ����� ������ �������� ��    �� � ��� �            �      �          �                              ��  � �  �   � �     � � �     ������� �� �   �  �      ��� �� ��� �  � ���� �  �����                 ����� ������ �������� ��    �� � ��� �            �      �          �   �                          ��  � �  �   � �  �     � �     ������� �� �           �� ���������  �  ������� �� ��� �            ����� ������ �������� ��    �� � ��� �            �      �          �   �                 �        ��  � �  �   � �  �  �  � �     ������� �� �      �     �� ���������  �  ��  ������ �� ��� �          ����� ������ �������� ��    �� � ��� �            �      �          �  ��                 �        ��  � �  �   �       � � �     ������� �� �           ��� ��� �  �� � ��� �                    � � ���� �    �� � ��� �                    �                �                             ��  � �  �   �    �     � �     ������� �� �      �    ��� ��� ����                          � � ���� �  � � � �                          �             �                  �� ��� �      ��  � �  �   �    �  �  � �     ������� �� �       �   ��� ��� �����                          � � ���� �  � � � �                          �  �        �  �                   �� ��� �      ��  � �  �   �        � � �     ������� �� �   �� � ��  �  ���  �   �� �  � ��� �� ��� ����� ��   ��� �  � ���� ���  � �  �   �       �  � �     ������� ������ ������������ �   � � ��� �� �    ��� � ��� ��� �� ����� �� �   �   �   ����� �� �� �   � � � � ��� ��� �� � ��� ����� ��  � � ��� �� �    ��� � ��� ��� �� ����� �� �   �  ��  � �  �   �    �  ��� � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��     �    �� �  �  �  ���     �  �              ��� �  �  �  ��� �    � �              � �� �� ���� ���  � �  � �� �   ��   �    �� ��  � ��    � �   ����� � ���  � �  �   � �   � �� � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��  �   �    �� �  �  �  ���     �  �� �  � �  �     ��� �  �  �  ��� �    �  �            � �� �� ���� ���   �  �      �  ��   �      � �      � �    ������ �  ���  � �  �   � �  ���   � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��      �    �� �  �  �  ���     �  ��  �   �  �� �   ��� �  �  �  ��� �    �  �  �  �  � �     � �� �� ���� ���    �     �   ��   �       � �� ���    � �    ������ �  ���  � �  �   � �   � �  � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��  �   �    �� �  �  �  ���     �  ��   �    � �    ��� �  �  �  ���  �                 � �� �� ���� ���    �   � �  �  ��   �        �      � � �    ������ �  ���  � �  �   � �  ��   � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��   �  �    �� �  �  �  ���     �                ��� �  �  �  ���  �       �           � �� �� ���� ��� �  �  ��� ��� �     ��   � �      �  � �   �   � �   ����� � ���  � �  �   �    � �  � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��  ���  �    �� �  �  �  ���      �   ���� ���  �      ��� �  �  �  ���  �        �   � �  �   � �� �� ���� ��� �   � �� �   �  ��   �   �  �         � �    ������ �  ���  � �  �   �     �  � �   �� �� � ����� ������� �� ��� � �   � ��� �� ������� � �� ��   �  �    �� �  �  �  ���      � � �� ��  � �� �   ��� �  �  �  ��� ���                 � �� �� ���� ���       �     ��   �         �   � � �    ������ �  ���  � �  �   � �    ��� � �     ������� �� �     ����� �  ��� �  �  � � � �    �  ��������   �� �  � ��� �� ��� ����� ��  � � ��  ���  �  �� ��� � ��     ��  �          ��  � �  �   � �    ��� � �     ������� �� �     �� ��� �� �  � ��� �� ��� �    ��  �� �  �� �� �  � ��� �  �� � �� ��  ���� �� �  � ��������  �� ��� � �  �  � ��  � �  �   � �  �  ��� � �   � � ��������� � ��� �  � �� �    ��  ����  � � �����  ���� � � ��  � �  �   � �  �  ��� � �   � � ��������� � ��� �  � �� �   � �� ��� �  � ��� �� ��� �  � � � �  � � ����� �   �� � �� ��  �� �   ����� �� �� ��  � ��� �     � �       �    � � � ��  � �  �   � �    �  � �   � � ��������� � ��� �  � �� �   � � � �  � � �����  ���� � � ��  � �  �   � �       � �   � � ��������� � ��� �  � �� �    ��  ����  � � �����  � � ��� �  � ��  ����� ��� �  �  � ����  ��� ���  � �  �   � �     �  � �   � � ��������� � ��� �  � �� �   � � �����    �  ��� �� � �       �               ��  � �  �   � �     �  � �   � � ��������� � ��� �  � �� �   � � � � ��� ��� �� � ��� ����� ��  � �� ��  ����  ������ � ��� ����� �� � ��  � �  �   � �  �    � �   � � ��������� � ��� �  � �� �    ��  ���� ����� �� � ��   ��� ������� � �           � ��������� ����� �����  ��� � ����  � �  �   � �  �   � � �   � � ��������� � ��� �  � �� �   � � � �   ���� �  �� �� ����� �� �                �    ��  � �  �   � �  �    � �   � � ��������� � ��� �  � �� �   �� �  �  �    �� �� ���� �  � ��  �� �   ���  �  �     � �� �  ����    � ���   ��   �     �    �     � �  �  � ��  � �  �   � �   � �  � �   � � ��������� � ��� �  � �� �   �� �� �� ����� �  �  �  � �                       ��� �� �  ����   �� �� ��  ����   �� � ���  �� ������  �  ���  � �  �   � �   �   � �    ���� �� � ����� �� ��� �� �� �   �  � ��� �� ��� ��� � ��� �� ��� �� ��� � �     ��� ��� �  � � ��� �� �� ��� �  � ���� �    ����  �    �� � ��� ������ ��� �  � � �� ������ �� � ��� ����� �� � ��  � �  �   � �  ���  � � �    ���� �� � ����� �� ��� �� �� �   � � ��  �    �  �� �  �  ��       ���� � ��                �     �     �� �� ��  �� �  �     �  ��� ��� ���  � �  �   � �  ��� �  � �    ���� �� � ����� �� ��� �� �� �   � � ��  �    �  �  � � �         ���� � ��          �  � ���      � ��   �� �� ��  �� �  �     �  ��� ��� ���  � �  �   � �   � ��� � �    ���� �� � ����� �� ��� �� �� �   � � ��  �    �  �  ��  � �        ���� � ��           � �         � �   �   �� �� ��  �� �  �     �  ��� ��� ���  � �  �   � �  ��   � �    ���� �� � ����� �� ��� �� �� �   � � ��  �    �  �  ��    �� �     ���� � ��           �     �      �     �   �� �� ��  �� �  �     �  ��� ��� ���  � �  �   � �  �� ��� � �    ���� �� � ����� �� ��� �� �� �   � � ��  �    �  ��� �   �  �      ���� � ��          �  � ��� �     � �   �   �� �� ��  �� �  �     ��� �  �  ��� ��� ���  � �  �   � �      � �    ���� �� � ����� �� ��� �� �� �   � � ��  �    �  ��� � � �  ���      ���� � ��        �    �� �  �     � �  �  �    �� �� ��  �� �  �     ��� �  �  ��� ��� ���  � �  �   � �     � � �    ���� �� � ����� �� ��� �� �� �   � � ��   �     �    �  ��� �     ���� � ��           �    �       � �   �   �� �� ��  �� �  �   �  �  ��� ��� ���  � �  �   � �  �     � �   � � �� �����  � ��� �� � �� �     ��� � ���� �� � ���� �  �  � � ��� �� � �   � ��� � ���� �  �� ��� ���  � �  �   � �  �  ��� � �   � � �� �����  � ��� �� � �� �     � ��� �� � ��  � ����� �     �� �������  � �  �   � �  �  �  � �   �� �� � ����� ����  ��� ����  ��������� ��������� �  � �� �   �  � ��� �� �� �ɕ�dump I (23:59:55.178) OSS: log_sem Semaphore creation Scs
+I (23:59:55.179) OSS: end_idx_sem Semaphore creation Scs
+I (23:59:55.179) OSS: log_sem Semaphore creation Scs
+I (23:59:55.179) 16: nvm_para_init
+I (23:59:55.180) OSS: NVM_SEM Semaphore creation Scs
+I (23:59:55.180) OSS: Lock_NVM_SEM Semaphore creation Scs
+I (23:59:55.181) 16: Chksum 5020 nvm ch 5024
+I (23:59:55.182) 16: add=14000 nvm_lbl nvm_data_1  5020 chsmpos 480
+I (23:59:55.183) 16: size=2000
+I (23:59:55.183) 16: part rd scs
+I (23:59:55.184) 16: part rd scs
+I (23:59:55.184) 16: Retrived Magic num from NVM  == 173
+I (23:59:55.184) 16: Retrived NVM ver from NVM  == 2
+I (23:59:55.184) 16: rw_ver_upd 2
+E (23:59:55.185) 16: P16 nvm_data_1
+I (23:59:55.185) 16: nvm rd checksum=188E0C50 32 cchk 188E0C50
+I (23:59:55.186) 16: nvm dt rd checksum scs nvm_data_1
+I (23:59:55.186) 16: add=16000 nvm_lbl nvm_data_2  5020 chsmpos 480
+I (23:59:55.187) 16: size=2000
+I (23:59:55.187) 16: part rd scs
+I (23:59:55.189) 16: part rd scs
+I (23:59:55.189) 16: Retrived Magic num from NVM  == 173
+I (23:59:55.189) 16: Retrived NVM ver from NVM  == 2
+I (23:59:55.189) 16: rw_ver_upd 2
+E (23:59:55.190) 16: P16 nvm_data_2
+I (23:59:55.190) 16: nvm rd checksum=188E0C50 32 cchk 188E0C50
+I (23:59:55.191) 16: nvm dt rd checksum scs nvm_data_2
+I (23:59:55.191) 16: part_1 part rd scs
+I (23:59:55.192) 16:  part_2  rd scs
+I (23:59:55.192) 16: part_1_sts 0 part_2_sts 0
+E (23:59:55.193) 16: P7
+I (23:59:55.193) 16: cpy_part_dt_to_ram buf_len 5020
+I (23:59:55.195) 16: part rd scs
+I (23:59:55.195) 16: add=36000 nvm_lbl nvm_rd_only  1024 chsmpos 121
+I (23:59:55.195) 16: size=1000
+I (23:59:55.195) 16: part rd scs
+I (23:59:55.196) 16: part rd scs
+I (23:59:55.196) 16: Retrived Magic num from NVM  == 173
+I (23:59:55.197) 16: Retrived NVM ver from NVM  == 2
+I (23:59:55.197) 16: ro_ver_upd 2
+E (23:59:55.197) 16: P16 nvm_rd_only
+I (23:59:55.198) 16: nvm rd checksum=5CC41A76 32 cchk 5CC41A76
+I (23:59:55.199) 16: nvm dt rd checksum scs nvm_rd_only
+I (23:59:55.199) 16: part_3 part rd scs
+I (23:59:55.200) 16: cpy_part_dt_to_ram buf_len 1024
+I (23:59:55.201) 16: part rd scs
+I (23:59:55.201) 20: CSK 0 0
+I (23:59:55.201) 20: nvm ro chksm scs 0
+I (23:59:55.201) 20: Ser num =SPL00020251214JA
+I (23:59:55.202) APP_MN: NVM commit cnt !!!582
+
+I (23:59:55.202) OST: Up_time_timer Tmr creation Scs
+I (23:59:55.203) 17: Device ble name 9 iinv_spnl 
+
+I (23:59:55.204) 17: AP_PROVISION NAME IN BLE iinv_spnl 9
+I (23:59:55.204) APP_MN: RELAYS_IN_MAIN_NODES  1 RELAYS_PER_EXT_NODES 1 SPNL_SIN_NODES 1 SPNL_DUAL_NODES 0
+
+I (23:59:55.205) APP_MN: HWD_TYP 0 HW_VER 11 SW_VER 0
+I (23:59:55.206) APP_MN: rly_gio 27 rld 22 gld 23 bld 14 rly_off_ste_tmr 300 rly_on_off_time 1000 rly_off_on_time 1000 rly_on_ste_tmr600
+I (23:59:55.208) APP_MN: btn_gio 4 btn_glt 50
+I (23:59:55.208) APP_MN: flw_gio 4 flw_ltr_cnt 553
+I (23:59:55.209) APP_MN: temp_gpio 13
+I (23:59:55.209) 16: RO_NVM_VER 2
+I (23:59:55.209) APP_MN: enrgy_cali_mode 0
+I (23:59:55.210) APP_MN: cf_gio 35 cf1_gio 36 sel_gio 12
+I (23:59:55.211) APP_MN: curr 10609 volt 139814 pwr 1546092 volt_ic1 139814
+I (23:59:55.211) OST: mem alloc size is unalgnd 23
+I (23:59:55.212) APP_MN: Time_changes
+I (23:59:55.213) APP_MN: var1: 25088
+I (23:59:55.213) APP_MN: var2: 61440
+I (23:59:55.213) APP_MN: var3: 26796
+I (23:59:55.214) APP_MN: var4: 36
+I (23:59:55.214) APP_MN: var5: 0
+I (23:59:55.214) APP_MN: var6: 0
+I (23:59:55.215) APP_MN: var7: 0
+I (23:59:55.215) APP_MN: var8: 0
+I (23:59:55.215) APP_MN: var9: 0
+I (23:59:55.216) APP_MN: var10: 0
+I (23:59:55.216) APP_MN: var11: 0
+I (23:59:55.217) gpio: GPIO[14]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.218) OST: B Blink Prd Led Tmr Tmr creation Scs
+I (23:59:55.218) OST: R Blink Prdc Led Tmr Tmr creation Scs
+I (23:59:55.219) OST: Conn Prd Led Tmr Tmr creation Scs
+I (23:59:55.220) OST: Time Out Led Tmr Tmr creation Scs
+I (23:59:55.220) GDRV: b_led 14 ,r_led 0
+I (23:59:55.221) 2: Calibration_mode 0
+I (23:59:55.222) 13: SW_1:
+I (23:59:55.222) gpio: GPIO[35]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.223) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.224) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.225) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.226) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.227) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.228) GPIO_EXP: Peripheral ID 5 not found
+I (23:59:55.229) 13: Prev ste 0 
+I (23:59:55.229) 13: Prev ste 255 
+I (23:59:55.230) 13: Prev ste 255 
+I (23:59:55.230) 13: Prev ste 255 
+I (23:59:55.230) 13: Prev ste 255 
+I (23:59:55.231) GPIO_EXP: Peripheral ID 5 not found
+I (23:59:55.231) 13: Prev ste 255 
+I (23:59:55.232) OST: PNL_TIMER_PAIRING Tmr creation Scs
+I (23:59:55.232) OST: sw_gpio_tmr Tmr creation Scs
+I (23:59:55.233) OST: sw_io_exp_tmr Tmr creation Scs
+I (23:59:55.234) OST: PNL_MANUAL_LOCK_TIMER Tmr creation Scs
+I (23:59:55.234) OST: sw_ftry_rst_tmr Tmr creation Scs
+I (23:59:55.235) gpio: GPIO[27]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.236)  DRV_GPIO: rly_gpio pnl 27
+I (23:59:55.236) DRV_GPIO: rly_off_ste_tmr 50 rly_on_off_tmr 75 rly_off_on_tmr 50 rly_on_ste_tmr 75
+I (23:59:55.238) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.239)  DRV_GPIO: rly_gpio pnl 0
+I (23:59:55.239) DRV_GPIO: rly_off_ste_tmr 50 rly_on_off_tmr 75 rly_off_on_tmr 50 rly_on_ste_tmr 75
+I (23:59:55.240) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.241)  DRV_GPIO: rly_gpio pnl 0
+I (23:59:55.242) DRV_GPIO: rly_off_ste_tmr 50 rly_on_off_tmr 75 rly_off_on_tmr 50 rly_on_ste_tmr 75
+I (23:59:55.243) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.244)  DRV_GPIO: rly_gpio pnl 0
+I (23:59:55.244) DRV_GPIO: rly_off_ste_tmr 50 rly_on_off_tmr 75 rly_off_on_tmr 50 rly_on_ste_tmr 75
+I (23:59:55.246) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.247)  DRV_GPIO: rly_gpio pnl 0
+I (23:59:55.247) DRV_GPIO: rly_off_ste_tmr 50 rly_on_off_tmr 75 rly_off_on_tmr 50 rly_on_ste_tmr 75
+I (23:59:55.248) gpio: GPIO[0]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.249)  DRV_GPIO: rly_gpio pnl 0
+I (23:59:55.250) DRV_GPIO: rly_off_ste_tmr 50 rly_on_off_tmr 75 rly_off_on_tmr 50 rly_on_ste_tmr 75
+I (23:59:55.251) gpio: GPIO[14]| InputEn: 1| OutputEn: 1| OpenDrain: 0| Pullup: 0| Pulldown: 0| Intr:0 
+I (23:59:55.252) OST: B Blink Prd Led Tmr Tmr creation Scs
+I (23:59:55.253) OST: R Blink Prdc Led Tmr Tmr creation Scs
+I (23:59:55.253) OST: Conn Prd Led Tmr Tmr creation Scs
+I (23:59:55.254) OST: Time Out Led Tmr Tmr creation Scs
+I (23:59:55.255) GDRV: b_led 14 ,r_led 0
+I (23:59:55.255) 2: Calibration_mode 0
+I (23:59:55.256) OST: btn_rls_tmr Tmr creation Scs
+I (23:59:55.256) OST: btn_push_tmr Tmr creation Scs
+I (23:59:55.257) gpio: GPIO[4]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 
+I (23:59:55.258) GDRV: btn_glitch 50
+I (23:59:55.258) OST: btn_press_tmr Tmr creation Scs
+I (23:59:55.259) OST: btn_press_tmr Tmr creation Scs
+I (23:59:55.259) OST: btn_press_tmr Tmr creation Scs
+I (23:59:55.260) OST: btn_press_tmr Tmr creation Scs
+I (23:59:55.261) OST: btn_press_tmr Tmr creation Scs
+I (23:59:55.261) OST: btn_press_tmr Tmr creation Scs
+I (23:59:55.262) DRV_GPIO: btn_gpio 4 btn_glitch 50
+I (23:59:55.262) APP_MN: ================== bhs 144164 	 mfh ============= 141000 65536 0 0 0
+I (23:59:55.263) 2: Calibration_mode 0
+I (23:59:55.264) 20: SW_VER 3 HW_VER 3 fty_det.sfw_major_vsn 0 sfw_minor_vsn 0
+I (23:59:55.265) 20:  hw_mjr_vsn 0 hw_mnr_vsn 0  sw_build_num 41 hw_ty 0
+E (23:59:55.266) i2c: i2c_driver_delete(395): i2c driver install error
+I (23:59:55.267) I2C: I2C initialized on SDA=25, SCL=26
+I (23:59:55.267) I2C: Scanning for I2C devices...
+I (23:59:55.275) I2C: Found device at 0x51
+I (23:59:55.279) APP_MN: Hardware mode
+I (23:59:55.279) APP_MN: Serial num = SPL00020251214JA
+I (23:59:55.279) APP_MN: REV_NUMR :- 24365
+I (23:59:55.279) OSS: frame_tx Semaphore creation Scs
+I (23:59:55.304) APP_MN: Wdt_fl_en
+I (23:59:55.304) 17: pairing wifi_router password
+I (23:59:55.304) 17: pairing wifi_router SSID: password:
+I (23:59:55.304) 17: pairing wifi_router SSID: password:
+I (23:59:55.305) 17: router mac 0
+I (23:59:55.305) 17: router mac 0
+I (23:59:55.305) 17: router mac 0
+I (23:59:55.306) 17: router mac 0
+I (23:59:55.306) 17: router mac 0
+I (23:59:55.307) 17: router mac 0
+I (23:59:55.307) 14: set_local_mac_addr success 0 
+I (23:59:55.308) 14: set_local_mac_addr success 0 
+I (23:59:55.308) 14: set_local_mac_addr success 0 
+I (23:59:55.309) 14: set_local_mac_addr success 0 
+I (23:59:55.309) 14: set_local_mac_addr success 0 
+I (23:59:55.310) 14: set_local_mac_addr success 0 
+I (23:59:55.310) 17: pairing read wifi_init_softap SSID: password: nvm ssid :iinv_spnl
+I (23:59:55.311) 17: pairing read wifi_init_softap SSID:iinv_spnl password:mypassword
+I (23:59:55.312) 2: Calibration_mode 0
+I (23:59:55.313) 17: read ble name=iinv_spnl
+I (23:59:55.313) 17: ble_adv= gys-dvc-1 strlen= zu
+I (23:59:55.314) 17: prime mode 0 srvr type 0
+I (23:59:55.314) 17: mdns data=
+I (23:59:55.315) 17: mdns data=SPL00020251214JA
+I (23:59:55.315) 17: read connectivity_mode_status=0
+I (23:59:55.316) 17: wifi_ap_mode=0
+I (23:59:55.316) 17: wifi_sta_mode=0
+I (23:59:55.317) 17: wifi_ap_sta_mode=0
+I (23:59:55.317) 17: ble=0
+E (23:59:55.317) 17: O9 0 0
+I (23:59:55.318) WDT: dev reset reason 3
+I (23:59:55.318) WDT: NVM timezone 0
+I (23:59:55.319) WDT: rtc time 1577836795
+I (23:59:55.321) APP_MN: TmR 0
+E (23:59:55.322) 10: J1 0
+I (23:59:55.322) APP_MN: RTC set time
+E (23:59:55.322) 6: F1 0 0 0 0
+I (23:59:55.322) 6: Time_stamp_nit=0
+I (23:59:55.322) 6: rd prt rtc fld
+I (23:59:55.322) 6: rd prt rtc fld
+I (23:59:55.323) 6: rd prt rtc fld
+I (23:59:55.323) 6: rd prt rtc fld
+I (23:59:55.323) 6: rd prt rtc fld
+I (23:59:55.324) 6: rd prt rtc fld
+I (23:59:55.324) 21: NO_Partial_ses_hapnd
+I (23:59:55.325) QSND: INTF_MSG to 7 evnt 13 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:55.326) 10: 0
+I (23:59:55.327) AD: read_app_key_info_from_nvm
+I (23:59:55.327) OST: mem alloc size is unalgnd 10
+I (23:59:55.327) AD: EXIS APPID 0 0
+I (23:59:55.327) AD: EXIS APPID 0 0
+I (23:59:55.328) AD: EXIS APPID 0 0
+I (23:59:55.328) AD: EXIS APPID 0 0
+I (23:59:55.329) AD: EXIS APPID 0 0
+I (23:59:55.329) AD: EXIS APPID 0 0
+I (23:59:55.329) AD: EXIS APPID 0 0
+I (23:59:55.330) AD: EXIS APPID 0 0
+I (23:59:55.330) AD: EXIS APPID 0 0
+I (23:59:55.331) AD: EXIS APPID 0 0
+I (23:59:55.331) AD: Device have exis appid 0
+I (23:59:55.332) AD: app id read i 0 ptr=0 ptr_tk 0
+I (23:59:55.332) AD: app id read i 1 ptr=0 ptr_tk 0
+I (23:59:55.333) AD: app id read i 2 ptr=0 ptr_tk 0
+I (23:59:55.333) AD: app id read i 3 ptr=0 ptr_tk 0
+I (23:59:55.334) AD: app id read i 4 ptr=0 ptr_tk 0
+I (23:59:55.334) AD: app id read i 5 ptr=0 ptr_tk 0
+I (23:59:55.335) AD: app id read i 6 ptr=0 ptr_tk 0
+I (23:59:55.335) AD: app id read i 7 ptr=0 ptr_tk 0
+I (23:59:55.336) AD: app id read i 8 ptr=0 ptr_tk 0
+I (23:59:55.337) AD: app id read i 9 ptr=0 ptr_tk 0
+I (23:59:55.337) AD: app id read i 10 ptr=0 ptr_tk 0
+I (23:59:55.338) AD: app id read i 11 ptr=0 ptr_tk 0
+I (23:59:55.338) AD: app id read i 12 ptr=0 ptr_tk 0
+I (23:59:55.339) AD: app id read i 13 ptr=0 ptr_tk 0
+I (23:59:55.340) AD: app id read i 14 ptr=0 ptr_tk 0
+I (23:59:55.340) AD: app id read i 15 ptr=0 ptr_tk 0
+I (23:59:55.341) AD: app id read i 16 ptr=0 ptr_tk 0
+I (23:59:55.341) AD: app id read i 17 ptr=0 ptr_tk 0
+I (23:59:55.342) AD: app id read i 18 ptr=0 ptr_tk 0
+I (23:59:55.342) AD: app id read i 19 ptr=0 ptr_tk 0
+I (23:59:55.343) AD: app id read i 20 ptr=0 ptr_tk 0
+I (23:59:55.344) AD: app id read i 21 ptr=0 ptr_tk 0
+I (23:59:55.344) AD: app id read i 22 ptr=0 ptr_tk 0
+I (23:59:55.345) AD: app id read i 23 ptr=0 ptr_tk 0
+I (23:59:55.345) AD: app id read i 24 ptr=0 ptr_tk 0
+I (23:59:55.346) AD: app id read i 25 ptr=0 ptr_tk 0
+I (23:59:55.347) AD: app id read i 26 ptr=0 ptr_tk 0
+I (23:59:55.347) AD: app id read i 27 ptr=0 ptr_tk 0
+I (23:59:55.348) AD: app id read i 28 ptr=0 ptr_tk 0
+I (23:59:55.348) AD: app id read i 29 ptr=0 ptr_tk 0
+I (23:59:55.349) AD: app id read i 30 ptr=0 ptr_tk 0
+I (23:59:55.349) AD: app id read i 31 ptr=0 ptr_tk 0
+I (23:59:55.350) AD: app id read i 32 ptr=0 ptr_tk 0
+I (23:59:55.351) AD: app id read i 33 ptr=0 ptr_tk 0
+I (23:59:55.351) AD: app id read i 34 ptr=0 ptr_tk 0
+I (23:59:55.352) AD: app id read i 35 ptr=0 ptr_tk 0
+I (23:59:55.352) AD: app id read i 36 ptr=0 ptr_tk 0
+I (23:59:55.353) AD: app id read i 37 ptr=0 ptr_tk 0
+I (23:59:55.354) AD: app id read i 38 ptr=0 ptr_tk 0
+I (23:59:55.354) AD: app id read i 39 ptr=0 ptr_tk 0
+I (23:59:55.355) AD: app id read i 40 ptr=0 ptr_tk 0
+I (23:59:55.355) AD: app id read i 41 ptr=0 ptr_tk 0
+I (23:59:55.356) AD: app id read i 42 ptr=0 ptr_tk 0
+I (23:59:55.357) AD: app id read i 43 ptr=0 ptr_tk 0
+I (23:59:55.357) AD: app id read i 44 ptr=0 ptr_tk 0
+I (23:59:55.358) AD: app id read i 45 ptr=0 ptr_tk 0
+I (23:59:55.358) AD: app id read i 46 ptr=0 ptr_tk 0
+I (23:59:55.359) AD: app id read i 47 ptr=0 ptr_tk 0
+I (23:59:55.359) AD: app id read i 48 ptr=0 ptr_tk 0
+I (23:59:55.360) AD: app id read i 49 ptr=0 ptr_tk 0
+I (23:59:55.361) AD: app id read i 50 ptr=0 ptr_tk 0
+I (23:59:55.361) AD: app id read i 51 ptr=0 ptr_tk 0
+I (23:59:55.362) AD: app id read i 52 ptr=0 ptr_tk 0
+I (23:59:55.362) AD: app id read i 53 ptr=0 ptr_tk 0
+I (23:59:55.363) AD: app id read i 54 ptr=0 ptr_tk 0
+I (23:59:55.364) AD: app id read i 55 ptr=0 ptr_tk 0
+I (23:59:55.364) AD: app id read i 56 ptr=0 ptr_tk 0
+I (23:59:55.365) AD: app id read i 57 ptr=0 ptr_tk 0
+I (23:59:55.365) AD: app id read i 58 ptr=0 ptr_tk 0
+I (23:59:55.366) AD: app id read i 59 ptr=0 ptr_tk 0
+I (23:59:55.366) AD: app id read i 60 ptr=0 ptr_tk 0
+I (23:59:55.367) AD: app id read i 61 ptr=0 ptr_tk 0
+I (23:59:55.368) AD: app id read i 62 ptr=0 ptr_tk 0
+I (23:59:55.368) AD: app id read i 63 ptr=0 ptr_tk 0
+I (23:59:55.369) AD: app id read i 64 ptr=0 ptr_tk 0
+I (23:59:55.369) AD: app id read i 65 ptr=0 ptr_tk 0
+I (23:59:55.370) AD: app id read i 66 ptr=0 ptr_tk 0
+I (23:59:55.371) AD: app id read i 67 ptr=0 ptr_tk 0
+I (23:59:55.371) AD: app id read i 68 ptr=0 ptr_tk 0
+I (23:59:55.372) AD: app id read i 69 ptr=0 ptr_tk 0
+I (23:59:55.372) AD: app id read i 70 ptr=0 ptr_tk 0
+I (23:59:55.373) AD: app id read i 71 ptr=0 ptr_tk 0
+I (23:59:55.374) AD: app id read i 72 ptr=0 ptr_tk 0
+I (23:59:55.374) AD: app id read i 73 ptr=0 ptr_tk 0
+I (23:59:55.375) AD: app id read i 74 ptr=0 ptr_tk 0
+I (23:59:55.375) AD: app id read i 75 ptr=0 ptr_tk 0
+I (23:59:55.376) AD: app id read i 76 ptr=0 ptr_tk 0
+I (23:59:55.376) AD: app id read i 77 ptr=0 ptr_tk 0
+I (23:59:55.377) AD: app id read i 78 ptr=0 ptr_tk 0
+I (23:59:55.378) AD: app id read i 79 ptr=0 ptr_tk 0
+I (23:59:55.378) AD: app id read i 80 ptr=0 ptr_tk 0
+I (23:59:55.379) AD: app id read i 81 ptr=0 ptr_tk 0
+I (23:59:55.379) AD: app id read i 82 ptr=0 ptr_tk 0
+I (23:59:55.380) AD: app id read i 83 ptr=0 ptr_tk 0
+I (23:59:55.381) AD: app id read i 84 ptr=0 ptr_tk 0
+I (23:59:55.381) AD: app id read i 85 ptr=0 ptr_tk 0
+I (23:59:55.382) AD: app id read i 86 ptr=0 ptr_tk 0
+I (23:59:55.382) AD: app id read i 87 ptr=0 ptr_tk 0
+I (23:59:55.383) AD: app id read i 88 ptr=0 ptr_tk 0
+I (23:59:55.383) AD: app id read i 89 ptr=0 ptr_tk 0
+I (23:59:55.384) AD: app id read i 90 ptr=0 ptr_tk 0
+I (23:59:55.385) AD: app id read i 91 ptr=0 ptr_tk 0
+I (23:59:55.385) AD: app id read i 92 ptr=0 ptr_tk 0
+I (23:59:55.386) AD: app id read i 93 ptr=0 ptr_tk 0
+I (23:59:55.386) AD: app id read i 94 ptr=0 ptr_tk 0
+I (23:59:55.387) AD: app id read i 95 ptr=0 ptr_tk 0
+I (23:59:55.388) AD: app id read i 96 ptr=0 ptr_tk 0
+I (23:59:55.388) AD: app id read i 97 ptr=0 ptr_tk 0
+I (23:59:55.389) AD: app id read i 98 ptr=0 ptr_tk 0
+I (23:59:55.389) AD: app id read i 99 ptr=0 ptr_tk 0
+I (23:59:55.390) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.390) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.391) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.391) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.392) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.392) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.393) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.393) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.394) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.394) AD: ptr_ts 0 auth_vfy 0
+I (23:59:55.394) AD: read current_range_app_id 0 vrfy_sts 0
+I (23:59:55.395) AD: read_admin_info_from_nvm
+I (23:59:55.396) MSH: admin 0
+I (23:59:55.396) MSH: admin 0
+I (23:59:55.396) MSH: admin 0
+I (23:59:55.397) MSH: admin 0
+I (23:59:55.397) MSH: admin 0
+I (23:59:55.397) MSH: admin 0
+I (23:59:55.398) MSH: admin 0
+I (23:59:55.398) MSH: admin 0
+I (23:59:55.398) MSH: admin 0
+I (23:59:55.399) MSH: admin 0
+I (23:59:55.399) APP_MN: electl_malfun.electl_malfun_ntfy_en=0
+I (23:59:55.400) NVM: max_flw_time 0 max_vol_usg 0
+I (23:59:55.400) NVM: ntfy_on_chng_only= 1 timesec 5 thrs_cur35 thrs_vol 5 thrs_pwr 8
+I (23:59:55.401) NVM: ntfy_on_chng_only= 1 timesec 5 thrs_temp 0 thrs_flw 0
+I (23:59:55.402) KKKK: MMMMMMMM 1600 2500
+
+I (23:59:55.403) AD: Existing aap_prov 0
+I (23:59:55.403) AD: Existing aap_prov 0
+I (23:59:55.403) AD: Existing aap_prov 0
+I (23:59:55.404) AD: Existing aap_prov 0
+I (23:59:55.404) AD: Existing aap_prov 0
+I (23:59:55.405) AD: Existing aap_prov 0
+I (23:59:55.405) AD: Existing aap_prov 0
+I (23:59:55.406) AD: Existing aap_prov 0
+I (23:59:55.406) AD: Existing aap_prov 0
+I (23:59:55.407) AD: Existing aap_prov 0
+I (23:59:55.407) AD:  Device have app id prov 0
+I (23:59:55.408) SMAX: add_thrd_list addr 0x3ffccfe4 thrd_list_cnt 1 indx 0
+I (23:59:55.408) MDEC: no flow control
+I (23:59:55.409) OSTH: C T_N:- i2c_worker Size:- 3072 Priority:- 2 Core_id:- 255 handle:- 0x3ffdf224
+I (23:59:55.415) 17: read connectivity_mode_status=0
+I (23:59:55.415) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (23:59:55.415) SMAX: add_thrd_list addr 0x3ffd2f58 thrd_list_cnt 2 indx 1
+I (23:59:55.416) SMAX: add_thrd_list addr 0x3ffcf420 thrd_list_cnt 3 indx 2
+inside log_server..
+I (23:59:55.417)(23:59:55:251) SMAX: add_thrd_list addr 0x3ffce2b8 thrd_list_cnt 4 indx 3
+I (23:59:55.417)(23:59:55:252) SMAX: Name rx_process hghwtrmrk 3128
+I (23:59:55.418)(23:59:55:253) SMAX: add_thrd_list addr 0x3ffcf5c0 thrd_list_cnt 5 indx 4
+I (23:59:55.419)(23:59:55:253) OST: relay_on_timer Tmr creation Scs
+I (23:59:55.419)(23:59:55:254) SMAX: Name tx_process hghwtrmrk 3636
+I (23:59:55.420)(23:59:55:255) MSH: no flow control
+I (23:59:55.420)(23:59:55:255) OST: relay_off_timer Tmr creation Scs
+I (23:59:55.422)(23:59:55:257) rly: get_id_on: 0
+I (23:59:55.422)(23:59:55:256) SMAX: Name ota hghwtrmrk 5180
+I (23:59:55.423)(23:59:55:258) rly: get_id_off: 0
+I (23:59:55.421)(23:59:55:255) SMAX: null thrd err occur
+I (23:59:55.424)(23:59:55:259) OST: relay_on_timer Tmr creation Scs
+I (23:59:55.424)(23:59:55:259) SMAX: Name log_server hghwtrmrk 1384
+I (23:59:55.425)(23:59:55:260) OST: relay_off_timer Tmr creation Scs
+I (23:59:55.426)(23:59:55:260) OSTH: C T_N:- rly_state Size:- 3072 Priority:- 3 Core_id:- 0 handle:- 0x3ffdf824
+I (23:59:55.427)(23:59:55:262) rly: get_id_on: 1
+I (23:59:55.426)(23:59:55:261) SMAX: Name Cntrl_state hghwtrmrk 2144
+I (23:59:55.429)(23:59:55:263) rly: get_id_off: 1
+I (23:59:55.429)(23:59:55:264) SMAX: add_thrd_list addr 0x3ffdf824 thrd_list_cnt 6 indx 5
+I (23:59:55.430)(23:59:55:265) OST: relay_on_timer Tmr creation Scs
+I (23:59:55.430)(23:59:55:265) SMAX: Name rly_state hghwtrmrk 2532
+I (23:59:55.432)(23:59:55:266) OST: relay_off_timer Tmr creation Scs
+I (23:59:55.432)(23:59:55:267) OST: con_check_tmr Tmr creation Scs
+I (23:59:55.433)(23:59:55:268) rly: get_id_on: 2
+I (23:59:55.435)(23:59:55:269) rly: get_id_off: 2
+I (23:59:55.435)(23:59:55:270) OST: relay_on_timer Tmr creation Scs
+I (23:59:55.436)(23:59:55:271) OST: relay_off_timer Tmr creation Scs
+I (23:59:55.437)(23:59:55:271) rly: get_id_on: 3
+I (23:59:55.437)(23:59:55:272) rly: get_id_off: 3
+I (23:59:55.438)(23:59:55:272) OST: relay_on_timer Tmr creation Scs
+I (23:59:55.438)(23:59:55:273) OST: relay_off_timer Tmr creation Scs
+I (23:59:55.439)(23:59:55:274) rly: get_id_on: 4
+I (23:59:55.440)(23:59:55:274) rly: get_id_off: 4
+I (23:59:55.440)(23:59:55:275) OST: relay_on_timer Tmr creation Scs
+I (23:59:55.441)(23:59:55:276) OST: relay_off_timer Tmr creation Scs
+I (23:59:55.442)(23:59:55:277) rly: get_id_on: 5
+I (23:59:55.442)(23:59:55:277) rly: get_id_off: 5
+I (23:59:55.443)(23:59:55:278) OST: SCH Duration Timer Tmr creation Scs
+I (23:59:55.444)(23:59:55:278) rly: get_idf:0
+I (23:59:55.444)(23:59:55:279) OST: SCH Duration Timer Tmr creation Scs
+I (23:59:55.445)(23:59:55:280) rly: get_idf:1
+I (23:59:55.446)(23:59:55:280) OST: SCH Duration Timer Tmr creation Scs
+I (23:59:55.446)(23:59:55:281) rly: get_idf:2
+I (23:59:55.447)(23:59:55:282) OST: SCH Duration Timer Tmr creation Scs
+I (23:59:55.448)(23:59:55:282) rly: get_idf:3
+I (23:59:55.448)(23:59:55:283) OST: SCH Duration Timer Tmr creation Scs
+I (23:59:55.449)(23:59:55:284) rly: get_idf:4
+I (23:59:55.449)(23:59:55:284) OST: SCH Duration Timer Tmr creation Scs
+I (23:59:55.450)(23:59:55:285) rly: get_idf:5
+I (23:59:55.451)(23:59:55:285) 2: Gyser State Handler Factory Details HDWRE Type =  5
+I (23:59:55.452)(23:59:55:286) OST: enrg_con_prdic_tmr_1 Tmr creation Scs
+I (23:59:55.452)(23:59:55:287) OST: enrg_con_prdic_tmr_2 Tmr creation Scs
+I (23:59:55.453)(23:59:55:288) OST: enrg_con_prdic_tmr_3 Tmr creation Scs
+I (23:59:55.454)(23:59:55:289) OST: enrg_con_prdic_tmr_4 Tmr creation Scs
+I (23:59:55.455)(23:59:55:290) OST: enrg_con_prdic_tmr_5 Tmr creation Scs
+I (23:59:55.456)(23:59:55:290) OST: enrg_con_prdic_tmr_6 Tmr creation Scs
+I (23:59:55.457)(23:59:55:291) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs0 low_curr_thrs 0 high_curr_thrs0
+I (23:59:55.458)(23:59:55:293) 2: low_vlt_cons_cnt0  high_vlt_cons_cnt 0 no_volt_cnt 0 high_curr_cn 0
+I (23:59:55.459)(23:59:55:294) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 3
+I (23:59:55.460)(23:59:55:295) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 13 high_curr_thrs5
+I (23:59:55.461)(23:59:55:296) 2: low_vlt_cons_cnt6  high_vlt_cons_cnt 6 no_volt_cnt 10 high_curr_cn 30
+I (23:59:55.462)(23:59:55:297) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 3
+I (23:59:55.463)(23:59:55:298) DRV_GPIO:  low_volt_thres 160000 high_volt_thres 275000  no_volt_thres10000    low_curr_thres 13    high_curr_thres5000 pro_vol_thr 180000
+
+I (23:59:55.465)(23:59:55:300) DRV_GPIO:  high_curr_cons_cnt  30 low_volt_cons_cnt6  high_volt_cons_cnt 6   no_volt_cons_cnt 10 
+
+I (23:59:55.466)(23:59:55:301) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs0 low_curr_thrs 0 high_curr_thrs0
+I (23:59:55.468)(23:59:55:302) 2: low_vlt_cons_cnt0  high_vlt_cons_cnt 0 no_volt_cnt 0 high_curr_cn 0
+I (23:59:55.469)(23:59:55:303) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.470)(23:59:55:304) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 13 high_curr_thrs5
+I (23:59:55.471)(23:59:55:305) 2: low_vlt_cons_cnt6  high_vlt_cons_cnt 6 no_volt_cnt 10 high_curr_cn 30
+I (23:59:55.472)(23:59:55:307) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.473)(23:59:55:307) DRV_GPIO:  low_volt_thres 160000 high_volt_thres 275000  no_volt_thres10000    low_curr_thres 13    high_curr_thres5000 pro_vol_thr 180000
+
+I (23:59:55.475)(23:59:55:309) DRV_GPIO:  high_curr_cons_cnt  30 low_volt_cons_cnt6  high_volt_cons_cnt 6   no_volt_cons_cnt 10 
+
+I (23:59:55.476)(23:59:55:311) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs0 low_curr_thrs 0 high_curr_thrs0
+I (23:59:55.477)(23:59:55:312) 2: low_vlt_cons_cnt0  high_vlt_cons_cnt 0 no_volt_cnt 0 high_curr_cn 0
+I (23:59:55.478)(23:59:55:313) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.479)(23:59:55:314) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 13 high_curr_thrs5
+I (23:59:55.481)(23:59:55:315) 2: low_vlt_cons_cnt6  high_vlt_cons_cnt 6 no_volt_cnt 10 high_curr_cn 30
+I (23:59:55.482)(23:59:55:316) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.483)(23:59:55:317) DRV_GPIO:  low_volt_thres 160000 high_volt_thres 275000  no_volt_thres10000    low_curr_thres 13    high_curr_thres5000 pro_vol_thr 180000
+
+I (23:59:55.484)(23:59:55:319) DRV_GPIO:  high_curr_cons_cnt  30 low_volt_cons_cnt6  high_volt_cons_cnt 6   no_volt_cons_cnt 10 
+
+I (23:59:55.486)(23:59:55:321) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs0 low_curr_thrs 0 high_curr_thrs0
+I (23:59:55.487)(23:59:55:322) 2: low_vlt_cons_cnt0  high_vlt_cons_cnt 0 no_volt_cnt 0 high_curr_cn 0
+I (23:59:55.488)(23:59:55:323) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.489)(23:59:55:324) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 13 high_curr_thrs5
+I (23:59:55.490)(23:59:55:325) 2: low_vlt_cons_cnt6  high_vlt_cons_cnt 6 no_volt_cnt 10 high_curr_cn 30
+I (23:59:55.491)(23:59:55:326) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.492)(23:59:55:327) DRV_GPIO:  low_volt_thres 160000 high_volt_thres 275000  no_volt_thres10000    low_curr_thres 13    high_curr_thres5000 pro_vol_thr 180000
+
+I (23:59:55.494)(23:59:55:329) DRV_GPIO:  high_curr_cons_cnt  30 low_volt_cons_cnt6  high_volt_cons_cnt 6   no_volt_cons_cnt 10 
+
+I (23:59:55.496)(23:59:55:330) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs0 low_curr_thrs 0 high_curr_thrs0
+I (23:59:55.497)(23:59:55:332) 2: low_vlt_cons_cnt0  high_vlt_cons_cnt 0 no_volt_cnt 0 high_curr_cn 0
+I (23:59:55.498)(23:59:55:333) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.499)(23:59:55:334) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 13 high_curr_thrs5
+I (23:59:55.500)(23:59:55:335) 2: low_vlt_cons_cnt6  high_vlt_cons_cnt 6 no_volt_cnt 10 high_curr_cn 30
+I (23:59:55.501)(23:59:55:336) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.502)(23:59:55:337) DRV_GPIO:  low_volt_thres 160000 high_volt_thres 275000  no_volt_thres10000    low_curr_thres 13    high_curr_thres5000 pro_vol_thr 180000
+
+I (23:59:55.504)(23:59:55:339) DRV_GPIO:  high_curr_cons_cnt  30 low_volt_cons_cnt6  high_volt_cons_cnt 6   no_volt_cons_cnt 10 
+
+I (23:59:55.505)(23:59:55:340) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs0 low_curr_thrs 0 high_curr_thrs0
+I (23:59:55.507)(23:59:55:341) 2: low_vlt_cons_cnt0  high_vlt_cons_cnt 0 no_volt_cnt 0 high_curr_cn 0
+I (23:59:55.508)(23:59:55:342) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.509)(23:59:55:343) 2: low_vlt_thrs 160 high_vlt_thrs 275 no_vlt_thrs10 low_curr_thrs 13 high_curr_thrs5
+I (23:59:55.510)(23:59:55:345) 2: low_vlt_cons_cnt6  high_vlt_cons_cnt 6 no_volt_cnt 10 high_curr_cn 30
+I (23:59:55.511)(23:59:55:346) 2: low_vlt_thrs 160 prp_vlt_thrs 180 en_dis 0
+I (23:59:55.512)(23:59:55:347) DRV_GPIO:  low_volt_thres 160000 high_volt_thres 275000  no_volt_thres10000    low_curr_thres 13    high_curr_thres5000 pro_vol_thr 180000
+
+I (23:59:55.514)(23:59:55:348) DRV_GPIO:  high_curr_cons_cnt  30 low_volt_cons_cnt6  high_volt_cons_cnt 6   no_volt_cons_cnt 10 
+
+I (23:59:55.515)(23:59:55:350) OST: Voltage_prdic_tmr_2 Tmr creation Scs
+I (23:59:55.516)(23:59:55:351) 2: energy driver voltage periodic timer  is started
+
+I (23:59:55.517)(23:59:55:352) OST: On Duration Timer Tmr creation Scs
+I (23:59:55.518)(23:59:55:352) OST: OFF Duration Timer Tmr creation Scs
+I (23:59:55.518)(23:59:55:353) rly: get_idf:0:0
+I (23:59:55.519)(23:59:55:354) OST: On Duration Timer Tmr creation Scs
+I (23:59:55.520)(23:59:55:354) OST: OFF Duration Timer Tmr creation Scs
+I (23:59:55.521)(23:59:55:355) rly: get_idf:1:1
+I (23:59:55.521)(23:59:55:356) OST: On Duration Timer Tmr creation Scs
+I (23:59:55.522)(23:59:55:357) OST: OFF Duration Timer Tmr creation Scs
+I (23:59:55.523)(23:59:55:357) rly: get_idf:2:2
+I (23:59:55.523)(23:59:55:358) OST: On Duration Timer Tmr creation Scs
+I (23:59:55.524)(23:59:55:359) OST: OFF Duration Timer Tmr creation Scs
+I (23:59:55.525)(23:59:55:359) rly: get_idf:3:3
+I (23:59:55.525)(23:59:55:360) OST: On Duration Timer Tmr creation Scs
+I (23:59:55.526)(23:59:55:361) OST: OFF Duration Timer Tmr creation Scs
+I (23:59:55.527)(23:59:55:362) rly: get_idf:4:4
+I (23:59:55.527)(23:59:55:362) OST: On Duration Timer Tmr creation Scs
+I (23:59:55.528)(23:59:55:363) OST: OFF Duration Timer Tmr creation Scs
+I (23:59:55.529)(23:59:55:364) rly: get_idf:5:5
+I (23:59:55.530)(23:59:55:364) rly: off hdl0x3ffdfddc: 0x3ffd7240
+I (23:59:55.530)(23:59:55:365) OST: Periodic Notify Timer Tmr creation Scs
+I (23:59:55.531)(23:59:55:366) OST: PARTIAL_WRITE Tmr creation Scs
+I (23:59:55.532)(23:59:55:367) OST: Analytics_midnt_tm Tmr creation Scs
+I (23:59:55.533)(23:59:55:367) 2: Calibration_mode 0
+I (23:59:55.533)(23:59:55:367) 17: read connectivity_mode_status=0
+I (23:59:55.534)(23:59:55:369) OST: Temperature Prdic tmr Tmr creation Scs
+I (23:59:55.535)(23:59:55:369) OST: Analytics_midnt_tm Tmr creation Scs
+I (23:59:55.536)(23:59:55:370) OST: OTA_CONN_RTY_TMR Tmr creation Scs
+I (23:59:55.536)(23:59:55:371) OST: svr_ota_custom_timer Tmr creation Scs
+I (23:59:55.537)(23:59:55:372) MSH: total available app id count 0
+I (23:59:55.538)(23:59:55:373) OST: ping_not_tmr Tmr creation Scs
+I (23:59:55.539)(23:59:55:373) OST: svr_ota Tmr creation Scs
+I (23:59:55.539)(23:59:55:374) 17: read connectivity_mode_status=0
+I (23:59:55.540)(23:59:55:375) QSND: INTF_MSG to 7 evnt 3 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:55.541)(23:59:55:376) 2: calling pairing mode
+I (23:59:55.542)(23:59:55:376) 2: RLS 0 
+
+I (23:59:55.542)(23:59:55:377) 2: RLS 0 
+
+I (23:59:55.543)(23:59:55:377) 2: RLS 0 
+
+I (23:59:55.543)(23:59:55:378) 2: RLS 0 
+
+I (23:59:55.543)(23:59:55:378) 2: RLS 0 
+
+I (23:59:55.544)(23:59:55:379) 2: RLS 0 
+
+I (23:59:55.544)(23:59:55:379) 4: gl:VOLT=217000
+I (23:59:55.545)(23:59:55:380) 2: Prev_skt_ste:0 3 0
+I (23:59:55.546)(23:59:55:380) 2: Test rly 0 0 0 0
+
+E (23:59:55.546)(23:59:55:381) 2: B25 0 0 0 0 0 0 0 0
+I (23:59:55.547)(23:59:55:382) 2: Calibration_mode 0
+I (23:59:55.547)(23:59:55:382) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (23:59:55.548)(23:59:55:383) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (23:59:55.548)(23:59:55:384) 2: RLY:0:0:0:0
+
+I (23:59:55.550)(23:59:55:385) 2: Rly sts 0 curr_vol_Sts 0 vol_err_ovrride_bit 0
+
+I (23:59:55.551)(23:59:55:386) 2: no pending process 
+I (23:59:55.551)(23:59:55:386) 2: Curr_ste 2
+I (23:59:55.552)(23:59:55:387) 2: RLS 0 
+
+I (23:59:55.552)(23:59:55:387) 2: RLS 0 
+
+I (23:59:55.553)(23:59:55:388) 2: RLS 0 
+
+I (23:59:55.553)(23:59:55:388) 2: RLS 0 
+
+I (23:59:55.554)(23:59:55:388) 2: RLS 0 
+
+I (23:59:55.554)(23:59:55:389) 2: RLS 0 
+
+I (23:59:55.555)(23:59:55:389) 4: gl:VOLT=0
+I (23:59:55.555)(23:59:55:390) 2: Prev_skt_ste:0 0 1
+I (23:59:55.556)(23:59:55:391) APP_ID: latest app id read = 0
+I (23:59:55.557)(23:59:55:391) 2: RLS 0 
+
+I (23:59:55.557)(23:59:55:392) 2: RLS 0 
+
+I (23:59:55.557)(23:59:55:392) 2: RLS 0 
+
+I (23:59:55.558)(23:59:55:393) 2: RLS 0 
+
+I (23:59:55.558)(23:59:55:393) 2: RLS 0 
+
+I (23:59:55.559)(23:59:55:394) 2: RLS 0 
+
+I (23:59:55.559)(23:59:55:394) 4: gl:VOLT=0
+I (23:59:55.560)(23:59:55:395) 2: Prev_skt_ste:0 0 2
+I (23:59:55.560)(23:59:55:395) APP_ID: latest app id read = 0
+I (23:59:55.561)(23:59:55:396) 2: RLS 0 
+
+I (23:59:55.562)(23:59:55:396) 2: RLS 0 
+
+I (23:59:55.562)(23:59:55:397) 2: RLS 0 
+
+I (23:59:55.563)(23:59:55:397) 2: RLS 0 
+
+I (23:59:55.563)(23:59:55:398) 2: RLS 0 
+
+I (23:59:55.564)(23:59:55:398) 2: RLS 0 
+
+I (23:59:55.564)(23:59:55:399) 4: gl:VOLT=0
+I (23:59:55.565)(23:59:55:399) 2: Prev_skt_ste:0 0 3
+I (23:59:55.565)(23:59:55:400) APP_ID: latest app id read = 0
+I (23:59:55.566)(23:59:55:400) 2: RLS 0 
+
+I (23:59:55.566)(23:59:55:401) 2: RLS 0 
+
+I (23:59:55.567)(23:59:55:401) 2: RLS 0 
+
+I (23:59:55.567)(23:59:55:402) 2: RLS 0 
+
+I (23:59:55.568)(23:59:55:402) 2: RLS 0 
+
+I (23:59:55.568)(23:59:55:403) 2: RLS 0 
+
+I (23:59:55.569)(23:59:55:403) 4: gl:VOLT=0
+I (23:59:55.569)(23:59:55:404) 2: Prev_skt_ste:0 0 4
+I (23:59:55.570)(23:59:55:404) APP_ID: latest app id read = 0
+I (23:59:55.570)(23:59:55:405) 2: RLS 0 
+
+I (23:59:55.571)(23:59:55:406) 2: RLS 0 
+
+I (23:59:55.571)(23:59:55:406) 2: RLS 0 
+
+I (23:59:55.572)(23:59:55:406) 2: RLS 0 
+
+I (23:59:55.572)(23:59:55:407) 2: RLS 0 
+
+I (23:59:55.573)(23:59:55:407) 2: RLS 0 
+
+I (23:59:55.573)(23:59:55:408) 4: gl:VOLT=0
+I (23:59:55.574)(23:59:55:408) 2: Prev_skt_ste:0 0 5
+I (23:59:55.574)(23:59:55:409) APP_ID: latest app id read = 0
+E (23:59:55.575)(23:59:55:410) 2: B13 2 0 13 7
+I (23:59:55.576)(23:59:55:410) 2: Pwr Off State_event rcvd event=13
+I (23:59:55.576)(23:59:55:411) 17: common events =13
+I (23:59:55.577)(23:59:55:412) 17: Time not sycned atleast one time
+I (23:59:55.578)(23:59:55:412) 2: event 13 intrf_type 7 ucstae 0
+I (23:59:55.578)(23:59:55:413) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 13 from intf 7
+E (23:59:55.579)(23:59:55:414) 2: B15 2 0 0 13 7
+E (23:59:55.580)(23:59:55:415) 2: B13 2 0 3 7
+E (23:59:55.581)(23:59:55:415) 17: O12 3
+I (23:59:55.581)(23:59:55:416) 17: in pairing mode button press
+E (23:59:55.582)(23:59:55:416) 17: O1 0 0
+I (23:59:55.582)(23:59:55:417) 17: statr pairing thread api
+I (23:59:55.583)(23:59:55:418) 2: Calibration_mode 0
+I (23:59:55.583)(23:59:55:418) OSTH: C T_N:- pairing Size:- 3072 Priority:- 10 Core_id:- 0 handle:- 0x3ffe2454
+I (23:59:55.585)(23:59:55:419) SMAX: add_thrd_list addr 0x3ffe2454 thrd_list_cnt 7 indx 6
+I (23:59:55.586)(23:59:55:420) 2: event 3 intrf_type 7 ucstae 0
+I (23:59:55.586)(23:59:55:421) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 3 from intf 7
+E (23:59:55.587)(23:59:55:422) 2: B15 2 0 0 3 7
+I (23:59:55.588)(23:59:55:423) OST: alarm_timer Tmr creation Scs
+I (23:59:55.589)(23:59:55:423) 9: 0
+I (23:59:55.589)(23:59:55:424) 9: 0
+I (23:59:55.589)(23:59:55:424) 9: 0
+I (23:59:55.590)(23:59:55:425) 9: 0
+I (23:59:55.590)(23:59:55:425) 9: 0
+I (23:59:55.591)(23:59:55:425) 9: 0
+I (23:59:55.591)(23:59:55:426) 9: 0
+I (23:59:55.591)(23:59:55:426) 9: 0
+I (23:59:55.592)(23:59:55:427) 9: 0
+I (23:59:55.592)(23:59:55:427) 9: 0
+I (23:59:55.593)(23:59:55:427) 9: 0
+I (23:59:55.593)(23:59:55:428) 9: 0
+I (23:59:55.593)(23:59:55:428) 9: 0
+I (23:59:55.594)(23:59:55:429) 9: 0
+I (23:59:55.594)(23:59:55:429) 9: 0
+I (23:59:55.595)(23:59:55:429) 9: 0
+I (23:59:55.595)(23:59:55:430) 9: alarm_used_cnt 0
+I (23:59:55.596)(23:59:55:430) 9: No alarm schedule found
+E (23:59:55.596)(23:59:55:431) 9: S4 0
+I (23:59:55.783)(23:59:55:618) BTDM_INIT: BT controller compile version [bc2e043]
+I (23:59:55.784)(23:59:55:619) system_api: Base MAC address is not set
+I (23:59:55.785)(23:59:55:619) system_api: read default base MAC address from EFUSE
+I (23:59:55.787)(23:59:55:622) phy_init: phy_version 4670,719f9f6,Feb 18 2021,17:07:07
+I (23:59:55.934)(23:59:55:769) SMAX: Name Cntrl_state hghwtrmrk 1952
+I (23:59:55.935)(23:59:55:769) SMAX: Name pairing hghwtrmrk 1088
+I (23:59:56.067)(23:59:56:902) OST: gatts_config_tmr Tmr creation Scs
+I (23:59:56.068)(23:59:56:902) BLE: BLE MAC ADDRESS
+I (23:59:56.068)(23:59:56:903) TAG: MAC: 00:4B:12:C1:41:AA
+I (23:59:56.068)(23:59:56:903) BLE: reg app id registered, app_id 85, status 0
+I (23:59:56.069)(23:59:56:904) OST: Pairing_Timer Tmr creation Scs
+I (23:59:56.069)(23:59:56:904) 2: Calibration_mode 0
+I (23:59:56.071)(23:59:56:905) BLE: pairing flag 1
+I (23:59:56.071)(23:59:56:906) BLE: dev_name_scs 0,dev_name_pair_mode iinv_spnl
+I (2052)(23:59:56:907) wifi:wifi driver task: 3ffee29c, prio:23, stack:6144, core=0
+I (2065)(23:59:56:921) wifi:wifi firmware version: 4809a2e
+I (2065)(23:59:56:921) wifi:wifi certification version: v7.0
+I (2066)(23:59:56:921) wifi:config NVS flash: enabled
+I (2066)(23:59:56:921) wifi:config nano formating: enabled
+I (2067)(23:59:56:922) wifi:Init data frame dynamic rx buffer num: 32
+I (2067)(23:59:56:923) wifi:Init management frame dynamic rx buffer num: 32
+I (23:59:56.089)(23:59:56:924) BLE: create attribute table sucesfuly,the number handle = 15
+I (2068)(23:59:56:924) wifi:Init management short buffer num: 32
+I (2070)(23:59:56:925) wifi:Init dynamic tx buffer num: 32
+I (2071)(23:59:56:926) wifi:Init static rx buffer size: 1600
+I (2071)(23:59:56:927) wifi:Init static rx buffer num: 2
+I (2072)(23:59:56:927) wifi:Init dynamic rx buffer num: 32
+I (23:59:56.094)(23:59:56:929) wifi_init: rx ba win: 2
+I (23:59:56.095)(23:59:56:929) wifi_init: tcpip mbox: 16
+I (23:59:56.095)(23:59:56:929) wifi_init: udp mbox: 6
+I (23:59:56.095)(23:59:56:930) wifi_init: tcp mbox: 6
+I (23:59:56.096)(23:59:56:930) wifi_init: tcp tx win: 2440
+I (23:59:56.096)(23:59:56:931) wifi_init: tcp rx win: 2440
+I (23:59:56.096)(23:59:56:931) BLE: SERVICE_START_EVT, status 0, service_handle 40
+I (23:59:56.097)(23:59:56:932) wifi_init: tcp mss: 536
+I (23:59:56.098)(23:59:56:933) BLE: advrtsng start scsfly
+I (23:59:56.099)(23:59:56:933) 14: esp wifi init ret scs
+I (23:59:56.100)(23:59:56:935) OST: sta_retry_timer Tmr creation Scs
+I (23:59:56.101)(23:59:56:936) SMC: in smartconfig_config api
+I (23:59:56.101)(23:59:56:936) OST: smartconfig Tmr creation Scs
+I (23:59:56.103)(23:59:56:938) 14: esp_wifi_set_mode scs
+I (2084)(23:59:56:940) wifi:mode : sta (00:4b:12:c1:41:a8)(23:59:56:940)
+I (2085)(23:59:56:941) wifi:enable tsf
+I (23:59:56.107)(23:59:56:942) SMC: after init SC wifi
+E (23:59:56.108)(23:59:56:943) 14: N1 WIFI_EVENT 2
+I (2088)(23:59:56:943) wifi:Set ps type: 0
+
+I (23:59:56.109)(23:59:56:943) 14: wifi_sta_en 0
+
+I (23:59:56.109)(23:59:56:944) OSTH: C T_N:- smartconfig_example_task Size:- 3072 Priority:- 11 Core_id:- 0 handle:- 0x3fff365c
+I (23:59:56.110)(23:59:56:945) SMAX: add_thrd_list addr 0x3fff365c thrd_list_cnt 8 indx 7
+I (2141)(23:59:56:996) smartconfig: SC version: V3.0.1
+I (23:59:56.435)(23:59:56:270) SMAX: Name pairing hghwtrmrk 972
+I (23:59:56.436)(23:59:56:270) SMAX: Name smartconfig_exa hghwtrmrk 2360
+I (23:59:56.473)(23:59:56:308) BLE: ESP_GATTS_CONNECT_EVT, conn_id = 0 49268 32768
+I (23:59:56.474)(23:59:56:309) BLE: cnctd sts ble_conn 0, ble_count 1
+I (23:59:56.474)(23:59:56:309) SMC: ** delete smartconfig task via ble
+I (23:59:56.476)(23:59:56:311) OST: smartconfig,Tmr Stpd Scsfly
+I (23:59:56.476)(23:59:56:311) OST: Tmr Del scs
+I (23:59:56.476)(23:59:56:311) OSTH: D handle:- 0x3fff365c
+I (2458)(23:59:56:314) wifi:flush txq
+I (2459)(23:59:56:314) wifi:stop sw txq
+I (2459)(23:59:56:315) wifi:lmac stop hw txq
+I (23:59:56.480)(23:59:56:315) SMC: after delete  xSCHandle
+I (23:59:56.481)(23:59:56:315) PAIRING: SC STOP IN PAIRING MODE
+E (23:59:56.481)(23:59:56:315) 14: N1 WIFI_EVENT 3
+I (23:59:56.481)(23:59:56:316) BLE_COMP: 72 b6 b9 c1 c1 fc 
+E (23:59:56.481)(23:59:56:316) 14: N4 WIFI_EVENT 3
+I (23:59:56.482)(23:59:56:317) BLE: reached max limit 1
+I (23:59:56.483)(23:59:56:318) OST: con_check_tmr,Tmr Stpd Scsfly
+I (23:59:56.489)(23:59:56:324) BLE: advrtsng start scsfly
+I (23:59:56.507)(23:59:56:342) SMC: sconfig return 1 smart_config_proc_sts 2
+I (23:59:56.508)(23:59:56:342) 17: call pairing_softap_config
+I (23:59:56.508)(23:59:56:343) OST: B Blink Prd Led Tmr,Tmr Stpd Scsfly
+I (23:59:56.509)(23:59:56:343) BLE: curr user count 1 index 0
+I (23:59:56.509)(23:59:56:344) BLE: ble curr user count 1 
+I (23:59:56.510)(23:59:56:345) 14: pairing wifi not initialized ble enabled
+I (23:59:56.813)(23:59:56:648) BLE: upd_conn params sts = 0, min_int = 0, max_int = 0,conn_int = 6,latency = 0, timeout = 500
+I (23:59:57.153)(23:59:57:988) BLE: ESP_GATTS_MTU_EVT, MTU 256
+I (23:59:57.154)(23:59:57:989) 20: connected sts : 0 0 11 1
+E (23:59:57.154)(23:59:57:989) 21: T 11 0 0
+E (23:59:57.154)(23:59:57:989) 21: R 11 0 0 0 0
+E (23:59:57.155)(23:59:57:990) TM: T1 74 0 11 0
+E (23:59:57.155)(23:59:57:990) TM: T2 3 0 1 0
+E (23:59:57.156)(23:59:57:991) TM: MM 12 0 12 0
+I (23:59:57.156)(23:59:57:991) BLE: ESP_GATTS_MTU_EVT, MTU 256 0 0
+I (23:59:57.168)(23:59:57:002) BLE: upd_conn params sts = 0, min_int = 0, max_int = 0,conn_int = 39,latency = 0, timeout = 500
+I (23:59:57.211)(23:59:57:046) BLE: data rcvd long write
+I (23:59:57.211)(23:59:57:046) BLE: ping_tmr_strtd
+I (23:59:57.212)(23:59:57:046) MDEC: rx_len 251
+I (23:59:57.212)(23:59:57:047) 21: sync byte not matched 0 addr 0x3fff26aa remain_len 251
+I (23:59:57.304)(23:59:57:139) BLE: data rcvd long write
+I (23:59:57.305)(23:59:57:140) BLE: ping_tmr_strtd
+I (23:59:57.305)(23:59:57:140) MDEC: rx_len 249
+I (23:59:57.305)(23:59:57:140) 21: sync byte not matched 0 addr 0x3fff2a16 remain_len 249
+I (23:59:57.536)(23:59:57:371) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (23:59:57.537)(23:59:57:372) 4: D10 0 1 0 0 0 216000 0 0 5 0 0
+I (23:59:57.544)(23:59:57:378) BLE: notfy true
+I (23:59:57.690)(23:59:57:524) BLE: data rcvd short write
+I (23:59:57.690)(23:59:57:525) BLE: ping_tmr_strtd
+I (23:59:57.690)(23:59:57:525) MDEC: rx_len 32
+I (23:59:57.690)(23:59:57:525) 21: sync byte matched 0x3fff242a
+I (23:59:57.691)(23:59:57:526) MDEC: frame_len=32
+I (23:59:57.692)(23:59:57:527) 21: total len 32 proc len 32
+I (23:59:57.692)(23:59:57:527) MDEC: full frame rcvd
+I (23:59:57.692)(23:59:57:527) 21: rcvd_frm 11 num_msg 1 trn_id 1 ack_req 0 frm_len 32 sec_mod 0
+I (23:59:57.694)(23:59:57:529) 21: rcvd_msg intf 11 msg_id 39 msg_len 20 msg_type 1
+E (23:59:57.695)(23:59:57:529) 21: Q13 11 39 20 1
+I (23:59:57.695)(23:59:57:530) 2: Calibration_mode 0
+I (23:59:57.696)(23:59:57:531) 20: App lvl sec msg
+I (23:59:57.696)(23:59:57:531) OST: mem alloc size is unalgnd 17
+I (23:59:57.697)(23:59:57:532) 20: 05 
+I (23:59:57.698)(23:59:57:532) 20: 0e 
+I (23:59:57.698)(23:59:57:533) 20: bf 
+I (23:59:57.698)(23:59:57:533) 20: 6a 
+I (23:59:57.699)(23:59:57:534) 20: fa 
+I (23:59:57.699)(23:59:57:534) 20: f1 
+I (23:59:57.700)(23:59:57:534) 20: ce 
+I (23:59:57.700)(23:59:57:535) 20: 1d 
+I (23:59:57.701)(23:59:57:535) 20: b3 
+I (23:59:57.701)(23:59:57:536) 20: 77 
+I (23:59:57.701)(23:59:57:536) 20: ba 
+I (23:59:57.702)(23:59:57:537) 20: 9f 
+I (23:59:57.702)(23:59:57:537) 20: 6a 
+I (23:59:57.703)(23:59:57:537) 20: 92 
+I (23:59:57.703)(23:59:57:538) 20: 5b 
+I (23:59:57.704)(23:59:57:538) 20: 67 
+I (23:59:57.704)(23:59:57:539) 21: R app_id:0 sec_resp:0
+I (23:59:57.705)(23:59:57:539) 20: trans_id 1 pld_len 8 intf 11 msg_type 1  pr_snt_scs 0
+I (23:59:57.706)(23:59:57:540) 21: S sec_mod :1 app_id :0 rand:�j����w��j�[g
+I (23:59:57.706)(23:59:57:541) 21: WSS_NCNT
+I (23:59:57.707)(23:59:57:541) OST: mem alloc size is unalgnd 34
+I (23:59:57.707)(23:59:57:542) BLE: mtu 253
+I (23:59:57.708)(23:59:57:542) 20: key w/N`���N�:�q���s�iLI	Cs���SPL00020251214JA 
+***** Sec ctx address 0x3ffee4ec****
+
+I (23:59:57.708)(23:59:57:543) BLE: payld_len 24
+I (23:59:57.710)(23:59:57:544) 20: Upd the conn req
+I (23:59:57.710)(23:59:57:545) BLE: config tmr uptd strt
+I (23:59:57.711)(23:59:57:546) 2: Calibration_mode 0
+I (23:59:57.712)(23:59:57:547) MDEC: no flow control
+I (23:59:57.712)(23:59:57:547) 21: send_msg intf 11 msg_id 39 msg_len 24 sec_mode 1 fd 0 pad_len 8 app_id 0 trs_id 1 scs_snt 0
+E (23:59:57.714)(23:59:57:549) 21: Q14 11 39 24 1
+I (23:59:57.714)(23:59:57:549) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (23:59:57.715)(23:59:57:550) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (23:59:57.716)(23:59:57:551) BLE: gatts config tmr stpd
+I (23:59:57.788)(23:59:57:623) BLE: data rcvd short write
+I (23:59:57.788)(23:59:57:623) BLE: ping_tmr_strtd
+I (23:59:57.788)(23:59:57:623) MDEC: rx_len 24
+I (23:59:57.789)(23:59:57:623) 21: sync byte matched 0x3fff242a
+I (23:59:57.789)(23:59:57:624) MDEC: frame_len=24
+I (23:59:57.790)(23:59:57:625) 21: total len 24 proc len 24
+I (23:59:57.790)(23:59:57:625) MDEC: full frame rcvd
+I (23:59:57.790)(23:59:57:625) 21: rcvd_frm 11 num_msg 1 trn_id 2 ack_req 0 frm_len 24 sec_mod 1
+I (23:59:57.792)(23:59:57:627) 21: rcvd_msg intf 11 msg_id 11 msg_len 0 msg_type 0
+E (23:59:57.793)(23:59:57:628) 21: Q13 11 11 0 0
+I (23:59:57.793)(23:59:57:628) 2: Calibration_mode 0
+I (23:59:57.794)(23:59:57:629) 2: Calibration_mode 0
+I (23:59:57.795)(23:59:57:629) TAG: MAC: 00:4B:12:C1:41:AA
+I (23:59:57.795)(23:59:57:630) 20: 00: 
+I (23:59:57.796)(23:59:57:630) 20: 4B: 
+I (23:59:57.796)(23:59:57:631) 20: 12: 
+I (23:59:57.797)(23:59:57:631) 20: C1: 
+I (23:59:57.797)(23:59:57:632) 20: 41: 
+I (23:59:57.797)(23:59:57:632) 20: AA: 
+I (23:59:57.798)(23:59:57:633) 21:  Q fd_hw_mj:0 fd_hw_mr:0 fd_sfw_mj:0 fd_sfw_mr:0 fd_hw_tp:5 max_alrm 16 bld_num 41 ful_sts 0
+I (23:59:57.799)(23:59:57:634) 20: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (23:59:57.800)(23:59:57:635) 20: Q hw_vr_nw 11 Q sw_vr_nw 3 prm_id 1
+I (23:59:57.801)(23:59:57:636) 20: trans_id 2 pld_len 40 intf 11 msg_type 1  pr_snt_scs 1
+I (23:59:57.802)(23:59:57:637) 21: REV_NUMR :- 24365
+I (23:59:57.802)(23:59:57:637) 21: WSS_NCNT
+I (23:59:57.803)(23:59:57:637) 16: RO_NVM_VER 2
+I (23:59:57.803)(23:59:57:638) BLE: mtu 253
+I (23:59:57.804)(23:59:57:638) 4: Vol_ref_parm= 139814
+I (23:59:57.804)(23:59:57:639) BLE: payld_len 56
+I (23:59:57.805)(23:59:57:639) MDEC: no flow control
+I (23:59:57.805)(23:59:57:640) BLE: config tmr uptd strt
+I (23:59:57.807)(23:59:57:641) 21: send_msg intf 11 msg_id 11 msg_len 56 sec_mode 1 fd 0 pad_len 8 app_id 0 trs_id 2 scs_snt 1
+E (23:59:57.808)(23:59:57:642) 21: Q14 11 11 56 2
+I (23:59:57.808)(23:59:57:643) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (23:59:57.809)(23:59:57:644) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (23:59:57.810)(23:59:57:644) BLE: gatts config tmr stpd
+I (23:59:57.936)(23:59:57:771) SMAX: Name rx_process hghwtrmrk 2076
+I (23:59:57.937)(23:59:57:771) SMAX: Name tx_process hghwtrmrk 2244
+I (23:59:58.031)(23:59:58:866) BLE: data rcvd short write
+I (23:59:58.032)(23:59:58:866) BLE: ping_tmr_strtd
+I (23:59:58.032)(23:59:58:866) MDEC: rx_len 56
+I (23:59:58.032)(23:59:58:867) 21: sync byte matched 0x3fff242a
+I (23:59:58.033)(23:59:58:867) MDEC: frame_len=56
+I (23:59:58.033)(23:59:58:868) 21: total len 56 proc len 56
+I (23:59:58.034)(23:59:58:868) MDEC: full frame rcvd
+I (23:59:58.034)(23:59:58:869) 21: rcvd_frm 11 num_msg 1 trn_id 3 ack_req 1 frm_len 56 sec_mod 1
+I (23:59:58.035)(23:59:58:870) 21: ack_resp intf 11 trans 3
+I (23:59:58.036)(23:59:58:871) 20: trans_id 0 pld_len 8 intf 11 msg_type 0  pr_snt_scs 2
+I (23:59:58.036)(23:59:58:871) 4: PROP VOLT DETECTED
+I (23:59:58.037)(23:59:58:872) 21: rcvd_msg intf 11 msg_id 3 msg_len 32 msg_type 1
+I (23:59:58.037)(23:59:58:872) 21: WSS_NCNT
+E (23:59:58.038)(23:59:58:873) 21: Q13 11 3 32 1
+I (23:59:58.039)(23:59:58:874) BLE: mtu 253
+I (23:59:58.040)(23:59:58:874) 2: Calibration_mode 0
+I (23:59:58.040)(23:59:58:875) BLE: payld_len 8
+I (23:59:58.041)(23:59:58:876) 21: srv_prime_mode=1 addr wss://ftp.iinvsys.com:55568 addr_len 27 srv_info_type 4 nvm_srvr 1
+I (23:59:58.041)(23:59:58:876) BLE: config tmr uptd strt
+I (23:59:58.042)(23:59:58:877) 17: prime mode 1 srvr type 4
+I (23:59:58.044)(23:59:58:879) 17: server_uri_addr=wss://ftp.iinvsys.com:55568
+I (23:59:58.045)(23:59:58:879) QSND: INTF_MSG to 8 evnt 3 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:58.045)(23:59:58:880) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (23:59:58.046)(23:59:58:880) 20: Conn mode in 0:10
+
+I (23:59:58.046)(23:59:58:881) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (23:59:58.047)(23:59:58:882) MDEC: no flow control
+I (23:59:58.048)(23:59:58:882) BLE: gatts config tmr stpd
+I (23:59:58.046)(23:59:58:881) MSH: event_num=3
+I (23:59:58.049)(23:59:58:884) MSH: wifi ble msg hdlr rcvd event=3
+I (23:59:58.050)(23:59:58:885) MSH: MSG_STE_HDLR_THRD2424
+I (23:59:58.051)(23:59:58:886) MSH: no flow control
+I (23:59:58.038)(23:59:58:872) QSND: INTF_MSG to 3 evnt 25 pld 0 len(w) 4 ctx 0 fre_req 0
+E (23:59:58.052)(23:59:58:887) 2: B13 2 0 25 3
+I (23:59:58.053)(23:59:58:888) 2: Pwr Off State_event rcvd event=25
+I (23:59:58.054)(23:59:58:888) 17: read connectivity_mode_status=0
+I (23:59:58.055)(23:59:58:889) OST: Time Out Led Tmr,Tmr Stpd Scsfly
+I (23:59:58.055)(23:59:58:890) 2: event 25 intrf_type 3 ucstae 0
+I (23:59:58.056)(23:59:58:891) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 25 from intf 3
+E (23:59:58.057)(23:59:58:892) 2: B15 2 0 0 25 3
+I (23:59:58.177)(23:59:58:012) BLE: data rcvd short write
+I (23:59:58.178)(23:59:58:012) BLE: ping_tmr_strtd
+I (23:59:58.178)(23:59:58:013) MDEC: rx_len 56
+I (23:59:58.178)(23:59:58:013) 21: sync byte matched 0x3fff242a
+I (23:59:58.179)(23:59:58:013) MDEC: frame_len=56
+I (23:59:58.180)(23:59:58:014) 21: total len 56 proc len 56
+I (23:59:58.180)(23:59:58:015) MDEC: full frame rcvd
+I (23:59:58.180)(23:59:58:015) 21: rcvd_frm 11 num_msg 1 trn_id 4 ack_req 1 frm_len 56 sec_mod 1
+I (23:59:58.182)(23:59:58:016) 21: ack_resp intf 11 trans 4
+I (23:59:58.182)(23:59:58:017) 20: trans_id 0 pld_len 8 intf 11 msg_type 0  pr_snt_scs 2
+I (23:59:58.183)(23:59:58:018) 21: WSS_NCNT
+I (23:59:58.184)(23:59:58:018) 21: rcvd_msg intf 11 msg_id 0 msg_len 40 msg_type 1
+I (23:59:58.184)(23:59:58:018) BLE: mtu 253
+E (23:59:58.185)(23:59:58:019) 21: Q13 11 0 40 1
+I (23:59:58.185)(23:59:58:020) BLE: payld_len 8
+I (23:59:58.186)(23:59:58:020) 2: Calibration_mode 0
+I (23:59:58.186)(23:59:58:021) BLE: config tmr uptd strt
+I (23:59:58.187)(23:59:58:022) 20: i val=26
+I (23:59:58.188)(23:59:58:023) 20: j val=28
+I (23:59:58.188)(23:59:58:023) 21: ssd_len=26 ssid=TP-Link_6D38-with_Internet pass_len=11 pass=12345678906
+I (23:59:58.190)(23:59:58:024) 20: set conn_Med=255
+I (23:59:58.190)(23:59:58:025) MDEC: no flow control
+I (23:59:58.191)(23:59:58:025) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (23:59:58.191)(23:59:58:026) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (23:59:58.192)(23:59:58:027) BLE: gatts config tmr stpd
+I (23:59:58.372)(23:59:58:207) BLE: data rcvd short write
+I (23:59:58.372)(23:59:58:207) BLE: ping_tmr_strtd
+I (23:59:58.373)(23:59:58:207) MDEC: rx_len 24
+I (23:59:58.373)(23:59:58:208) 21: sync byte matched 0x3fff242a
+I (23:59:58.373)(23:59:58:208) MDEC: frame_len=24
+I (23:59:58.374)(23:59:58:209) 21: total len 24 proc len 24
+I (23:59:58.375)(23:59:58:209) MDEC: full frame rcvd
+I (23:59:58.375)(23:59:58:209) 21: rcvd_frm 11 num_msg 1 trn_id 5 ack_req 1 frm_len 24 sec_mod 1
+I (23:59:58.376)(23:59:58:211) 21: ack_resp intf 11 trans 5
+I (23:59:58.377)(23:59:58:212) 20: trans_id 0 pld_len 8 intf 11 msg_type 0  pr_snt_scs 2
+I (23:59:58.378)(23:59:58:213) 21: WSS_NCNT
+I (23:59:58.378)(23:59:58:213) 21: rcvd_msg intf 11 msg_id 9 msg_len 4 msg_type 1
+I (23:59:58.379)(23:59:58:214) BLE: mtu 253
+E (23:59:58.379)(23:59:58:214) 21: Q13 11 9 4 1
+I (23:59:58.380)(23:59:58:215) BLE: payld_len 8
+I (23:59:58.380)(23:59:58:215) 2: Calibration_mode 0
+I (23:59:58.381)(23:59:58:216) BLE: config tmr uptd strt
+I (23:59:58.382)(23:59:58:216) OST: exit_Timer Tmr creation Scs
+I (23:59:58.383)(23:59:58:218) INDEX: in exit pair
+
+I (23:59:58.383)(23:59:58:218) 20: conn 15
+I (23:59:58.384)(23:59:58:219) 21: app id: 0
+I (23:59:58.384)(23:59:58:219) 21: idx: 0
+I (23:59:58.385)(23:59:58:219) BLE: ESP_GATTS_CONF_EVT, status = 0
+I (23:59:58.385)(23:59:58:220) 21: 0
+I (23:59:58.386)(23:59:58:220) OST: gatts_config_tmr,Tmr Stpd Scsfly
+I (23:59:58.386)(23:59:58:221) 21: 1
+I (23:59:58.387)(23:59:58:221) BLE: gatts config tmr stpd
+I (23:59:58.387)(23:59:58:222) 21: 0
+I (23:59:58.388)(23:59:58:223) 21: 1
+I (23:59:58.389)(23:59:58:223) 21: 
+0 : 0 : 0 :0
+I (23:59:58.389)(23:59:58:224) 21: 
+0 : 0 : 0 :0
+I (23:59:58.390)(23:59:58:224) 21: 
+0 : 0 : 0 :0
+I (23:59:58.390)(23:59:58:225) 21: 
+0 : 0 : 0 :0
+I (23:59:58.391)(23:59:58:226) 21: 
+0 : 0 : 0 :0
+I (23:59:58.391)(23:59:58:226) 21: 
+0 : 0 : 0 :0
+I (23:59:58.392)(23:59:58:227) 21: 
+0 : 0 : 0 :0
+I (23:59:58.393)(23:59:58:227) 21: 
+0 : 0 : 0 :0
+I (23:59:58.393)(23:59:58:228) 21: 
+0 : 0 : 0 :0
+I (23:59:58.394)(23:59:58:228) 21: 
+0 : 0 : 0 :0
+I (23:59:58.394)(23:59:58:229) 21: 
+0 : 0 : 0 :0
+I (23:59:58.395)(23:59:58:229) 21: 
+0 : 0 : 0 :0
+I (23:59:58.395)(23:59:58:230) 21: 
+0 : 0 : 0 :0
+I (23:59:58.396)(23:59:58:231) 21: 
+0 : 0 : 0 :0
+I (23:59:58.396)(23:59:58:231) 21: 
+0 : 0 : 0 :0
+I (23:59:58.397)(23:59:58:232) 21: 
+0 : 0 : 0 :0
+I (23:59:58.397)(23:59:58:232) 21: 
+0 : 0 : 0 :0
+I (23:59:58.398)(23:59:58:233) 21: 
+0 : 0 : 0 :0
+I (23:59:58.399)(23:59:58:233) 21: 
+0 : 0 : 0 :0
+I (23:59:58.399)(23:59:58:234) 21: 
+0 : 0 : 0 :0
+I (23:59:58.400)(23:59:58:234) 21: 
+0 : 0 : 0 :0
+I (23:59:58.400)(23:59:58:235) 21: 
+0 : 0 : 0 :0
+I (23:59:58.401)(23:59:58:235) 21: 
+0 : 0 : 0 :0
+I (23:59:58.401)(23:59:58:236) 21: 
+0 : 0 : 0 :0
+I (23:59:58.402)(23:59:58:237) 21: 
+0 : 0 : 0 :0
+I (23:59:58.402)(23:59:58:237) 21: 
+0 : 0 : 0 :0
+I (23:59:58.403)(23:59:58:238) 21: 
+0 : 0 : 0 :0
+I (23:59:58.404)(23:59:58:238) 21: 
+0 : 0 : 0 :0
+I (23:59:58.404)(23:59:58:239) 21: 
+0 : 0 : 0 :0
+I (23:59:58.405)(23:59:58:239) 21: 
+0 : 0 : 0 :0
+I (23:59:58.405)(23:59:58:240) 21: 
+0 : 0 : 0 :0
+I (23:59:58.406)(23:59:58:240) 21: 
+0 : 0 : 0 :0
+I (23:59:58.406)(23:59:58:241) 21: 
+0 : 0 : 0 :0
+I (23:59:58.407)(23:59:58:242) 21: 
+0 : 0 : 0 :0
+I (23:59:58.407)(23:59:58:242) 21: 
+0 : 0 : 0 :0
+I (23:59:58.408)(23:59:58:243) 21: 
+0 : 0 : 0 :0
+I (23:59:58.409)(23:59:58:243) 21: 
+0 : 0 : 0 :0
+I (23:59:58.409)(23:59:58:244) 21: 
+0 : 0 : 0 :0
+I (23:59:58.410)(23:59:58:244) 21: 
+0 : 0 : 0 :0
+I (23:59:58.410)(23:59:58:245) 21: 
+0 : 0 : 0 :0
+I (23:59:58.411)(23:59:58:245) 21: 
+0 : 0 : 0 :0
+I (23:59:58.411)(23:59:58:246) 21: 
+0 : 0 : 0 :0
+I (23:59:58.412)(23:59:58:247) 21: 
+0 : 0 : 0 :0
+I (23:59:58.412)(23:59:58:247) 21: 
+0 : 0 : 0 :0
+I (23:59:58.413)(23:59:58:248) 21: 
+0 : 0 : 0 :0
+I (23:59:58.414)(23:59:58:248) 21: 
+0 : 0 : 0 :0
+I (23:59:58.414)(23:59:58:249) 21: 
+0 : 0 : 0 :0
+I (23:59:58.415)(23:59:58:249) 21: 
+0 : 0 : 0 :0
+I (23:59:58.415)(23:59:58:250) 21: 
+0 : 0 : 0 :0
+I (23:59:58.416)(23:59:58:250) 21: 
+0 : 0 : 0 :0
+I (23:59:58.416)(23:59:58:251) 21: 
+0 : 0 : 0 :0
+I (23:59:58.417)(23:59:58:252) 21: 
+0 : 0 : 0 :0
+I (23:59:58.417)(23:59:58:252) 21: 
+0 : 0 : 0 :0
+I (23:59:58.418)(23:59:58:253) 21: 
+0 : 0 : 0 :0
+I (23:59:58.418)(23:59:58:253) 21: 
+0 : 0 : 0 :0
+I (23:59:58.419)(23:59:58:254) 21: 
+0 : 0 : 0 :0
+I (23:59:58.420)(23:59:58:254) 21: 
+0 : 0 : 0 :0
+I (23:59:58.420)(23:59:58:255) 21: 
+0 : 0 : 0 :0
+I (23:59:58.421)(23:59:58:255) 21: 
+0 : 0 : 0 :0
+I (23:59:58.421)(23:59:58:256) 21: 
+0 : 0 : 0 :0
+I (23:59:58.422)(23:59:58:256) 21: 
+0 : 0 : 0 :0
+I (23:59:58.422)(23:59:58:257) 21: 
+0 : 0 : 0 :0
+I (23:59:58.423)(23:59:58:258) 21: 
+0 : 0 : 0 :0
+I (23:59:58.423)(23:59:58:258) 21: 
+0 : 0 : 0 :0
+I (23:59:58.424)(23:59:58:259) 21: 
+0 : 0 : 0 :0
+I (23:59:58.425)(23:59:58:259) 21: 
+0 : 0 : 0 :0
+I (23:59:58.425)(23:59:58:260) 21: 
+0 : 0 : 0 :0
+I (23:59:58.426)(23:59:58:260) 21: 
+0 : 0 : 0 :0
+I (23:59:58.426)(23:59:58:261) 21: 
+0 : 0 : 0 :0
+I (23:59:58.427)(23:59:58:261) 21: 
+0 : 0 : 0 :0
+I (23:59:58.427)(23:59:58:262) 21: 
+0 : 0 : 0 :0
+I (23:59:58.428)(23:59:58:263) 21: 
+0 : 0 : 0 :0
+I (23:59:58.428)(23:59:58:263) 21: 
+0 : 0 : 0 :0
+I (23:59:58.429)(23:59:58:264) 21: 
+0 : 0 : 0 :0
+I (23:59:58.430)(23:59:58:264) 21: 
+0 : 0 : 0 :0
+I (23:59:58.430)(23:59:58:265) 21: 
+0 : 0 : 0 :0
+I (23:59:58.431)(23:59:58:265) 21: 
+0 : 0 : 0 :0
+I (23:59:58.431)(23:59:58:266) 21: 
+0 : 0 : 0 :0
+I (23:59:58.432)(23:59:58:266) 21: 
+0 : 0 : 0 :0
+I (23:59:58.432)(23:59:58:267) 21: 
+0 : 0 : 0 :0
+I (23:59:58.433)(23:59:58:268) 21: 
+0 : 0 : 0 :0
+I (23:59:58.433)(23:59:58:268) 21: 
+0 : 0 : 0 :0
+I (23:59:58.434)(23:59:58:269) 21: 
+0 : 0 : 0 :0
+I (23:59:58.435)(23:59:58:269) 21: 
+0 : 0 : 0 :0
+I (23:59:58.435)(23:59:58:270) 21: 
+0 : 0 : 0 :0
+I (23:59:58.436)(23:59:58:270) 21: 
+0 : 0 : 0 :0
+I (23:59:58.436)(23:59:58:271) 21: 
+0 : 0 : 0 :0
+I (23:59:58.437)(23:59:58:271) 21: 
+0 : 0 : 0 :0
+I (23:59:58.437)(23:59:58:272) 21: 
+0 : 0 : 0 :0
+I (23:59:58.437)(23:59:58:272) SMAX: Name rx_process hghwtrmrk 1996
+I (23:59:58.438)(23:59:58:273) 21: 
+0 : 0 : 0 :0
+I (23:59:58.439)(23:59:58:274) 21: 
+0 : 0 : 0 :0
+I (23:59:58.440)(23:59:58:274) 21: 
+0 : 0 : 0 :0
+I (23:59:58.440)(23:59:58:275) 21: 
+0 : 0 : 0 :0
+I (23:59:58.441)(23:59:58:275) 21: 
+0 : 0 : 0 :0
+I (23:59:58.441)(23:59:58:276) 21: 
+0 : 0 : 0 :0
+I (23:59:58.442)(23:59:58:277) 21: 
+0 : 0 : 0 :0
+I (23:59:58.442)(23:59:58:277) 21: 
+0 : 0 : 0 :0
+I (23:59:58.443)(23:59:58:278) 21: 
+0 : 0 : 0 :0
+I (23:59:58.444)(23:59:58:278) 21: 
+0 : 0 : 0 :0
+I (23:59:58.444)(23:59:58:279) 21: 
+0 : 0 : 0 :0
+I (23:59:58.445)(23:59:58:279) 21: 
+0 : 1 : 0 :1
+I (23:59:58.445)(23:59:58:280) 21: wifi_ap_mode=0
+
+I (23:59:58.446)(23:59:58:280) 21: wifi_sta_mode=1
+
+I (23:59:58.446)(23:59:58:281) 21: wifi_ap_sta_mode=0
+
+I (23:59:58.447)(23:59:58:282) 21: ble=1
+
+I (23:59:58.447)(23:59:58:282) 21: IN_PENB0 1
+
+I (23:59:58.448)(23:59:58:283) 21: dis_flg 0 en_dis_md 0 ss_hid_fl 0 rot_in 0
+I (23:59:58.449)(23:59:58:284) 17: router_info_ssid=TP-Link_6D38-with_Internet
+I (23:59:58.450)(23:59:58:284) 17: router_info_password=12345678906
+I (23:59:58.450)(23:59:58:285) 17: NVM write ssid_len value=TP-Link_6D38-with_Internet
+I (23:59:58.451)(23:59:58:286) 17: NVM write password_len value=12345678906
+I (23:59:58.452)(23:59:58:287) 17: nvm read router_info_ssid=TP-Link_6D38-with_Internet
+I (23:59:58.453)(23:59:58:288) 17: nvm read router_info_password=12345678906
+I (23:59:58.454)(23:59:58:289) 17: mdns data=SPL00020251214JA
+I (23:59:58.455)(23:59:58:289) 17: ble name=SPL00020251214JA
+I (23:59:58.455)(23:59:58:290) 17: ble password=0
+I (23:59:58.456)(23:59:58:291) 17: prime mode 1 srvr type 4
+I (23:59:58.457)(23:59:58:291) 17: server_uri_addr=wss://ftp.iinvsys.com:55568
+E (23:59:58.458)(23:59:58:292) 17: O8 1
+I (23:59:58.769)(23:59:58:604) 21: S ex_pr_m:1
+I (23:59:58.770)(23:59:58:604) QSND: INTF_MSG to 8 evnt 9 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:58.770)(23:59:58:605) MDEC: no flow control
+I (23:59:58.770)(23:59:58:605) MSH: event_num=9
+I (23:59:58.771)(23:59:58:606) MSH: wifi ble msg hdlr rcvd event=9
+I (23:59:58.772)(23:59:58:606) MSH: MSG_STE_HDLR_THRD2364
+I (23:59:58.772)(23:59:58:607) MSH: no flow control
+I (23:59:59.542)(23:59:59:377) BLE: ESP_GATTS_DISCONNECT_EVT, reason = 19 57004 32768
+I (23:59:59.543)(23:59:59:378) BLE_COMP: 72 b6 b9 c1 c1 fc 
+I (23:59:59.543)(23:59:59:378) BLE: disconnected sts ble_conn 0, ble_count 1  256
+I (23:59:59.544)(23:59:59:379) 20: connected sts : 1 0 11 0
+I (23:59:59.545)(23:59:59:379) 20: cstart:1 cstop:4 totcon:2
+
+E (23:59:59.545)(23:59:59:380) 21: T 11 2 0
+E (23:59:59.546)(23:59:59:381) 21: R 11 7 2 0 5
+E (23:59:59.546)(23:59:59:381) TM: T1 75 0 27 0
+E (23:59:59.547)(23:59:59:382) TM: T2 9 0 1 0
+E (23:59:59.547)(23:59:59:382) TM: MM 30 0 30 0
+I (23:59:59.548)(23:59:59:383) BLE: ble max interface 6
+I (23:59:59.549)(23:59:59:383) BLE: ble_conn 255, ble_count 0  23
+I (23:59:59.549)(23:59:59:384) BLE: ble curr user count 0 
+I (23:59:59.550)(23:59:59:385) BLE: PING_TMR_STOP
+I (23:59:59.550)(23:59:59:385) OST: ping_not_tmr,Tmr Stpd Scsfly
+I (23:59:59.551)(23:59:59:386) BLE: ble curr user count 0 
+I (23:59:59.552)(23:59:59:386) BLE: con_chk_tmr_strtd
+I (23:59:59.553)(23:59:59:387) INDEX: pairing msg 2 times rcvd flag cleared
+I (23:59:59.553)(23:59:59:388) 17: in delete_pair_exit_timer
+I (23:59:59.554)(23:59:59:389) OST: exit_Timer,Tmr Stpd Scsfly
+I (23:59:59.555)(23:59:59:389) OST: Tmr Del scs
+I (23:59:59.555)(23:59:59:390) 17: after delete_pairing_time_out
+I (23:59:59.556)(23:59:59:391) QSND: INTF_MSG to 8 evnt 9 pld 0x1 len(w) 0 ctx 0 fre_req 0
+I (23:59:59.557)(23:59:59:392) MSH: event_num=9
+I (23:59:59.557)(23:59:59:392) MSH: wifi ble msg hdlr rcvd event=9
+E (23:59:59.558)(23:59:59:393) 17: O1 0 1
+I (23:59:59.559)(23:59:59:393) 1: !Websocket not enabled!
+I (23:59:59.559)(23:59:59:394) 14: unreg the events
+I (23:59:59.560)(23:59:59:395) 14: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+I (23:59:59.561)(23:59:59:395) 14: handler_unreg WIFI_EVENT,ESP_EVENT_ANY_ID
+I (23:59:59.562)(23:59:59:396) 14: ap_sta esp_wifi_disconnect ESP_ERR_WIFI_NOT_STARTED: WiFi was not started by esp_wifi_start
+I (23:59:59.563)(23:59:59:398) 14: esp_wifi_stop ESP_OK: succeed
+I (5543)(23:59:59:399) wifi:Deinit lldesc rx mblock:2
+I (23:59:59.565)(23:59:59:400) 14: esp_wifi_deinit ESP_OK: succeed
+I (23:59:59.566)(23:59:59:400) OST: Tmr Del scs
+I (23:59:59.566)(23:59:59:401) 17: in delete_pairing_time_out
+I (23:59:59.566)(23:59:59:401) OST: Pairing_Timer,Tmr Stpd Scsfly
+I (23:59:59.567)(23:59:59:402) OST: Tmr Del scs
+I (23:59:59.567)(23:59:59:402) 17: after delete_pairing_time_out
+E (23:59:59.568)(23:59:59:403) 17: O2
+I (23:59:59.569)(23:59:59:404) BLE: advertisement stopped
+W (5555)(23:59:59:411) BT_APPL: bta_dm_disable BTA_DISABLE_DELAY set to 200 ms
+I (23:59:59.577)(23:59:59:412) BLE: Stop adv scsfly
+I (23:59:59.793)(23:59:59:627) BLE: BLE STOPPED
+I (23:59:59.793)(23:59:59:628) QSND: INTF_MSG to 7 evnt 2 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:59.793)(23:59:59:628) MSH: del xtask
+I (23:59:59.793)(23:59:59:628) MSH: MSG_STE_HDLR_THRD2252
+I (23:59:59.794)(23:59:59:629) MSH: no flow control
+E (23:59:59.795)(23:59:59:629) 2: B13 2 0 2 7
+E (23:59:59.795)(23:59:59:630) 17: O12 2
+I (23:59:59.796)(23:59:59:630) 17: in exit pairing mode
+I (23:59:59.796)(23:59:59:631) 17: on exit pairing mode
+I (23:59:59.797)(23:59:59:632) QSND: INTF_MSG to 7 evnt 5 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:59.798)(23:59:59:633) 2: event 2 intrf_type 7 ucstae 0
+I (23:59:59.799)(23:59:59:633) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 2 from intf 7
+E (23:59:59.800)(23:59:59:634) 2: B15 2 0 0 2 7
+E (23:59:59.800)(23:59:59:635) 2: B13 2 0 5 7
+E (23:59:59.801)(23:59:59:635) 17: O12 5
+I (23:59:59.801)(23:59:59:636) 17: =Switch case PAIRING_SUCCESS=
+I (23:59:59.802)(23:59:59:637) QSND: INTF_MSG to 7 evnt 4 pld 0 len(w) 0 ctx 0 fre_req 0
+I (23:59:59.803)(23:59:59:637) 2: event 5 intrf_type 7 ucstae 0
+I (23:59:59.804)(23:59:59:638) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 5 from intf 7
+E (23:59:59.805)(23:59:59:639) 2: B15 2 0 0 5 7
+E (23:59:59.805)(23:59:59:640) 2: B13 2 0 4 7
+E (23:59:59.806)(23:59:59:640) 17: O12 4
+I (23:59:59.806)(23:59:59:641) OST: Time Out Led Tmr,Tmr Stpd Scsfly
+I (23:59:59.807)(23:59:59:642) led: LED ON
+I (23:59:59.807)(23:59:59:642) led: LED ON
+I (23:59:59.808)(23:59:59:643) led: LED ON
+I (23:59:59.808)(23:59:59:643) led: LED ON
+I (23:59:59.809)(23:59:59:643) led: LED ON
+I (23:59:59.809)(23:59:59:644) led: LED ON
+I (23:59:59.810)(23:59:59:644) 17: =Switch case CONNECIVITY_MODE=
+E (23:59:59.811)(23:59:59:645) 17: O8 1
+I (23:59:59.811)(23:59:59:646) 17: wifi_ap_mode=0
+
+I (23:59:59.812)(23:59:59:646) 17: wifi_sta_mode=1
+
+I (23:59:59.812)(23:59:59:647) 17: wifi_ap_sta_mode=0
+
+I (23:59:59.813)(23:59:59:647) 17: ble=1
+
+I (23:59:59.813)(23:59:59:648) 17: Bef ble start:122524 15
+
+I (23:59:59.814)(23:59:59:649) 17: =connectivity_mode BLE=
+I (23:59:59.815)(23:59:59:649) BTDM_INIT: BT controller compile version [bc2e043]
+I (23:59:59.892)(23:59:59:727) OSTH: D handle:- 0
+I (00:00:00.009)(00:00:00:843) OST: gatts_config_tmr Tmr creation Scs
+I (00:00:00.009)(00:00:00:843) BLE: BLE MAC ADDRESS
+I (00:00:00.009)(00:00:00:844) TAG: MAC: 00:4B:12:C1:41:AA
+I (00:00:00.009)(00:00:00:844) BLE: reg app id registered, app_id 85, status 0
+I (00:00:00.010)(00:00:00:845) 17: Availble heap bef wifi init77936 32768
+
+I (00:00:00.010)(00:00:00:845) 2: Calibration_mode 0
+I (00:00:00.011)(00:00:00:846) 17: wifi_ap_mode=0
+
+I (00:00:00.012)(00:00:00:847) BLE: pairing flag 0
+I (00:00:00.012)(00:00:00:847) 17: wifi_sta_mode=1
+
+I (00:00:00.013)(00:00:00:847) BLE: set_name_scs 0,dev_name_conectvity_mode SPL00020251214JA
+I (00:00:00.013)(00:00:00:848) 17: wifi_ap_sta_mode=0
+
+I (00:00:00.015)(00:00:00:850) 17: ble=1
+
+E (00:00:00.016)(00:00:00:850) 17: O3
+W (5995)(00:00:00:851) BT_BTM: BTM_BleWriteAdvData, Partial data write into ADV
+I (5999)(00:00:00:854) wifi:W (5999)(00:00:00:854) BT_BTM: BTM_BleWriteScanRsp, Partial data write into ADV
+wifi driver task: 3ffe79a8, prio:23, stack:6144, core=0
+I (6012)(00:00:00:868) wifi:wifi firmware version: 4809a2e
+I (00:00:00.033)(00:00:00:868) BLE: create attribute table sucesfuly,the number handle = 15
+I (6013)(00:00:00:868) wifi:wifi certification version: v7.0
+I (6013)(00:00:00:869) wifi:config NVS flash: enabled
+I (6014)(00:00:00:869) wifi:config nano formating: enabled
+I (6015)(00:00:00:871) wifi:Init data frame dynamic rx buffer num: 32
+I (6015)(00:00:00:871) wifi:Init management frame dynamic rx buffer num: 32
+I (6016)(00:00:00:872) wifi:Init management short buffer num: 32
+I (6017)(00:00:00:872) wifi:Init dynamic tx buffer num: 32
+I (6018)(00:00:00:874) wifi:Init static rx buffer size: 1600
+I (6018)(00:00:00:874) wifi:Init static rx buffer num: 2
+I (6019)(00:00:00:874) wifi:Init dynamic rx buffer num: 32I (00:00:00.040)(00:00:00:875) BLE: SERVICE_START_EVT, status 0, service_handle 40
+
+I (00:00:00.042)(00:00:00:876) BLE: advrtsng start scsfly
+I (00:00:00.042)(00:00:00:877) wifi_init: rx ba win: 2
+I (00:00:00.043)(00:00:00:877) wifi_init: tcpip mbox: 16
+I (00:00:00.043)(00:00:00:878) wifi_init: udp mbox: 6
+I (00:00:00.044)(00:00:00:879) wifi_init: tcp mbox: 6
+I (00:00:00.044)(00:00:00:879) wifi_init: tcp tx win: 2440
+I (00:00:00.045)(00:00:00:880) wifi_init: tcp rx win: 2440
+I (00:00:00.046)(00:00:00:880) wifi_init: tcp mss: 536
+I (00:00:00.046)(00:00:00:881) 14: esp wifi init ret scs
+I (00:00:00.047)(00:00:00:882) OST: sta_retry_timer Tmr creation Scs
+I (00:00:00.049)(00:00:00:883) 14: esp_wifi_set_mode scs
+E (00:00:00.049)(00:00:00:884) 14: N12 TP-Link_6D38-with_Internet 12345678906
+I (00:00:00.049)(00:00:00:884) 14: STA BSSID is empty. Checking NVM for stored MAC...
+W (00:00:00.050)(00:00:00:885) 14: No valid MAC in NVM. STA BSSID remains unset.
+I (00:00:00.052)(00:00:00:887) 14: esp wifi set config ret success
+I (6034)(00:00:00:889) wifi:mode : sta (00:4b:12:c1:41:a8)(00:00:00:890)
+I (6035)(00:00:00:890) wifi:enable tsf
+I (00:00:00.056)(00:00:00:891) 14: esp wifi start ret scs
+I (00:00:00.057)(00:00:00:892) 14: wifi cnct call in the sta fun
+E (00:00:00.059)(00:00:00:894) 14: N1 WIFI_EVENT 2
+I (6039)(00:00:00:894) wifi:Set ps type: 0
+
+I (00:00:00.061)(00:00:00:895) 14: wifi_sta_en 2
+
+I (00:00:00.061)(00:00:00:896) 14: WIFI_EVENT_STA_START config not rcvd
+I (00:00:00.062)(00:00:00:897) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (00:00:00.063)(00:00:00:897) 4: D10 0 1 0 0 0 216000 0 0 1 0 25
+I (00:00:00.440)(00:00:00:275) SMAX: Name Cntrl_state hghwtrmrk 1692
+I (00:00:00.535)(00:00:00:370) PCNT: NVM_COMMIT_CNT 583
+I (8091)(00:00:02:947) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:4
+I (8093)(00:00:02:948) wifi:state: init -> auth (b0)(00:00:02:948)
+I (8098)(00:00:02:954) wifi:state: auth -> assoc (0)(00:00:02:954)
+I (8104)(00:00:02:960) wifi:state: assoc -> run (10)(00:00:02:960)
+W (8324)(00:00:02:180) wifi:<ba-add>idx:0 (ifx:0, 40:3f:8c:b7:6d:38)(00:00:02:180), tid:0, ssn:2, winSize:64
+I (8326)(00:00:02:182) wifi:connected with TP-Link_6D38-with_Internet, aid = 8, channel 1, BW20, bssid = 40:3f:8c:b7:6d:38
+I (8327)(00:00:02:182) wifi:security: WPA2-PSK, phy: bgn, rssi: -40
+I (8331)(00:00:02:187) wifi:pm start, type: 0
+
+E (00:00:02.356)(00:00:02:191) 14: N1 WIFI_EVENT 4
+I (00:00:02.357)(00:00:02:191) 14: 64:
+I (00:00:02.357)(00:00:02:192) 14: 63:
+I (00:00:02.357)(00:00:02:192) 14: 140:
+I (00:00:02.357)(00:00:02:192) 14: 183:
+I (00:00:02.358)(00:00:02:192) 14: 109:
+I (00:00:02.358)(00:00:02:193) 14: 56:
+I (8338)(00:00:02:193) wifi:Set ps type: 0
+
+I (00:00:02.359)(00:00:02:194) 14: Wifi disconnect inactive time Sec 6
+
+I (00:00:02.360)(00:00:02:195) 14: $$$ ps_mode=WIFI_PS_NONE
+
+I (8361)(00:00:02:217) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (00:00:03.822)(00:00:03:657) esp_netif_handlers: sta ip: 192.168.1.130, mask: 255.255.255.0, gw: 192.168.1.1
+E (00:00:03.823)(00:00:03:657) 14: N1 IP_EVENT 0
+I (00:00:03.823)(00:00:03:658) 14: router cnctn sts ready in ap_sta pass
+E (00:00:03.824)(00:00:03:659) 14: N36 -40 1
+E (00:00:03.824)(00:00:03:659) 14: N5: 192.168.1.130
+E (00:00:03.825)(00:00:03:659) 14: N6 192 168 1 130
+E (00:00:03.825)(00:00:03:660) 14: N7 0 0 0 0 192
+I (00:00:03.826)(00:00:03:661) BLE: ble curr user count 0 
+I (00:00:03.827)(00:00:03:661) 21: IP ADDR :192 168 1 130
+
+I (00:00:03.827)(00:00:03:662) 20: trans_id 0 pld_len 8 intf 18 msg_type 1  pr_snt_scs 0
+E (00:00:03.828)(00:00:03:663) 14: N14 TP-Link_6D38-with_Internet 12345678906 0
+I (00:00:03.829)(00:00:03:664) 14: router cnctn sts ready in ap_sta pass
+E (00:00:03.830)(00:00:03:665) 14: N36 -40 1
+E (00:00:03.830)(00:00:03:665) 17: O4 59484 49056
+E (00:00:03.831)(00:00:03:666) 17: O5
+I (00:00:03.831)(00:00:03:666) 17: =server_provisioning.prime_mode=
+I (00:00:03.832)(00:00:03:667) 1: websocket connection config
+I (00:00:03.833)(00:00:03:667) 1: Connecting to wss://ftp.iinvsys.com:55568...
+I (00:00:03.834)(00:00:03:668) NVS: Pre-Flashed 0
+I (00:00:03.834)(00:00:03:669) 1: Connecting to wss://ftp.iinvsys.com:55568...
+I (00:00:03.835)(00:00:03:670) 1: DYNCERT DEV CERT_STATUS 0
+I (00:00:03.836)(00:00:03:670) NVS: NVS open success cert_data
+I (00:00:03.837)(00:00:03:672) NVS: NVS size required  success 1521
+I (00:00:03.843)(00:00:03:678) NVS: NVS open success cert_data
+I (00:00:03.843)(00:00:03:678) NVS: NVS size required  success 1704
+I (00:00:03.850)(00:00:03:684) 1: client cert size:1704
+I (00:00:03.850)(00:00:03:685) NVS: NVS open success cert_data
+I (00:00:03.850)(00:00:03:685) NVS: NVS size required  success 3243
+I (00:00:03.862)(00:00:03:697) 1: Key cert size:3243
+I (00:00:03.864)(00:00:03:699) 1: web socket return value = 0
+I (00:00:03.864)(00:00:03:699) 17: free hp aftr wifi init & svr: 45624:45428
+
+E (00:00:03.865)(00:00:03:699) 17: O7 45496 45300
+I (00:00:03.865)(00:00:03:700) WIFI_TX_PWR: nvm read tx power value 0
+I (00:00:03.867)(00:00:03:702) WIFI_TX_PWR: tx power read 80
+I (00:00:03.868)(00:00:03:702) 2: event 4 intrf_type 7 ucstae 0
+I (00:00:03.868)(00:00:03:703) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 4 from intf 7
+E (00:00:03.869)(00:00:03:703) 2: B15 2 0 0 4 7
+I (00:00:05.605)(00:00:05:440) PCNT: NVM_COMMIT_CNT 584
+I (00:00:05.606)(00:00:05:441) TDRV: Temp periodic tmr exp
+I (00:00:05.606)(00:00:05:441) 17: read connectivity_mode_status=1
+I (00:00:05.678)(00:00:05:512) 17: read connectivity_mode_status=1
+I (00:00:05.678)(00:00:05:513) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (00:00:07.906)(00:00:07:741) TDRV: Temp periodic tmr exp
+I (00:00:07.907)(00:00:07:742) 17: read connectivity_mode_status=1
+I (00:00:07.908)(00:00:07:743) 17: read connectivity_mode_status=1
+I (00:00:07.909)(00:00:07:743) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (00:00:10.206)(00:00:10:041) TDRV: Temp periodic tmr exp
+I (00:00:10.207)(00:00:10:042) 17: read connectivity_mode_status=1
+I (00:00:10.208)(00:00:10:043) 17: read connectivity_mode_status=1
+E (00:00:10.208)(00:00:10:044) 7: G1 0 0x48 47.62
+I (00:00:10.209)(00:00:10:044) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (00:00:10.210)(00:00:10:044) 7: G5 47.62°C 0 0 4
+I (00:00:10.535)(00:00:10:370) PCNT: NVM_COMMIT_CNT 584
+E (00:00:10.946)(00:00:10:781) 1: A126724 8192
+I (00:00:10.946)(00:00:10:781) 20: connected sts : 0 0 18 1
+I (00:00:10.947)(00:00:10:781) 20: CONN STS TRUE NTFY
+E (00:00:10.947)(00:00:10:782) 21: T 18 0 0
+E (00:00:10.947)(00:00:10:782) 21: R 18 0 0 0 0
+E (00:00:10.948)(00:00:10:782) TM: T1 77 0 31 0
+E (00:00:10.948)(00:00:10:783) TM: T2 13 0 4 0
+E (00:00:10.949)(00:00:10:783) TM: MM 33 0 33 0
+I (00:00:10.949)(00:00:10:784) 2: Calibration_mode 0
+I (00:00:10.950)(00:00:10:785) TAG: MAC: 00:4B:12:C1:41:AA
+I (00:00:10.951)(00:00:10:785) 20: 00: 
+I (00:00:10.951)(00:00:10:786) 20: 4B: 
+I (00:00:10.951)(00:00:10:786) 20: 12: 
+I (00:00:10.952)(00:00:10:787) 20: C1: 
+I (00:00:10.952)(00:00:10:787) 20: 41: 
+I (00:00:10.953)(00:00:10:787) 20: AA: 
+I (00:00:10.953)(00:00:10:788) 21:  Q fd_hw_mj:0 fd_hw_mr:0 fd_sfw_mj:0 fd_sfw_mr:0 fd_hw_tp:5 max_alrm 16 bld_num 41 ful_sts 0
+I (00:00:10.955)(00:00:10:789) 20: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (00:00:10.955)(00:00:10:790) 20: Q hw_vr_nw 11 Q sw_vr_nw 3 prm_id 1
+I (00:00:10.956)(00:00:10:791) 20: trans_id 0 pld_len 40 intf 18 msg_type 1  pr_snt_scs 0
+I (00:00:10.957)(00:00:10:792) 21: REV_NUMR :- 24365
+I (00:00:10.958)(00:00:10:793) 16: RO_NVM_VER 2
+I (00:00:10.958)(00:00:10:793) 4: Vol_ref_parm= 139814
+E (00:00:10.959)(00:00:10:794) 17: O15 120 1
+I (00:00:10.960)(00:00:10:794) 17: dpot 1577836810
+
+E (00:00:10.960)(00:00:10:795) 20: L1 0 1 0 18
+I (00:00:10.961)(00:00:10:795) 20: trans_id 0 pld_len 12 intf 18 msg_type 1  pr_snt_scs 0
+I (00:00:10.972)(00:00:10:806) 21: DC-NOTIFY dyn_cert_status:1 dyn_cert_err_type:0 dyn_cert_error_code:0 
+I (00:00:10.972)(00:00:10:807) 21: srvr_type 1 dc_srvr_ver_num 1 cert_ver_num 1
+I (00:00:10.973)(00:00:10:807) 20: trans_id 0 pld_len 8 intf 19 msg_type 1  pr_snt_scs 0
+I (00:00:10.980)(00:00:10:816) 21: send_msg intf 18 msg_id 11 msg_len 56 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 0 scs_snt 0
+E (00:00:10.981)(00:00:10:816) 21: Q14 18 11 56 0
+I (00:00:10.986)(00:00:10:821) 21: send_msg intf 18 msg_id 16 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 0 scs_snt 1
+E (00:00:10.987)(00:00:10:822) 21: Q14 18 16 24 0
+I (00:00:10.988)(00:00:10:822) 20: !get_srvr_ntfy_sts SRVR_NO_NTFY
+I (00:00:10.988)(00:00:10:823) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+I (00:00:10.989)(00:00:10:824) 21: wss data not sent to the server msg_id 34
+E (00:00:11.050)(00:00:11:885) 1: A220 20 0
+I (00:00:11.053)(00:00:11:888) MDEC: rx_len 20
+I (00:00:11.053)(00:00:11:888) 21: sync byte matched 0x3fff4e6c
+I (00:00:11.054)(00:00:11:889) MDEC: frame_len=20
+I (00:00:11.055)(00:00:11:891) 21: total len 20 proc len 20
+I (00:00:11.056)(00:00:11:891) 21: rcvd_frm 18 num_msg 1 trn_id 23 ack_req 0 frm_len 20 sec_mod 0
+I (00:00:11.057)(00:00:11:892) 21: rcvd_msg intf 18 msg_id 17 msg_len 8 msg_type 1
+I (00:00:11.057)(00:00:11:892) MDEC: full frame rcvd
+E (00:00:11.057)(00:00:11:892) 21: Q13 18 17 8 1
+I (00:00:11.059)(00:00:11:894) 2: Calibration_mode 0
+E (00:00:11.059)(00:00:11:894) 20: L2 1765810202 0 0 1 0
+I (00:00:11.060)(00:00:11:895) QSND: INTF_MSG to 8 evnt 17 pld 0x3fff9dec len(w) 3 ctx 0 fre_req 1
+I (00:00:11.061)(00:00:11:896) MDEC: no flow control
+I (00:00:11.061)(00:00:11:896) MSH: event_num=17
+I (00:00:11.062)(00:00:11:897) MSH: wifi ble msg hdlr rcvd event=17
+I (00:00:11.063)(00:00:11:898) 10: reboot_GMT = 1577836811 msg17_GMT = 1765810202 dev_GMT 1577836811 Tdiff 187973391 tm_zn_fg 0
+E (00:00:11.063)(00:00:11:898) 1: A220 20 0
+I (00:00:11.065)(00:00:11:899) 10: Alarm currt time:1765810202
+
+I (00:00:11.065)(00:00:11:900) SMAX: Name rx_process hghwtrmrk 1980
+I (00:00:11.147)(00:00:11:981) MDEC: rx_len 20
+I (00:00:11.147)(00:00:11:982) 21: sync byte matched 0x3fff4e6c
+I (00:00:11.147)(00:00:11:982) MDEC: frame_len=20
+I (00:00:11.148)(00:00:11:983) 21: total len 20 proc len 20
+I (00:00:11.148)(00:00:11:983) 21: rcvd_frm 18 num_msg 1 trn_id 24 ack_req 0 frm_len 20 sec_mod 0
+I (00:00:11.149)(00:00:11:984) 21: rcvd_msg intf 18 msg_id 41 msg_len 8 msg_type 1
+E (00:00:11.151)(00:00:11:985) 21: Q13 18 41 8 1
+I (00:00:11.151)(00:00:11:986) MDEC: full frame rcvd
+I (00:00:11.151)(00:00:11:986) 2: Calibration_mode 0
+E (00:00:11.314)(00:00:11:210) 1: A28 8 0
+I (00:00:11.397)(00:00:11:232) 20: set_srvr_ntfy_sts SRVR_NTFY_EN
+I (00:00:11.398)(00:00:11:232) 20: !set_srvr_ntfy_sts 1
+I (00:00:11.398)(00:00:11:233) QSND: INTF_MSG to 7 evnt 0 pld 0x12 len(w) 0 ctx 0 fre_req 0
+I (00:00:11.399)(00:00:11:233) OST: mem alloc size is unalgnd 117
+I (00:00:11.399)(00:00:11:234) 21: $ ssid TP-Link_6D38-with_Internet pwd 12345678906
+E (00:00:11.400)(00:00:11:235) 14: N18 32 26
+E (00:00:11.400)(00:00:11:235) 12: L3 1765810202
+E (00:00:11.401)(00:00:11:236) 14: N19 26
+I (00:00:11.402)(00:00:11:237) MDEC: rx_len 8
+E (00:00:11.402)(00:00:11:237) 14: N20 0
+I (14:50:02.000)(14:50:02:237) 21: sync byte matched 0x3fff4e6c
+E (14:50:02.000)(14:50:02:238) 14: N21 0 1 0 1577836811 0 -40 32 26 0 1 0
+I (14:50:02.002)(14:50:02:239) 14: ===== Router Query Data =====
+I (14:50:02.002)(14:50:02:239) MDEC: frame_len=8
+I (14:50:02.003)(14:50:02:240) 14: len: 32
+E (14:50:02.003)(14:50:02:241) 14: N22 TP-Link_6D38-with_Internet
+I (14:50:02.004)(14:50:02:241) 14: reserved: 0
+I (14:50:02.004)(14:50:02:242) 21: total len 8 proc len 8
+I (14:50:02.005)(14:50:02:242) 14: app_id: 0
+I (14:50:02.006)(14:50:02:243) MDEC: full frame rcvd
+I (14:50:02.006)(14:50:02:243) 14: app_id_rtr_prov_sts: 0
+I (14:50:02.007)(14:50:02:244) 14: dev_rtr_prov_sts: 1
+I (14:50:02.008)(14:50:02:245) 14: force_remove_flg: 0
+I (14:50:02.008)(14:50:02:246) 14: resrvd: 0
+I (14:50:02.009)(14:50:02:246) 14: router_STATUS_code: 0
+I (14:50:02.009)(14:50:02:247) 14: router_signal_strength: -40 dBm
+I (14:50:02.010)(14:50:02:247) 14: wifi_config_time: 1577836811 (Wed Jan  1 00:00:11 2020
+)
+I (14:50:02.011)(14:50:02:248) 14: rtr_ret_sts: 1
+E (14:50:02.012)(14:50:02:249) 14: N23 0
+E (14:50:02.012)(14:50:02:250) 14: N24 0
+E (14:50:02.013)(14:50:02:250) 14: N26 40 3F 8C B7 6D 38
+E (14:50:02.013)(14:50:02:251) 14: N22 MAC 00:00:00:00:00:00
+I (14:50:02.014)(14:50:02:251) 14: ===== End =====
+I (14:50:02.014)(14:50:02:252) 20: trans_id 0 pld_len 93 intf 19 msg_type 1  pr_snt_scs 0
+I (14:50:02.015)(14:50:02:253) 21: S ntfy 1 pres 0 bitmap 13959014 
+
+
+I (14:50:02.016)(14:50:02:254) MDEC: no flow control
+I (14:50:02.017)(14:50:02:254) 21: rcvd_frm 18 num_msg 0 trn_id 25 ack_req 0 frm_len 8 sec_mod 0
+I (14:50:02.018)(14:50:02:255) MDEC: no flow control
+I (14:50:02.020)(14:50:02:257) 20: !get_srvr_ntfy_sts SRVR_NTFY_EN
+I (14:50:02.020)(14:50:02:258) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 1
+I (14:50:02.000)(14:50:02:237) MSH: time synced
+I (14:50:02.021)(14:50:02:258) MSH: tm_zn_intf 18 available_tm_zone_flg 0
+I (14:50:02.022)(14:50:02:259) QSND: INTF_MSG to 7 evnt 13 pld 0 len(w) 0 ctx 0 fre_req 0
+I (14:50:02.023)(14:50:02:260) 10: 0
+I (14:50:02.023)(14:50:02:260) QSND: INTF_MSG to 7 evnt 12 pld 0x3ffce03c len(w) 0 ctx 0 fre_req 1
+E (14:50:02.024)(14:50:02:262) 1: A272 72 0
+I (14:50:02.024)(14:50:02:262) MSH: MSG_STE_HDLR_THRD2232
+I (14:50:02.025)(14:50:02:262) SMAX: Name rx_process hghwtrmrk 1884
+I (14:50:02.026)(14:50:02:263) QMEM: mem clr = 17
+I (14:50:02.027)(14:50:02:264) MSH: no flow control
+I (14:50:02.027)(14:50:02:264) MDEC: rx_len 72
+E (00:00:11.401)(00:00:11:235) 2: B13 2 0 0 7
+I (14:50:02.028)(14:50:02:265) 21: sync byte matched 0x3fff4e6c
+I (14:50:02.000)(14:50:02:237) SMAX: Name rx_process hghwtrmrk 1964
+I (14:50:02.029)(14:50:02:267) MDEC: frame_len=72
+I (14:50:02.030)(14:50:02:267) 2: Pwr Off State_event rcvd event=0
+I (14:50:02.031)(14:50:02:268) 21: total len 72 proc len 72
+I (14:50:02.032)(14:50:02:269) MDEC: full frame rcvd
+I (14:50:02.032)(14:50:02:269) 21: rcvd_frm 18 num_msg 1 trn_id 26 ack_req 0 frm_len 72 sec_mod 0
+I (14:50:02.033)(14:50:02:271) 21: rcvd_msg intf 18 msg_id 33 msg_len 60 msg_type 1
+E (14:50:02.034)(14:50:02:272) 21: Q13 18 33 60 1
+I (14:50:02.035)(14:50:02:272) 2: Calibration_mode 0
+E (14:50:02.035)(14:50:02:273) 21: K11688672 0 253
+E (14:50:02.036)(14:50:02:274) 21: k2 42 0
+E (14:50:02.037)(14:50:02:274) 21: K3 0
+E (14:50:02.037)(14:50:02:274) 21: K4 https://ftp.iinvsys.com:55569/files/5_1.1_42.bin 48 1688672 42 1
+I (14:50:02.038)(14:50:02:276) QSND: INTF_MSG to 8 evnt 71 pld 0x3fffa94c len(w) 16 ctx 0 fre_req 1
+I (14:50:02.039)(14:50:02:276) MDEC: no flow control
+I (14:50:02.040)(14:50:02:277) MSH: event_num=71
+I (14:50:02.040)(14:50:02:278) MSH: wifi ble msg hdlr rcvd event=71
+I (14:50:02.041)(14:50:02:279) 21: 1_HTTPA_OTA_STATE = 1
+I (14:50:02.042)(14:50:02:279) BLE: ble curr user count 0 
+I (14:50:02.043)(14:50:02:280) 11: LOC_CONN_IM 1
+I (14:50:02.043)(14:50:02:281) MSH: MSG_STE_HDLR_THRD2220
+I (14:50:02.044)(14:50:02:281) QMEM: mem clr = 71
+I (14:50:02.044)(14:50:02:283) MSH: no flow control
+I (14:50:02.032)(14:50:02:269) 17: common events =0
+I (14:50:02.046)(14:50:02:284) 11: K14 0 253 42
+I (14:50:02.047)(14:50:02:284) 11: K15 0.00 0 0 0.00 0 0 0
+I (14:50:02.047)(14:50:02:285) 21: send_msg intf 18 msg_id 14 msg_len 104 sec_mode 0 fd 3FFEBDB8 pad_len 3 app_id 253 trs_id 1 scs_snt 3
+E (14:50:02.048)(14:50:02:285) 21: Q14 18 14 104 1
+E (14:50:02.051)(14:50:02:289) 1: A212 12 0
+I (14:50:02.053)(14:50:02:290) MDEC: rx_len 12
+I (14:50:02.053)(14:50:02:290) 21: sync byte matched 0x3fff4e6c
+I (14:50:02.053)(14:50:02:290) MDEC: frame_len=12
+I (14:50:02.054)(14:50:02:291) 21: total len 12 proc len 12
+I (14:50:02.054)(14:50:02:291) 21: rcvd_frm 18 num_msg 1 trn_id 6 ack_req 0 frm_len 12 sec_mod 0
+I (14:50:02.055)(14:50:02:292) MDEC: full frame rcvd
+I (14:50:02.055)(14:50:02:292) 21: rcvd_msg intf 18 msg_id 17 msg_len 0 msg_type 0
+E (14:50:02.056)(14:50:02:294) 21: Q13 18 17 0 0
+I (14:50:02.057)(14:50:02:294) 2: Calibration_mode 0
+E (14:50:02.058)(14:50:02:295) 10: TC 1765810202 0 0 1 0
+I (14:50:02.058)(14:50:02:296) 20: trans_id 6 pld_len 12 intf 18 msg_type 1  pr_snt_scs 4
+I (14:50:02.059)(14:50:02:297) MDEC: no flow control
+E (14:50:02.060)(14:50:02:297) 1: A220 20 0
+E (14:50:02.047)(14:50:02:285) 11: K16 1 0
+E (14:50:02.061)(14:50:02:298) 21: K7 1765810202 1 0 0
+I (14:50:02.061)(14:50:02:298) MDEC: rx_len 20
+I (14:50:02.062)(14:50:02:299) 21: sync byte matched 0x3fff4e6c
+I (14:50:02.063)(14:50:02:300) MDEC: frame_len=20
+I (14:50:02.064)(14:50:02:301) 21: total len 20 proc len 20
+I (14:50:02.064)(14:50:02:301) 21: rcvd_frm 18 num_msg 1 trn_id 7 ack_req 0 frm_len 20 sec_mod 0
+I (14:50:02.065)(14:50:02:302) MDEC: full frame rcvd
+I (14:50:02.065)(14:50:02:302) 21: rcvd_msg intf 18 msg_id 13 msg_len 8 msg_type 1
+E (14:50:02.066)(14:50:02:304) 21: Q13 18 13 8 1
+I (14:50:02.067)(14:50:02:304) 2: Calibration_mode 0
+I (14:50:02.067)(14:50:02:305) 20: app id msg rcvd
+I (14:50:02.068)(14:50:02:305) QSND: INTF_MSG to 8 evnt 13 pld 0x3fff95a0 len(w) 3 ctx 0 fre_req 1
+I (14:50:02.069)(14:50:02:306) 21: S tok_key:0 app_id:0 act_sts:1
+I (14:50:02.070)(14:50:02:307) 21: S rem_req:0 usr_typ:1
+I (14:50:02.070)(14:50:02:308) MDEC: no flow control
+I (14:50:02.071)(14:50:02:308) MSH: event_num=13
+I (14:50:02.071)(14:50:02:308) 21: send_msg intf 18 msg_id 17 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 6 scs_snt 4
+I (14:50:02.072)(14:50:02:309) MSH: wifi ble msg hdlr rcvd event=13
+E (14:50:02.073)(14:50:02:310) 21: Q14 18 17 24 6
+I (14:50:02.074)(14:50:02:312) AD: app id sts trans 7 intf 18
+E (14:50:02.075)(14:50:02:312) AD: G1 1 0 1 0 0
+E (14:50:02.065)(14:50:02:302) 21: K8 253 5 42
+E (14:50:02.076)(14:50:02:313) AD: G2 -1 0 -1 -1
+I (14:50:02.076)(14:50:02:314) 20: trans_id 0 pld_len 16 intf 19 msg_type 1  pr_snt_scs 0
+I (14:50:02.077)(14:50:02:314) MSH: least_idx_pos = -1 value 0
+I (14:50:02.078)(14:50:02:316) AD: tkey:1765810202 a_id:1 actnsts:1
+I (14:50:02.079)(14:50:02:316) AD: store_app_key_info_to_nvm
+I (14:50:02.080)(14:50:02:317) AD: app id write i 0 ptr=1 ptr_tk 1765810202
+I (14:50:02.081)(14:50:02:318) AD: app id write i 1 ptr=0 ptr_tk 0
+I (14:50:02.081)(14:50:02:319) AD: app id write i 2 ptr=0 ptr_tk 0
+I (14:50:02.082)(14:50:02:319) AD: app id write i 3 ptr=0 ptr_tk 0
+I (14:50:02.083)(14:50:02:320) AD: app id write i 4 ptr=0 ptr_tk 0
+I (14:50:02.084)(14:50:02:321) AD: app id write i 5 ptr=0 ptr_tk 0
+I (14:50:02.084)(14:50:02:322) AD: app id write i 6 ptr=0 ptr_tk 0
+I (14:50:02.085)(14:50:02:322) AD: app id write i 7 ptr=0 ptr_tk 0
+I (14:50:02.086)(14:50:02:323) AD: app id write i 8 ptr=0 ptr_tk 0
+I (14:50:02.086)(14:50:02:324) AD: app id write i 9 ptr=0 ptr_tk 0
+I (14:50:02.088)(14:50:02:325) AD: app id write i 10 ptr=0 ptr_tk 0
+I (14:50:02.088)(14:50:02:325) AD: app id write i 11 ptr=0 ptr_tk 0
+I (14:50:02.089)(14:50:02:326) AD: app id write i 12 ptr=0 ptr_tk 0
+I (14:50:02.089)(14:50:02:327) AD: app id write i 13 ptr=0 ptr_tk 0
+I (14:50:02.090)(14:50:02:327) AD: app id write i 14 ptr=0 ptr_tk 0
+I (14:50:02.091)(14:50:02:328) AD: app id write i 15 ptr=0 ptr_tk 0
+I (14:50:02.092)(14:50:02:329) AD: app id write i 16 ptr=0 ptr_tk 0
+I (14:50:02.092)(14:50:02:330) AD: app id write i 17 ptr=0 ptr_tk 0
+I (14:50:02.094)(14:50:02:331) AD: app id write i 18 ptr=0 ptr_tk 0
+I (14:50:02.094)(14:50:02:331) AD: app id write i 19 ptr=0 ptr_tk 0
+I (14:50:02.095)(14:50:02:332) AD: app id write i 20 ptr=0 ptr_tk 0
+I (14:50:02.095)(14:50:02:333) AD: app id write i 21 ptr=0 ptr_tk 0
+I (14:50:02.096)(14:50:02:334) AD: app id write i 22 ptr=0 ptr_tk 0
+I (14:50:02.097)(14:50:02:334) AD: app id write i 23 ptr=0 ptr_tk 0
+I (14:50:02.098)(14:50:02:335) AD: app id write i 24 ptr=0 ptr_tk 0
+I (14:50:02.098)(14:50:02:336) AD: app id write i 25 ptr=0 ptr_tk 0
+I (14:50:02.099)(14:50:02:336) AD: app id write i 26 ptr=0 ptr_tk 0
+I (14:50:02.099)(14:50:02:337) 20: !get_srvr_ntfy_sts SRVR_NTFY_EN
+I (14:50:02.101)(14:50:02:338) AD: app id write i 27 ptr=0 ptr_tk 0
+I (14:50:02.101)(14:50:02:338) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 1
+I (14:50:02.102)(14:50:02:339) AD: app id write i 28 ptr=0 ptr_tk 0
+I (14:50:02.103)(14:50:02:340) AD: app id write i 29 ptr=0 ptr_tk 0
+I (14:50:02.104)(14:50:02:341) AD: app id write i 30 ptr=0 ptr_tk 0
+I (14:50:02.104)(14:50:02:342) AD: app id write i 31 ptr=0 ptr_tk 0
+I (14:50:02.105)(14:50:02:343) AD: app id write i 32 ptr=0 ptr_tk 0
+I (14:50:02.106)(14:50:02:343) AD: app id write i 33 ptr=0 ptr_tk 0
+I (14:50:02.109)(14:50:02:347) AD: app id write i 34 ptr=0 ptr_tk 0
+I (14:50:02.111)(14:50:02:349) 21: send_msg intf 18 msg_id 38 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 0 app_id 253 trs_id 2 scs_snt 5
+I (14:50:02.112)(14:50:02:349) AD: app id write i 35 ptr=0 ptr_tk 0
+E (14:50:02.112)(14:50:02:350) 21: Q14 18 38 24 2
+I (14:50:02.113)(14:50:02:351) AD: app id write i 36 ptr=0 ptr_tk 0
+I (14:50:02.114)(14:50:02:352) AD: app id write i 37 ptr=0 ptr_tk 0
+I (14:50:02.115)(14:50:02:352) AD: app id write i 38 ptr=0 ptr_tk 0
+I (14:50:02.116)(14:50:02:353) AD: app id write i 39 ptr=0 ptr_tk 0
+I (14:50:02.117)(14:50:02:354) AD: app id write i 40 ptr=0 ptr_tk 0
+I (14:50:02.117)(14:50:02:355) AD: app id write i 41 ptr=0 ptr_tk 0
+I (14:50:02.100)(14:50:02:337) 17: c_cnt 1 
+I (14:50:02.118)(14:50:02:356) AD: app id write i 42 ptr=0 ptr_tk 0
+I (14:50:02.119)(14:50:02:357) AD: app id write i 43 ptr=0 ptr_tk 0
+I (14:50:02.120)(14:50:02:357) AD: app id write i 44 ptr=0 ptr_tk 0
+I (14:50:02.121)(14:50:02:358) AD: app id write i 45 ptr=0 ptr_tk 0
+I (14:50:02.122)(14:50:02:359) AD: app id write i 46 ptr=0 ptr_tk 0
+I (14:50:02.122)(14:50:02:360) AD: app id write i 47 ptr=0 ptr_tk 0
+I (14:50:02.123)(14:50:02:360) AD: app id write i 48 ptr=0 ptr_tk 0
+I (14:50:02.124)(14:50:02:361) AD: app id write i 49 ptr=0 ptr_tk 0
+I (14:50:02.125)(14:50:02:362) AD: app id write i 50 ptr=0 ptr_tk 0
+I (14:50:02.126)(14:50:02:363) AD: app id write i 51 ptr=0 ptr_tk 0
+I (14:50:02.126)(14:50:02:363) AD: app id write i 52 ptr=0 ptr_tk 0
+I (14:50:02.127)(14:50:02:364) AD: app id write i 53 ptr=0 ptr_tk 0
+I (14:50:02.128)(14:50:02:365) AD: app id write i 54 ptr=0 ptr_tk 0
+I (14:50:02.128)(14:50:02:366) AD: app id write i 55 ptr=0 ptr_tk 0
+I (14:50:02.129)(14:50:02:366) AD: app id write i 56 ptr=0 ptr_tk 0
+I (14:50:02.130)(14:50:02:367) AD: app id write i 57 ptr=0 ptr_tk 0
+I (14:50:02.131)(14:50:02:368) AD: app id write i 58 ptr=0 ptr_tk 0
+I (14:50:02.131)(14:50:02:369) AD: app id write i 59 ptr=0 ptr_tk 0
+I (14:50:02.132)(14:50:02:369) AD: app id write i 60 ptr=0 ptr_tk 0
+I (14:50:02.133)(14:50:02:370) AD: app id write i 61 ptr=0 ptr_tk 0
+I (14:50:02.134)(14:50:02:371) AD: app id write i 62 ptr=0 ptr_tk 0
+I (14:50:02.134)(14:50:02:372) AD: app id write i 63 ptr=0 ptr_tk 0
+I (14:50:02.135)(14:50:02:372) AD: app id write i 64 ptr=0 ptr_tk 0
+I (14:50:02.136)(14:50:02:373) AD: app id write i 65 ptr=0 ptr_tk 0
+I (14:50:02.137)(14:50:02:374) AD: app id write i 66 ptr=0 ptr_tk 0
+I (14:50:02.137)(14:50:02:375) AD: app id write i 67 ptr=0 ptr_tk 0
+I (14:50:02.138)(14:50:02:375) AD: app id write i 68 ptr=0 ptr_tk 0
+I (14:50:02.139)(14:50:02:376) AD: app id write i 69 ptr=0 ptr_tk 0
+I (14:50:02.140)(14:50:02:377) AD: app id write i 70 ptr=0 ptr_tk 0
+I (14:50:02.140)(14:50:02:378) AD: app id write i 71 ptr=0 ptr_tk 0
+I (14:50:02.141)(14:50:02:378) AD: app id write i 72 ptr=0 ptr_tk 0
+I (14:50:02.142)(14:50:02:379) AD: app id write i 73 ptr=0 ptr_tk 0
+I (14:50:02.143)(14:50:02:380) AD: app id write i 74 ptr=0 ptr_tk 0
+I (14:50:02.143)(14:50:02:381) AD: app id write i 75 ptr=0 ptr_tk 0
+I (14:50:02.144)(14:50:02:381) AD: app id write i 76 ptr=0 ptr_tk 0
+I (14:50:02.145)(14:50:02:382) AD: app id write i 77 ptr=0 ptr_tk 0
+I (14:50:02.146)(14:50:02:383) AD: app id write i 78 ptr=0 ptr_tk 0
+I (14:50:02.146)(14:50:02:384) AD: app id write i 79 ptr=0 ptr_tk 0
+I (14:50:02.147)(14:50:02:384) AD: app id write i 80 ptr=0 ptr_tk 0
+I (14:50:02.148)(14:50:02:385) AD: app id write i 81 ptr=0 ptr_tk 0
+I (14:50:02.149)(14:50:02:386) AD: app id write i 82 ptr=0 ptr_tk 0
+I (14:50:02.149)(14:50:02:387) AD: app id write i 83 ptr=0 ptr_tk 0
+I (14:50:02.150)(14:50:02:387) AD: app id write i 84 ptr=0 ptr_tk 0
+I (14:50:02.151)(14:50:02:388) AD: app id write i 85 ptr=0 ptr_tk 0
+I (14:50:02.152)(14:50:02:389) AD: app id write i 86 ptr=0 ptr_tk 0
+I (14:50:02.152)(14:50:02:390) AD: app id write i 87 ptr=0 ptr_tk 0
+I (14:50:02.153)(14:50:02:390) AD: app id write i 88 ptr=0 ptr_tk 0
+I (14:50:02.154)(14:50:02:391) AD: app id write i 89 ptr=0 ptr_tk 0
+I (14:50:02.155)(14:50:02:392) AD: app id write i 90 ptr=0 ptr_tk 0
+I (14:50:02.155)(14:50:02:393) AD: app id write i 91 ptr=0 ptr_tk 0
+I (14:50:02.156)(14:50:02:393) AD: app id write i 92 ptr=0 ptr_tk 0
+I (14:50:02.157)(14:50:02:394) AD: app id write i 93 ptr=0 ptr_tk 0
+I (14:50:02.158)(14:50:02:395) AD: app id write i 94 ptr=0 ptr_tk 0
+I (14:50:02.158)(14:50:02:396) AD: app id write i 95 ptr=0 ptr_tk 0
+I (14:50:02.159)(14:50:02:396) AD: app id write i 96 ptr=0 ptr_tk 0
+I (14:50:02.160)(14:50:02:397) AD: app id write i 97 ptr=0 ptr_tk 0
+I (14:50:02.161)(14:50:02:398) AD: app id write i 98 ptr=0 ptr_tk 0
+I (14:50:02.161)(14:50:02:399) AD: app id write i 99 ptr=0 ptr_tk 0
+I (14:50:02.162)(14:50:02:399) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.163)(14:50:02:400) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.164)(14:50:02:401) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.164)(14:50:02:402) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.165)(14:50:02:402) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.166)(14:50:02:403) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.166)(14:50:02:404) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.167)(14:50:02:405) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.168)(14:50:02:405) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.169)(14:50:02:406) AD: ptr_ts 0 vrfy_sts 0 vrfy_flag 0
+I (14:50:02.170)(14:50:02:407) AD: write current_range_app_id 1 auth_vrfy_sts 0
+I (14:50:02.483)(14:50:02:721) AD: store_admin_info_to_nvm
+I (14:50:02.484)(14:50:02:721) MSH: admin 0
+I (14:50:02.484)(14:50:02:721) MSH: admin 0
+I (14:50:02.484)(14:50:02:722) MSH: admin 0
+I (14:50:02.484)(14:50:02:722) MSH: admin 0
+I (14:50:02.487)(14:50:02:724) MSH: admin 0
+I (14:50:02.487)(14:50:02:724) MSH: admin 0
+I (14:50:02.487)(14:50:02:725) MSH: admin 0
+I (14:50:02.487)(14:50:02:725) MSH: admin 0
+I (14:50:02.488)(14:50:02:725) MSH: admin 0
+I (14:50:02.488)(14:50:02:725) MSH: admin 0
+I (14:50:02.489)(14:50:02:726) 21: R tkey:1765810202 appid:1 sts:1 fullsts:0
+I (14:50:02.489)(14:50:02:727) 20: trans_id 7 pld_len 12 intf 18 msg_type 1  pr_snt_scs 6
+E (14:50:02.490)(14:50:02:727) 1: A220 20 0
+I (14:50:02.491)(14:50:02:728) MSH: MSG_STE_HDLR_THRD2172
+E (14:50:02.491)(14:50:02:728) 17: O15 125 1
+I (14:50:02.492)(14:50:02:729) QMEM: mem clr = 13
+I (14:50:02.492)(14:50:02:730) MDEC: rx_len 20
+I (14:50:02.493)(14:50:02:730) MSH: no flow control
+I (14:50:02.493)(14:50:02:730) 21: sync byte matched 0x3fff4e6c
+I (14:50:02.494)(14:50:02:732) MDEC: frame_len=20
+I (14:50:02.495)(14:50:02:733) 21: total len 20 proc len 20
+I (14:50:02.496)(14:50:02:733) MDEC: full frame rcvd
+I (14:50:02.496)(14:50:02:733) 21: rcvd_frm 18 num_msg 1 trn_id 8 ack_req 0 frm_len 20 sec_mod 0
+I (14:50:02.497)(14:50:02:735) 21: rcvd_msg intf 18 msg_id 17 msg_len 8 msg_type 1
+E (14:50:02.498)(14:50:02:735) 21: Q13 18 17 8 1
+I (14:50:02.499)(14:50:02:736) 2: Calibration_mode 0
+E (14:50:02.499)(14:50:02:737) 20: L2 1765810201 19800 0 0 0
+I (14:50:02.500)(14:50:02:737) QSND: INTF_MSG to 8 evnt 17 pld 0x3fff9dfc len(w) 3 ctx 0 fre_req 1
+I (14:50:02.501)(14:50:02:739) MDEC: no flow control
+I (14:50:02.506)(14:50:02:743) MSH: event_num=17
+I (14:50:02.506)(14:50:02:744) MSH: wifi ble msg hdlr rcvd event=17
+I (14:50:02.507)(14:50:02:744) 10: reboot_GMT = 1765810202 msg17_GMT = 1765810201 dev_GMT 1765810202 Tdiff -1 tm_zn_fg 0
+I (14:50:02.509)(09:20:02:746) 10: Alarm currt time:1765810201
+
+I (14:50:02.493)(14:50:02:730) 17: dpot 1765810202
+
+E (14:50:02.510)(09:20:02:747) 20: L1 0 1 0 19
+I (14:50:02.510)(09:20:02:747) 20: trans_id 0 pld_len 12 intf 19 msg_type 1  pr_snt_scs 0
+I (14:50:02.511)(09:20:02:748) 17: set_skt_periodic_data.notify_on_change_only 1 sec 5
+I (14:50:02.512)(09:20:02:749) 17: conn_recv_from yes 18 bit_map_connection_sts 262144 prev_set_bits 0
+I (14:50:02.669)(09:20:02:907) 21: send_msg intf 18 msg_id 13 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 7 scs_snt 7
+E (14:50:02.752)(09:20:02:989) 21: Q14 18 13 24 7
+I (14:50:02.752)(09:20:02:990) 20: !get_srvr_ntfy_sts SRVR_NTFY_EN
+I (14:50:02.753)(09:20:02:990) 21: In svr no not msg:1
+I (14:50:02.753)(09:20:02:991) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 1
+E (14:50:02.835)(09:20:02:073) 12: L3 1765830001
+I (20:20:01.000)(14:50:01:075) 10: Updating RTC from system time: Mon Dec 15 20:20:01 2025
+
+I (20:20:01.000)(14:50:01:075) 10: Checking MAX31341 for write...
+I (20:20:01.001)(14:50:01:075) 10: Writing 1 bytes to reg 0x00
+I (20:20:01.001)(14:50:01:076) 21: send_msg intf 18 msg_id 16 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 3 scs_snt 8
+I (20:20:01.002)(14:50:01:077) 10: rtc_write failed: ESP_FAIL
+E (20:20:01.003)(14:50:01:077) 21: Q14 18 16 24 3
+I (20:20:01.004)(14:50:01:079) 10: MAX31341 RTC write fail set time
+I (20:20:01.005)(14:50:01:079) 10: MAX not found. Checking PCF85263A...
+I (20:20:01.005)(14:50:01:080) 10: OSC OFF
+I (20:20:01.006)(14:50:01:081) 10: Writing 1 bytes to reg 0x2E
+I (20:20:01.003)(14:50:01:078) 6: prtl_cmprsr_ses_flg 0
+I (20:20:01.007)(14:50:01:082) 10: Writing 7 bytes to reg 0x01
+E (20:20:01.009)(14:50:01:084) 10: J2
+I (20:20:01.009)(14:50:01:084) 10: Writing 1 bytes to reg 0x2E
+I (20:20:01.011)(14:50:01:086) 10: System time written to PCF85263A RTC
+E (20:20:01.012)(14:50:01:087) 10: J10Mon Dec 15 20:20:01 2025
+
+I (20:20:01.012)(14:50:01:087) 2: event 0 intrf_type 7 ucstae 0
+E (20:20:01.013)(14:50:01:087) 10: J4 2
+I (20:20:01.013)(14:50:01:088) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 0 from intf 7
+I (20:20:01.013)(14:50:01:088) MSH: time synced
+I (20:20:01.015)(14:50:01:089) MSH: tm_zn_intf 18 available_tm_zone_flg 1
+I (20:20:01.015)(14:50:01:090) 9: no tmr active
+I (20:20:01.016)(14:50:01:091) QSND: INTF_MSG to 7 evnt 11 pld 0 len(w) 0 ctx 0 fre_req 0
+I (20:20:01.017)(14:50:01:092) 10: 1
+I (20:20:01.018)(14:50:01:092) QSND: INTF_MSG to 7 evnt 12 pld 0x3ffce03c len(w) 0 ctx 0 fre_req 1
+I (20:20:01.019)(14:50:01:093) MSH: Wdt_fl_dis 1
+I (20:20:01.019)(14:50:01:094) MSH: Wdt_fl_dis
+I (20:20:01.020)(14:50:01:095) MSH: MSG_STE_HDLR_THRD1724
+I (20:20:01.020)(14:50:01:095) QMEM: mem clr = 17
+I (20:20:01.021)(14:50:01:095) MSH: no flow control
+E (20:20:01.024)(14:50:01:099) 1: A220 20 0
+I (20:20:01.025)(14:50:01:100) MDEC: rx_len 20
+I (20:20:01.026)(14:50:01:100) 21: sync byte matched 0x3fff4e6c
+I (20:20:01.026)(14:50:01:101) MDEC: frame_len=20
+I (20:20:01.027)(14:50:01:101) 21: total len 20 proc len 20
+I (20:20:01.027)(14:50:01:102) 21: rcvd_frm 18 num_msg 1 trn_id 27 ack_req 0 frm_len 20 sec_mod 0
+I (20:20:01.027)(14:50:01:102) MDEC: full frame rcvd
+I (20:20:01.028)(14:50:01:102) 21: rcvd_msg intf 18 msg_id 17 msg_len 8 msg_type 1
+E (20:20:01.029)(14:50:01:104) 21: Q13 18 17 8 1
+E (20:20:01.028)(14:50:01:103) 2: B15 2 0 0 0 7
+I (20:20:01.030)(14:50:01:105) 2: Calibration_mode 0
+E (20:20:01.031)(14:50:01:106) 20: L2 1765810203 0 0 1 0
+I (20:20:01.031)(14:50:01:106) QSND: INTF_MSG to 8 evnt 17 pld 0x3fff9600 len(w) 3 ctx 0 fre_req 1
+I (20:20:01.033)(14:50:01:107) MSH: event_num=17
+I (20:20:01.033)(14:50:01:107) MDEC: no flow control
+I (20:20:01.033)(14:50:01:108) MSH: wifi ble msg hdlr rcvd event=17
+I (20:20:01.034)(14:50:01:109) 10: reboot_GMT = 1765810201 msg17_GMT = 1765810203 dev_GMT 1765810201 Tdiff 2 tm_zn_fg 1
+I (20:20:01.036)(14:50:01:110) 10: current time svr:1765810203
+
+E (20:20:01.036)(14:50:01:111) 12: L3 1765830003
+I (20:20:03.000)(14:50:03:112) 10: Updating RTC from system time: Mon Dec 15 20:20:03 2025
+
+I (20:20:03.000)(14:50:03:113) 10: Conforming to PCF85263A (rtc_chk==2) for write...
+I (20:20:03.001)(14:50:03:114) 10: OSC OFF
+I (20:20:03.002)(14:50:03:114) 10: Writing 1 bytes to reg 0x2E
+E (20:20:01.033)(14:50:01:108) 2: B13 2 0 13 7
+I (20:20:03.003)(14:50:03:115) 10: Writing 7 bytes to reg 0x01
+E (20:20:03.004)(14:50:03:117) 10: J2
+I (20:20:03.005)(14:50:03:117) 10: Writing 1 bytes to reg 0x2E
+E (20:20:03.005)(14:50:03:118) 10: J4 2
+I (20:20:03.006)(14:50:03:118) 10: System time written to PCF85263A RTC
+I (20:20:03.007)(14:50:03:119) 10: PCF85263A RTC readback OK: Mon Dec 15 20:20:03 2025
+
+I (20:20:03.007)(14:50:03:119) MSH: time synced
+I (20:20:03.008)(14:50:03:120) MSH: tm_zn_intf 18 available_tm_zone_flg 1
+I (20:20:03.009)(14:50:03:121) 9: no tmr active
+I (20:20:03.009)(14:50:03:121) QSND: INTF_MSG to 7 evnt 11 pld 0 len(w) 0 ctx 0 fre_req 0
+I (20:20:03.010)(14:50:03:122) 10: 1
+I (20:20:03.010)(14:50:03:123) QSND: INTF_MSG to 7 evnt 12 pld 0x3ffce03c len(w) 0 ctx 0 fre_req 1
+I (20:20:03.011)(14:50:03:124) MSH: Wdt_fl_dis 0
+I (20:20:03.012)(14:50:03:124) MSH: Wdt_fl_dis
+I (20:20:03.013)(14:50:03:125) MSH: MSG_STE_HDLR_THRD1724
+I (20:20:03.013)(14:50:03:125) QMEM: mem clr = 17
+I (20:20:03.014)(14:50:03:126) MSH: no flow control
+I (20:20:03.005)(14:50:03:126) 2: Pwr Off State_event rcvd event=13
+I (20:20:03.015)(14:50:03:127) 17: common events =13
+I (20:20:03.016)(14:50:03:128) 17: Time not sycned atleast one time
+I (20:20:03.016)(14:50:03:129) 2: event 13 intrf_type 7 ucstae 0
+I (20:20:03.017)(14:50:03:129) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 13 from intf 7
+E (20:20:03.018)(14:50:03:130) 2: B15 2 0 0 13 7
+E (20:20:03.019)(14:50:03:131) 2: B13 2 0 12 135
+I (20:20:03.019)(14:50:03:132) 2: Pwr Off State_event rcvd event=12
+I (20:20:03.020)(14:50:03:132) 17: common events =12
+I (20:20:03.021)(14:50:03:133) 17: TIME_SYNC_RES trans_id  23 intf 18
+I (20:20:03.021)(14:50:03:134) 21: R sync_resp 1
+I (20:20:03.022)(14:50:03:134) 20: trans_id 23 pld_len 8 intf 18 msg_type 1  pr_snt_scs 9
+I (20:20:03.029)(14:50:03:142) 6: dev doesn't rcvd time stamp from app
+I (20:20:03.031)(14:50:03:143) 6: get_refresh_ses_stop_bit 23
+
+I (20:20:03.031)(14:50:03:144) 17: OTA_TEST_TM: -14174980 1751655023
+I (20:20:03.032)(14:50:03:145) 17: EPOCH_TIME_LESS_THAN_LOCALTIME
+I (20:20:03.033)(14:50:03:145) 2: event 12 intrf_type 135 ucstae 0
+I (20:20:03.032)(14:50:03:145) 21: send_msg intf 18 msg_id 17 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 23 scs_snt 9
+E (20:20:03.035)(14:50:03:147) 21: Q14 18 17 24 23
+I (20:20:03.035)(14:50:03:148) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 12 from intf 135
+E (20:20:03.036)(14:50:03:149) 2: B15 2 0 0 12 135
+E (20:20:03.037)(14:50:03:149) 2: B13 2 0 11 7
+I (20:20:03.039)(14:50:03:152) 2: Pwr Off State_event rcvd event=11
+I (20:20:03.040)(14:50:03:152) 17: common events =11
+I (20:20:03.040)(14:50:03:152) 17: geyser time resync 1 3
+I (20:20:03.040)(14:50:03:153) 6: store indx in else
+E (20:20:03.041)(14:50:03:153) 6: F16 0 0
+I (20:20:03.042)(14:50:03:154) 2: Test rly 0 0 0 0
+
+E (20:20:03.043)(14:50:03:155) 2: B25 0 0 0 0 0 0 0 0
+I (20:20:03.043)(14:50:03:155) 2: Calibration_mode 0
+I (20:20:03.043)(14:50:03:156) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (20:20:03.044)(14:50:03:157) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (20:20:03.044)(14:50:03:157) 2: RLY:0:0:0:0
+
+I (20:20:03.046)(14:50:03:158) 2: Rly sts 0 curr_vol_Sts 0 vol_err_ovrride_bit 0
+
+I (20:20:03.047)(14:50:03:159) 2: no pending process 
+I (20:20:03.047)(14:50:03:160) 2: Invers Last off time 0 pending_sts 0 off dur 0
+E (20:20:03.048)(14:50:03:161) 17: O16 13197 1765830003
+I (20:20:03.049)(14:50:03:161) 2: event 11 intrf_type 7 ucstae 0
+I (20:20:03.050)(14:50:03:162) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 11 from intf 7
+E (20:20:03.051)(14:50:03:163) 2: B15 2 0 0 11 7
+E (20:20:03.051)(14:50:03:163) 2: B13 2 0 12 135
+I (20:20:03.052)(14:50:03:164) 2: Pwr Off State_event rcvd event=12
+I (20:20:03.053)(14:50:03:165) 17: common events =12
+I (20:20:03.053)(14:50:03:165) 17: TIME_SYNC_RES trans_id  8 intf 18
+I (20:20:03.054)(14:50:03:166) 21: R sync_resp 1
+I (20:20:03.054)(14:50:03:167) 20: trans_id 8 pld_len 8 intf 18 msg_type 1  pr_snt_scs 10
+I (20:20:03.061)(14:50:03:173) 21: send_msg intf 18 msg_id 17 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 8 scs_snt 10
+E (20:20:03.061)(14:50:03:173) 21: Q14 18 17 24 8
+I (20:20:03.062)(14:50:03:174) 6: dev doesn't rcvd time stamp from app
+I (20:20:03.062)(14:50:03:175) 6: get_refresh_ses_stop_bit 23
+
+I (20:20:03.063)(14:50:03:176) 17: OTA_TEST_TM: -14174980 1751655023
+I (20:20:03.064)(14:50:03:176) 17: EPOCH_TIME_LESS_THAN_LOCALTIME
+I (20:20:03.065)(14:50:03:177) 2: event 12 intrf_type 135 ucstae 0
+I (20:20:03.065)(14:50:03:178) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 12 from intf 135
+E (20:20:03.067)(14:50:03:179) 2: B15 2 0 0 12 135
+E (20:20:03.067)(14:50:03:179) 2: B13 2 0 11 7
+I (20:20:03.068)(14:50:03:180) 2: Pwr Off State_event rcvd event=11
+I (20:20:03.068)(14:50:03:181) 17: common events =11
+I (20:20:03.069)(14:50:03:181) 17: geyser time resync 1 3
+I (20:20:03.070)(14:50:03:182) 2: Test rly 0 0 0 0
+
+E (20:20:03.070)(14:50:03:183) 2: B25 0 0 0 0 0 0 0 0
+I (20:20:03.071)(14:50:03:183) 2: Calibration_mode 0
+I (20:20:03.071)(14:50:03:184) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (20:20:03.072)(14:50:03:185) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (20:20:03.072)(14:50:03:186) 2: RLY:0:0:0:0
+
+I (20:20:03.074)(14:50:03:186) 2: Rly sts 0 curr_vol_Sts 0 vol_err_ovrride_bit 0
+
+I (20:20:03.075)(14:50:03:188) 2: no pending process 
+I (20:20:03.075)(14:50:03:188) 2: Invers Last off time 0 pending_sts 0 off dur 0
+E (20:20:03.076)(14:50:03:189) 17: O16 13197 1765830003
+I (20:20:03.077)(14:50:03:189) 2: event 11 intrf_type 7 ucstae 0
+I (20:20:03.078)(14:50:03:190) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 11 from intf 7
+E (20:20:03.080)(14:50:03:192) 2: B15 2 0 0 11 7
+E (20:20:03.080)(14:50:03:193) 2: B13 2 0 12 135
+I (20:20:03.081)(14:50:03:193) 2: Pwr Off State_event rcvd event=12
+I (20:20:03.081)(14:50:03:193) 17: common events =12
+I (20:20:03.083)(14:50:03:196) 17: TIME_SYNC_RES trans_id  27 intf 18
+I (20:20:03.084)(14:50:03:196) 21: R sync_resp 1
+I (20:20:03.084)(14:50:03:196) 20: trans_id 27 pld_len 8 intf 18 msg_type 1  pr_snt_scs 11
+I (20:20:03.087)(14:50:03:199) 6: dev doesn't rcvd time stamp from app
+I (20:20:03.088)(14:50:03:200) 6: get_refresh_ses_stop_bit 23
+
+I (20:20:03.088)(14:50:03:201) 17: OTA_TEST_TM: -14174980 1751655023
+I (20:20:03.089)(14:50:03:201) 17: EPOCH_TIME_LESS_THAN_LOCALTIME
+I (20:20:03.090)(14:50:03:202) 2: event 12 intrf_type 135 ucstae 0
+I (20:20:03.090)(14:50:03:202) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 12 from intf 135
+E (20:20:03.091)(14:50:03:203) 2: B15 2 0 0 12 135
+I (20:20:03.091)(14:50:03:203) 21: send_msg intf 18 msg_id 17 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 27 scs_snt 11
+E (20:20:03.093)(14:50:03:205) 21: Q14 18 17 24 27
+E (20:20:03.181)(14:50:03:294) 1: A256 56 0
+I (20:20:03.183)(14:50:03:295) MDEC: rx_len 56
+I (20:20:03.183)(14:50:03:295) 21: sync byte matched 0x3fff4e6c
+I (20:20:03.183)(14:50:03:295) MDEC: frame_len=56
+I (20:20:03.184)(14:50:03:296) 21: total len 56 proc len 56
+I (20:20:03.184)(14:50:03:296) 21: rcvd_frm 18 num_msg 10 trn_id 10 ack_req 1 frm_len 56 sec_mod 0
+I (20:20:03.185)(14:50:03:297) 21: ack_resp intf 18 trans 10
+I (20:20:03.185)(14:50:03:297) MDEC: full frame rcvd
+I (20:20:03.186)(14:50:03:298) 20: trans_id 0 pld_len 8 intf 18 msg_type 0  pr_snt_scs 13
+I (20:20:03.187)(14:50:03:300) 21: rcvd_msg intf 18 msg_id 11 msg_len 0 msg_type 0
+E (20:20:03.188)(14:50:03:300) 21: Q13 18 11 0 0
+I (20:20:03.189)(14:50:03:301) 2: Calibration_mode 0
+I (20:20:03.189)(14:50:03:302) 2: Calibration_mode 0
+I (20:20:03.190)(14:50:03:302) TAG: MAC: 00:4B:12:C1:41:AA
+I (20:20:03.191)(14:50:03:303) 20: 00: 
+I (20:20:03.191)(14:50:03:303) 20: 4B: 
+I (20:20:03.191)(14:50:03:304) 20: 12: 
+I (20:20:03.192)(14:50:03:304) 20: C1: 
+I (20:20:03.192)(14:50:03:305) 20: 41: 
+I (20:20:03.193)(14:50:03:305) 20: AA: 
+I (20:20:03.193)(14:50:03:306) 21:  Q fd_hw_mj:0 fd_hw_mr:0 fd_sfw_mj:0 fd_sfw_mr:0 fd_hw_tp:5 max_alrm 16 bld_num 41 ful_sts 0
+I (20:20:03.195)(14:50:03:307) 20: dc_srvr_type 1  dc_srvr_num0  dc_ver_num2
+I (20:20:03.195)(14:50:03:308) 20: Q hw_vr_nw 11 Q sw_vr_nw 3 prm_id 1
+I (20:20:03.196)(14:50:03:308) 20: trans_id 10 pld_len 40 intf 18 msg_type 1  pr_snt_scs 13
+I (20:20:03.197)(14:50:03:309) 21: REV_NUMR :- 24365
+I (20:20:03.198)(14:50:03:310) 16: RO_NVM_VER 2
+I (20:20:03.198)(14:50:03:311) 4: Vol_ref_parm= 139814
+I (20:20:03.200)(14:50:03:312) 21: rcvd_msg intf 18 msg_id 48 msg_len 4 msg_type 0
+E (20:20:03.200)(14:50:03:312) 21: Q13 18 48 4 0
+I (20:20:03.200)(14:50:03:313) 2: Calibration_mode 0
+I (20:20:03.201)(14:50:03:313) 21: param 0 auto_on_off 0 sch_override: 0 h_temp_thrs: 0 l_temp_thrs: 0
+I (20:20:03.202)(14:50:03:314) 21: HTR_STR 0 PARM 2
+I (20:20:03.203)(14:50:03:315) 21: MX_CUR 0 PARM 3 
+I (20:20:03.203)(14:50:03:315) 21: LED 0 PARM 4
+E (20:20:03.204)(14:50:03:316) 1: A212 12 0
+I (20:20:03.204)(14:50:03:316) 21: det: 1 4 
+
+I (20:20:03.205)(14:50:03:317) 20: trans_id 10 pld_len 8 intf 18 msg_type 1  pr_snt_scs 13
+I (20:20:03.205)(14:50:03:318) MDEC: rx_len 12
+I (20:20:03.206)(14:50:03:318) 21: det: 4 4 
+
+I (20:20:03.207)(14:50:03:319) 21: sync byte matched 0x3fff4e6c
+I (20:20:03.207)(14:50:03:319) 21: ptr[4]: 4 ptr[5] : 0 ptr[6] 0 ptr[7] 0
+I (20:20:03.208)(14:50:03:320) MDEC: frame_len=12
+I (20:20:03.210)(14:50:03:322) 20: trans_id 10 pld_len 8 intf 18 msg_type 1  pr_snt_scs 13
+I (20:20:03.210)(14:50:03:323) 21: total len 12 proc len 12
+I (20:20:03.210)(14:50:03:323) 21: rcvd_msg intf 18 msg_id 47 msg_len 4 msg_type 0
+E (20:20:03.211)(14:50:03:324) 21: Q13 18 47 4 0
+I (20:20:03.211)(14:50:03:324) MDEC: full frame rcvd
+I (20:20:03.212)(14:50:03:325) 2: Calibration_mode 0
+I (20:20:03.213)(14:50:03:326) 21: rcvd_msg intf 18 msg_id 61 msg_len 0 msg_type 0
+E (20:20:03.214)(14:50:03:326) 21: Q13 18 61 0 0
+I (20:20:03.215)(14:50:03:327) 2: Calibration_mode 0
+I (20:20:03.215)(14:50:03:328) 21: node cnt in 61 1
+I (20:20:03.216)(14:50:03:328) 21: Low Volt 160 Proper Volt 275 en_dis 3 enrgy_id 0
+I (20:20:03.217)(14:50:03:329) 20: trans_id 10 pld_len 12 intf 18 msg_type 1  pr_snt_scs 13
+I (20:20:03.218)(14:50:03:330) 21: rcvd_msg intf 18 msg_id 69 msg_len 0 msg_type 0
+E (20:20:03.219)(14:50:03:331) 21: Q13 18 69 0 0
+I (20:20:03.219)(14:50:03:332) 2: Calibration_mode 0
+I (20:20:03.220)(14:50:03:332) 21: EN SV MODE EN_MO 0 IN_DUR 0 OF_DUR 0 ON_DUR 0 LT 0 HT 0
+I (20:20:03.221)(14:50:03:333) 20: trans_id 10 pld_len 12 intf 18 msg_type 1  pr_snt_scs 13
+I (20:20:03.222)(14:50:03:334) 21: rcvd_msg intf 18 msg_id 26 msg_len 8 msg_type 1
+E (20:20:03.223)(14:50:03:335) 21: Q13 18 26 8 1
+I (20:20:03.223)(14:50:03:335) 21: send_msg intf 18 msg_id 11 msg_len 56 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 10 scs_snt 13
+I (20:20:03.223)(14:50:03:336) 2: Calibration_mode 0
+I (20:20:03.225)(14:50:03:338) 21: off_time_stamp 0
+I (20:20:03.226)(14:50:03:338) QSND: INTF_MSG to 8 evnt 26 pld 0x3fff9e1c len(w) 3 ctx 0 fre_req 1
+E (20:20:03.227)(14:50:03:339) 1: A28 8 0
+I (20:20:03.227)(14:50:03:339) 21: rcvd_msg intf 18 msg_id 68 msg_len 0 msg_type 0
+E (20:20:03.228)(14:50:03:341) 21: Q13 18 68 0 0
+I (20:20:03.229)(14:50:03:341) TDRV: Temp periodic tmr exp
+I (20:20:03.229)(14:50:03:341) MDEC: rx_len 8
+I (20:20:03.230)(14:50:03:342) 17: read connectivity_mode_status=1
+I (20:20:03.230)(14:50:03:342) 21: sync byte matched 0x3fff4e6c
+I (20:20:03.229)(14:50:03:341) 2: Calibration_mode 0
+I (20:20:03.232)(14:50:03:344) MDEC: frame_len=8
+I (20:20:03.232)(14:50:03:344) 21: IP_ADDR 192.168.1.130
+I (20:20:03.233)(14:50:03:345) 21: total len 8 proc len 8
+I (20:20:03.233)(14:50:03:346) 20: trans_id 10 pld_len 8 intf 18 msg_type 1  pr_snt_scs 13
+I (20:20:03.234)(14:50:03:346) MDEC: full frame rcvd
+I (20:20:03.235)(14:50:03:348) 21: rcvd_msg intf 18 msg_id 72 msg_len 0 msg_type 0
+E (20:20:03.236)(14:50:03:349) 21: Q13 18 72 0 0
+E (20:20:03.225)(14:50:03:337) 21: Q14 18 11 56 10
+I (20:20:03.237)(14:50:03:349) 2: Calibration_mode 0
+I (20:20:03.238)(14:50:03:351) 21: rcrt[0] = 5
+I (20:20:03.239)(14:50:03:351) 21: SRCT 15
+I (20:20:03.239)(14:50:03:351) 21: pwr_src_1 1, pwr_src_2 0, src_rly 1, inv_rly 0 act_len 1 e_Act_lev 1 
+I (20:20:03.240)(14:50:03:352) 20: trans_id 10 pld_len 32 intf 18 msg_type 1  pr_snt_scs 14
+I (20:20:03.241)(14:50:03:353) 21: rcvd_msg intf 18 msg_id 46 msg_len 8 msg_type 0
+E (20:20:03.242)(14:50:03:354) 21: Q13 18 46 8 0
+I (20:20:03.243)(14:50:03:355) 2: Calibration_mode 0
+I (20:20:03.243)(14:50:03:356) 21: S_ER 0
+I (20:20:03.244)(14:50:03:356) 21: Q NCDS ID 0 not found
+I (20:20:03.244)(14:50:03:357) 21: Q NCDS ID 0 not found
+I (20:20:03.245)(14:50:03:357) 21: Q ID 3 LSUT 0
+I (20:20:03.246)(14:50:03:358) 20: trans_id 10 pld_len 12 intf 18 msg_type 1  pr_snt_scs 14
+I (20:20:03.246)(14:50:03:358) 21: send_msg intf 18 msg_id 48 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 10 scs_snt 14
+I (20:20:03.247)(14:50:03:359) 21: Q NCDS ID 0 not found
+E (20:20:03.249)(14:50:03:361) 21: Q14 18 48 24 10
+I (20:20:03.249)(14:50:03:361) 21: Q NCDS ID 0 not found
+E (20:20:03.250)(14:50:03:362) 21: Q11 6 0 0 0 0 0 0 0 253 0
+I (20:20:03.251)(14:50:03:363) 20: trans_id 10 pld_len 16 intf 18 msg_type 1  pr_snt_scs 15
+I (20:20:03.252)(14:50:03:364) 21: Q NCDS ID 7 not found
+I (20:20:03.252)(14:50:03:364) 21: rcvd_msg intf 18 msg_id 22 msg_len 4 msg_type 0
+E (20:20:03.253)(14:50:03:365) 21: Q13 18 22 4 0
+I (20:20:03.254)(14:50:03:366) 2: Calibration_mode 0
+I (20:20:03.254)(14:50:03:367) Manual_lock: lock_bit 0 intf 18
+I (20:20:03.254)(14:50:03:367) 21: send_msg intf 18 msg_id 48 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 10 scs_snt 15
+I (20:20:03.255)(14:50:03:367) 20: trans_id 10 pld_len 8 intf 18 msg_type 1  pr_snt_scs 15
+E (20:20:03.257)(14:50:03:369) 21: Q14 18 48 24 10
+I (20:20:03.257)(14:50:03:370) MDEC: no flow control
+I (20:20:03.259)(14:50:03:371) 21: rcvd_frm 18 num_msg 1 trn_id 11 ack_req 0 frm_len 12 sec_mod 0
+I (20:20:03.260)(14:50:03:372) 21: rcvd_msg intf 18 msg_id 17 msg_len 0 msg_type 0
+E (20:20:03.261)(14:50:03:373) 21: Q13 18 17 0 0
+I (20:20:03.261)(14:50:03:373) 2: Calibration_mode 0
+E (20:20:03.262)(14:50:03:374) 10: TC 1765810203 19800 0 1 0
+I (20:20:03.262)(14:50:03:375) 20: trans_id 11 pld_len 12 intf 18 msg_type 1  pr_snt_scs 16
+I (20:20:03.262)(14:50:03:375) 21: send_msg intf 18 msg_id 61 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 10 scs_snt 16
+I (20:20:03.263)(14:50:03:376) MDEC: no flow control
+I (20:20:03.227)(14:50:03:340) MSH: event_num=26
+I (20:20:03.266)(14:50:03:378) 21: rcvd_frm 18 num_msg 1 trn_id 12 ack_req 0 frm_len 8 sec_mod 0
+E (20:20:03.265)(14:50:03:378) 21: Q14 18 61 24 10
+I (20:20:03.267)(14:50:03:379) 21: rcvd_msg intf 18 msg_id 85 msg_len 20472 msg_type 0
+E (20:20:03.269)(14:50:03:381) 21: Q13 18 85 20472 0
+I (20:20:03.269)(14:50:03:381) MDEC: Rcvd INVLD msg id 55 or msg len 20472
+I (20:20:03.270)(14:50:03:383) MDEC: aa 
+I (20:20:03.271)(14:50:03:383) MDEC: 08 
+I (20:20:03.271)(14:50:03:383) MDEC: 01 
+I (20:20:03.271)(14:50:03:384) MDEC: 2c 
+I (20:20:03.272)(14:50:03:384) MDEC: 55 
+I (20:20:03.272)(14:50:03:385) MDEC: ff 
+I (20:20:03.273)(14:50:03:385) MDEC: fe 
+I (20:20:03.273)(14:50:03:386) MDEC: d3 
+I (20:20:03.274)(14:50:03:386) MDEC: no flow control
+I (20:20:03.267)(14:50:03:379) MSH: wifi ble msg hdlr rcvd event=26
+I (20:20:03.275)(14:50:03:388) MSH: offline_time_stamp 0
+I (20:20:03.276)(14:50:03:388) MSH: refrh_ses_bit 0
+E (20:20:03.276)(14:50:03:388) 6: F6 0
+I (20:20:03.277)(14:50:03:389) 6: Mem allocated Memory address = 0x3fffb018
+E (20:20:03.278)(14:50:03:390) 6: F9 0
+I (20:20:03.278)(14:50:03:390) 6: F10
+E (20:20:03.278)(14:50:03:391) 6: F7 255
+I (20:20:03.279)(14:50:03:391) 21: send_msg intf 18 msg_id 69 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 10 scs_snt 17
+I (20:20:03.279)(14:50:03:391) MSH: MSG_STE_HDLR_THRD1724
+E (20:20:03.280)(14:50:03:393) 21: Q14 18 69 24 10
+I (20:20:03.282)(14:50:03:394) QMEM: mem clr = 26
+I (20:20:03.282)(14:50:03:394) MSH: no flow control
+I (20:20:03.232)(14:50:03:345) 17: read connectivity_mode_status=1
+I (20:20:03.285)(14:50:03:398) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:03.287)(14:50:03:400) 21: send_msg intf 18 msg_id 68 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 10 scs_snt 18
+E (20:20:03.288)(14:50:03:400) 21: Q14 18 68 24 10
+I (20:20:03.294)(14:50:03:406) 21: send_msg intf 18 msg_id 72 msg_len 40 sec_mode 0 fd 3FFEBDB8 pad_len 0 app_id 253 trs_id 10 scs_snt 19
+E (20:20:03.294)(14:50:03:407) 21: Q14 18 72 40 10
+I (20:20:03.302)(14:50:03:414) 21: send_msg intf 18 msg_id 46 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 10 scs_snt 20
+E (20:20:03.303)(14:50:03:415) 21: Q14 18 46 24 10
+I (20:20:03.307)(14:50:03:420) 21: send_msg intf 18 msg_id 46 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 0 app_id 253 trs_id 10 scs_snt 21
+E (20:20:03.308)(14:50:03:421) 21: Q14 18 46 24 10
+I (20:20:03.315)(14:50:03:427) 21: send_msg intf 18 msg_id 22 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 10 scs_snt 22
+E (20:20:03.315)(14:50:03:428) 21: Q14 18 22 24 10
+I (20:20:03.320)(14:50:03:433) 21: send_msg intf 18 msg_id 17 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 4 app_id 253 trs_id 11 scs_snt 23
+E (20:20:03.321)(14:50:03:433) 21: Q14 18 17 24 11
+E (20:20:03.745)(14:50:03:857) 1: A220 20 0
+I (20:20:03.746)(14:50:03:858) MDEC: rx_len 20
+I (20:20:03.746)(14:50:03:859) 21: sync byte matched 0x3fff4e6c
+I (20:20:03.747)(14:50:03:859) MDEC: frame_len=20
+I (20:20:03.747)(14:50:03:860) 21: total len 20 proc len 20
+I (20:20:03.748)(14:50:03:860) 21: rcvd_frm 18 num_msg 1 trn_id 13 ack_req 0 frm_len 20 sec_mod 0
+I (20:20:03.748)(14:50:03:860) MDEC: full frame rcvd
+I (20:20:03.749)(14:50:03:861) 21: rcvd_msg intf 18 msg_id 49 msg_len 8 msg_type 1
+E (20:20:03.750)(14:50:03:862) 21: Q13 18 49 8 1
+I (20:20:03.751)(14:50:03:863) 2: Calibration_mode 0
+I (20:20:03.751)(14:50:03:863) 20: Prdc_ntfy_ctrl_rcvd
+I (20:20:03.752)(14:50:03:864) 21: P 1 5 1 5 35 8
+I (20:20:03.752)(14:50:03:865) QSND: INTF_MSG to 8 evnt 21 pld 0 len(w) 0 ctx 0 fre_req 0
+I (20:20:03.753)(14:50:03:866) MDEC: no flow control
+I (20:20:03.753)(14:50:03:866) MSH: event_num=21
+I (20:20:03.755)(14:50:03:867) MSH: wifi ble msg hdlr rcvd event=21
+I (20:20:03.755)(14:50:03:867) MSH: skt_periodic_para
+I (20:20:03.756)(14:50:03:868) MSH: MSG_STE_HDLR_THRD1724
+I (20:20:03.756)(14:50:03:869) MSH: no flow control
+E (20:20:03.777)(14:50:03:889) 1: A220 20 0
+I (20:20:03.778)(14:50:03:890) MDEC: rx_len 20
+I (20:20:03.778)(14:50:03:890) 21: sync byte matched 0x3fff4e6c
+I (20:20:03.778)(14:50:03:891) MDEC: frame_len=20
+I (20:20:03.779)(14:50:03:891) 21: total len 20 proc len 20
+I (20:20:03.779)(14:50:03:892) 21: rcvd_frm 18 num_msg 1 trn_id 14 ack_req 0 frm_len 20 sec_mod 0
+I (20:20:03.780)(14:50:03:892) MDEC: full frame rcvd
+I (20:20:03.780)(14:50:03:893) 21: rcvd_msg intf 18 msg_id 17 msg_len 8 msg_type 1
+E (20:20:03.782)(14:50:03:894) 21: Q13 18 17 8 1
+I (20:20:03.782)(14:50:03:895) 2: Calibration_mode 0
+E (20:20:03.783)(14:50:03:895) 20: L2 1765810203 19800 0 1 0
+I (20:20:03.784)(14:50:03:896) QSND: INTF_MSG to 8 evnt 17 pld 0x3fff9e1c len(w) 3 ctx 0 fre_req 1
+I (20:20:03.785)(14:50:03:897) MDEC: no flow control
+I (20:20:03.785)(14:50:03:897) MSH: event_num=17
+I (20:20:03.786)(14:50:03:898) MSH: wifi ble msg hdlr rcvd event=17
+I (20:20:03.787)(14:50:03:899) 10: reboot_GMT = 1765810203 msg17_GMT = 1765810203 dev_GMT 1765810203 Tdiff 0 tm_zn_fg 1
+I (20:20:03.788)(14:50:03:900) 10: current time svr:1765810203
+
+E (20:20:03.789)(14:50:03:901) 12: L3 1765830003
+I (20:20:03.000)(14:50:03:902) 10: Updating RTC from system time: Mon Dec 15 20:20:03 2025
+
+I (20:20:03.000)(14:50:03:902) 10: Conforming to PCF85263A (rtc_chk==2) for write...
+I (20:20:03.001)(14:50:03:903) 10: OSC OFF
+I (20:20:03.002)(14:50:03:904) 10: Writing 1 bytes to reg 0x2E
+I (20:20:03.003)(14:50:03:905) 10: Writing 7 bytes to reg 0x01
+E (20:20:03.004)(14:50:03:906) 10: J2
+I (20:20:03.004)(14:50:03:906) 10: Writing 1 bytes to reg 0x2E
+E (20:20:03.005)(14:50:03:907) 10: J4 2
+I (20:20:03.005)(14:50:03:907) 10: System time written to PCF85263A RTC
+I (20:20:03.006)(14:50:03:908) 10: PCF85263A RTC readback OK: Mon Dec 15 20:20:03 2025
+
+I (20:20:03.007)(14:50:03:909) MSH: time synced
+I (20:20:03.007)(14:50:03:909) MSH: tm_zn_intf 18 available_tm_zone_flg 1
+I (20:20:03.008)(14:50:03:910) 9: no tmr active
+I (20:20:03.008)(14:50:03:910) QSND: INTF_MSG to 7 evnt 11 pld 0 len(w) 0 ctx 0 fre_req 0
+I (20:20:03.009)(14:50:03:911) 10: 1
+I (20:20:03.010)(14:50:03:912) QSND: INTF_MSG to 7 evnt 12 pld 0x3ffce03c len(w) 0 ctx 0 fre_req 1
+I (20:20:03.011)(14:50:03:913) MSH: Wdt_fl_dis 0
+I (20:20:03.011)(14:50:03:913) MSH: Wdt_fl_dis
+I (20:20:03.012)(14:50:03:914) MSH: MSG_STE_HDLR_THRD1724
+I (20:20:03.013)(14:50:03:915) QMEM: mem clr = 17
+I (20:20:03.013)(14:50:03:915) MSH: no flow control
+E (20:20:03.014)(14:50:03:916) 2: B13 2 0 11 7
+I (20:20:03.014)(14:50:03:916) 2: Pwr Off State_event rcvd event=11
+I (20:20:03.015)(14:50:03:917) 17: common events =11
+I (20:20:03.016)(14:50:03:918) 17: geyser time resync 1 3
+I (20:20:03.016)(14:50:03:918) 2: Test rly 0 0 0 0
+
+E (20:20:03.017)(14:50:03:919) 2: B25 0 0 0 0 0 0 0 0
+I (20:20:03.017)(14:50:03:919) 2: Calibration_mode 0
+I (20:20:03.018)(14:50:03:920) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (20:20:03.019)(14:50:03:921) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+I (20:20:03.019)(14:50:03:922) 2: RLY:0:0:0:0
+
+I (20:20:03.021)(14:50:03:923) 2: Rly sts 0 curr_vol_Sts 0 vol_err_ovrride_bit 0
+
+I (20:20:03.022)(14:50:03:923) 2: no pending process 
+I (20:20:03.022)(14:50:03:924) 2: Invers Last off time 0 pending_sts 0 off dur 0
+E (20:20:03.023)(14:50:03:926) 17: O16 13197 1765830003
+I (20:20:03.024)(14:50:03:926) 2: event 11 intrf_type 7 ucstae 0
+I (20:20:03.024)(14:50:03:926) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 11 from intf 7
+E (20:20:03.025)(14:50:03:927) 2: B15 2 0 0 11 7
+E (20:20:03.026)(14:50:03:928) 2: B13 2 0 12 135
+I (20:20:03.027)(14:50:03:928) 2: Pwr Off State_event rcvd event=12
+I (20:20:03.027)(14:50:03:929) 17: common events =12
+I (20:20:03.028)(14:50:03:930) 17: TIME_SYNC_RES trans_id  14 intf 18
+I (20:20:03.029)(14:50:03:931) 21: R sync_resp 1
+I (20:20:03.029)(14:50:03:931) 20: trans_id 14 pld_len 8 intf 18 msg_type 1  pr_snt_scs 25
+I (20:20:03.036)(14:50:03:939) 6: dev doesn't rcvd time stamp from app
+I (20:20:03.038)(14:50:03:940) 6: get_refresh_ses_stop_bit 23
+
+I (20:20:03.038)(14:50:03:942) 17: OTA_TEST_TM: -14174980 1751655023
+I (20:20:03.040)(14:50:03:942) 21: send_msg intf 18 msg_id 17 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 8 app_id 253 trs_id 14 scs_snt 25
+E (20:20:03.041)(14:50:03:943) 21: Q14 18 17 24 14
+I (20:20:03.042)(14:50:03:945) 17: EPOCH_TIME_LESS_THAN_LOCALTIME
+I (20:20:03.043)(14:50:03:945) 2: event 12 intrf_type 135 ucstae 0
+I (20:20:03.043)(14:50:03:945) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 12 from intf 135
+E (20:20:03.044)(14:50:03:946) 2: B15 2 0 0 12 135
+I (20:20:04.741)(14:50:04:643) TDRV: Temp periodic tmr exp
+I (20:20:04.742)(14:50:04:644) 17: read connectivity_mode_status=1
+I (20:20:04.743)(14:50:04:645) 17: read connectivity_mode_status=1
+I (20:20:04.743)(14:50:04:645) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:04.970)(14:50:04:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:04.970)(14:50:04:872) 4: D10 0 1 0 0 0 216000 0 0 2 0 25
+I (20:20:05.468)(14:50:05:370) PCNT: NVM_COMMIT_CNT 587
+I (20:20:07.041)(14:50:07:943) TDRV: Temp periodic tmr exp
+I (20:20:07.042)(14:50:07:944) 17: read connectivity_mode_status=1
+I (20:20:07.042)(14:50:07:944) 17: read connectivity_mode_status=1
+I (20:20:07.043)(14:50:07:945) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:07.968)(14:50:07:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:07.969)(14:50:07:871) 2: B13 2 0 30 7
+I (20:20:07.969)(14:50:07:871) TAG_INTF_MTRX: HP_FR 26188 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:07.970)(14:50:07:872) BLE: ble curr user count 0 
+I (20:20:07.970)(14:50:07:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:07.971)(14:50:07:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:07.972)(14:50:07:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:07.973)(14:50:07:875) 3: C30:0
+E (20:20:07.974)(14:50:07:876) 20: D4 6 216000 0 0
+I (20:20:07.974)(14:50:07:876) 21: r_id 0 raw_src_supp_rly_id 0
+I (20:20:07.975)(14:50:07:876) 21: skt_per_time 6897696
+I (20:20:07.975)(14:50:07:877) 2: Calibration_mode 0
+I (20:20:07.976)(14:50:07:878) 20: trans_id 0 pld_len 20 intf 19 msg_type 1  pr_snt_scs 0
+I (20:20:07.977)(14:50:07:879) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+I (20:20:07.978)(14:50:07:880) 21: wss data not sent to the server msg_id 47
+I (20:20:07.978)(14:50:07:880) 2: Calibration_mode 0
+I (20:20:07.979)(14:50:07:881) 20: trans_id 0 pld_len 8 intf 19 msg_type 1  pr_snt_scs 0
+I (20:20:07.980)(14:50:07:882) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 0
+I (20:20:07.981)(14:50:07:883) 21: wss data not sent to the server msg_id 47
+I (20:20:07.982)(14:50:07:884) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:07.984)(14:50:07:886) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:07.984)(14:50:07:886) 2: B15 2 0 0 30 7
+W (24393)(14:50:08:249) wifi:<ba-add>idx:1 (ifx:0, 40:3f:8c:b7:6d:38)(14:50:08:249), tid:6, ssn:1, winSize:64
+I (20:20:09.341)(14:50:09:243) TDRV: Temp periodic tmr exp
+I (20:20:09.342)(14:50:09:244) 17: read connectivity_mode_status=1
+I (20:20:09.343)(14:50:09:245) 17: read connectivity_mode_status=1
+I (20:20:09.343)(14:50:09:245) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:09.970)(14:50:09:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:09.970)(14:50:09:872) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+I (20:20:10.468)(14:50:10:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:11.641)(14:50:11:543) TDRV: Temp periodic tmr exp
+I (20:20:11.642)(14:50:11:544) 17: read connectivity_mode_status=1
+I (20:20:11.643)(14:50:11:545) 17: read connectivity_mode_status=1
+I (20:20:11.643)(14:50:11:545) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:12.968)(14:50:12:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:12.969)(14:50:12:871) 2: B13 2 0 30 7
+I (20:20:12.969)(14:50:12:871) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:12.970)(14:50:12:872) BLE: ble curr user count 0 
+I (20:20:12.970)(14:50:12:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:12.971)(14:50:12:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:12.972)(14:50:12:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:12.973)(14:50:12:875) 3: C30:0
+I (20:20:12.974)(14:50:12:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:12.974)(14:50:12:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:12.975)(14:50:12:877) 2: B15 2 0 0 30 7
+I (20:20:13.941)(14:50:13:843) TDRV: Temp periodic tmr exp
+I (20:20:13.942)(14:50:13:844) 17: read connectivity_mode_status=1
+I (20:20:13.943)(14:50:13:845) 17: read connectivity_mode_status=1
+I (20:20:13.943)(14:50:13:845) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:15.468)(14:50:15:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:16.241)(14:50:16:143) TDRV: Temp periodic tmr exp
+I (20:20:16.242)(14:50:16:144) 17: read connectivity_mode_status=1
+I (20:20:16.243)(14:50:16:145) 17: read connectivity_mode_status=1
+E (20:20:16.243)(14:50:16:146) 7: G1 0 0x48 47.38
+I (20:20:16.244)(14:50:16:146) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:20:16.244)(14:50:16:146) 7: G5 47.38°C 0 0 11
+I (20:20:17.968)(14:50:17:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:17.969)(14:50:17:871) 2: B13 2 0 30 7
+I (20:20:17.969)(14:50:17:871) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:17.970)(14:50:17:872) BLE: ble curr user count 0 
+I (20:20:17.970)(14:50:17:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:17.971)(14:50:17:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:17.972)(14:50:17:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:17.973)(14:50:17:875) 3: C30:0
+I (20:20:17.974)(14:50:17:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:17.974)(14:50:17:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:17.975)(14:50:17:877) 2: B15 2 0 0 30 7
+I (20:20:18.541)(14:50:18:443) TDRV: Temp periodic tmr exp
+I (20:20:18.542)(14:50:18:444) 17: read connectivity_mode_status=1
+I (20:20:18.543)(14:50:18:445) 17: read connectivity_mode_status=1
+I (20:20:18.543)(14:50:18:445) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:20.468)(14:50:20:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:20.841)(14:50:20:743) TDRV: Temp periodic tmr exp
+I (20:20:20.842)(14:50:20:744) 17: read connectivity_mode_status=1
+I (20:20:20.843)(14:50:20:745) 17: read connectivity_mode_status=1
+I (20:20:20.843)(14:50:20:745) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:22.470)(14:50:22:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:22.470)(14:50:22:372) 4: D10 0 1 0 0 0 216000 0 0 5 0 25
+I (20:20:22.968)(14:50:22:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:22.969)(14:50:22:871) 2: B13 2 0 30 7
+I (20:20:22.969)(14:50:22:872) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:22.970)(14:50:22:872) BLE: ble curr user count 0 
+I (20:20:22.970)(14:50:22:873) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:22.971)(14:50:22:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:22.972)(14:50:22:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:22.973)(14:50:22:875) 3: C30:0
+I (20:20:22.974)(14:50:22:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:22.974)(14:50:22:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:22.975)(14:50:22:877) 2: B15 2 0 0 30 7
+E (20:20:23.098)(14:50:23:000) 1: A20 0 0
+I (20:20:23.141)(14:50:23:043) TDRV: Temp periodic tmr exp
+I (20:20:23.142)(14:50:23:044) 17: read connectivity_mode_status=1
+I (20:20:23.143)(14:50:23:045) 17: read connectivity_mode_status=1
+I (20:20:23.143)(14:50:23:045) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:25.441)(14:50:25:343) TDRV: Temp periodic tmr exp
+I (20:20:25.442)(14:50:25:344) 17: read connectivity_mode_status=1
+I (20:20:25.443)(14:50:25:345) 17: read connectivity_mode_status=1
+I (20:20:25.443)(14:50:25:345) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:25.468)(14:50:25:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:27.741)(14:50:27:643) TDRV: Temp periodic tmr exp
+I (20:20:27.742)(14:50:27:644) 17: read connectivity_mode_status=1
+I (20:20:27.743)(14:50:27:645) 17: read connectivity_mode_status=1
+I (20:20:27.743)(14:50:27:645) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:27.968)(14:50:27:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:27.969)(14:50:27:871) 2: B13 2 0 30 7
+I (20:20:27.969)(14:50:27:872) TAG_INTF_MTRX: HP_FR 26136 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:27.970)(14:50:27:872) BLE: ble curr user count 0 
+I (20:20:27.970)(14:50:27:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:27.971)(14:50:27:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:27.972)(14:50:27:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:27.973)(14:50:27:875) 3: C30:0
+I (20:20:27.974)(14:50:27:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:27.974)(14:50:27:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:27.975)(14:50:27:877) 2: B15 2 0 0 30 7
+I (20:20:29.970)(14:50:29:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:29.970)(14:50:29:872) 4: D10 0 1 0 0 0 217000 0 0 1 0 25
+I (20:20:30.041)(14:50:30:943) TDRV: Temp periodic tmr exp
+I (20:20:30.042)(14:50:30:944) 17: read connectivity_mode_status=1
+I (20:20:30.043)(14:50:30:945) 17: read connectivity_mode_status=1
+I (20:20:30.043)(14:50:30:945) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:30.468)(14:50:30:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:32.341)(14:50:32:243) TDRV: Temp periodic tmr exp
+I (20:20:32.342)(14:50:32:244) 17: read connectivity_mode_status=1
+I (20:20:32.343)(14:50:32:245) 17: read connectivity_mode_status=1
+E (20:20:32.343)(14:50:32:245) 7: G1 0 0x48 47.31
+I (20:20:32.344)(14:50:32:246) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:20:32.344)(14:50:32:246) 7: G5 47.31°C 0 0 18
+I (20:20:32.968)(14:50:32:871) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:32.970)(14:50:32:872) 2: B13 2 0 30 7
+E (20:20:32.971)(14:50:32:873) 2: B3 110891 10654 8050 8015 0 0 0 1 93
+E (20:20:32.972)(14:50:32:874) 2: B4 0 0 0 26136 0 0 24365 -40 588
+I (20:20:32.973)(14:50:32:875) SMAX: Name rx_process hghwtrmrk 1884 tsk_st 2
+I (20:20:32.973)(14:50:32:876) TAG_INTF_MTRX: HP_FR 26136 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:32.974)(14:50:32:876) BLE: ble curr user count 0 
+I (20:20:32.974)(14:50:32:876) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:32.975)(14:50:32:877) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:32.976)(14:50:32:878) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:32.977)(14:50:32:879) 3: C30:0
+I (20:20:32.977)(14:50:32:879) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:32.978)(14:50:32:880) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:32.979)(14:50:32:881) 2: B15 2 0 0 30 7
+I (20:20:34.641)(14:50:34:543) TDRV: Temp periodic tmr exp
+I (20:20:34.642)(14:50:34:544) 17: read connectivity_mode_status=1
+I (20:20:34.643)(14:50:34:545) 17: read connectivity_mode_status=1
+I (20:20:34.643)(14:50:34:545) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:34.970)(14:50:34:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:34.970)(14:50:34:872) 4: D10 0 1 0 0 0 217000 0 0 2 0 25
+I (20:20:35.468)(14:50:35:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:36.941)(14:50:36:843) TDRV: Temp periodic tmr exp
+I (20:20:36.942)(14:50:36:844) 17: read connectivity_mode_status=1
+I (20:20:36.943)(14:50:36:845) 17: read connectivity_mode_status=1
+I (20:20:36.943)(14:50:36:845) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:37.968)(14:50:37:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:37.969)(14:50:37:871) 2: B13 2 0 30 7
+I (20:20:37.969)(14:50:37:871) TAG_INTF_MTRX: HP_FR 26136 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:37.970)(14:50:37:872) BLE: ble curr user count 0 
+I (20:20:37.970)(14:50:37:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:37.971)(14:50:37:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:37.972)(14:50:37:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:37.973)(14:50:37:875) 3: C30:0
+I (20:20:37.974)(14:50:37:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:37.974)(14:50:37:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:37.975)(14:50:37:877) 2: B15 2 0 0 30 7
+I (20:20:39.241)(14:50:39:143) TDRV: Temp periodic tmr exp
+I (20:20:39.242)(14:50:39:144) 17: read connectivity_mode_status=1
+I (20:20:39.243)(14:50:39:145) 17: read connectivity_mode_status=1
+I (20:20:39.243)(14:50:39:145) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:39.970)(14:50:39:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:39.970)(14:50:39:872) 4: D10 0 1 0 0 0 217000 0 0 4 0 25
+I (20:20:40.468)(14:50:40:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:41.541)(14:50:41:443) TDRV: Temp periodic tmr exp
+I (20:20:41.542)(14:50:41:444) 17: read connectivity_mode_status=1
+I (20:20:41.542)(14:50:41:444) 17: read connectivity_mode_status=1
+I (20:20:41.543)(14:50:41:445) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:42.470)(14:50:42:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:42.470)(14:50:42:372) 4: D10 0 1 0 0 0 217000 0 0 4 0 25
+I (20:20:42.968)(14:50:42:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:42.969)(14:50:42:871) 2: B13 2 0 30 7
+I (20:20:42.969)(14:50:42:872) TAG_INTF_MTRX: HP_FR 24856 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:42.970)(14:50:42:872) BLE: ble curr user count 0 
+I (20:20:42.970)(14:50:42:873) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:42.971)(14:50:42:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:42.972)(14:50:42:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:42.973)(14:50:42:875) 3: C30:0
+I (20:20:42.974)(14:50:42:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:42.974)(14:50:42:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:42.975)(14:50:42:877) 2: B15 2 0 0 30 7
+I (20:20:43.841)(14:50:43:743) TDRV: Temp periodic tmr exp
+I (20:20:43.842)(14:50:43:744) 17: read connectivity_mode_status=1
+I (20:20:43.843)(14:50:43:745) 17: read connectivity_mode_status=1
+I (20:20:43.843)(14:50:43:745) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:20:44.142)(14:50:44:045) 1: A20 0 0
+I (20:20:45.468)(14:50:45:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:46.142)(14:50:46:044) TDRV: Temp periodic tmr exp
+I (20:20:46.143)(14:50:46:045) 17: read connectivity_mode_status=1
+I (20:20:46.144)(14:50:46:046) 17: read connectivity_mode_status=1
+I (20:20:46.144)(14:50:46:046) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:47.968)(14:50:47:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:47.969)(14:50:47:871) 2: B13 2 0 30 7
+I (20:20:47.969)(14:50:47:871) TAG_INTF_MTRX: HP_FR 26116 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:47.970)(14:50:47:872) BLE: ble curr user count 0 
+I (20:20:47.970)(14:50:47:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:47.971)(14:50:47:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:47.972)(14:50:47:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:47.973)(14:50:47:875) 3: C30:0
+I (20:20:47.974)(14:50:47:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:47.974)(14:50:47:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:47.975)(14:50:47:877) 2: B15 2 0 0 30 7
+I (20:20:48.442)(14:50:48:344) TDRV: Temp periodic tmr exp
+I (20:20:48.443)(14:50:48:345) 17: read connectivity_mode_status=1
+I (20:20:48.444)(14:50:48:346) 17: read connectivity_mode_status=1
+E (20:20:48.444)(14:50:48:347) 7: G1 0 0x48 47.38
+I (20:20:48.445)(14:50:48:347) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:20:48.445)(14:50:48:347) 7: G5 47.38°C 0 0 25
+I (20:20:50.468)(14:50:50:370) PCNT: NVM_COMMIT_CNT 588
+I (20:20:50.742)(14:50:50:644) TDRV: Temp periodic tmr exp
+I (20:20:50.743)(14:50:50:645) 17: read connectivity_mode_status=1
+I (20:20:50.744)(14:50:50:646) 17: read connectivity_mode_status=1
+I (20:20:50.744)(14:50:50:646) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:20:50.851)(14:50:50:753) 1: A220 20 0
+I (20:20:50.852)(14:50:50:754) MDEC: rx_len 20
+I (20:20:50.852)(14:50:50:754) 21: sync byte matched 0x3fff4e6c
+I (20:20:50.852)(14:50:50:754) MDEC: frame_len=20
+I (20:20:50.853)(14:50:50:755) 21: total len 20 proc len 20
+I (20:20:50.853)(14:50:50:755) 21: rcvd_frm 18 num_msg 1 trn_id 28 ack_req 0 frm_len 20 sec_mod 0
+I (20:20:50.854)(14:50:50:756) 21: rcvd_msg intf 18 msg_id 41 msg_len 8 msg_type 1
+I (20:20:50.854)(14:50:50:756) MDEC: full frame rcvd
+E (20:20:50.855)(14:50:50:757) 21: Q13 18 41 8 1
+I (20:20:50.856)(14:50:50:758) 2: Calibration_mode 0
+I (20:20:50.857)(14:50:50:759) 20: set_srvr_ntfy_sts SRVR_NTFY_EN
+I (20:20:50.858)(14:50:50:760) 20: !set_srvr_ntfy_sts 1
+I (20:20:50.858)(14:50:50:760) QSND: INTF_MSG to 7 evnt 0 pld 0x12 len(w) 0 ctx 0 fre_req 0
+I (20:20:50.859)(14:50:50:761) OST: mem alloc size is unalgnd 117
+E (20:20:50.859)(14:50:50:761) 2: B13 2 0 0 7
+I (20:20:50.860)(14:50:50:762) 21: $ ssid TP-Link_6D38-with_Internet pwd 12345678906
+E (20:20:50.861)(14:50:50:763) 14: N18 32 26
+E (20:20:50.862)(14:50:50:764) 14: N19 26
+E (20:20:50.862)(14:50:50:764) 14: N20 0
+E (20:20:50.863)(14:50:50:765) 14: N21 0 1 0 1765810250 0 -40 32 26 0 1 0
+I (20:20:50.864)(14:50:50:766) 14: ===== Router Query Data =====
+I (20:20:50.864)(14:50:50:766) 14: len: 32
+E (20:20:50.865)(14:50:50:767) 14: N22 TP-Link_6D38-with_Internet
+I (20:20:50.865)(14:50:50:767) 2: Pwr Off State_event rcvd event=0
+I (20:20:50.866)(14:50:50:768) 14: reserved: 0
+I (20:20:50.867)(14:50:50:769) 14: app_id: 0
+I (20:20:50.867)(14:50:50:769) 14: app_id_rtr_prov_sts: 0
+I (20:20:50.868)(14:50:50:770) 14: dev_rtr_prov_sts: 1
+I (20:20:50.869)(14:50:50:771) 14: force_remove_flg: 0
+I (20:20:50.869)(14:50:50:771) 14: resrvd: 0
+I (20:20:50.870)(14:50:50:772) 14: router_STATUS_code: 0
+I (20:20:50.870)(14:50:50:772) 14: router_signal_strength: -40 dBm
+I (20:20:50.871)(14:50:50:773) 14: wifi_config_time: 1765810250 (Mon Dec 15 14:50:50 2025
+)
+I (20:20:50.872)(14:50:50:774) 14: rtr_ret_sts: 1
+E (20:20:50.873)(14:50:50:775) 14: N23 0
+E (20:20:50.873)(14:50:50:775) 14: N24 0
+E (20:20:50.874)(14:50:50:775) 14: N26 40 3F 8C B7 6D 38
+E (20:20:50.874)(14:50:50:776) 14: N22 MAC 00:00:00:00:00:00
+I (20:20:50.875)(14:50:50:777) 14: ===== End =====
+I (20:20:50.875)(14:50:50:777) 20: trans_id 0 pld_len 93 intf 19 msg_type 1  pr_snt_scs 0
+I (20:20:50.876)(14:50:50:778) 20: !get_srvr_ntfy_sts SRVR_NTFY_EN
+I (20:20:50.876)(14:50:50:778) 21: S ntfy 1 pres 0 bitmap 13959014 
+
+
+I (20:20:50.878)(14:50:50:780) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 1
+I (20:20:50.878)(14:50:50:780) MDEC: no flow control
+I (20:20:50.877)(14:50:50:779) 17: common events =0
+I (20:20:50.880)(14:50:50:782) 11: K14 0 253 42
+I (20:20:50.880)(14:50:50:783) 11: K15 0.00 0 0 0.00 0 0 0
+E (20:20:50.881)(14:50:50:783) 11: K16 1 0
+E (20:20:50.882)(14:50:50:784) 21: K7 1765810250 1 0 0
+E (20:20:50.883)(14:50:50:785) 21: K8 253 5 42
+I (20:20:50.883)(14:50:50:785) 20: trans_id 0 pld_len 16 intf 19 msg_type 1  pr_snt_scs 0
+I (20:20:50.886)(14:50:50:788) 17: c_cnt 1 
+E (20:20:50.886)(14:50:50:788) 17: O15 125 0
+I (20:20:50.887)(14:50:50:789) 17: dpot 1765810250
+
+I (20:20:50.887)(14:50:50:789) 17: set_skt_periodic_data.notify_on_change_only 1 sec 5
+I (20:20:50.887)(14:50:50:789) 17: conn_recv_from yes 18 bit_map_connection_sts 262144 prev_set_bits 262144
+I (20:20:50.887)(14:50:50:790) 21: send_msg intf 18 msg_id 14 msg_len 104 sec_mode 0 fd 3FFEBDB8 pad_len 3 app_id 253 trs_id 6 scs_snt 50
+E (20:20:50.890)(14:50:50:792) 21: Q14 18 14 104 6
+I (20:20:50.891)(14:50:50:793) 6: prtl_cmprsr_ses_flg 0
+I (20:20:50.891)(14:50:50:793) 20: !get_srvr_ntfy_sts SRVR_NTFY_EN
+I (20:20:50.892)(14:50:50:794) 20: intf==NTFY lcl_ntfy 19 lcl_ntfy_ste 1
+I (20:20:50.900)(14:50:50:803) 2: event 0 intrf_type 7 ucstae 0
+I (20:20:50.901)(14:50:50:803) 21: send_msg intf 18 msg_id 38 msg_len 24 sec_mode 0 fd 3FFEBDB8 pad_len 0 app_id 253 trs_id 7 scs_snt 51
+I (20:20:50.901)(14:50:50:803) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 0 from intf 7
+E (20:20:50.902)(14:50:50:804) 21: Q14 18 38 24 7
+E (20:20:50.904)(14:50:50:806) 2: B15 2 0 0 0 7
+I (20:20:51.479)(14:50:51:381) SMAX: Name rx_process hghwtrmrk 1772
+I (20:20:51.480)(14:50:51:382) SMAX: Name tx_process hghwtrmrk 2164
+I (20:20:52.968)(14:50:52:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:52.969)(14:50:52:871) 2: B13 2 0 30 7
+I (20:20:52.969)(14:50:52:871) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:52.970)(14:50:52:872) BLE: ble curr user count 0 
+I (20:20:52.970)(14:50:52:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:52.971)(14:50:52:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:52.972)(14:50:52:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:52.973)(14:50:52:875) 3: C30:0
+I (20:20:52.974)(14:50:52:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:52.974)(14:50:52:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:52.975)(14:50:52:877) 2: B15 2 0 0 30 7
+I (20:20:53.042)(14:50:53:944) TDRV: Temp periodic tmr exp
+I (20:20:53.043)(14:50:53:945) 17: read connectivity_mode_status=1
+I (20:20:53.044)(14:50:53:946) 17: read connectivity_mode_status=1
+I (20:20:53.044)(14:50:53:946) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:54.970)(14:50:54:872) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:20:54.970)(14:50:54:872) 4: D10 0 1 0 0 0 216000 0 0 0 0 25
+I (20:20:55.343)(14:50:55:245) TDRV: Temp periodic tmr exp
+I (20:20:55.344)(14:50:55:246) 17: read connectivity_mode_status=1
+I (20:20:55.345)(14:50:55:247) 17: read connectivity_mode_status=1
+I (20:20:55.345)(14:50:55:247) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:55.468)(14:50:55:370) PCNT: NVM_COMMIT_CNT 589
+I (20:20:57.643)(14:50:57:545) TDRV: Temp periodic tmr exp
+I (20:20:57.644)(14:50:57:546) 17: read connectivity_mode_status=1
+I (20:20:57.645)(14:50:57:546) 17: read connectivity_mode_status=1
+I (20:20:57.645)(14:50:57:547) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:20:57.968)(14:50:57:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:20:57.969)(14:50:57:871) 2: B13 2 0 30 7
+I (20:20:57.969)(14:50:57:872) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:20:57.970)(14:50:57:872) BLE: ble curr user count 0 
+I (20:20:57.970)(14:50:57:873) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:20:57.971)(14:50:57:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:20:57.972)(14:50:57:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:20:57.973)(14:50:57:875) 3: C30:0
+I (20:20:57.974)(14:50:57:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:20:57.974)(14:50:57:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:20:57.975)(14:50:57:877) 2: B15 2 0 0 30 7
+I (20:20:59.943)(14:50:59:845) TDRV: Temp periodic tmr exp
+I (20:20:59.944)(14:50:59:846) 17: read connectivity_mode_status=1
+I (20:20:59.945)(14:50:59:847) 17: read connectivity_mode_status=1
+I (20:20:59.945)(14:50:59:847) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:21:00.468)(14:51:00:370) PCNT: NVM_COMMIT_CNT 589
+I (20:21:02.243)(14:51:02:145) TDRV: Temp periodic tmr exp
+I (20:21:02.244)(14:51:02:146) 17: read connectivity_mode_status=1
+I (20:21:02.245)(14:51:02:146) 17: read connectivity_mode_status=1
+I (20:21:02.245)(14:51:02:147) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:21:02.470)(14:51:02:372) 4: [IC-0][0x101] Power: 0 mW MAX_PWR 1150000
+E (20:21:02.470)(14:51:02:372) 4: D10 0 1 0 0 0 216000 0 0 3 0 25
+I (20:21:02.968)(14:51:02:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:21:02.969)(14:51:02:871) 2: B13 2 0 30 7
+E (20:21:02.970)(14:51:02:872) 2: B3 124630 13029 9861 9826 0 0 0 1 152
+E (20:21:02.971)(14:51:02:873) 2: B4 0 0 0 26108 0 0 24365 -40 589
+I (20:21:02.973)(14:51:02:875) SMAX: Name rx_process hghwtrmrk 1772 tsk_st 2
+I (20:21:02.974)(14:51:02:876) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:21:02.974)(14:51:02:876) BLE: ble curr user count 0 
+I (20:21:02.974)(14:51:02:876) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:21:02.975)(14:51:02:877) TAG_INTF_MTRX: Remote_cnt 1
+I (20:21:02.976)(14:51:02:878) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:21:02.977)(14:51:02:879) 3: C30:0
+I (20:21:02.978)(14:51:02:880) 2: event 30 intrf_type 7 ucstae 0
+I (20:21:02.978)(14:51:02:880) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:21:02.979)(14:51:02:881) 2: B15 2 0 0 30 7
+I (20:21:04.543)(14:51:04:445) TDRV: Temp periodic tmr exp
+I (20:21:04.544)(14:51:04:446) 17: read connectivity_mode_status=1
+I (20:21:04.545)(14:51:04:447) 17: read connectivity_mode_status=1
+E (20:21:04.545)(14:51:04:448) 7: G1 0 0x48 47.62
+I (20:21:04.546)(14:51:04:448) 7: Thres Gysr Temp State 0 Low Temp State 0
+E (20:21:04.546)(14:51:04:448) 7: G5 47.62°C 0 0 32
+I (20:21:05.468)(14:51:05:370) PCNT: NVM_COMMIT_CNT 589
+I (20:21:06.843)(14:51:06:745) TDRV: Temp periodic tmr exp
+I (20:21:06.844)(14:51:06:746) 17: read connectivity_mode_status=1
+I (20:21:06.845)(14:51:06:747) 17: read connectivity_mode_status=1
+I (20:21:06.845)(14:51:06:747) 7: Thres Gysr Temp State 0 Low Temp State 0
+I (20:21:07.968)(14:51:07:870) QSND: INTF_MSG to 7 evnt 30 pld 0xff len(w) 0 ctx 1 fre_req 0
+E (20:21:07.969)(14:51:07:871) 2: B13 2 0 30 7
+I (20:21:07.969)(14:51:07:872) TAG_INTF_MTRX: HP_FR 26108 HP_L_FR 8192 ST_FR 16852 ST-OCC 8 0 
+I (20:21:07.970)(14:51:07:872) BLE: ble curr user count 0 
+I (20:21:07.970)(14:51:07:872) TAG_INTF_MTRX: BLE_cnt 0 
+I (20:21:07.971)(14:51:07:873) TAG_INTF_MTRX: Remote_cnt 1
+I (20:21:07.972)(14:51:07:874) 3: ret rly sts:0 relay_status: 0 gp 27 rly id 0 1st rly sts 1
+E (20:21:07.973)(14:51:07:875) 3: C30:0
+I (20:21:07.974)(14:51:07:876) 2: event 30 intrf_type 7 ucstae 0
+I (20:21:07.974)(14:51:07:876) 2: Gys_hdlr_ent_exit GCstate 2 UCstate :0 : 0  Event proc 30 from intf 7
+E (20:21:07.975)(14:51:07:877) 2: B15 2 0 0 30 7
+I (20:21:09.143)(14:51:09:045) TDRV: Temp periodic tmr exp
+I (20:21:09.144)(14:51:09:046) 17: read connectivity_mode_status=1
+I (20:21:09.145)(14:51:09:047) 17: read connectivity_mode_status=1
+I (20:21:09.145)(14:51:09:047) 7: Thres Gysr Temp State 0 Low Temp State 0

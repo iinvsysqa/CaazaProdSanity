@@ -3,9 +3,13 @@ package pages;
 import java.time.Duration;
 
 import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.StaleElementReferenceException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedCondition;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import io.appium.java_client.android.AndroidDriver;
@@ -14,7 +18,7 @@ import wrappers.GenericWrappers;
 
 public class Analytics  extends GenericWrappers {
 
-	private AndroidDriver driver;
+	private static AndroidDriver driver;
 	public Analytics(AndroidDriver driver) {
 
 		this.driver = driver;
@@ -26,7 +30,7 @@ public class Analytics  extends GenericWrappers {
 	JavascriptExecutor js = (JavascriptExecutor)driver;
 	@FindBy(xpath = "//*[@resource-id='energy_used_live_units_watts']")
 	private WebElement energyUsedunit;
-	@FindBy(xpath = "//*[@resource-id='switch_dur_value']")
+	@FindBy(xpath = "//*[@resource-id='acitve_today_energy']")
 	private WebElement enrgyDurationmin;
 	@FindBy(xpath = "//*[@resource-id='duration_expand_icon']")
 	private WebElement durationExpandicon;
@@ -70,14 +74,41 @@ public class Analytics  extends GenericWrappers {
 	String oldvalue;
 	public String getenergydurationvalue() {
 
-        expWaitTillElementDisplay(enrgyDurationmin,10);
+		waitForElementToDisplayNumber(enrgyDurationmin,10);
 		 oldvalue = enrgyDurationmin.getText();
+		 oldvalue.contentEquals("Fetching");
 		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
 		System.out.println(oldvalue);
 	return oldvalue;
 	
 	}
 	
+	
+	
+	// --- NEW ROBUST WAIT METHOD ---
+    public static String waitForElementToDisplayNumber(WebElement element, int timeoutSeconds) {
+        WebDriverWait wait = new WebDriverWait(driver, timeoutSeconds);
+        wait.pollingEvery(Duration.ofMillis(500));
+        wait.ignoring(NoSuchElementException.class);
+        wait.ignoring(StaleElementReferenceException.class);
+
+        // This defines the custom condition: "Keep waiting until text contains a digit"
+        wait.until(new ExpectedCondition<Boolean>() {
+            public Boolean apply(WebDriver d) {
+                try {
+                    String text = element.getText();
+                    // Regex checks if text contains at least one digit (0-9)
+                    // It returns true ONLY if text is not "Fetching", not empty, and has numbers.
+                    return text != null && text.matches(".*\\d+.*"); 
+                } catch (StaleElementReferenceException e) {
+                    return false; // Element refreshed, try again
+                }
+            }
+        });
+
+        // Once wait is over, return the valid text
+        return element.getText();
+    }
 
 	
 	public void navigatehomepage() {
@@ -86,7 +117,7 @@ public class Analytics  extends GenericWrappers {
 	}
 	public boolean checkenrgyduration(int value) throws Exception {	
 		boolean bReturn = false;
-		expWaitTillElementDisplay(enrgyDurationmin,10);
+		waitForElementToDisplayNumber(enrgyDurationmin,10);
 //		clickbyXpath(enrgyDurationmin, "energy duration");
 		
 		int newvalue=extractMinutes(oldvalue)+value;

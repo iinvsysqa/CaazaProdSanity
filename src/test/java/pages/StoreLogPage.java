@@ -107,7 +107,7 @@ public class StoreLogPage extends GenericWrappers{
 				clickbyXpath(FTPsaveBtn, "Filemanager save Button");
 			}else {
 				allowpermissions();
-				enterUserName("Demouserauto");
+				enterUserName(loadProp("DUMMYUSER"));
 				enterPassword("Welcome@123");
 				clickSignInButton();
 				

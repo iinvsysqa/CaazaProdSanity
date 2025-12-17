@@ -5,10 +5,8 @@
     <listener class-name="utils.RetryListener" />
 </listeners> 
   <test thread-count="5" name="Test">
-    <classes>
-   
-      <class name="caaza_testcases.SingleNodeSanity"/>
-
-    </classes>
+    <packages>
+      <package name="caaza_testcases"/>
+    </packages>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

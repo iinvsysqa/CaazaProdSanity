@@ -48,7 +48,7 @@ public class SettingsPage extends GenericWrappers{
 	
 	@FindBy(xpath = "//*[@resource-id='Tab_Settings_Icon']")
 	private WebElement menu_Settingsbtn;
-	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_1']")
+	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_0']")
 	private WebElement MenuItem_Settings;
 	
 	@FindBy(xpath = "//*[@resource-id='MenuItem_Settings_1']")

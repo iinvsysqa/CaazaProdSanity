@@ -44,7 +44,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 	
 	
 	logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
-	List<String> switchNames = Arrays.asList("Switch1");
+	List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 	String Hierarchyname="apartment";
 	String Oldpassword =loadProp("PASSWORD");
 	String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
@@ -95,32 +95,29 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			
 			
 			homepage.clickFloorSelctionBtn();
+			homepage.clickPanel(0);
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
 			Thread.sleep(3000);
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
-			switchpage.clickAddEditSwitchBoardButton();
-			switchpage.clickSwitchboardmenuButton(0);
-			switchpage.clickRemoveSwitchBoardOption();
-			Thread.sleep(3000);
-			switchpage.clickOkButton();
-			driver.navigate().back();
-			driver.navigate().back();
-			Thread.sleep(3000);
-			homepage.clickFloorSelctionBtn();
+			switchpage.clickSettingsButton();
+			switchpage.clickRemoveDeviceButton();
+			switchpage.clickResetConfirmationButton();
+			
 			
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);	
 			
 			
 			homepage.clickFloorSelctionBtn();
+			homepage.clickPanel(0);
 			Thread.sleep(5000);
 			switchpage.clickOnOffButton();
 			Thread.sleep(3000);
 			switchpage.clickOnOffButton();
 			switchpage.clickMenuButton();
-			settingspage.navigateswitchmenuSettingspage();
+			switchpage.clickSettingsButton();
 			settingspage.resetDevice();
 			driver.navigate().back();
 			

@@ -34,6 +34,7 @@ public class TC01_SignUp_Check extends MobileAppWrappers {
 	public void startTestCase() {
 		testCaseName = "TC_01_SignUp with Valid creds";
 		testDescription = "Sign Up with valid user ";
+		dataSheetName="Automation";
 	}
 
 	

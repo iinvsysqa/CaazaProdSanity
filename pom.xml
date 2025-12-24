@@ -5,18 +5,18 @@
 	<groupId>com</groupId>
 	<artifactId>innomate</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	
+
 	<properties> <!-- Default properties for the Java version -->
-			<maven.compiler.source>1.8</maven.compiler.source>
-			<maven.compiler.target>1.8</maven.compiler.target>
-			<maven.compiler.encoding>UTF-8</maven.compiler.encoding> 
-			<!--Encoding for source files -->
-			
+		<maven.compiler.source>1.8</maven.compiler.source>
+		<maven.compiler.target>1.8</maven.compiler.target>
+		<maven.compiler.encoding>UTF-8</maven.compiler.encoding>
+		<!--Encoding for source files -->
+
 	</properties>
-	
+
 	<dependencies>
 
-		
+
 		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
 
 		<!-- https://mvnrepository.com/artifact/io.appium/java-client -->
@@ -47,13 +47,6 @@
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-support -->
 
 
-		<!-- https://mvnrepository.com/artifact/org.testng/testng -->
-		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>7.9.0</version>
-			<scope>test</scope>
-		</dependency>
 		<!--
 		https://mvnrepository.com/artifact/org.seleniumhq.selenium/selenium-java -->
 
@@ -61,11 +54,15 @@
 		<!-- Thanks for using https://jar-download.com -->
 
 
-		<!-- https://mvnrepository.com/artifact/commons-io/commons-io -->
+		<dependency>
+			<groupId>org.apache.logging.log4j</groupId>
+			<artifactId>log4j-core</artifactId>
+			<version>2.20.0</version>
+		</dependency>
 		<dependency>
 			<groupId>commons-io</groupId>
 			<artifactId>commons-io</artifactId>
-			<version>2.14.0</version>
+			<version>2.16.1</version>
 		</dependency>
 		<!-- https://mvnrepository.com/artifact/net.sourceforge.tess4j/tess4j -->
 		<dependency>
@@ -137,20 +134,23 @@
 			<version>4.2</version>
 		</dependency>
 
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
+
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi</artifactId>
-			<version>5.2.3</version>
+			<version>5.3.0</version>
 		</dependency>
-
-		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi-ooxml -->
 		<dependency>
 			<groupId>org.apache.poi</groupId>
 			<artifactId>poi-ooxml</artifactId>
-			<version>5.2.3</version>
+			<version>5.3.0</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>7.10.2</version>
+			<scope>test</scope>
+		</dependency>
 		<dependency>
 			<groupId>com.aventstack</groupId>
 			<artifactId>extentreports</artifactId>
@@ -183,14 +183,14 @@
 			<artifactId>commons-net</artifactId>
 			<version>3.8.0</version>
 		</dependency>
-		
+
 		<dependency>
 			<groupId>org.tmatesoft.svnkit</groupId>
 			<artifactId>svnkit</artifactId>
 			<version>1.10.11</version>
 		</dependency>
 
-	<dependency>
+		<dependency>
 			<groupId>io.rest-assured</groupId>
 			<artifactId>json-schema-validator</artifactId>
 			<version>5.5.0</version>
@@ -200,25 +200,24 @@
 			<artifactId>rest-assured</artifactId>
 			<version>4.5.1</version>
 		</dependency>
-		  <!-- JSON Parser for Response Handling -->
-    <dependency>
-        <groupId>org.json</groupId>
-        <artifactId>json</artifactId>
-        <version>20210307</version>
-    </dependency>
+		<!-- JSON Parser for Response Handling -->
+		<dependency>
+			<groupId>org.json</groupId>
+			<artifactId>json</artifactId>
+			<version>20210307</version>
+		</dependency>
 
 
-
-    <!-- Gson for JSON parsing -->
-    <dependency>
-        <groupId>com.google.code.gson</groupId>
-        <artifactId>gson</artifactId>
-        <version>2.8.8</version>
-    </dependency>
+		<!-- Gson for JSON parsing -->
+		<dependency>
+			<groupId>com.google.code.gson</groupId>
+			<artifactId>gson</artifactId>
+			<version>2.8.8</version>
+		</dependency>
 	</dependencies>
-	
 
-		<build>
+
+	<build>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -232,7 +231,6 @@
 			</plugin>
 		</plugins>
 	</build>
-
 
 
 </project>

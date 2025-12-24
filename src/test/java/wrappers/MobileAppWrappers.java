@@ -8,6 +8,7 @@ import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.List;
 
+import org.testng.ITestResult;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterSuite;
 import org.testng.annotations.AfterTest;
@@ -23,6 +24,7 @@ import pages.StoreLogPage;
 import utils.ADBconnections;
 import utils.CheckoutAndBuildApk;
 import utils.DataInputProvider;
+import utils.ExcelUpdate;
 import utils.Flashscript_RegisterSerialno;
 import utils.GetAppLog;
 import utils.Reporter;
@@ -124,13 +126,29 @@ public class MobileAppWrappers extends GenericWrappers {
 	}
 
 	@AfterMethod
-	public void afterMethod() throws Exception{
-//		quitBrowser();
-		
-	//	driver.terminateApp(packages);
-		driver.quit();
-		
-	}
+	public void afterMethod(ITestResult result) throws Exception {
+        // --- LOGIC TO UPDATE EXCEL ---
+        if (result.getStatus() == ITestResult.SUCCESS) {
+            // Only update if Pass. Use the static 'testCaseName' variable you defined at the top
+            try {
+                // Ensure 'dataSheetName' and 'testCaseName' are populated correctly by your @Test
+                if(dataSheetName != null && testCaseName != null) {
+                     ExcelUpdate.updateResult(dataSheetName, testCaseName, "PASS");
+                }
+            } catch (Exception e) {
+                System.err.println("Could not update Excel: " + e.getMessage());
+            }
+        } else if (result.getStatus() == ITestResult.FAILURE) {
+             // Optional: Update FAIL if needed
+              ExcelUpdate.updateResult(dataSheetName, testCaseName, "FAIL");
+        }
+        // -----------------------------
+
+        // quitBrowser();
+        
+        // driver.terminateApp(packages);
+        driver.quit();
+    }
 
 //	@DataProvider(name="fetchData")
 //	public Object[][] getData(){

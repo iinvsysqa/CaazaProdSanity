@@ -40,7 +40,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "SceneCreation";
+		testCaseName = "TC_06_SceneCreation";
 		testDescription = "Scene Creation for Switches ";
 	}
 

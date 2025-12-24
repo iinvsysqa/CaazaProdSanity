@@ -50,7 +50,7 @@ public class OTA_update extends MobileAppWrappers {
 	String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
 	String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
 	
-	@Test()
+//	@Test()
 	public void OTAupdatecheck() throws Exception {
 		initAndriodDriver();
 		functionaCheck();

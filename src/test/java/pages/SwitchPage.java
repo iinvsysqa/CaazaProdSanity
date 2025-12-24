@@ -32,7 +32,7 @@ public class SwitchPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='Single_Button']")
 	private WebElement okButton;
 
-	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.CaaZa_Smart:id/SwitchToggle_1\"]/android.view.ViewGroup")
+	@FindBy(xpath = "//*[@resource-id='SwitchToggle_1']")
 	private WebElement onOffButton;
 	
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.CaaZa_Smart:id/SwitchToggle_2\"]/android.view.ViewGroup")
@@ -76,6 +76,8 @@ public class SwitchPage extends GenericWrappers{
 	private WebElement Switchboard_EditOptionText_0;
 	@FindBy(xpath = "//*[@resource-id='Switchboard_EditInput_0']")
 	private WebElement switchpageTextbox;
+	@FindBy(xpath = "//*[@resource-id='Switchboard_DeviceName_0']")
+	private WebElement Switchboard_DeviceName;
 	@FindBy(xpath = "//*[@resource-id='Switchboard_EditConfirm_0']")
 	private WebElement Switchboard_EditConfirm;
 	@FindBy(xpath = "//*[@resource-id='Header_BackIcon']")
@@ -153,6 +155,11 @@ public class SwitchPage extends GenericWrappers{
 	public void clickResetConfirmationButton() {
 		clickbyXpath(resetConfirmationButton, "Click On Reset Confirmation Button");
 	}
+	public void checkForpopup() {
+		if(isElementDisplayedCheck(okButton)) {
+			clickbyXpath(okButton, "ok button");
+		}
+	}
 	
 	public void clickBackButton() {
 		try {
@@ -168,7 +175,7 @@ public class SwitchPage extends GenericWrappers{
 		clickbyXpath(MenuItem_AddandEditSwitchboard, "MenuItem Add and Edit Switchboard");
 	}
 	public void verifySwitchBoardname(String text) {
-		verifyTextContainsByXpath(switchpageTextbox, text, "SwitchpageTextbox");
+		verifyTextContainsByXpath(Switchboard_DeviceName, text, "Switchboard name");
 	}
 	public void clickSwitchboardmenu() {
 		clickbyXpath(Switchboard_MenuTrigger, "Swiychboardmenu trigger");

@@ -861,17 +861,17 @@ public class AddDevicePage extends GenericWrappers {
 				clickEnterButton();
 				
 				
-				Thread.sleep(1000 * 1 * 10);
+//				Thread.sleep(1000 * 1 * 10);
 
 				blepermissionokpopup();
 				
-				Thread.sleep(30000);
+//				Thread.sleep(30000);
 				
 				if(!isElementDisplayedCheck(sZephyrInfoNextButton)) {
 					unregistereddevicepopup();
 					retrypagecheck(mode);
 				}
-				blepermissionokpopup();
+//				blepermissionokpopup();
 				
 				break;
 				

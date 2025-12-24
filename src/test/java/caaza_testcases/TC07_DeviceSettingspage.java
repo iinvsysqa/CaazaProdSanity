@@ -37,7 +37,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 	Profilepage profilepage;
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "Device settings ";
+		testCaseName = "TC_07_Device settings ";
 		testDescription = "Device settings page features check";
 	}
 

@@ -30,6 +30,7 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 	public void startTestCase() {
 		testCaseName = "TC_02_SignIn_check";
 		testDescription = "Login with valid user and log-out";
+		dataSheetName="Automation";
 	}
 
 	

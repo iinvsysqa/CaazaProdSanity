@@ -262,7 +262,7 @@ public class Schedularpage extends GenericWrappers {
 		LocalTime currentTime = LocalTime.now();
 		LocalTime startTime = currentTime.plusMinutes(timeToStart);
 
-//		String configuredTime = "12:59";  // can come from properties file
+//		String configuredTime = "12:57";  // can come from properties file
 //		LocalTime currentTime = LocalTime.parse(configuredTime);
 //		LocalTime startTime = currentTime.plusMinutes(timeToStart);
 
@@ -392,72 +392,72 @@ public class Schedularpage extends GenericWrappers {
 
 	}
 
-	private void scrollColumnUntilValueAtIndex0Hour(String xpath, String resourceId, String expectedValue) {
-	    WebElement columnElement = driver.findElement(By.xpath(xpath));
-	    boolean valueSet = false;
-
-	    while (!valueSet) {
-	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
-
-	        // ✅ determine center index dynamically
-	        int centerIndex = (elements.size() == 2 ) ? 0 : elements.size() / 2;
-
-	        WebElement centerEl = elements.get(centerIndex);
-	        String currentValue = centerEl.getText().trim();
-
-	        System.out.println("Current hour at center: " + currentValue + " | Expected: " + expectedValue);
-
-	        int current = extractintvalue(currentValue);
-	        int expected = extractintvalue(expectedValue);
-
-	        if (current == expected) {
-	            System.out.println("✅ Hour " + expectedValue + " aligned at center index " + centerIndex);
-	            valueSet = true;
-	        } else {
-	            int compare = comparePickerValues(resourceId, currentValue, expectedValue);
-	            if (compare < 0) {
-	                swipeElement(xpath, true); // scroll forward
-	            } else {
-	                swipeElement(xpath, false); // scroll backward
-	            }
-	        }
-	    }
-	}
-	private void scrollColumnUntilValueAtIndex0Min(String xpath, String resourceId, String expectedValue) {
-	    WebElement columnElement = driver.findElement(By.xpath(xpath));
-	    boolean valueSet = false;
-
-	    while (!valueSet) {
-	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
-
-	        // ✅ determine center index dynamically
-	        int centerIndex = (elements.size() == 2) ? 0 : elements.size() / 2;
-	        WebElement centerEl = elements.get(centerIndex);
-	        String currentValue = centerEl.getText().trim();
-
-	        System.out.println("Current minute at center: " + currentValue + " | Expected: " + expectedValue);
-
-	        int current = extractintvalue(currentValue);
-	        int expected = extractintvalue(expectedValue);
-
-	        if (current == expected) {
-	            System.out.println("✅ Minute " + expectedValue + " aligned at center index " + centerIndex);
-	            valueSet = true;
-	        } else {
-	            int compare = comparePickerValues(resourceId, currentValue, expectedValue);
-	            if (compare < 0) {
-	                swipeElement(xpath, true);
-	            } else {
-	                // Optional faster scroll for small minute values
-	                if (expected <= 5) {
-	                    fastswipe(xpath, false);
-	                } else {
-	                    swipeElement(xpath, false);
-	                }
-	            }
-	        }
-	    }
-	}
+//	private void scrollColumnUntilValueAtIndex0Hour(String xpath, String resourceId, String expectedValue) {
+//	    WebElement columnElement = driver.findElement(By.xpath(xpath));
+//	    boolean valueSet = false;
+//
+//	    while (!valueSet) {
+//	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+//
+//	        // ✅ determine center index dynamically
+//	        int centerIndex = (elements.size() == 2 ) ? 0 : elements.size() / 2;
+//
+//	        WebElement centerEl = elements.get(centerIndex);
+//	        String currentValue = centerEl.getText().trim();
+//
+//	        System.out.println("Current hour at center: " + currentValue + " | Expected: " + expectedValue);
+//
+//	        int current = extractintvalue(currentValue);
+//	        int expected = extractintvalue(expectedValue);
+//
+//	        if (current == expected) {
+//	            System.out.println("✅ Hour " + expectedValue + " aligned at center index " + centerIndex);
+//	            valueSet = true;
+//	        } else {
+//	            int compare = comparePickerValues(resourceId, currentValue, expectedValue);
+//	            if (compare < 0) {
+//	                swipeElement(xpath, true); // scroll forward
+//	            } else {
+//	                swipeElement(xpath, false); // scroll backward
+//	            }
+//	        }
+//	    }
+//	}
+//	private void scrollColumnUntilValueAtIndex0Min(String xpath, String resourceId, String expectedValue) {
+//	    WebElement columnElement = driver.findElement(By.xpath(xpath));
+//	    boolean valueSet = false;
+//
+//	    while (!valueSet) {
+//	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+//
+//	        // ✅ determine center index dynamically
+//	        int centerIndex = (elements.size() == 2) ? 0 : elements.size() / 2;
+//	        WebElement centerEl = elements.get(centerIndex);
+//	        String currentValue = centerEl.getText().trim();
+//
+//	        System.out.println("Current minute at center: " + currentValue + " | Expected: " + expectedValue);
+//
+//	        int current = extractintvalue(currentValue);
+//	        int expected = extractintvalue(expectedValue);
+//
+//	        if (current == expected) {
+//	            System.out.println("✅ Minute " + expectedValue + " aligned at center index " + centerIndex);
+//	            valueSet = true;
+//	        } else {
+//	            int compare = comparePickerValues(resourceId, currentValue, expectedValue);
+//	            if (compare < 0) {
+//	                swipeElement(xpath, true);
+//	            } else {
+//	                // Optional faster scroll for small minute values
+//	                if (expected <= 5) {
+//	                    fastswipe(xpath, false);
+//	                } else {
+//	                    swipeElement(xpath, false);
+//	                }
+//	            }
+//	        }
+//	    }
+//	}
 
 	private void scrollColumnUntilValueAtIndex1(String xpath, String resourceId, String expectedValue) {
 		// Find the container element using resourceId
@@ -747,6 +747,117 @@ clickbyXpath(switchLockToggle, "SwitchlockToggle");
 		if(!isElementDisplayedCheck(othersSchedulePage_schedule)) {
 			 Reporter.reportStep("Disconnected Badge Displayed", "FAIL");
 		}
+	}
+	
+	private void scrollColumnUntilValueAtIndex0Hour(String xpath, String resourceId, String expectedValue) {
+	    WebElement columnElement = driver.findElement(By.xpath(xpath));
+	    boolean valueSet = false;
+	    int expectedHour = extractintvalue(expectedValue);
+
+	    if (expectedHour < 1 || expectedHour > 12) {
+	        System.out.println("❌ Invalid hour: " + expectedValue + ". Must be between 1 and 12.");
+	        return;
+	    }
+
+	    while (!valueSet) {
+	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+	        int elementsCount = elements.size();
+
+	        // ✅ Custom center index for hour=1/12 edge cases
+	        int centerIndex;
+	        if (resourceId.equals(resourseId1)) { // Hour column
+	            if (expectedHour == 1 && elementsCount == 2) {
+	                centerIndex = 0; // Force center to index 0 when desired is 1 and size=2
+	            } else if (expectedHour == 12 && elementsCount == 3) {
+	                centerIndex = 2; // Force center to index 2 when desired is 12 and size=3
+	            } else {
+	                centerIndex = elementsCount / 2; // Default calculation
+	            }
+	        } else {
+	            centerIndex = elementsCount / 2; // For non-hour columns
+	        }
+
+	        WebElement centerEl = elements.get(centerIndex);
+	        String currentValue = centerEl.getText().trim();
+	        int currentHour = extractintvalue(currentValue);
+
+	        System.out.println("Current hour at center: " + currentValue + " | Expected: " + expectedValue);
+
+	        if (currentHour == expectedHour) {
+	            System.out.println("✅ Hour " + expectedValue + " aligned at center index " + centerIndex);
+	            valueSet = true;
+	        } else {
+	            int compare = comparePickerValues(resourceId, currentValue, expectedValue);
+	            if (compare < 0) {
+	                if (currentHour == 12) {
+	                    System.out.println("⚠️ Already at max hour (12). Cannot scroll up further.");
+	                    break;
+	                }
+	                swipeElement(xpath, true);
+	            } else {
+	                if (currentHour == 1) {
+	                    System.out.println("⚠️ Already at min hour (1). Cannot scroll down further.");
+	                    break;
+	                }
+	                swipeElement(xpath, false);
+	            }
+	        }
+	    }
+	}
+	private void scrollColumnUntilValueAtIndex0Min(String xpath, String resourceId, String expectedValue) {
+	    WebElement columnElement = driver.findElement(By.xpath(xpath));
+	    boolean valueSet = false;
+	    int expectedMinute = extractintvalue(expectedValue);
+
+	    if (expectedMinute < 0 || expectedMinute > 59) {
+	        System.out.println("❌ Invalid minute: " + expectedValue + ". Must be between 00 and 59.");
+	        return;
+	    }
+
+	    while (!valueSet) {
+	        List<WebElement> elements = columnElement.findElements(By.className("android.widget.TextView"));
+	        int elementsCount = elements.size();
+
+	        // ✅ Custom center index for minute=00/59 edge cases
+	        int centerIndex;
+	        if (resourceId.equals(resourseId2)) { // Minute column
+	            if (expectedMinute == 0 && elementsCount == 2) {
+	                centerIndex = 0; // Force center to index 0 when desired is 00 and size=2
+	            } else if (expectedMinute == 59 && elementsCount == 3) {
+	                centerIndex = 2; // Force center to index 2 when desired is 59 and size=3
+	            } else {
+	                centerIndex = elementsCount / 2; // Default calculation
+	            }
+	        } else {
+	            centerIndex = elementsCount / 2; // For non-minute columns
+	        }
+
+	        WebElement centerEl = elements.get(centerIndex);
+	        String currentValue = centerEl.getText().trim();
+	        int currentMinute = extractintvalue(currentValue);
+
+	        System.out.println("Current minute at center: " + currentValue + " | Expected: " + expectedValue);
+
+	        if (currentMinute == expectedMinute) {
+	            System.out.println("✅ Minute " + expectedValue + " aligned at center index " + centerIndex);
+	            valueSet = true;
+	        } else {
+	            int compare = comparePickerValues(resourceId, currentValue, expectedValue);
+	            if (compare < 0) {
+	                if (currentMinute == 59) {
+	                    System.out.println("⚠️ Already at max minute (59). Cannot scroll up further.");
+	                    break;
+	                }
+	                swipeElement(xpath, true);
+	            } else {
+	                if (currentMinute == 0) {
+	                    System.out.println("⚠️ Already at min minute (00). Cannot scroll down further.");
+	                    break;
+	                }
+	                swipeElement(xpath, false);
+	            }
+	        }
+	    }
 	}
  
 }

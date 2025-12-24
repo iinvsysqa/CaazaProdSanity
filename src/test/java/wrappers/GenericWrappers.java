@@ -112,7 +112,7 @@ public class GenericWrappers {
 	}
 	
 	@SuppressWarnings("deprecation")
-	public static boolean initAndriodDriver() throws FileNotFoundException, IOException {
+	public static boolean initAndriodDriver() throws FileNotFoundException, IOException, InterruptedException {
 
 		boolean bReturn = false;
 		Properties prop = new Properties();
@@ -128,7 +128,7 @@ public class GenericWrappers {
 			caps.setCapability("appium:ignoreHiddenApiPolicyError", "true");
 			caps.setCapability("newCommandTimeout", 999999);
 			caps.setCapability("noReset", true);
-//			caps.setCapability("appium:autoGrantPermissions", true);
+			caps.setCapability("appium:autoGrantPermissions", true);
 			
 
 			//			keepSessionAlive(driver);
@@ -162,8 +162,13 @@ public class GenericWrappers {
 			} else {
 				System.out.println("App is not installed. Installing and launching...");
 				turnOnBT();
+				if(loadProp("PLATFORM_VERSION").contains("15")) {
+					appinstallationforhigherversion();
+				}else {
 				driver.installApp(prop.getProperty("APP_PATH"));
 				driver.activateApp(appPackage); // Launch the app after installation
+					
+				}
 //				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.caazasmart android.permission.ACCESS_FINE_LOCATION"));
 //				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.caazasmart android.permission.BLUETOOTH_SCAN"));
 //				driver.executeScript("mobile: shell", ImmutableMap.of("command", "pm grant com.iinvsys.caazasmart android.permission.BLUETOOTH_CONNECT"));
@@ -410,6 +415,7 @@ public class GenericWrappers {
 		return bReturn;
 		
 	}
+	
 
 
 
@@ -1139,15 +1145,26 @@ Boolean yes= true;
 		
 		if (driver.isAppInstalled(packages)) {
 		Runtime.getRuntime().exec("adb uninstall com.iinvsys.caazasmart");
-		Thread.sleep(3000);
+		
+		if(loadProp("PLATFORM_VERSION").contains("15")) {
+			appinstallationforhigherversion();
+		}else {
 		driver.installApp(prop.getProperty("APP_PATH"));
 		driver.activateApp(packages);
+			
+		}
+		
 		allowpermissions();
 		}
 		else {
+			if(loadProp("PLATFORM_VERSION").contains("15")) {
+				appinstallationforhigherversion();
 			
+			}else {
 			driver.installApp(prop.getProperty("APP_PATH"));
 			driver.activateApp(packages);
+				
+			}
 			allowpermissions();
 		}
 	}
@@ -1240,4 +1257,58 @@ Boolean yes= true;
 	        scanner.close();  // Close the scanner
 	    }
  
+	  public static void appinstallationforhigherversion() {
+		  String apkPath = loadProp("APP_PATH");
+		  String appPackage =loadProp("APP_PACKAGE"); // replace with your actual package name
+
+		  try {
+		      // Step 1: Install the APK with -r (reinstall) and -g (grant all runtime permissions)
+		      Process process = Runtime.getRuntime().exec("adb install -r -g " + apkPath);
+		      
+		      // Wait for the install command to complete and check result
+		      int exitCode = process.waitFor();
+		      
+		      if (exitCode == 0) {
+		          System.out.println("APK installed successfully with permissions granted.");
+		      } else {
+		          // Read error output
+		          java.util.Scanner scanner = new java.util.Scanner(process.getErrorStream()).useDelimiter("\\A");
+		          String error = scanner.hasNext() ? scanner.next() : "Unknown error";
+		          throw new RuntimeException("APK installation failed: " + error);
+		      }
+
+		      // Step 2: Wait until the package is fully installed and appears in pm list
+		      System.out.println("Waiting for app to be fully installed...");
+		      boolean installed = false;
+		      for (int i = 0; i < 30; i++) {  // max 30 seconds
+		          Process checkProcess = Runtime.getRuntime().exec("adb shell pm list packages " + appPackage);
+		          checkProcess.waitFor();
+		          
+		          java.util.Scanner outputScanner = new java.util.Scanner(checkProcess.getInputStream()).useDelimiter("\\A");
+		          String output = outputScanner.hasNext() ? outputScanner.next() : "";
+		          
+		          if (output.contains("package:" + appPackage)) {
+		              installed = true;
+		              break;
+		          }
+		          Thread.sleep(1000); // wait 1 second before retry
+		      }
+
+		      if (!installed) {
+		          throw new RuntimeException("Timeout: App package not detected after installation.");
+		      }
+
+		      System.out.println("App is installed and ready.");
+
+		      // Optional: Small delay to let system settle
+		      Thread.sleep(2000);
+
+		      // Step 3: Now safely activate the app
+		      driver.activateApp(appPackage);
+
+		  } catch (Exception e) {
+		      e.printStackTrace();
+		      throw new RuntimeException("Failed to install and launch app: " + e.getMessage());
+		  }
+	}
 }

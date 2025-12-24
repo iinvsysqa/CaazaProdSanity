@@ -144,9 +144,9 @@ public class SignUpPage extends GenericWrappers {
 	public void enteranswer2(String answer2) {
 		entervaluebyXpath(answerField2, " Enter the Security Answer " , answer2);
 	}
-	public void clickSignUpButton() {
+	public void clickSignUpButton() throws Exception {
 		clickbyXpath(signUpButton, " Sign Up ");
-		
+		Thread.sleep(3000);
 	}
 	
 	public void clickSignUpNextButton() {

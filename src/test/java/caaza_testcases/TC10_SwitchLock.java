@@ -1,5 +1,7 @@
 package caaza_testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.util.Arrays;
 import java.util.List;
 
@@ -45,6 +47,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 	public void startTestCase() {
 		testCaseName = "TC10_SwitchLock_&_notifications";
 		testDescription = "Switch Lock and notifications ";
+		dataSheetName="Automation";
 	}
 
 	
@@ -115,6 +118,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
 			homepage.enterFirstcard();
+			homepage.clickPanel(0);
 			switchpage.NavigatetoSwitches(1);
 			
 			
@@ -126,6 +130,8 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			schedular.clickSwitchsaveBtn();
 			schedular.verifyLockicon();
 			userpage.navigateBack();
+			userpage.navigateBack();
+			userpage.navigateBack();
 			
 			
 			
@@ -136,9 +142,9 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			userpage.clickFullAccessradioButton();
 			userpage.SelectApartmentDevices("Apartment"); 
 			userpage.clickdeviceShareButton();
-			userpage.enterUsername("Autotest");
+			userpage.enterUsername(loadProp("DUMMYUSER"));
 			userpage.clickSendbutton();
-			userpage.checkAddedUser("Autotest");
+			userpage.checkAddedUser(loadProp("DUMMYUSER"));
 			userpage.navigateBack();
 			profilepage.navigateSettingsbtn();
 			profilepage.clicklogoutbtn();
@@ -147,7 +153,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			
 			//check notifications
 			
-			landingpage.enterUserName("Autotest");
+			landingpage.enterUserName(loadProp("DUMMYUSER"));
 			landingpage.enterPassword("Welcome@123");
 			landingpage.clickSignInButton();
 			notificationpage.NavigateNotificationPage();
@@ -174,25 +180,13 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 			settingspage.navigateMenuitemSettings();
 			settingspage.resetDevice();
 			settingspage.navigateback();
-			
-			homepage.enterFirstcard();
-			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);
-			
-			
 			notificationpage.NavigateNotificationPage();
-			notificationpage.clickNotificationTabDevices();
+			notificationpage.clickNotificationTabUsers();
 			notificationpage.checkResetDeviceNotification();
 			settingspage.navigateback();
 			
 			
-			
-			homepage.enterFirstcard();
-			settingspage.openMenuPage();
-			settingspage.navigateMenuitemSettings();
-			settingspage.resetDevice();
-			settingspage.navigateback();
-			
+			//deleting hierarchy and user account
 			profilepage.clickApartmentIcon();
 			profilepage.clickMenubaricon();
 			profilepage.clickAddEditbtn();

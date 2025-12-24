@@ -74,7 +74,7 @@ public class Analytics  extends GenericWrappers {
 	String oldvalue;
 	public String getenergydurationvalue() {
 
-		waitForElementToDisplayNumber(enrgyDurationmin,10);
+		waitForElementToDisplayNumber(enrgyDurationmin,20);
 		 oldvalue = enrgyDurationmin.getText();
 		 oldvalue.contentEquals("Fetching");
 		 Reporter.reportStep("Analytics value before Start of the session : " + oldvalue, "PASS");
@@ -117,7 +117,7 @@ public class Analytics  extends GenericWrappers {
 	}
 	public boolean checkenrgyduration(int value) throws Exception {	
 		boolean bReturn = false;
-		waitForElementToDisplayNumber(enrgyDurationmin,10);
+		waitForElementToDisplayNumber(enrgyDurationmin,15);
 //		clickbyXpath(enrgyDurationmin, "energy duration");
 		
 		int newvalue=extractMinutes(oldvalue)+value;

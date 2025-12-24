@@ -77,6 +77,9 @@ public class NotificationPage extends GenericWrappers {
 public void clickNotificationTabDevices() {
 	clickbyXpath(Notification_Tab_Devices, "Notification tab devices");
 }
+public void clickNotificationTabUsers() {
+	clickbyXpath(Notification_Tab_Users, "Notification tab devices");
+}
 	
 	public void navigateBack() {
 		driver.navigate().back();
@@ -90,7 +93,7 @@ public void clickNotificationTabDevices() {
 
 				WebElement titleElement = driver.findElement(firstNotificationTitle);
 				
-				verifyTextContainsByXpath(titleElement, Username+" has granted you Full Access to \"apartment\".", "Shared User notification");
+				verifyTextContainsByXpath(titleElement, Username+" has granted you Full Access to \"Apartment\".", "Shared User notification");
 		}
 		public void checkResetDeviceNotification() {
 			

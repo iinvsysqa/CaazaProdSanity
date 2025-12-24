@@ -1,5 +1,7 @@
 package caaza_testcases;
 
+import org.testng.annotations.Test;
+import org.testng.annotations.BeforeClass;
 import java.util.Arrays;
 import java.util.List;
 
@@ -148,6 +150,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.navigateback();
 			
 			//turn on app for 1 min
+			Thread.sleep(5000);
 			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
 			Thread.sleep(60000);
@@ -163,7 +166,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);
 			schedular.enter_Switchpage(1);
-			schedular.createSchedules(1, 2, 1, 3);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			schedular.createSchedules(1, 3, 1, 1);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
 			homepage.navigateback();
 			homepage.navigateback();
 			profilepage.navigateSettingsbtn();
@@ -180,7 +183,8 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			schedular.verifyOtherUserscheduleSchedules();
 			homepage.navigateback();
 			homepage.navigateback();
-			Thread.sleep(60000*5);//to complete that old schedule
+			homepage.navigateback();
+			Thread.sleep(60000*2);//to complete that old schedule
 			
 			System.out.println("Moving to partial access");
 			//==========================change the access to partial access 
@@ -215,11 +219,12 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 		
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);
-			switchpage.NavigatetoSwitches(1);
+			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
 			
 			//turn on app for 1 min
+			Thread.sleep(5000);
 			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
 			Thread.sleep(60000);
@@ -230,6 +235,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			analytics.checkenrgyduration(1);
 			
 			schedular.checkPartialAccessSchedulepage();
+			homepage.navigateback();
 			homepage.navigateback();
 			homepage.navigateback();
 
@@ -278,9 +284,9 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			schedular.checkPartialAccessSchedulepage();
 			userpage.navigateBack();
 			userpage.navigateBack();
+			userpage.navigateBack();
 			
 			//deleting device and account 
-			
 			profilepage.navigateSettingsbtn();
 			profilepage.clicklogoutbtn();
 			profilepage.logoutConfirmationBtn();
@@ -294,7 +300,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);
 			settingspage.openMenuPage();
-			settingspage.navigateswitchmenuSettingspage();
+			settingspage.navigateSettingspage();
 			settingspage.resetDevice();
 			settingspage.navigateback();
 			

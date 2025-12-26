@@ -45,6 +45,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 	public void startTestCase() {
 		testCaseName = "TC09_Multiuser";
 		testDescription = "Multiuser -Device sharing fullaccess,Partial access,View only access";
+		dataSheetName="Automation";
 	}
 
 	

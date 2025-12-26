@@ -37,6 +37,7 @@ public class TC03_SingUp_Create_hierarchy extends MobileAppWrappers {
 	public void startTestCase() {
 		testCaseName = "TC_01_SignUp with Valid creds and Create Hierarchy";
 		testDescription = "Sign Up with valid user and Create Hierrachy";
+		dataSheetName="Automation";
 	}
 
 	

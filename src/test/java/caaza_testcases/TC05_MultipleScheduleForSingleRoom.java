@@ -41,6 +41,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 	public void startTestCase() {
 		testCaseName = "TC05_MultipleSchedule_Timer";
 		testDescription = "Multiple Schedule and Timer";
+		dataSheetName="Automation";
 	}
 
 	

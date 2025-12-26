@@ -40,6 +40,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 	public void startTestCase() {
 		testCaseName = "TC_04_removeswitchboard";
 		testDescription = "TC_04_removeswitchboard";
+		dataSheetName="Automation";
 	}
 	
 	

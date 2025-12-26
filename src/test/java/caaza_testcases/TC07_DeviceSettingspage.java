@@ -39,6 +39,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 	public void startTestCase() {
 		testCaseName = "TC_07_Device settings ";
 		testDescription = "Device settings page features check";
+		dataSheetName="Automation";
 	}
 
 	

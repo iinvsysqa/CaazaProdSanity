@@ -42,6 +42,7 @@ public class TC08_Profilepage extends MobileAppWrappers{
 	public void startTestCase() {
 		testCaseName = "TC08_Profilepage";
 		testDescription = "Profilepage_logoutlogin_deleteAccount_changePassword";
+		dataSheetName="Automation";
 	}
 
 	

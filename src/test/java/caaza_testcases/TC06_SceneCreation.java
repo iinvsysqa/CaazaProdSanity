@@ -42,6 +42,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 	public void startTestCase() {
 		testCaseName = "TC_06_SceneCreation";
 		testDescription = "Scene Creation for Switches ";
+		dataSheetName="Automation";
 	}
 
 	

@@ -74,7 +74,7 @@ public class DualNodeSanity extends MobileAppWrappers {
 			switchpage.DualnodeclickOnOffButton();
 			
 			
-			switchpage.FetchSerailnumber();//newly added
+			switchpage.FetchSerailnumber_Dual_Threenode();//newly added
 			
 			switchpage.clickMenuButton();
 			switchpage.clickSettingsButton();

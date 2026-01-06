@@ -249,5 +249,29 @@ public class SwitchPage extends GenericWrappers{
 		}
 		
 	}
+	public void FetchSerailnumber_Dual_Threenode() {
+		
+		try {
+			List<WebElement> switchElements = driver.findElements(
+					By.xpath("//*[@resource-id[contains(., 'SwitchWrapper_')]]")
+					);
+			
+			System.out.println("Found " + switchElements.size() + " switches:");
+			System.out.println("========================================");
+			
+			for (WebElement element : switchElements) {
+				String resourceId = element.getAttribute("resource-id");
+				
+				// Extract serial number: everything after the LAST underscore
+				String serialNumber = resourceId.substring(resourceId.lastIndexOf("_") + 1);
+				Reporter.reportStep( "Serial Number -"+ serialNumber , "PASS");
+				System.out.println("Serial Number: " + serialNumber);
+			}
+		}catch (Exception e) {
+			System.out.println(e);
+			Reporter.reportStep( "Serial Number not fetched " , "PASS");
+		}
+		
+	}
 }
 

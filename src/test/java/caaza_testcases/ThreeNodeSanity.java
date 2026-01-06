@@ -74,7 +74,7 @@ public class ThreeNodeSanity extends MobileAppWrappers {
 			switchpage.ThreenodeclickOnOffButton();
 			
 			
-			switchpage.FetchSerailnumber();//newly added
+			switchpage.FetchSerailnumber_Dual_Threenode();//newly added
 			
 			switchpage.clickMenuButton();
 			switchpage.clickSettingsButton();

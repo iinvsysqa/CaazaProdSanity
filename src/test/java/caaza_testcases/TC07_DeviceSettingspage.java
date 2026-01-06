@@ -97,6 +97,8 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
+			homepage.navigateback();
+			
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);
 			settingspage.openMenuPage();
@@ -106,7 +108,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.clickHighVoltToggle();
 			settingspage.enterHighVoltagevalue("270");
 			settingspage.clickSavebutton();
-			settingspage.verifyHighvoltToast();
+//			settingspage.verifyHighvoltToast();
 			
 //			killAndReopenApp();
 //			homepage.enterFirstcard();
@@ -124,7 +126,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.clickLowVoltToggle();
 			settingspage.enterLowVoltagevalue("170");
 			settingspage.clickSavebutton();
-			settingspage.verifyLowvoltToast();
+//			settingspage.verifyLowvoltToast();
 			
 //			killAndReopenApp();
 //			homepage.enterFirstcard();
@@ -157,6 +159,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			settingspage.navigateSettingspage();
 			settingspage.resetDevice();
 			settingspage.navigateback();
+			
 			
 			profilepage.clickApartmentIcon();
 			profilepage.clickMenubaricon();

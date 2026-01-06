@@ -20,7 +20,7 @@ public class UsersPage extends GenericWrappers {
 		this.wait = new WebDriverWait(driver, 10);
 	}
 
-	@FindBy(xpath = "//*[@resource-id='UsersCard']")
+	@FindBy(xpath = "//*[@resource-id='UsersCountContainer']")
 	private WebElement UsersCard;
 	@FindBy(xpath = "//*[@resource-id='ShareButtonText']")
 	private WebElement Userpage_ShareButtonText;
@@ -30,7 +30,7 @@ public class UsersPage extends GenericWrappers {
 	private WebElement Share_partialaccess_Radiobtn;
 	@FindBy(xpath = "//*[@resource-id='ShareControl_RadioOuter_2']")
 	private WebElement Share_viewonlyaccess_Radiobtn;
-	@FindBy(xpath = "//*[@resource-id='ShareText']")
+	@FindBy(xpath = "//*[@resource-id='ShareButton']")
 	private WebElement ShareButton;
 	@FindBy(xpath = "//*[@resource-id='ShareControl_CloseButton']")
 	private WebElement ShareControl_CloseButton;
@@ -98,9 +98,18 @@ public class UsersPage extends GenericWrappers {
 
 	}
 
-	public void clickSharebutton() {
-		clickbyXpath(Userpage_ShareButtonText, "Share button");
-	}
+	public void clickSharebutton() throws Exception {
+		if(isElementDisplayedCheck(Userpage_ShareButtonText)) {
+		clickbyXpath(Userpage_ShareButtonText, "Share button");}
+		else {
+
+			driver.navigate().back();
+			Thread.sleep(2000);
+			driver.navigate().back();
+			NavigateUserpage();
+			clickbyXpath(Userpage_ShareButtonText, "Share button");}
+		}
+	
 	public void navigateBack() {
 		driver.navigate().back();
 		

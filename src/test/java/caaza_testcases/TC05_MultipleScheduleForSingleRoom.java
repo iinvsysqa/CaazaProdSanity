@@ -20,6 +20,7 @@ import pages.Schedulartestpage;
 import pages.SettingsPage;
 import pages.SignUpPage;
 import pages.StoreLogPage;
+import pages.SwitchPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
@@ -35,7 +36,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 	AddDevicePage adddevicepage;
 	HierarchyPage hierarchypage;
 	Profilepage profilepage;
-	
+	SwitchPage switchpage;
 
 	@BeforeClass
 	public void startTestCase() {
@@ -63,6 +64,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 		adddevicepage = new AddDevicePage(driver);
 		hierarchypage = new HierarchyPage(driver);
 		profilepage = new Profilepage(driver);
+		switchpage = new SwitchPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
@@ -97,13 +99,18 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);			
-		
+			homepage.navigateback();
+			
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);
+			switchpage.clickOnOffButton();
+			Thread.sleep(60000*1);
+			switchpage.clickOnOffButton();
+			
 			schedular.enter_Switchpage(1);
 			analytics.getenergydurationvalue();
 			homepage.navigateback();
-			schedular.createSchedules(1, 2, 1, 1);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			schedular.createSchedules(1, 2, 1, 1,"NewSchedule");//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
 			Thread.sleep(60000*3);
 			schedular.enter_Switchpage(1);
 			analytics.checkenrgyduration(1);

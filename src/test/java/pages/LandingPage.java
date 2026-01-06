@@ -12,7 +12,7 @@ public class LandingPage extends GenericWrappers{
 	    
 	 // Locate all elements on the page
 	    
-	    @FindBy(xpath = "//*[@resource-id='Sign InText']")
+	    @FindBy(xpath = "//*[@resource-id='Sign InButton']")
 	    private WebElement signInButton;
 	    
 	    @FindBy(xpath = "//*[@resource-id='SignUp_SignUpText']")

@@ -19,7 +19,7 @@ import pages.SwitchPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
-public class DualNodeSanity extends MobileAppWrappers {
+public class ThreeNodeSanity extends MobileAppWrappers {
 
 	LandingPage landingpage;
 	SignUpPage signuppage;
@@ -34,18 +34,18 @@ public class DualNodeSanity extends MobileAppWrappers {
 	
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "Dual Node Sanity Check";
-		testDescription = "Dual Node Sanity Check";
+		testCaseName = "Three Node Sanity Check";
+		testDescription = "Three Node Sanity Check";
 	}
 
 	
 	@Test(priority = 0)
-	public void DualNodeSanity_Check() throws Exception {
+	public void ThreeNodeSanity_Check() throws Exception {
 		initAndriodDriver();
 		functionaCheck();
 	}
 
-	List<String> switchNames = Arrays.asList("Switch1","Switch2"); void functionaCheck() throws Exception {
+	List<String> switchNames = Arrays.asList("Switch1","Switch2","Switch3"); void functionaCheck() throws Exception {
 		landingpage= new LandingPage(driver);
 		signuppage = new SignUpPage(driver);
 		settingspage = new SettingsPage(driver);
@@ -55,7 +55,7 @@ public class DualNodeSanity extends MobileAppWrappers {
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
-//			readwrite.openPort();
+			//readwrite.openPort();
 			
 			//landingpage.clickLandingPageNextBtn();			
 			//landingpage.enterUserName("Demouserauto");
@@ -69,9 +69,9 @@ public class DualNodeSanity extends MobileAppWrappers {
 			
 			homepage.clickPanel(0);
 			Thread.sleep(2000);
-			switchpage.DualnodeclickOnOffButton();
+			switchpage.ThreenodeclickOnOffButton();
 			Thread.sleep(2000);
-			switchpage.DualnodeclickOnOffButton();
+			switchpage.ThreenodeclickOnOffButton();
 			
 			
 			switchpage.FetchSerailnumber();//newly added

@@ -41,7 +41,7 @@ public class HierarchyPage  extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='RetryButton']")
 	private WebElement RetryButton;
 	
-	@FindBy(xpath = "(//android.widget.TextView[@content-desc=\"com.CaaZa_Smart:id/Start a New SmartEcoText\"])[2]")
+	@FindBy(xpath = "(//android.widget.TextView[@text=\"Start a New SmartEco\"])[2]")
 	private WebElement StartaNewHomeText;
 	
 	private WebElement devicenameDeviceSettingsPage(String username) {

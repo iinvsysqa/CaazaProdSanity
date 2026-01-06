@@ -68,9 +68,16 @@ public class ScenecreationPage extends GenericWrappers {
 	}
 	
 	public void navigateScenecreationpage() {
+		
 		clickbyXpath(ScenePlusbtn, "SceneCreationBtn");
 	}
-	public void enterSceneName(String sceneName) {
+	public void enterSceneName(String sceneName) throws InterruptedException {
+		if(isElementDisplayedCheck(sceneNametextbox)) {
+		entervaluebyXpath(sceneNametextbox, "SceneNameTextbox", sceneName);}
+		driver.navigate().back();
+		Thread.sleep(2000);
+		driver.navigate().back();
+		navigateScenecreationpage();
 		entervaluebyXpath(sceneNametextbox, "SceneNameTextbox", sceneName);
 	}
 	public void clickScenecreationBtn() {

@@ -113,6 +113,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
 			adddevicepage.EnterNode(node,switchNames);
+			homepage.navigateback();
 			
 			System.out.println("Moving to Full access");
 			
@@ -167,7 +168,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);
 			schedular.enter_Switchpage(1);
-			schedular.createSchedules(1, 3, 1, 1);//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			schedular.createSchedules(1, 3, 1, 1,"NewSchedule");//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
 			homepage.navigateback();
 			homepage.navigateback();
 			profilepage.navigateSettingsbtn();

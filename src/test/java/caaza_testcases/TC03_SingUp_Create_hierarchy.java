@@ -61,6 +61,7 @@ public class TC03_SingUp_Create_hierarchy extends MobileAppWrappers {
 		homepage= new HomePage(driver);
 		hierarchypage = new HierarchyPage(driver);
 		profilepage = new Profilepage(driver);
+		logpage= new StoreLogPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
@@ -78,7 +79,7 @@ public class TC03_SingUp_Create_hierarchy extends MobileAppWrappers {
 			signuppage.enteranswer1("demo");
 			signuppage.enteranswer2("demo");
 			signuppage.clickSignUpButton();
-			Thread.sleep(3000);
+			Thread.sleep(1000);
 			killAndReopenApp();
 			hierarchypage.clickStartaNewHomeButton();
 			hierarchypage.clickStartanewhometext();

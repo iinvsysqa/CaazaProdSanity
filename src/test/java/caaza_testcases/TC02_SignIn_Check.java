@@ -46,6 +46,7 @@ public class TC02_SignIn_Check extends MobileAppWrappers {
 		settingspage = new SettingsPage(driver);
 		homepage= new HomePage(driver);
 		profilepage = new Profilepage(driver);
+		logpage= new StoreLogPage(driver);
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		try {
 			readwrite.openPort();

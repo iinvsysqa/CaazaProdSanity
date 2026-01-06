@@ -77,7 +77,7 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement Header_Title;
 	@FindBy(xpath = "//*[@resource-id='HighVoltage_Toggle']")
 	private WebElement HighVoltage_Toggle;
-	@FindBy(xpath = "//*[@resource-id='SaveText']")
+	@FindBy(xpath = "//*[@resource-id='SaveButton']")
 	private WebElement SaveText;
 	@FindBy(xpath = "//*[@resource-id='HighVoltage_Input']")
 	private WebElement HighVoltage_Input;
@@ -111,6 +111,8 @@ public class SettingsPage extends GenericWrappers{
 	private WebElement RetryButton;
 	@FindBy(xpath = "//*[@resource-id='Header_BackIcon']")
 	private WebElement Header_Back_Button;
+	@FindBy(xpath = "//*[@resource-id='BackIcon_Component_Button']")
+	private WebElement Profile_Back_Button;
 
 	
 	
@@ -188,6 +190,10 @@ public class SettingsPage extends GenericWrappers{
 	}
 	public void navigateback() {
 		driver.navigate().back();
+	}
+	
+	public void Profilebackbutton() {
+		clickbyXpath(Profile_Back_Button, "Profile back button");
 	}
 	public void clickheaderbackbutton() {
 		clickbyXpath(Header_Back_Button, "back button");

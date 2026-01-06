@@ -84,7 +84,7 @@ public class Profilepage extends GenericWrappers{
 	private WebElement ChangePassword_ConfirmPassword;
 	@FindBy(xpath = "//*[@resource-id='ChangePassword_ForgotPasswordText']")
 	private WebElement ChangePassword_ForgotPasswordText;
-	@FindBy(xpath = "//*[@resource-id=' Change PasswordText']")
+	@FindBy(xpath = "//*[@resource-id=' Change PasswordButton']")
 	private WebElement  ChangePasswordBTN;
 	@FindBy(xpath = "//*[@resource-id='ThemedButton_Text_ConfirmDelete']")
 	private WebElement ConfirmDelete;
@@ -184,7 +184,6 @@ public class Profilepage extends GenericWrappers{
 		entervaluebyXpath(ChangePassword_NewPassword, "New  password", GeneratedPassword);
 		entervaluebyXpath(ChangePassword_ConfirmPassword, "Confirm password", GeneratedPassword);
 		clickbyXpath(ChangePasswordBTN, "Change password btn");
-		
 	}
 	
 	public void removeAddeddevice() throws InterruptedException {

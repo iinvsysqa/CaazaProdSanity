@@ -328,7 +328,7 @@ public class AddDevicePage extends GenericWrappers {
 	
 	@FindBy(xpath = "//android.widget.TextView[@text=\"fan\"]")
 	private WebElement switchTypeFanButton;
-	@FindBy(xpath = "//android.widget.TextView[@text=\"Fridge\"]")
+	@FindBy(xpath = "//android.widget.TextView[@text=\"fridge\"]")
 	private WebElement switchTypeFridgeButton;
 	
 	@FindBy(xpath = "//*[@resource-id='AddDevices_VerifyingText']")
@@ -376,13 +376,13 @@ public class AddDevicePage extends GenericWrappers {
 	
 	public void clickFanType() {
 //		clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
-		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
-			
-			clickbyXpath(switchTypeFanButton, " Click Fan option ");
-		}else {
+//		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
+//			
+//			clickbyXpath(switchTypeFanButton, " Click Fan option ");
+//		}else {
 			clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
 			
-		}
+//		}
 	}
 	public void clickAddswitchSaveBtn() {
 		clickbyXpath(addSwitchSaveBtn, "Panel name save button ");

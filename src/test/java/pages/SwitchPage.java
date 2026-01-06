@@ -35,6 +35,12 @@ public class SwitchPage extends GenericWrappers{
 	@FindBy(xpath = "//*[@resource-id='SwitchToggle_1']")
 	private WebElement onOffButton;
 	
+	@FindBy(xpath = "//*[@resource-id='SwitchToggle_2']")
+	private WebElement onOffButtonTwo;
+	
+	@FindBy(xpath = "//*[@resource-id='SwitchToggle_3']")
+	private WebElement onOffButtonThree;
+	
 	@FindBy(xpath = "//android.view.ViewGroup[@content-desc=\"com.CaaZa_Smart:id/SwitchToggle_2\"]/android.view.ViewGroup")
 	private WebElement onOffButton2;
 	
@@ -125,8 +131,22 @@ public class SwitchPage extends GenericWrappers{
 	}
 
 	public void clickOnOffButton() {
-		
+		if (isElementDisplayedCheck(onOffButton)) {
 		clickbyXpath(onOffButton, "Click On/OFF 1 Button");
+		}
+	}
+	public void DualnodeclickOnOffButton() {
+		if (isElementDisplayedCheck(onOffButton)) {
+			clickbyXpath(onOffButton, "Click On/OFF 1 Button");
+			clickbyXpath(onOffButtonTwo, "Click On/OFF 1 Button");
+		}
+	}
+	public void ThreenodeclickOnOffButton() {
+		if (isElementDisplayedCheck(onOffButton)) {
+			clickbyXpath(onOffButton, "Click On/OFF 1 Button");
+			clickbyXpath(onOffButtonTwo, "Click On/OFF 2 Button");
+			clickbyXpath(onOffButtonThree, "Click On/OFF 3 Button");
+		}
 	}
 
 	public void clickOnOff2Button() {

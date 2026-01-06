@@ -2,29 +2,29 @@ package caaza_testcases;
 
 import java.util.Arrays;
 import java.util.List;
-import java.util.UUID;
 
-import org.openqa.selenium.logging.profiler.HttpProfilerLogEntry;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
+import pages.AccountsInfoPage;
 import pages.AddDevicePage;
 import pages.Analytics;
+import pages.DeviceMenuPage;
 import pages.HierarchyPage;
 import pages.HomePage;
 import pages.LandingPage;
+import pages.OtpPage;
 import pages.Profilepage;
-import pages.ScenecreationPage;
 import pages.Schedularpage;
 import pages.Schedulartestpage;
 import pages.SettingsPage;
 import pages.SignUpPage;
 import pages.StoreLogPage;
+import pages.SwitchPage;
 import utils.logReadandWrite;
 import wrappers.MobileAppWrappers;
 
-public class TC08_Profilepage extends MobileAppWrappers{
-
+public class TC11_ModifySchedule extends MobileAppWrappers{
 	LandingPage landingpage;
 	SignUpPage signuppage;
 	HomePage homepage;
@@ -34,20 +34,20 @@ public class TC08_Profilepage extends MobileAppWrappers{
 	Schedulartestpage test;
 	Analytics analytics;
 	AddDevicePage adddevicepage;
-	ScenecreationPage scenecreation;
-	Profilepage profilepage;
 	HierarchyPage hierarchypage;
+	Profilepage profilepage;
+	SwitchPage switchpage;
 
 	@BeforeClass
 	public void startTestCase() {
-		testCaseName = "TC08_Profilepage";
-		testDescription = "Profilepage_logoutlogin_deleteAccount_changePassword";
+		testCaseName = "TC05_MultipleSchedule_Timer";
+		testDescription = "Multiple Schedule and Timer";
 		dataSheetName="Automation";
 	}
 
 	
-	@Test(priority = 7)
-	public void TC08_Profilepage_check() throws Exception {
+	@Test(priority = 10)
+	public void TC05_MultipleSchedule_Timer() throws Exception {
 		initAndriodDriver();
 		landingPageCheck();
     }
@@ -62,26 +62,21 @@ public class TC08_Profilepage extends MobileAppWrappers{
 		schedular= new Schedularpage(driver);
 		analytics = new Analytics(driver);
 		adddevicepage = new AddDevicePage(driver);
-		scenecreation =new ScenecreationPage(driver);
-		profilepage= new Profilepage(driver);
-		hierarchypage= new HierarchyPage(driver);
+		hierarchypage = new HierarchyPage(driver);
+		profilepage = new Profilepage(driver);
+		switchpage = new SwitchPage(driver);
 		
 		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
 		List<String> switchNames = Arrays.asList(loadProp("SWITCHES_NAMES"));
 		String Hierarchyname="apartment";
 		String Oldpassword =loadProp("PASSWORD");
 		String GeneratedPassword=updateProperty("PASSWORD", randomCharacters(3, 1)+randomCharacters(2, 2)+randomCharacters(3, 3)+randomCharacters(2, 4));
-		
 		String userName = updateProperty("USERNAME", randomCharacters(4,2 ));
-		/*
-		 * " 1. Gointo profile section. 2. Check user able edit name,DOB and chane
-		 * password. 3. Logout and login with new password and check user details
-		 * updated properly. "
-		 */	
 		try {
 			readwrite.openPort();
+			
 			uninstall_reinstall();
-			landingpage.clickLandingPageNextBtn();
+			landingpage.clickLandingPageNextBtn();			
 			landingpage.clickSignUpLink();
 			signuppage.enterUserName(userName);
 			signuppage.enterName(userName);
@@ -98,19 +93,39 @@ public class TC08_Profilepage extends MobileAppWrappers{
 			hierarchypage.enterHierarchyText(1, Hierarchyname);
 			hierarchypage.clickCreateHierarchybtn();
 			hierarchypage.addHierarchy_oneOption();
-
-		
-//			homepage.enterFirstcard();
-//			adddevicepage.pair(2);
-//			adddevicepage.EnterNode(1,switchNames);
-//			homepage.enterFirstcard();
-//			profilepage.navigateProfileSettingsProfileeditpage();
-			// //unable to do 
-//			profilepage.SetProfileimage();
-//			profilepage.setDOB();
 			
 			
-//			profilepage.removeAddeddevice();
+			//For schedules
+			homepage.enterFirstcard();
+			adddevicepage.pair(2);
+			adddevicepage.EnterNode(node,switchNames);			
+			homepage.navigateback();
+			
+			homepage.enterFirstcard();
+			homepage.clickPanel(0);
+			switchpage.clickOnOffButton();
+			Thread.sleep(60000*1);
+			switchpage.clickOnOffButton();
+			schedular.enter_Switchpage(1);
+			
+			analytics.getenergydurationvalue();
+			homepage.navigateback();
+			schedular.createSchedules(1, 3, 1, 1,"NewSchedule");//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			schedular.createSchedules(1, 2, 1, 2,"AlreadyExistingSchedules");//mention switches count ,mention the time to start ,how many schedules need to keep,schedule duration like 1 min or 2 min
+			
+			Thread.sleep(60000*3);
+			schedular.enter_Switchpage(1);
+			analytics.checkenrgyduration(2);
+			schedular.deleteschedule();
+			homepage.navigateback();
+			
+			
+			
+			settingspage.openMenuPage();
+			settingspage.navigateSettingspage();
+			settingspage.resetDevice();
+			settingspage.navigateback();
+			
 			profilepage.clickApartmentIcon();
 			profilepage.clickMenubaricon();
 			profilepage.clickAddEditbtn();
@@ -119,25 +134,9 @@ public class TC08_Profilepage extends MobileAppWrappers{
 			
 			profilepage.navigateSettingsbtn();
 			profilepage.navigateProfileSettingsPage();
-			
-			
-			profilepage.openChangePasswordpage();
-			profilepage.entercurrentpassword(Oldpassword);
-			profilepage.changepassword(GeneratedPassword);
-			
-			settingspage.Profilebackbutton();
-			profilepage.clicklogoutbtn();
-			profilepage.logoutConfirmationBtn();
-			landingpage.enterUserName(userName);
-			landingpage.enterPassword(GeneratedPassword);
-			landingpage.clickSignInButton();
-			killAndReopenApp();
-			profilepage.navigateSettingsbtn();
-			profilepage.navigateProfileSettingsPage();
 			profilepage.deleteAccount();
 			profilepage.confirmDelete();
 			profilepage.checkSignInButton();
-			
 			readwrite.closePort();
 		}
 		catch (Exception e) {	

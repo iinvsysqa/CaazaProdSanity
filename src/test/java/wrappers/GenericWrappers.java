@@ -24,7 +24,9 @@ import org.apache.commons.net.ftp.FTP;
 import org.apache.commons.net.ftp.FTPClient;
 import org.apache.commons.net.ftp.FTPFile;
 import org.openqa.selenium.By;
+import org.openqa.selenium.Dimension;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.Point;
 import org.openqa.selenium.StaleElementReferenceException;
 import org.openqa.selenium.TimeoutException;
 import org.openqa.selenium.WebElement;
@@ -1311,4 +1313,36 @@ Boolean yes= true;
 		      throw new RuntimeException("Failed to install and launch app: " + e.getMessage());
 		  }
 	}
+	  
+
+	  public boolean isElementVisible(By locator) {
+		    try {
+		        List<AndroidElement> elements = driver.findElements(locator);
+		        for (WebElement element : elements) {
+		            if (element.isDisplayed()) {
+		                // Get the location of the element
+		                Point location = element.getLocation();
+		                int x = location.getX();
+		                int y = location.getY();
+
+		                // Get the size of the element
+		                Dimension size = element.getSize();
+
+		                // STRICT CHECK: 
+		                // 1. Must have width/height > 0
+		                // 2. X and Y coordinates must be positive (not hidden off-screen)
+		                // 3. Usually, Home buttons aren't at (0,0). Adjust these values if needed.
+		                if (size.getWidth() > 0 && size.getHeight() > 0 && x >= 0 && y >= 0) {
+		                    
+		                    // Optional: Print coordinates for debugging
+		                    System.out.println("Found visible element at: X=" + x + ", Y=" + y);
+		                    return true; 
+		                }
+		            }
+		        }
+		        return false;
+		    } catch (Exception e) {
+		        return false;
+		    }
+		}
 }

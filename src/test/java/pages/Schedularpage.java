@@ -133,7 +133,8 @@ public class Schedularpage extends GenericWrappers {
 	@FindBy(xpath = "//android.widget.ScrollView[@content-desc=\"com.CaaZa_Smart:id/SettingsScreen_ScrollView\"]/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup/android.view.ViewGroup")
 	private WebElement switchLockToggle;
 	
-	
+	@FindBy(xpath = "//*[@resource-id='Scheduler_Time']")
+	private WebElement alreadyExistingSchedule;
 	
 
 	private WebElement deviceName(int username) {
@@ -256,7 +257,7 @@ public class Schedularpage extends GenericWrappers {
 	
 	
 
-	public void createSchedules(int switchCount, int timeToStart, int intervals, int gapBetweenNextSchedule) {
+	public void createSchedules(int switchCount, int timeToStart, int intervals, int gapBetweenNextSchedule,String scheduletype) {
 		analytics = new Analytics(driver);
 		// Get current time and calculate when first schedule should start
 		LocalTime currentTime = LocalTime.now();
@@ -297,7 +298,13 @@ public class Schedularpage extends GenericWrappers {
 				int minute = time.getMinute();
 				String formattedMinute = String.format("%02d", minute);
 				String amPm = time.getHour() >= 12 ? "PM" : "AM";
-				clickbyXpath(plusIcon, "plusbutton");
+				
+				if(scheduletype.contains("NewSchedule")) {
+					clickbyXpath(plusIcon, "plusbutton");
+				}else {
+					clickbyXpath(alreadyExistingSchedule, "Already existing schedule");
+				}
+				
 				System.out.println("Creating schedule for: " + hour + ":" + formattedMinute + " " + amPm);
 
 				
@@ -858,6 +865,11 @@ clickbyXpath(switchLockToggle, "SwitchlockToggle");
 	            }
 	        }
 	    }
+	    
 	}
+	public void clickonexistingSchedule() {
+		clickbyXpath(alreadyExistingSchedule, "Already existing schedule");
+	}
+	
  
 }

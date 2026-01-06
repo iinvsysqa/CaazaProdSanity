@@ -47,10 +47,10 @@ public class SignUpPage extends GenericWrappers {
 	@FindBy(xpath = "//*[@resource-id='confirm_passwordInput']")
 	private WebElement confirmPasswordTextBox;
 	
-	@FindBy(xpath = "//*[@resource-id='NextText']")
+	@FindBy(xpath = "//*[@resource-id='NextButton']")
 	private WebElement signUpnextButton;
 	
-	@FindBy(xpath = "//*[@resource-id='Sign UpText']")
+	@FindBy(xpath = "//*[@resource-id='Sign UpButton']")
 	private WebElement signUpButton;
 	
 	

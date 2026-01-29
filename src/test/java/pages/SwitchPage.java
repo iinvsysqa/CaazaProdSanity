@@ -141,12 +141,27 @@ public class SwitchPage extends GenericWrappers{
 			clickbyXpath(onOffButtonTwo, "Click On/OFF 1 Button");
 		}
 	}
-	public void ThreenodeclickOnOffButton() {
-		if (isElementDisplayedCheck(onOffButton)) {
+	public void ThreenodeclickOnOffButton(int enternode) {
+		switch (enternode) {
+		case 1:
+			clickbyXpath(onOffButton, "Click On/OFF 1 Button");
+			break;
+		case 2:
+			clickbyXpath(onOffButton, "Click On/OFF 1 Button");
+			clickbyXpath(onOffButtonTwo, "Click On/OFF 2 Button");
+			break;
+		case 3:	
 			clickbyXpath(onOffButton, "Click On/OFF 1 Button");
 			clickbyXpath(onOffButtonTwo, "Click On/OFF 2 Button");
 			clickbyXpath(onOffButtonThree, "Click On/OFF 3 Button");
+			break;
+		 default:
+             System.out.println("Invalid size number");
 		}
+//		if(isElementDisplayedCheck(onOffButtonThree)){
+//		}else if(isElementDisplayedCheck(onOffButtonTwo)){
+//		}else if (isElementDisplayedCheck(onOffButton)) {
+//		}
 	}
 
 	public void clickOnOff2Button() {
@@ -249,8 +264,9 @@ public class SwitchPage extends GenericWrappers{
 		}
 		
 	}
-	public void FetchSerailnumber_Dual_Threenode() {
+	public String FetchSerailnumber_Dual_Threenode() {
 		
+		String serialNumber = null;
 		try {
 			List<WebElement> switchElements = driver.findElements(
 					By.xpath("//*[@resource-id[contains(., 'SwitchWrapper_')]]")
@@ -263,7 +279,7 @@ public class SwitchPage extends GenericWrappers{
 				String resourceId = element.getAttribute("resource-id");
 				
 				// Extract serial number: everything after the LAST underscore
-				String serialNumber = resourceId.substring(resourceId.lastIndexOf("_") + 1);
+				 serialNumber = resourceId.substring(resourceId.lastIndexOf("_") + 1);
 				Reporter.reportStep( "Serial Number -"+ serialNumber , "PASS");
 				System.out.println("Serial Number: " + serialNumber);
 			}
@@ -271,6 +287,7 @@ public class SwitchPage extends GenericWrappers{
 			System.out.println(e);
 			Reporter.reportStep( "Serial Number not fetched " , "PASS");
 		}
+		return serialNumber;
 		
 	}
 }

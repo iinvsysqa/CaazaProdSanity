@@ -98,7 +98,7 @@ public class TC06_SceneCreation extends MobileAppWrappers{
 			
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);
+			adddevicepage.EnterNode(switchNames);
 			homepage.navigateback();
 			
 			scenecreation.navigateScenecreationpage();

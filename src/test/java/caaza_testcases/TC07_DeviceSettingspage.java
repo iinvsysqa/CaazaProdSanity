@@ -96,7 +96,7 @@ public class TC07_DeviceSettingspage extends MobileAppWrappers{
 			
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);
+			adddevicepage.EnterNode(switchNames);
 			homepage.navigateback();
 			
 			homepage.enterFirstcard();

@@ -93,7 +93,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);	
+			adddevicepage.EnterNode(switchNames);	
 			homepage.navigateback();
 			
 			homepage.clickFloorSelctionBtn();
@@ -110,7 +110,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			
 			
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);	
+			adddevicepage.EnterNode(switchNames);	
 			homepage.navigateback();
 			
 			homepage.clickFloorSelctionBtn();
@@ -126,7 +126,7 @@ public class TC04_RemoveSwitchBoardandRepair extends MobileAppWrappers {
 			//smartconfig
 			
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);	
+			adddevicepage.EnterNode(switchNames);	
 			homepage.navigateback();
 			
 			homepage.clickFloorSelctionBtn();

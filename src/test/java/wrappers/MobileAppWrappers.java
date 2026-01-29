@@ -31,14 +31,18 @@ import utils.Reporter;
 import utils.RunFlashScript;
 import utils.RunRelayFromPython;
 import utils.SwitchWiFi;
+import utils.serialnumberExcelupdate;
 
 public class MobileAppWrappers extends GenericWrappers {
 	protected String browserName;
 	protected String dataSheetName;
 	protected static String testCaseName;
 	protected static String testDescription;
+	protected static String nodetype;
+	protected static String serialNo;
 	private PrintStream originalOut;
     private PrintStream fileOut;
+    
     
     
     
@@ -127,6 +131,29 @@ public class MobileAppWrappers extends GenericWrappers {
 
 	@AfterMethod
 	public void afterMethod(ITestResult result) throws Exception {
+		
+		String methodName = result.getName();
+		if (methodName.equals("ProductionSanity_Check")) {
+			
+			
+			if (result.getStatus() == ITestResult.SUCCESS) {
+				// Only update if Pass. Use the static 'testCaseName' variable you defined at the top
+				try {
+					// Ensure 'dataSheetName' and 'testCaseName' are populated correctly by your @Test
+					if(nodetype != null && serialNo != null) {
+						serialnumberExcelupdate.writeTestResult(serialNo, nodetype,"PASS");
+					}
+				} catch (Exception e) {
+					System.err.println("Could not update Excel: " + e.getMessage());
+				}
+			} else if (result.getStatus() == ITestResult.FAILURE) {
+				// Optional: Update FAIL if needed
+				serialnumberExcelupdate.writeTestResult(serialNo, nodetype,"FAIL");
+			}
+			
+			
+		}else {
+		
         // --- LOGIC TO UPDATE EXCEL ---
         if (result.getStatus() == ITestResult.SUCCESS) {
             // Only update if Pass. Use the static 'testCaseName' variable you defined at the top
@@ -142,13 +169,40 @@ public class MobileAppWrappers extends GenericWrappers {
              // Optional: Update FAIL if needed
               ExcelUpdate.updateResult(dataSheetName, testCaseName, "FAIL");
         }
-        // -----------------------------
-
-        // quitBrowser();
+		} 
         
-        // driver.terminateApp(packages);
+        
+
+        
         driver.quit();
     }
+	
+	
+//	@AfterMethod
+//	public void afterMethod(ITestResult result) throws Exception {
+//		// --- LOGIC TO UPDATE EXCEL ---
+//		if (result.getStatus() == ITestResult.SUCCESS) {
+//			// Only update if Pass. Use the static 'testCaseName' variable you defined at the top
+//			try {
+//				// Ensure 'dataSheetName' and 'testCaseName' are populated correctly by your @Test
+//				if(nodetype != null && serialNo != null) {
+//					serialnumberExcelupdate.writeTestResult(serialNo, nodetype,"PASS");
+//				}
+//			} catch (Exception e) {
+//				System.err.println("Could not update Excel: " + e.getMessage());
+//			}
+//		} else if (result.getStatus() == ITestResult.FAILURE) {
+//			// Optional: Update FAIL if needed
+//			serialnumberExcelupdate.writeTestResult(serialNo, nodetype,"FAIL");
+//		}
+//		// -----------------------------
+//		
+//		// quitBrowser();
+//		
+//		// driver.terminateApp(packages);
+//		driver.quit();
+//	}
+	
 
 //	@DataProvider(name="fetchData")
 //	public Object[][] getData(){

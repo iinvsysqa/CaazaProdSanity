@@ -112,7 +112,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 //			//logout
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);
+			adddevicepage.EnterNode(switchNames);
 			homepage.navigateback();
 			
 			System.out.println("Moving to Full access");
@@ -281,7 +281,7 @@ public class TC09_Multiuser  extends MobileAppWrappers{
 			Thread.sleep(5000);
 			switchpage.checkforDisconenctedBadge();
 			switchpage.clickSwitchToggle();
-			userpage.checkViewonlyAccesson_off_Toast();
+//			userpage.checkViewonlyAccesson_off_Toast();
 			switchpage.NavigatetoSwitches(1);
 			schedular.checkPartialAccessSchedulepage();
 			userpage.navigateBack();

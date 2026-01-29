@@ -1,0 +1,111 @@
+package caaza_testcases;
+
+import java.util.Arrays;
+import java.util.List;
+
+import org.openqa.selenium.By;
+import org.testng.ITestResult;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+
+import pages.AccountsInfoPage;
+import pages.AddDevicePage;
+import pages.DeviceMenuPage;
+import pages.HomePage;
+import pages.LandingPage;
+import pages.OtpPage;
+import pages.SettingsPage;
+import pages.SignUpPage;
+import pages.StoreLogPage;
+import pages.SwitchPage;
+import utils.logReadandWrite;
+import utils.serialnumberExcelupdate;
+import wrappers.MobileAppWrappers;
+
+public class ProductionSanity_Testclass extends MobileAppWrappers {
+
+	LandingPage landingpage;
+	SignUpPage signuppage;
+	HomePage homepage;
+	OtpPage otppage;
+	SettingsPage settingspage;
+	AccountsInfoPage accountinfopage;
+	DeviceMenuPage devicesettingpage;
+	StoreLogPage logpage;
+	AddDevicePage adddevicepage;
+	SwitchPage switchpage;
+	int enterNode;
+	String fetchSerailnumber_Dual_Threenode;
+
+	@BeforeClass
+	public void startTestCase() {
+		testCaseName = "Innomate Production device Sanity Check";
+		testDescription = "Innomate  deviceSanity Check";
+
+	}
+
+	@Test(priority = 0)
+	public void ProductionSanity_Check() throws Exception {
+		initAndriodDriver();
+		functionaCheck();
+	}
+
+	List<String> switchNames = Arrays.asList("Switch1", "Switch2", "Switch3", "Switch4", "Switch5");
+
+	void functionaCheck() throws Exception {
+		landingpage = new LandingPage(driver);
+		signuppage = new SignUpPage(driver);
+		settingspage = new SettingsPage(driver);
+		homepage = new HomePage(driver);
+		adddevicepage = new AddDevicePage(driver);
+		switchpage = new SwitchPage(driver);
+
+		logReadandWrite readwrite = logReadandWrite.getInstance(loadProp("COM"));
+		try {
+//			readwrite.openPort();
+
+//			landingpage.clickLandingPageNextBtn();			
+//			landingpage.enterUserName("Demouserauto");
+//			landingpage.enterPassword("Welcome@123");
+//			landingpage.clickSignInButton();
+			homepage.clickFloorSelctionBtn();
+			adddevicepage.pair(2);
+			enterNode = adddevicepage.EnterNode(switchNames);
+			homepage.clickFloorSelctionBtn();
+
+			homepage.clickPanel(0);
+			Thread.sleep(2000);
+			switchpage.ThreenodeclickOnOffButton(enterNode);
+			Thread.sleep(2000);
+			switchpage.ThreenodeclickOnOffButton(enterNode);
+
+			fetchSerailnumber_Dual_Threenode = switchpage.FetchSerailnumber_Dual_Threenode();// newly added
+
+			switchpage.clickMenuButton();
+			switchpage.clickSettingsButton();
+			switchpage.clickResetDeviceButton();
+			switchpage.clickResetConfirmationButton();
+			Thread.sleep(5000);
+			driver.navigate().back();
+			driver.navigate().back();
+			// switchpage.clickBackButton();
+
+			if (enterNode == 1) {
+				nodetype = "SingleNode";
+			} else if (enterNode == 2) {
+				nodetype = "DualNode";
+			} else if (enterNode == 3) {
+				nodetype = "ThreeNode";
+			}
+			serialNo = fetchSerailnumber_Dual_Threenode;
+
+//			readwrite.closePort();
+		} catch (Exception e) {
+			readwrite.closePort();
+			logpage.CollectLogOnFailure(testCaseName, testDescription);
+			fail(e);
+		}
+	}
+
+}

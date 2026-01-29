@@ -96,7 +96,7 @@ public class TC12_EnableEnergyMonitoring extends MobileAppWrappers{
 			//For schedules
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);			
+			adddevicepage.EnterNode(switchNames);			
 		
 			homepage.enterFirstcard();
 			homepage.clickPanel(0);

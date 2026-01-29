@@ -376,13 +376,13 @@ public class AddDevicePage extends GenericWrappers {
 	
 	public void clickFanType() {
 //		clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
-//		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
-//			
-//			clickbyXpath(switchTypeFanButton, " Click Fan option ");
-//		}else {
+		if(isiconDisplayed(switchTypeFanButton, "Fan type in dropdown") ) {
+			
+			clickbyXpath(switchTypeFanButton, " Click Fan option ");
+		}else {
 			clickbyXpath(switchTypeFridgeButton, " Click Fridge option ");
 			
-//		}
+		}
 	}
 	public void clickAddswitchSaveBtn() {
 		clickbyXpath(addSwitchSaveBtn, "Panel name save button ");
@@ -1188,39 +1188,19 @@ public void TurnOffmobiledata() throws Exception {
 
  // Add names for the switches
 
-public void EnterNode(int Node ,List<String> switchNames) throws InterruptedException {
+public int  EnterNode(List<String> switchNames) throws InterruptedException {
 	
 	waitForVerificationComplete();
 	enterPanelName("Panel1");
 	clickbyXpath(panelNameSaveBtn, "PanelNamesave");
-	switch(Node) {
-	case 1://singlenode-1switch
+	//singlenode-1switch
 //		 enterSwitchName("Switch1");
-		 setupSwitches(switchNames);
+		 int setupSwitches = setupSwitches(switchNames);
 		 clickAddswitchSaveBtn();
 		 clickOkButton();
-		break;
-	case 2://Dualnode-2switch
-		setupSwitches(switchNames);
-		 
-		 clickAddswitchSaveBtn();
-		 clickOkButton();
-		break;
-	case 3://threenode-3switch
-		setupSwitches(switchNames);
-		 
-		 clickAddswitchSaveBtn();
-		 clickOkButton();
-		break;
-	case 4://unicore -6switch
-		setupSwitches(switchNames);
-		 clickAddswitchSaveBtn();
-		 clickOkButton();
-		break;
+
+		 return setupSwitches;
 		
-	default:
-		break;
-	}
 }
 
 
@@ -1229,7 +1209,7 @@ public List<WebElement> getSwitchTextboxes() {
     return driver.findElements(By.xpath("//android.widget.EditText[@text='Enter Switch Name']"));
 }
 
-public void enterNamesForSwitches(List<String> switchNames) {
+public int enterNamesForSwitches(List<String> switchNames) {
     List<WebElement> switchTextboxes = getSwitchTextboxes();
     
     System.out.println("Switchtextboxes sizes: "+switchTextboxes.size() );
@@ -1248,12 +1228,14 @@ public void enterNamesForSwitches(List<String> switchNames) {
         clickSwitchTypeDropdown();
         clickFanType();
     }
+    return switchTextboxes.size();
 }
 
 
-public void setupSwitches(List<String> switchNames) throws InterruptedException {
+public int setupSwitches(List<String> switchNames) throws InterruptedException {
 	Thread.sleep(5000);
-    enterNamesForSwitches(switchNames);
+    int enterNamesForSwitches = enterNamesForSwitches(switchNames);
+    return enterNamesForSwitches;
     
 }
 

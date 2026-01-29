@@ -98,7 +98,7 @@ public class TC05_MultipleScheduleForSingleRoom extends MobileAppWrappers{
 			//For schedules
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);			
+			adddevicepage.EnterNode(switchNames);			
 			homepage.navigateback();
 			
 			homepage.enterFirstcard();

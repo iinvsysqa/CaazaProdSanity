@@ -116,7 +116,7 @@ public class TC10_SwitchLock  extends MobileAppWrappers{
 //			//logout
 			homepage.enterFirstcard();
 			adddevicepage.pair(2);
-			adddevicepage.EnterNode(node,switchNames);
+			adddevicepage.EnterNode(switchNames);
 			homepage.navigateback();
 			
 			homepage.enterFirstcard();
